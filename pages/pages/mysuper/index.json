@@ -5,7 +5,7 @@
   "template":"/pages/device.j2",
   "data": [
     {
-      "type": "navigation/global-nav",
+      "type": "global/global-nav",
       "external_theme": "theme--white",
       "right_column_padding":"pt-m pb-m",
       "logo":"",
@@ -65,7 +65,7 @@
             },
             "Life insurance provides a lump sum payment of three times your annual salary if you die. Income protection cover provides a tax-free monthly benefit equivalent to 50% of your annual salary should you become unable to work due to illness or accident.",
             { 
-              "type": "buttons/btn",
+              "type": "links/btn",
               "label": "Calculate your premium",
               "theme": "mysuper-green",
               "size":"small",
@@ -122,7 +122,7 @@
               "data":"mysuper exists to set up our employees with financial security in the future, and we’ve been doing it."
             },
             { 
-              "type": "buttons/btn",
+              "type": "links/btn",
               "label": "Join my super",
               "theme": "mysuper-green",
               "size":"small",

@@ -5,7 +5,7 @@
   "template":"/pages/device.j2",
   "data": [ 
     {
-      "type": "navigation/global-nav",
+      "type": "global/global-nav",
       "external_theme":"theme--white",
       "logo":"-logo",
       "container_padding":"layout section-s",
@@ -34,7 +34,7 @@
             },
             "Introducing our first line of connected rings that let you put your phone away and your mind at ease.",
             { 
-              "type":"buttons/btn",
+              "type":"links/btn",
               "label":"I want one",
               "theme":"secondary"
             }
@@ -146,7 +146,7 @@
                 "data":"$195"
               },
               {
-                "type":"buttons/btn",
+                "type":"links/btn",
                 "label":"PRE ORDER",
                 "theme":"primary"
               }
@@ -169,7 +169,7 @@
                 "data":"$195"
               },
               {
-                "type":"buttons/btn",
+                "type":"links/btn",
                 "label":"PRE ORDER",
                 "theme":"primary"
               }
@@ -193,7 +193,7 @@
                 "data":"$195"
               },
               {
-                "type":"buttons/btn",
+                "type":"links/btn",
                 "label":"PRE ORDER",
                 "theme":"primary"
               }
@@ -216,7 +216,7 @@
                 "data":"$195"
               },
               {
-                "type":"buttons/btn",
+                "type":"links/btn",
                 "label":"PRE ORDER",
                 "theme":"primary"
               }

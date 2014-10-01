@@ -9,7 +9,7 @@
     {
       "data": [
         {
-          "type": "navigation/global-nav",
+          "type": "global/global-nav",
           "external_theme": "theme--kiwibank",
           "internal_theme": "theme--dark-green",
           "logo":"kiwibank-logo",

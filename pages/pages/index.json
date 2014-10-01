@@ -5,7 +5,7 @@
     "template":"/pages/device.j2",
     "data": [
         {
-          "type": "navigation/global-nav",
+          "type": "global/global-nav",
           "external_theme":"theme--black",
           "logo":"-logo",
           "container_padding":"layout section-s",
@@ -18,11 +18,10 @@
                   "title":"Member logout",
                   "href":""
               }
-            
           ]
         },
         {
-        "type": "navigation/global-nav",
+        "type": "global/global-nav",
         "internal_theme":"theme--white",
         "logo":"-logo",
         "container_padding":"layout section-s",
@@ -102,7 +101,7 @@
                 "data":[
                   "Our new free app offers step-by-step first aid advice, tips on how to prepare for disasters and instructions on what to do during an emergency. Read more",
                   {
-                    "type":"buttons/btn",
+                    "type":"links/btn",
                     "label":"Download the app",
                     "theme":"primary"
                   }

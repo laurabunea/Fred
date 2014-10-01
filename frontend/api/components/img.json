@@ -9,8 +9,7 @@
             "example": {
                 "type": "img",
                 "alt": "test image",
-                "src": "/images/test-picture.jpg"
-                
+                "src": "/images/test-picture.jpg"  
             }
         },
         {

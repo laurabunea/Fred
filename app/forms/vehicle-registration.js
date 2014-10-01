@@ -441,7 +441,7 @@ module.exports = new Form({
                             label: "Confirm and pay"
                         },
                         {
-                            type: "buttons/btn",
+                            type: "links/btn",
                             theme: "secondary",
                             href: "step1",
                             label: "Change vehicle or licence period",

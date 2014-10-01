@@ -5,7 +5,7 @@
   "template":"/pages/device.j2",
   "data": [
     {
-      "type": "navigation/global-nav",
+      "type": "global/global-nav",
       "external_theme": "theme--white",
       "right_column_padding":"pt-m pb-m",
       "logo":"",
