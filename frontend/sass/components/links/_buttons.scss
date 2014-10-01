@@ -134,6 +134,7 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
 /*********************************
     Size modifiers
 *********************************/
+
 .btn.btn--x-small {
     @extend %pl-xs;
     @extend %pr-xs;

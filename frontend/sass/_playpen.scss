@@ -5,3 +5,113 @@
     sass structure 
 \*------------------------------------*/
 
+/**
+* Media blocks
+* ---------------------------------------------------------------------------
+*/
+.media {
+    overflow: hidden;
+    margin-bottom: 32px;
+    margin-bottom: 2rem; 
+}
+ 
+.media--squishy img {
+    width: 100%; 
+}
+ 
+.media__image {
+    float: left;
+    margin-right: 2em; 
+}
+
+.media__image > img {
+    display: block; 
+}
+
+
+/**
+* Inset panels/cards
+* ---------------------------------------------------------------------------
+*/
+.card {
+    border-radius: 0.25em;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    margin-bottom: 2em;
+    border: solid 1px #e2e2e2;
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(10, 15, 37, 0.05);
+    padding-left: 1em;
+    padding-right: 1em; 
+}
+
+@media only screen and (min-width: 37.5em) {
+    .card {
+        padding-left: 2em;
+        padding-right: 2em; 
+    } 
+}
+    .card > :last-child {
+        margin-bottom: 0; 
+    }
+
+
+
+
+/**
+* ---------------------------------------------------------------------------
+* States
+* ---------------------------------------------------------------------------
+*
+* Apply states last.
+*
+*/
+/**
+* Prevent all user interaction with the element
+*/
+.is-disabled {
+pointer-events: none;
+cursor: default;
+opacity: 0.5; }
+ 
+/**
+* Shows errors, especially in forms.
+*
+* 1. Assume error class can be applied to an input, containing div or label.
+* 2. Give links inside an errored component a clickable appearance.
+* 3. Reset form field border-color on focus.
+*/
+.is-error {
+color: #FA4C3D;
+border-color: #FA4C3D;
+/* [1] */ }
+.is-error a {
+color: #FA4C3D;
+text-decoration: underline;
+/* [2] */ }
+.is-error .field {
+border-color: #FA4C3D; }
+.is-error .field:focus {
+border-color: #014d8c;
+/* [3] */ }
+ 
+.is-field-error {
+color: #FA4C3D;
+margin-bottom: 0.25em; }
+ 
+.is-warning {
+color: #FA4C3D; }
+ 
+.is-hidden {
+display: none; }
+ 
+.is-overlay:after {
+content: "";
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(255, 255, 255, 0.85);
+-webkit-animation: fadeIn 0.1s ease-out backwards;
+animation: fadeIn 0.1s ease-out backwards; }

@@ -44,3 +44,40 @@ li ol {
         margin-top: 0;
     }
 }
+
+/**
+* Throws list items into a collection of inline-blocks
+*/
+.nav {
+/* ul, ol */
+margin-top: 0;
+margin-bottom: 0;
+list-style: none;
+padding-left: 0;
+font-size: medium; }
+.nav > li {
+display: inline-block;
+vertical-align: middle; }
+
+
+/**
+* Extends `.nav {}`
+*
+* Adds spacing between a bunch of inline block nav children.
+*
+*/
+.nav--links > li {
+margin-right: 0.75em;
+line-height: 1; }
+.nav--links > li:last-child {
+margin-right: 0; }
+.nav--links > .nav--links__tight {
+margin-right: 0.25em; }
+ 
+.nav--bullet li:after {
+content: "â€¢";
+margin-left: 0.55em;
+color: #aaa;
+display: inline-block; }
+.nav--bullet li:last-child:after {
+display: none; }

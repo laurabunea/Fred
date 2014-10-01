@@ -22,6 +22,16 @@
                 "src": "/images/test-picture.jpg",
                 "responsive":true
             }
+        },
+        {
+            "title": "Avatar ",
+            "notes":"make an avatar component",
+            "example": {
+                "type": "img",
+                "alt": "test image",
+                "src": "/images/test-picture.jpg",
+                "responsive":true
+            }
         }
     ]
 }
