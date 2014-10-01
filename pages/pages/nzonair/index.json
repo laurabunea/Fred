@@ -59,7 +59,7 @@
           {
             "data":[
               {
-                "type": "navigation/breadcrumb",
+                "type": "links/breadcrumb",
                 "data": [
                   {
                     "url": "#",
@@ -85,7 +85,7 @@
       },
       
 		{
-			"type": "featured-article",
+			"type": "global/featured-article",
 			"layout":"layout",
 			"category":"Music",
 			"date":"01/04/2014",
