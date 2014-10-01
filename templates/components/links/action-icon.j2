@@ -1,0 +1,18 @@
+
+{% for action in item.action %}
+
+    <a href='{{ action.href }}' class='action  {{ action.size }} {% if action.horizontal %}action--horizontal{% endif %}{% if action.horizontal %} action--bold{% endif %}'>
+
+        <div class="action__icon {{ action.background_colour | default('bg--link-color') }}">
+
+            <i class="i {{ action.icon }} {{ action.icon_colour | default('i--white')}}"></i>
+
+        </div>
+
+        <span class='{{ action.text_colour | default('text--link') }}'> 
+            {{ action.text }}
+        </span>
+
+    </a>
+    
+{% endfor %}

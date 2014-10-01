@@ -1,0 +1,23 @@
+<ul class='[ grid ] {{item.theme}} anchor-links'>
+
+    {% for child in item.data %}
+
+        <li class='[ col {{item.column_size | default('large-5')}} ]'>
+
+            {% if child.href %}
+
+                <a href="#{{ child.href|default("#") }}">
+                    {{ child.text|safe }}
+                </a>
+            
+            {% else %}
+                {{ child }}
+            {% endif %}
+
+        </li>
+
+    {% endfor %}
+
+</ul>
+
+      

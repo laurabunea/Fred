@@ -1,0 +1,26 @@
+{
+    "api": {
+        "type": "links/breadcrumb",
+        "data": []
+    },
+    "examples": [
+        {    
+            "title":"Breadcrumbs",
+            "notes":"Use breadcrumbs to indicate the user’s location within the website information architecture.",
+            "type": "links/breadcrumb",
+            "example": {
+                "type": "links/breadcrumb",
+                "data": [
+                    {
+                        "url": "#",
+                        "title": "Link 1"
+                    },
+                    {
+                        "url": "#",
+                        "title": "Link 2"
+                    }
+                ]
+            } 
+        }
+    ]   
+}

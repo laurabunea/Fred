@@ -106,7 +106,7 @@
                 },
                "Since v22, Chrome makes fat sausage horrible web typography. Fix it with these properties right here:",
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<div class='my-black-box antialiased'>\n <h1>Knocked out white text!</h1> \n</div>"
                     ]
@@ -121,7 +121,7 @@
                 },
                 "In yoru  markup:",
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<html class='isWindowsChrome'>\n <!-- some time later -->\n <div class='my-black-box antialiased'>\n  <h1>Hey i'll look good on Vista!</h1>\n </div>"
                     ]
@@ -139,7 +139,7 @@
                 "Place something before or after an element",
                
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<p class='prepend' data-prepend='email:'>\n email@gmail.com\n</p>\n<p class='append' data-append='is my email'>\n email@gmail.com\n</p>"
                     ]
@@ -186,7 +186,7 @@
                 "We've found some odd bugs with the -999px textindent hack. Clipping is much better since it doesn't require a 999 x [your-line-height]px region to be drawn.",
                 "This is borrowed from Bootstrap.",
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<a class='sr-only' href='#content'>Skip to main content</a>"
                     ]
@@ -207,7 +207,7 @@
                     "data": "Text alignment classes"
                 },
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<p class='text-center'>text-center</p>\n<p class='text-left'>text-left</p>\n<p class='text-right'>text-right</p>"
                     ]
@@ -217,7 +217,7 @@
                     "data": "Uppercase and lowercase"
                 },
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<p class='uppercase'>uppercase</p>\n<p class='lowercase'>lowercase</p>"
                     ] 
@@ -227,7 +227,7 @@
                     "data": "Font weights "
                 },
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<p class='font-bold'>font-bold</p>\n<p class='font-light'>font-light</p>\n<p class='font-italic'>font-italic</p>\n<p class='font-italic font-bold'>font-italic and font bold</p>\n<p class='font-italic font-light'>font-italic and font light</p>"
                     ]
@@ -238,7 +238,7 @@
                     "data": "Text overflow"
                 },
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<p class='text--overflow'>I am a really really really really really really long sentence that just keeps going and going and going and going and going.</p>"
                     ]
@@ -261,7 +261,7 @@
                     "data": "Inline list"
                 },
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<ul class='list--inline'>\n  <li>List item one</li>\n  <li>List item two</li>\n</ul>"
                     ]
@@ -271,7 +271,7 @@
                     "data": "Block lists"
                 },
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<ul class='list--block'>\n  <li>List item one</li>\n  <li>List item two</li>\n</ul>"
                     ]
@@ -292,7 +292,7 @@
                     "data": "Floating helpers"
                 },
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<div class='clearfix'>\n  <p class='right'/>I'm floating left</p>\n  <p>I'm floating right</p>\n</div>"
                     ]
@@ -302,7 +302,7 @@
                     "data": "Absolute and Relative helpers"
                 },
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<div class='relative' style='height:100px; width:100%'>\n  <p class='absolute--top-right'/>I'm positioned top right</p>\n  <p class='absolute--top-left'/>I'm positioned top left</p>\n  <p class='absolute--bottom-left'/>I'm positioned bottom left</p>\n  <p class='absolute--bottom-right'/>I'm positioned bottom right</p>\n</div>"
                     ]
@@ -312,7 +312,7 @@
                     "data": "Centering elements"
                 },
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<div class='center-element' style='width:100px;' >\n   <p>I am centered</p>\n</div>"
                     ]
@@ -322,7 +322,7 @@
                     "data": "Alligning elements"
                 },
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "example here please"
                     ]
@@ -332,7 +332,7 @@
                     "data": "Overflow"
                 },
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<div class=clearfix'>\n  <p class='right'/>I'm floating left</p>\n  <p>I'm floating right</p>\n</div>"
                     ]
@@ -353,7 +353,7 @@
                     "data": "Disabled link"
                 },
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<a href='' class='is-disabled'>I'm a disabled link</a>"
                     ]
@@ -363,7 +363,7 @@
                     "data": "Draggable link"
                 },
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<a href='' class='is-draggable'>I'm a disabled link</a>"
                     ]
@@ -373,7 +373,7 @@
                     "data": "Clean link"
                 },
                 {
-                    "type": "code-and-example",
+                    "type": "code/code-and-example",
                     "data": [
                         "<a href='' class='clean-link'>I'm a clean link</a>"
                     ]

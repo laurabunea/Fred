@@ -193,12 +193,8 @@ module.exports = function(grunt) {
                 options: {
                 },
                 src: 'www/css/screen.css'
-            },
-            slim: {
-                options: {
-                },
-                src: 'www/css/style-guide.css'
             }
+            
         },
 
         uglify: {
@@ -223,15 +219,8 @@ module.exports = function(grunt) {
                 files: {
                     'www/css/screen.css': ['www/css/screen.css']
                 }
-            },
-            slim: {
-                options: {
-                    banner: '/* Style guide */'
-                },
-                files: {
-                    'www/css/style-guide.css': ['www/css/style-guide.css']
-                }
             }
+           
         },
 
         cmq: {

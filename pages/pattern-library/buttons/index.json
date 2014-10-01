@@ -6,17 +6,22 @@
         {
             "type" : "/pattern-library/section-block-with-api-example",
             "anchor": "simple",
-            "component": "components/buttons/btn"
+            "component": "components/links/btn"
         },
         {
             "type" : "/pattern-library/section-block-with-api-example",
             "anchor": "action-icon",
-            "component": "components/buttons/action-icon"
+            "component": "components/links/action-icon"
         },
         {
             "type" : "/pattern-library/section-block-with-api-example",
             "anchor": "anchor-links",
-            "component": "components/buttons/anchor-links"
+            "component": "components/links/anchor-links"
+        },
+        {
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "breadcrumbs",
+            "component": "components/links/breadcrumb"
         }
     ]
 }

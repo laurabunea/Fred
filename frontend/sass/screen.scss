@@ -123,33 +123,34 @@ body {
 
 @import "playpen";
 @import "animations";
+
 /**
 ## Components
 */
 
-@import "components/grid";
-@import "components/breadcrumb";
-@import "components/anchor-link";
-@import "components/buttons";
-@import "components/link-complex";
-@import "components/list";
-@import "components/nav";
-@import "components/action";
-@import "components/pills";
-@import "components/stat-block";
-@import "components/subnav";
-@import "components/banner";
-@import "components/subnav-tertiary";
-@import "components/content-block";
-@import "components/global-nav";
-@import "components/header";
-@import "components/table";
-@import "components/share";
-@import "components/accessibility";
+//layout
+@import "components/layout/grid";
+@import "components/layout/table";
 
-/**
-## Forms
-*/
+//links
+@import "components/links/breadcrumb";
+@import "components/links/anchor-link";
+@import "components/links/buttons";
+@import "components/links/action-links";
+//need to clean up this file
+@import "components/links/links";
+
+//global elements
+@import "components/global/header";
+@import "components/global/banner";
+@import "components/global/global-nav";
+
+
+@import "components/list";
+@import "components/pills";
+
+
+//forms
 @import "components/form/_fieldset";
 @import "components/form/_field";
 @import "components/form/_field--number";

@@ -46,7 +46,7 @@
                 },
                 {
                     "type": "pattern-library/code-example",
-                    "component": "components/header"
+                    "component": "components/global/header"
                 }
             ]
         },

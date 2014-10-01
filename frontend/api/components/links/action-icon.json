@@ -1,0 +1,102 @@
+{
+    "api": {
+        "type": "links/action-icon",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "Action links",
+            "notes":"Use these components when you want to use an icon to guide the user to another page.",
+            "example": {
+                "type": "links/action-icon",
+                "action":[
+                    {
+             
+                        "icon":"i-section-driver-licences",
+                        "text":"Where to take an advanced driving course",
+                        "href":"/driver-licences/licensing-agents-and-approved-course-providers/"
+                    }    
+                ]
+            }
+        },
+        {
+          
+            "title":"Action link with some theme modifiers",
+            "notes":"Yes this is an ugly colour choice but it's an example :).",
+            "example": {
+                "type": "links/action-icon",
+                "action":[
+                    {
+                        "icon":"i-section-driver-licences",
+                        "text":"Where to take an advanced driving course",
+                        "href":"/driver-licences/licensing-agents-and-approved-course-providers/",
+                        "background_colour":"bg--red",
+                        "text_colour":"text--orange",
+                        "icon_colour":"i--orange"
+                    }    
+                ]
+            }
+        },
+        {
+         
+            "title":"Action link with a size modifier",
+            "example": {
+                "type": "links/action-icon",
+                "action":[
+                    {
+                        "icon":"i-section-driver-licences",
+                        "text":"Where to take an advanced driving course",
+                        "href":"/driver-licences/licensing-agents-and-approved-course-providers/",
+                        "size":"action--small"
+                    }    
+                ]
+            }
+        },
+        {
+           
+            "title":"Action link with a tiny size modifier",
+            "example": {
+                "type": "links/action-icon",
+                "action":[
+                    {
+                        "icon":"i-section-driver-licences",
+                        "text":"Where to take an advanced driving course",
+                        "href":"/driver-licences/licensing-agents-and-approved-course-providers/",
+                        "size":"action--tiny"
+                    }    
+                ]
+            }
+        },
+        {
+            
+            "title":"Horizontal action link:",
+            "example": {
+                "type": "links/action-icon",
+                "action":[
+                    {
+                        "icon":"i-section-driver-licences",
+                        "text":"Where to take an advanced driving course",
+                        "href":"/driver-licences/licensing-agents-and-approved-course-providers/",
+                        "size":"action--small",
+                        "horizontal":true
+                    }    
+                ]
+            }
+        },
+        {
+            "title":"Action link with a bold modifier:",
+            "example": {
+                "type": "links/action-icon",
+                "action":[
+                    {
+                        "icon":"i-section-driver-licences",
+                        "text":"Where to take an advanced driving course",
+                        "href":"/driver-licences/licensing-agents-and-approved-course-providers/",
+                        "size":"action--small",
+                        "bold":true
+                    }    
+                ]
+            }
+        }
+    ]
+}

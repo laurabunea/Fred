@@ -1,0 +1,153 @@
+{
+    "api": {
+        "type": "links/btn",
+        "label": "",
+        "theme": ["primary", "secondary","tertiary"]
+    },
+    "heading":"Buttons",
+    "description":"hello",
+    "examples": [
+        {
+            "title": "Simple btn",
+            "notes": "This is a simple button with a couple of different themes applied.",
+            "example": {
+                "data": [
+                    {
+                        "type": "links/btn",
+                        "label": "Primary button",
+                        "theme": "primary"
+                    },
+                    {
+                        "type": "links/btn",
+                        "label": "Secondary button",
+                        "theme": "secondary"
+                    },
+                    {
+                        "type": "links/btn",
+                        "label": "Tertiary button",
+                        "theme": "tertiary"
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Button with block modifier",
+            "notes":"Block buttons stretch to the full width of their parent.",
+            "example": {
+                "type": "links/btn",
+                "label": "Hello",
+                "theme": "primary",
+                "block": true
+            }
+        },
+        {
+            "title": "Button with a block modifier for small devices",
+            "example": {
+                "type": "links/btn",
+                "label": "Shrink the screen and see me stretch",
+                "theme": "primary",
+                "mobile": true
+            }
+        },
+        {
+            "title": "Button with a bounce modifier",
+            "example": {
+                "type": "links/btn",
+                "label": "Hover over me and see me bounce",
+                "theme": "primary",
+                "bounce": true
+            }
+        },
+        {
+            "title": "Button with an icon",
+            "notes":"Using this type of button assumes there’s an inline-block element with a class of .i inside the button element.",
+            "example": {
+                "type": "links/btn",
+                "label": "I’m a button with an icon",
+                "theme": "secondary",
+                "icon": 
+                    {
+                        "name":"caret-down",
+                        "color":"white"
+                    }
+                
+            }
+        },
+        {
+            "title": "Button with an icon in front of the label",
+            "example": {
+                "type": "links/btn",
+                "label": "I’m a button with an icon",
+                "theme": "secondary",
+                "icon_reversed":"true",
+                "icon": 
+                    {
+                        "name":"caret-down",
+                        "color":"white"
+                    }
+                
+            }
+        },
+        { 
+            "title":"Buttons can also be icons only:",
+            "example": {
+                "type": "links/btn",
+                "theme": "secondary",
+                "href": "#",
+                "icon": 
+                    {
+                        "name":"caret-down",
+                        "color":"white"
+                    }
+                
+            }
+        },
+        {
+            "title": "Simple button",
+            "example": {
+                "data": [
+                    {
+                        "type": "links/btn",
+                        "label": "x-small button",
+                        "size":"x-small",
+                        "theme":"primary"
+                    },
+                    {
+                        "type": "links/btn",
+                        "label": "small button",
+                        "size":"small",
+                        "theme":"primary"
+                    },
+                    {
+                        "type": "links/btn",
+                        "label": "default button",
+                        "theme":"primary"
+                    },
+                    {
+                        "type": "links/btn",
+                        "label": "large button",
+                        "size":"large",
+                        "theme":"primary"
+                    },
+                    {
+                        "type": "links/btn",
+                        "label": "x-large button",
+                        "size":"x-large",
+                        "theme":"primary"
+                    }
+                ]
+            }
+        },
+        { 
+            "title":"Buttons with rounded corners:",
+            "example": {
+                "type": "links/btn",
+                "label":"Rounded button",
+                "theme": "primary",
+                "rounded":true,
+                "href": "#"
+            }
+        }
+    ]
+}
+

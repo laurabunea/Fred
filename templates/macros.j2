@@ -93,7 +93,7 @@
 
 {% macro site_header(breadcrumb, headline, step_name, image, subnav, layout, title) %}
 
-    {% set item = { type:"header", breadcrumb:breadcrumb, "headline":headline,"step_name":step_name, "image":image, subnav:subnav, "layout":layout, title:title}  %}
+    {% set item = { type:"global/header", breadcrumb:breadcrumb, "headline":headline,"step_name":step_name, "image":image, subnav:subnav, "layout":layout, title:title}  %}
     
     {{ item|component }}
 

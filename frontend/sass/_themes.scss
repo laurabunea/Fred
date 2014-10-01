@@ -199,7 +199,9 @@ $link-color:
 .bg--white {  background:#fff;  }
 .bg--light-blue {background-color:#f6fcfb;}
 .bg--dark-grey {background-color:#727375;}
-
+.bg--red {background-color:#e2534a;}
+.bg--blue {background-color:#1392b2;}
+.bg--link-color {background-color:$base-link-color;}
 
 //text colours
 .text--muted {  color:grey; }
@@ -209,7 +211,7 @@ $link-color:
 .text--red {color:#e2534a}
 .text--blue {color:#1392b2}
 .text--green {color:#37b67f}
-
+.text--link {color:$base-link-color;}
 
 .text--highlight-red {
   @extend %pl-m;
