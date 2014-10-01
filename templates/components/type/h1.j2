@@ -1,3 +1,3 @@
-<h1 {% if item.class %}class='{{item.class}}'{% endif %}>
+<h1 {% if item.class or item.theme %}class='{{item.class}} {{item.theme}}'{% endif %}>
     {{ item|children }}
 </h1>

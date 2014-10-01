@@ -195,28 +195,62 @@ $link-color:
 // ----------------------------------------------------------------------------
 
 //bg colours
-.bg--black {  background:#000;  }
-.bg--white {  background:#fff;  }
-.bg--light-blue {background-color:#f6fcfb;}
-.bg--dark-grey {background-color:#727375;}
-.bg--red {background-color:#e2534a;}
-.bg--blue {background-color:#1392b2;}
+.bg--black {  background:$black;  }
+.bg--white {  background:$white;  }
+.bg--light-blue {background-color:$light-blue;}
+.bg--dark-grey {background-color:$dark-grey;}
+.bg--red {background-color:$red;}
+.bg--blue {background-color:$blue;}
 .bg--link-color {background-color:$base-link-color;}
+.bg--soft-pink { background-color:$soft-pink;}
 
 //text colours
-.text--muted {  color:grey; }
-.text--bright-yellow {color:yellow}
-.text--white {color:#fff}
-.text--orange {color:#e78547}
-.text--red {color:#e2534a}
-.text--blue {color:#1392b2}
-.text--green {color:#37b67f}
-.text--link {color:$base-link-color;}
+.text--black {  color:$black; }
+.text--dark-grey {color:$dark-grey;}
+.text--muted {  color:$light-grey; }
+.text--white {color:$white}
+.text--orange {color:$orange}
+.text--red {color:$red}
+.text--blue {color:$blue}
+.text--green {color:$green}
+.text--link-color {color:$base-link-color;}
+.text--soft-pink {color:$soft-pink;}
 
-.text--highlight-red {
-  @extend %pl-m;
-  border:3px solid red;
+
+.highlight-top { 
+  @extend %pt-l;
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-top-color: inherit;
 }
+
+.highlight-bottom { 
+  @extend %pb-l;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: inherit;
+}
+.highlight-left { 
+  @extend %pl-l;
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-left-color: inherit;
+}
+
+.highlight-right { 
+  @extend %pr-l;
+  border-right-width: 4px;
+  border-right-style: solid;
+  border-right-color: inherit;
+}
+
+.highlight--red         {  border-color:$red; }
+.highlight--soft-pink   {  border-color:$soft-pink; }
+.highlight--orange      {  border-color:$soft-pink; }
+.highlight--blue        {  border-color:$blue; }
+.highlight--green       {  border-color:$blue; }
+.highlight--link-colour {  border-color:$base-link-color; }
+
 
 // ----------------------------------------------------------------------------
 // Button themes

@@ -11,6 +11,14 @@
                 "type": "type/h6",
                 "data": " H6 heading "
             }
+        },
+        {
+            "title": "Heading 6 with a theme modifier",
+            "example": {
+                "type": "type/h6",
+                "data": "H6 heading",
+                "theme": "text--blue"
+            }
         }
     ]
 }

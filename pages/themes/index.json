@@ -1,0 +1,180 @@
+{
+    "title": "Theme helpers",
+    "headline": "Theme helpers",
+    "template":"template.j2",
+    "data": [
+        {
+            "type": "gallery/dynamic",
+            "internal_theme":"theme--dark",
+            "container_padding":"layout section",
+            "anchor":"themes",
+            "intro":[
+                {
+                    "grid_modifier":"grid--center",
+                    "data":[
+                        {
+                            "type":"type/h2",
+                            "data":"Themes "
+                        },
+                        "Themes are modifier classes that control the colour scheme of an individual pattern or component."
+                    ]
+                }
+            ],
+            "columns":[
+                {
+                    "column_size":"",
+                    "data":[
+                         {
+                            "type": "/pattern-library/swatch",
+                            "themes":[
+                                { 
+                                    "name":"theme--hot",
+                                    "data":"Aa <a href=''>a</a>" 
+                                },
+                                { 
+                                    "name":"theme--warm",
+                                    "data":"Aa <a href=''>a</a>" 
+                                },
+                                { 
+                                    "name":"theme--soft",
+                                    "data":"Aa <a href=''>a</a>" 
+                                },
+                                { 
+                                    "name":"theme--cool",
+                                    "data":"Aa <a href=''>a</a>"  
+                                },
+                                { 
+                                    "name":"theme--fred",
+                                    "data":"Aa <a href=''>a</a>" 
+                                },
+                                { 
+                                    "name":"theme--dark",
+                                    "data":"Aa <a href=''>a</a>" 
+                                }
+                            ]  
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "gallery/dynamic",
+            "internal_theme":"theme--white",
+            "container_padding":"layout section",
+            "anchor":"themes",
+            "intro":[
+                {
+                    "grid_modifier":"grid--center",
+                    "column_size":"",
+                    "data":[
+                        {
+                            "type":"type/h2",
+                            "data":"Background-colours "
+                        },
+                        "blah blah."
+                    ]
+                }
+            ],
+            "columns":[
+                {
+                    "column_size":"",
+                    "data":[
+                         {
+                            "type": "/pattern-library/swatch",
+                            "bottom_theme":"theme--dark",
+                            "themes":[
+                                { 
+                                    "name":"bg--black" 
+                                },
+                                { 
+                                    "name":"bg--white" 
+                                },
+                                { 
+                                    "name":"bg--light-blue" 
+                                },
+                                { 
+                                    "name":"bg--dark-grey" 
+                                },
+                                { 
+                                    "name":"bg--red" 
+                                },
+                                { 
+                                    "name":"bg--blue" 
+                                },
+                                 { 
+                                    "name":"bg--link-color" 
+                                },
+                                 { 
+                                    "name":"bg--soft-pink" 
+                                }
+                            ]  
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "gallery/dynamic",
+            "internal_theme":"theme--dark",
+            "container_padding":"layout section",
+            "anchor":"themes",
+            "intro":[
+                {
+                    "grid_modifier":"grid--center",
+                    "column_size":"",
+                    "data":[
+                        {
+                            "type":"type/h2",
+                            "data":"Text colours"
+                        },
+                        "blah blah."
+                    ]
+                }
+            ],
+            "columns":[
+                {
+                    "column_size":"",
+                    "data":[
+                         {
+                            "type": "/pattern-library/swatch",
+                            "themes":[
+                                { 
+                                    "name":"text--black",
+                                    "data":"<span class='font-size-xl'>Aa</span>"
+                                },
+                                { 
+                                    "name":"text--white",
+                                    "data":"<span class='font-size-xl'>Aa</span>"
+                                },
+                                { 
+                                    "name":"text--light-blue",
+                                    "data":"<span class='font-size-xl'>Aa</span>"
+                                },
+                                { 
+                                    "name":"text--dark-grey",
+                                    "data":"<span class='font-size-xl'>Aa</span>"
+                                },
+                                { 
+                                    "name":"text--red",
+                                    "data":"<span class='font-size-xl'>Aa</span>"
+                                },
+                                { 
+                                    "name":"text--blue",
+                                    "data":"<span class='font-size-xl'>Aa</span>"
+                                },
+                                 { 
+                                    "name":"text--link-color",
+                                    "data":"<span class='font-size-xl'>Aa</span>"
+                                },
+                                 { 
+                                    "name":"text--soft-pink",
+                                    "data":"<span class='font-size-xl'>Aa</span>"
+                                }
+                            ]  
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

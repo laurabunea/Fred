@@ -11,6 +11,14 @@
                 "type": "type/h2",
                 "data": "h2 Heading"
             }
+        },
+        {
+            "title": "Heading 2 with a theme modifier",
+            "example": {
+                "type": "type/h2",
+                "data": " H1 heading",
+                "theme": "text--blue"
+            }
         }
     ]
 }

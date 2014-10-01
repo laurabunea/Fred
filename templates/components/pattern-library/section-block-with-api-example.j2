@@ -17,13 +17,13 @@
                         {% if loop.index > 1 %}
                         
                         <h4>
-                            {{ example.title }} 
+                            {{ example.title | safe }} 
                         </h4>
 
                         {% else %}
 
                         <h3>
-                            {{ example.title }} 
+                            {{ example.title | safe }} 
                         </h3>
 
                         {% endif %}
@@ -33,7 +33,7 @@
                     {% if example.notes %}
 
                     <p>
-                        {{ example.notes }}
+                        {{ example.notes | safe }}
                     </p> 
 
                     {% endif %}

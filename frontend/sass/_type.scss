@@ -68,6 +68,14 @@
     line-height: $line-height-xs;
 }
 
+.font-size-xxxxl { @extend %font-size-xxxxl; }
+.font-size-xxxl { @extend %font-size-xxxl; }
+.font-size-xxl { @extend %font-size-xxl; }
+.font-size-xl { @extend %font-size-xl; }
+.font-size-l { @extend %font-size-l; }
+.font-size-m { @extend %font-size-m; }
+.font-size-s { @extend %font-size-s; }
+.font-size-xs { @extend %font-size-xs; }
 
 // ----------------------------------------------------------------------------
 // Headings

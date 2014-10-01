@@ -233,18 +233,29 @@ $padding-types: "pt", "pb", "pl", "pr";
 // Colours
 // -----------------------------------------------------------------------------
 
-$ultra-dark-grey: #444;
-$dark-grey: #5e5c5c;
-$mid-grey: #999;
-$light-grey: #ddd;
-$ultra-light-grey: #F2F4F7;
+$black: #000;
 $white: #fff;
+
+$ultra-light-grey: #F2F4F7;
+$light-grey: #ddd;
+$mid-grey: #999;
+$dark-grey: #5e5c5c;
+$ultra-dark-grey: #444;
+
+$light-blue:#f6fcfb;
+$blue:#1392b2;
 $dark-blue:#00456B;
 $teal: #008b97;
 
+$green:#37b67f;
+
+$soft-pink:#F49AC2;
+$orange:#e78547;
+$red:#e2534a;
+
+
 
 $color-focus: rgb(255, 92, 0);
-
 
 $error-red: #c44;
 $warning-red: #CA4142;

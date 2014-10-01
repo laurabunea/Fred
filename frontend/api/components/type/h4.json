@@ -11,6 +11,14 @@
                 "type": "type/h4",
                 "data": " H4 heading "
             }
+        },
+        {
+            "title": "Heading 4 with a theme modifier",
+            "example": {
+                "type": "type/h4",
+                "data": " H4 heading",
+                "theme": "text--orange"
+            }
         }
     ]
 }

@@ -11,6 +11,14 @@
                 "type": "type/h5",
                 "data": " H5 heading "
             }
+        },
+        {
+            "title": "Heading 5 with a theme modifier",
+            "example": {
+                "type": "type/h5",
+                "data": " H5 heading ",
+                "theme":"text--soft-pink"
+            }
         }
     ]
 }

@@ -4,7 +4,7 @@
     "template":"/pages/helpers.j2",
     "data": [ 
         {
-            "type" : "/pattern-library/section-block",
+            "type" : "/pattern-library/content-block",
             "data": [
                 { 
                     "type": "type/h1",
@@ -33,7 +33,7 @@
             ]
         },
         {
-            "type" : "/pattern-library/section-block",
+            "type" : "/pattern-library/content-block",
             "anchor":"blocks",
             "data": [
                 { 
@@ -47,7 +47,7 @@
                 "Inline blocks are handy for everything. We don't often support projects in IE7 and below, but since it's trivial to hack it in, we've included it here.",
                 "To cut down on rules in your stylesheet, you can extend this placeholder in your code.",
                 {
-                    "type": "code",
+                    "type": "code/code",
                     "data": [
                         "%inline-block { display: inline-block; *display: inline; *zoom: 1;}\n.my-icon { @extend %inline-block; }"
                     ]
@@ -58,7 +58,7 @@
                 },
                 "Blocks are handy for everything",
                 {
-                    "type": "code",
+                    "type": "code/code",
                     "data": [
                         "%block-element { display: block; }\n.my-anchor { @extend %block-element; }"
                     ]
@@ -66,7 +66,7 @@
             ]
         },         
         {
-            "type" : "/pattern-library/section-block",
+            "type" : "/pattern-library/content-block",
             "anchor":"first-child",
             "data": [
                 { 
@@ -78,7 +78,7 @@
                     "data": "Remove top margin from first-child elements"
                 },
                 {
-                    "type": "code",
+                    "type": "code/code",
                     "data": [
                         "h2 { @extend %first-child-no-top; }"
                     ]
@@ -88,7 +88,7 @@
                     "data": "Remove top border from first-child elements"
                 },
                 {
-                    "type": "code",
+                    "type": "code/code",
                     "data": [
                         "h2 { @extend %first-child-no-top-border; }"
                     ]
@@ -97,7 +97,7 @@
             ]
         },
         {
-            "type" : "/pattern-library/section-block",
+            "type" : "/pattern-library/content-block",
             "anchor":"type-rendering",
             "data": [
                 { 
@@ -114,7 +114,7 @@
                 "But wait! That screws with everything on Windows Vista Chrome... right?",
                 "Yeah, it does. If you're using our <a href=''>Browser.js </a>., it'll automatically add isWindowsChrome to the documentElement, and we set the antialiasing back to classic sub-pixel mode:",
                 {
-                    "type": "code",
+                    "type": "code/code",
                     "data": [
                         ".isWindowsChrome %font-smoothing  { -webkit-font-smoothing: subpixel-antialiased; }"
                     ]
@@ -129,7 +129,7 @@
             ]
         },
         {
-            "type" : "/pattern-library/section-block",
+            "type" : "/pattern-library/content-block",
             "anchor":"append-prepend",
             "data": [
                 { 
@@ -148,7 +148,7 @@
             ]
         },
         {
-            "type" : "/pattern-library/section-block",
+            "type" : "/pattern-library/content-block",
             "anchor":"clearfixing",
             "data": [
 
@@ -158,14 +158,14 @@
                 },
                 "Table-pseudo element clearfix. It is good.",
                 {
-                    "type": "code",
+                    "type": "code/code",
                     "data": [
                         "my-floater { @extend %clearfix; }"
                     ]
                 },
                 "Or, heaven forbid, in your markup:",
                 {
-                    "type": "code",
+                    "type": "code/code",
                     "data": [
                         "<div class='clearfix'>\n  <div class='left'>\n    Hey I'm floating!\n  </div>\n</div>"
                     ]
@@ -175,7 +175,7 @@
             ]
         },
         {
-            "type" : "/pattern-library/section-block",
+            "type" : "/pattern-library/content-block",
             "anchor":"screen-reader",
             "data": [
 
@@ -194,7 +194,7 @@
             ]
         },
         {
-            "type" : "/pattern-library/section-block",
+            "type" : "/pattern-library/content-block",
             "anchor":"typography-helpers",
             "data": [
                 { 
@@ -248,7 +248,7 @@
             ]
         },
         {
-            "type" : "/pattern-library/section-block",
+            "type" : "/pattern-library/content-block",
             "anchor":"list-helpers",
             "data": [
                 { 
@@ -279,7 +279,7 @@
             ]
         },
         {
-            "type" : "/pattern-library/section-block",
+            "type" : "/pattern-library/content-block",
             "anchor":"layout-helpers",
             "data": [
                 { 
@@ -340,7 +340,7 @@
             ]
         },
         {
-            "type" : "/pattern-library/section-block",
+            "type" : "/pattern-library/content-block",
             "anchor":"link-helpers",
             "data": [
                 { 

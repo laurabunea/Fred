@@ -1,0 +1,23 @@
+<div class='theme-container [ grid ]'>
+
+    {% for theme in item.themes %}
+        
+        <div class='theme-swatch [ col large-fifth medium-half ]'>
+      
+            <div class='swatch__top {% if theme.data %} {% else %}pt-xxl{% endif %} {{theme.name}}'>
+               
+                {{theme.data | safe }}
+        
+            </div>
+
+            <div class='swatch__bottom {{item.bottom_theme | default('theme--white')}}'>
+            
+                {{theme.name}}
+      
+            </div>
+            
+        </div>
+
+    {% endfor %}
+
+</div>

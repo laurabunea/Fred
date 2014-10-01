@@ -1,0 +1,30 @@
+.swatch-container {
+    @extend %mb-l;
+}
+    %swatch__top {
+        @extend %br-top-xxs; 
+        @extend %pt-s;
+        @extend %pb-s;   
+    }
+
+    %swatch__bottom {
+        @extend %br-bottom-xxs;
+        @extend %pt-s;
+        @extend %pb-s;
+        @extend %mb-l;
+    }
+
+    %swatch {
+        @extend %br-xxs;
+        @extend %pt-s;
+        @extend %pb-s;
+        @extend %pl-s; 
+        @extend %pr-s;  
+    }
+    .swatch {
+        @extend %swatch;
+    }
+    .swatch__top,
+    .swatch__bottom {   @extend %text-center; }
+    .swatch__top {      @extend %swatch__top; }
+    .swatch__bottom {   @extend %swatch__bottom; }

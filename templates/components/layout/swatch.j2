@@ -1,0 +1,23 @@
+<div class='theme-container [ grid ]'>
+
+    {% for item in item.themes %}
+        
+        <div class='theme-swatch [ col large-quarter medium-half ]'>
+      
+            <div class='swatch__top {{item.name}}'>
+               
+                {{item.data}}
+        
+            </div>
+
+            <div class='swatch__bottom theme--white'>
+            
+                {{item.name}}
+      
+            </div>
+            
+        </div>
+
+    {% endfor %}
+
+</div>

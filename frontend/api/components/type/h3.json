@@ -11,6 +11,14 @@
                 "type": "type/h3",
                 "data": " H3 heading "
             }
+        },
+        {
+            "title": "Heading 3 with a theme modifier",
+            "example": {
+                "type": "type/h3",
+                "data": " H3 heading ",
+                "theme":"text--green"
+            }
         }
     ]
 }

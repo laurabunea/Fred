@@ -1,5 +1,5 @@
 {% set defaults = { data: "This is an h4!" } %}
 
-<h4 {% if item.class %}class='{{item.class}}'{% endif %}>
+<h4 {% if item.class or item.theme %}class='{{item.class}} {{item.theme}}'{% endif %}>
     {{ item|children }}
 </h4>
