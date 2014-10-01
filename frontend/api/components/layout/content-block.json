@@ -1,0 +1,24 @@
+{
+  "api": {
+      "type": "layout/content-block",
+      "data": []
+  },
+  "examples": [
+    {
+      "title": "Content block",
+      "notes":"",
+      "example": {
+        "type":"layout/content-block",
+        "theme":"theme--fred",
+        "padding":"pt-s pb-s pl-s pr-s",
+        "data":[
+          { 
+            "type":"type/intro",
+            "data":"I am some dummy copy."
+          }
+         
+        ]
+      }
+    }
+  ]
+}
