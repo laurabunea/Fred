@@ -14,9 +14,9 @@ $height-icon-tiny: 2.5em;
 
 .action__icon {
     @extend %round;
+    @extend %inline-block;
     @include rem(width, $height-circle-large);
     @include rem(height, $height-circle-large);
-    display: inline-block;
     text-align: center;
     vertical-align: middle;
     @include small-down() {
@@ -142,8 +142,3 @@ $large-icon: $height-circle-large + 20;
 }
 
 .action--bold span { @extend %font-weight-bold; }
-
-//themes
-// .action--green .action__icon { background-color: #afc83d; }
-// .action--dark .action__icon { background-color: #004771; }
-// .action--orange .action__icon { background-color: #de3f00; }

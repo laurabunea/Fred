@@ -928,7 +928,7 @@ fieldset {
 /*------------------------------------*\
     #Utilities
 \*------------------------------------*/
-.inline-block, .text--overflow, .breadcrumb > li, .grid > *, .grid > .grid, .grid--justify > *, .grid--justify:after, .grid--float > *, .breadcrumb > li:last-child, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item, .field--bare, .segmented-control > li {
+.inline-block, .text--overflow, .breadcrumb > li, .i, .grid > *, .grid > .grid, .grid--justify > *, .grid--justify:after, .grid--float > *, .breadcrumb > li:last-child, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item, .field--bare, .segmented-control > li {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
@@ -1592,7 +1592,6 @@ blockquote:before, blockquote:after {
   width: 1em;
   height: 1em;
   background-size: cover;
-  display: inline-block;
   vertical-align: middle; }
 
 /* colourised icons */
