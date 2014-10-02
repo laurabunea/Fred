@@ -4,22 +4,22 @@
 .global-nav__items   {
         
     & > * {
-        @extend %right;
+        float:right;
     }
 }
 
 
 %nav_item {
     @extend %remove-anchor-decoration;
-    @extend %text-center;
     @extend %inline-block;
-    @extend %border-box;
     @extend %mt-0;
     @extend %mb-0;
     @extend %pl-m;
     @extend %pr-0;
     @extend %pb-0;
     @extend %pt-0;
+    box-sizing:border-box;
+    text-align:center;
     line-height:$btn--medium;
     white-space: nowrap;
     border: none;

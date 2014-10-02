@@ -9,10 +9,11 @@
 .email-wrapper {
     
     [type='email'] {
-        @extend %left;
+        
         @extend %email-btn-height;
         @include rem(border-top, $space-xxs);
         @include rem(border-left, $space-xxs);
+        float:left;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         width:70%;

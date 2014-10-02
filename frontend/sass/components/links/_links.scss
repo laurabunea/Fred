@@ -64,7 +64,7 @@
 
 .link-complex {
     @extend %remove-anchor-decoration;
-    @extend %block-element;
+    display:block;;
     color: inherit;
     
     & + .link-complex  { 

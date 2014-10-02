@@ -83,7 +83,7 @@ h1,
 .font-font-size-xxxl {
     @extend %mb-xxxl;
     @extend %font-size-xxxl;
-    @extend %font-weight-normal;
+    font-weight:$font-normal;
 }
 
 h2, 
@@ -93,14 +93,14 @@ h2,
         @include rem('margin-bottom', $space-s);
     }
     @extend %font-size-xxl;
-    @extend %font-weight-normal;
+   font-weight:$font-normal;
 }
 
 h3,
 .font-size-xl {
     @extend %mb-m;
-    @extend %font-weight-bold;
     @extend %font-size-xl;
+    font-weight:$font-bold;
     @include small-down() { 
         @include rem('margin-bottom', $space-s);
     }
@@ -109,21 +109,22 @@ h3,
 h4,
 .font-size-l {
     @extend %mb-m;
+    @extend %font-size-l;
+    font-weight:$font-bold;
     @include small-down() {
         @include rem('margin-bottom', $space-s);
     }
-    @extend %font-size-l;
-    @extend %font-weight-bold;
+
 }
 
 h5,
 .font-size-m {
     @extend %mb-m;
+    @extend %font-size-m;
     @include small-down {
         @include rem('margin-bottom', $space-s);
     }
-    @extend %font-size-m;
-    @extend %font-weight-bold;
+    font-weight:$font-bold;
 }
 
 h6 {
@@ -132,7 +133,7 @@ h6 {
         @include rem('margin-bottom', $space-s);
     }
     @extend %font-size-m;
-    @extend %font-weight-normal;
+    font-weight:$font-normal;
 }
 
 
@@ -147,7 +148,7 @@ h6 {
 
 %body-font-size {
     @extend %font-size-m;
-    @extend %font-weight-normal; 
+    font-weight:$font-normal;
 }
 
 p, .text, code, ul, ol, td, dl {
@@ -166,9 +167,8 @@ li {
 
 .intro {
     @extend %font-size-xl;
-    @extend %font-weight-light;
     @extend %mb-m;
-    
+    font-weight:$font-light;
     &:last-child {
         @extend %mb-xxxl;
     }
@@ -181,8 +181,10 @@ li {
 
 
 strong, 
-b { @extend %font-weight-bold; }
-em, i, cite, dfn { @extend %font-italic;}
+b { font-weight:$font-bold; }
+em, i, cite, dfn,.font-italic { 
+    font-style:italic; 
+}
 
 
 // ----------------------------------------------------------------------------
@@ -239,29 +241,26 @@ hr {
 // ----------------------------------------------------------------------------
 
 dl dt {
-    @extend %left; 
+    @extend %pt-s;
+    @extend %pr-s;
+    @extend %pb-s;
+    float:left;
     font-weight: bold;
-    @include rem(padding-top, 12);
-    @include rem(padding-right, 12);
-    @include rem(padding-bottom, 12);
 }
 
 dd {
     @extend %bt--primary;  
     @extend %mt-0;
     @extend %ml-0;
-    @extend %text-left;
-    @include rem(padding-top, 12);
-    @include rem(padding-bottom, 12);
+    @extend %pt-s;
+    @extend %pb-s;
     text-align:right;
-
 }
 
  @include small-down() {
      dt {
         border-top: 1px solid $primary-border-color;
         float:none!important;
-      
      }
     dd {
          text-align:left!important;
@@ -289,6 +288,27 @@ blockquote:after {
     content:none;
 }
 
+
+
+// ----------------------------------------------------------------------------
+// strikethrough
+// ----------------------------------------------------------------------------
+del { text-decoration:line-through; }
+
+// ----------------------------------------------------------------------------
+// Sub and sup
+// ----------------------------------------------------------------------------
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {  top: -0.5em; }
+
+sub {  bottom: -0.25em; }
 // ----------------------------------------------------------------------------
 // Remove last childs margin
 // ----------------------------------------------------------------------------

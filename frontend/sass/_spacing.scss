@@ -1,3 +1,4 @@
+%pt-0     { padding-top:0;}
 %pt-xxs     { @include rem(padding-top,$space-xxs);}
 %pt-xs      { @include rem(padding-top,$space-xs);}
 %pt-s       { @include rem(padding-top,$space-s);}
@@ -8,6 +9,7 @@
 %pt-xxxl    { @include rem(padding-top,$space-xxxl);}
 %pt-xxxxl   { @include rem(padding-top,$space-xxxxl);}
 
+%pb-0     { padding-bottom:0;}
 %pb-xxs     { @include rem(padding-bottom,$space-xxs);}
 %pb-xs      { @include rem(padding-bottom,$space-xs);}
 %pb-s       { @include rem(padding-bottom,$space-s);}
@@ -18,6 +20,7 @@
 %pb-xxxl    { @include rem(padding-bottom,$space-xxxl);}
 %pb-xxxxl   { @include rem(padding-bottom,$space-xxxxl);}
 
+%pr-0     { padding-right:0;}
 %pr-xxs     { @include rem(padding-right,$space-xxs);}
 %pr-xs      { @include rem(padding-right,$space-xs);}
 %pr-s       { @include rem(padding-right,$space-s);}
@@ -28,6 +31,7 @@
 %pr-xxxl    { @include rem(padding-right,$space-xxxl);}
 %pr-xxxxl   { @include rem(padding-right,$space-xxxxl);}
 
+%pl-0     { padding-left:0;}
 %pl-xxs     { @include rem(padding-left,$space-xxs);}
 %pl-xs      { @include rem(padding-left,$space-xs);}
 %pl-s       { @include rem(padding-left,$space-s);}
@@ -38,7 +42,7 @@
 %pl-xxxl    { @include rem(padding-left,$space-xxxl);}
 %pl-xxxxl   { @include rem(padding-left,$space-xxxxl);}
 
-
+%mt-0     { margin-top:0;}
 %mt-xxs     { @include rem(margin-top,$space-xxs);}
 %mt-xs      { @include rem(margin-top,$space-xs);}
 %mt-s       { @include rem(margin-top,$space-s);}
@@ -49,6 +53,8 @@
 %mt-xxxl    { @include rem(margin-top,$space-xxxl);}
 %mt-xxxxl   { @include rem(margin-top,$space-xxxxl);}
 
+
+%mb-0     { margin-bottom:0;}
 %mb-xxs     { @include rem(margin-bottom,$space-xxs);}
 %mb-xs      { @include rem(margin-bottom,$space-xs);}
 %mb-s       { @include rem(margin-bottom,$space-s);}
@@ -59,6 +65,8 @@
 %mb-xxxl    { @include rem(margin-bottom,$space-xxxl);}
 %mb-xxxxl   { @include rem(margin-bottom,$space-xxxxl);}
 
+
+%mr-0     { margin-right:0;}
 %mr-xxs     { @include rem(margin-right,$space-xxs);}
 %mr-xs      { @include rem(margin-right,$space-xs);}
 %mr-s       { @include rem(margin-right,$space-s);}
@@ -69,6 +77,7 @@
 %mr-xxxl    { @include rem(margin-right,$space-xxxl);}
 %mr-xxxxl   { @include rem(margin-right,$space-xxxxl);}
 
+%ml-0     { margin-left:0;}
 %ml-xxs     { @include rem(margin-left,$space-xxs);}
 %ml-xs      { @include rem(margin-left,$space-xs);}
 %ml-s       { @include rem(margin-left,$space-s);}
@@ -80,6 +89,7 @@
 %ml-xxxxl   { @include rem(margin-left,$space-xxxxl);}
 
 //padding helpers
+.pt-0       { @extend %pt-0;}
 .pt-xxs     { @extend %pt-xxs;}
 .pt-xs      { @extend %pt-xs;}
 .pt-s       { @extend %pt-s;}
@@ -90,6 +100,7 @@
 .pt-xxxl    { @extend %pt-xxxl;}
 .pt-xxxxl   { @extend %pt-xxxxl;}
 
+.pb-0       { @extend %pb-0;}
 .pb-xxs     { @extend %pb-xxs;}
 .pb-xs      { @extend %pb-xs;}
 .pb-s       { @extend %pb-s;}
@@ -100,6 +111,7 @@
 .pb-xxxl    { @extend %pb-xxxl;}
 .pb-xxxxl   { @extend %pb-xxxxl;}
 
+.pl-0       { @extend %pl-0;}
 .pl-xxs     { @extend %pl-xxs;}
 .pl-xs      { @extend %pl-xs;}
 .pl-s       { @extend %pl-s;}
@@ -110,6 +122,7 @@
 .pl-xxxl    { @extend %pl-xxxl;}
 .pl-xxxxl   { @extend %pl-xxxxl;}
 
+.pr-0       { @extend %pr-0;}
 .pr-xxs     { @extend %pr-xxs;}
 .pr-xs      { @extend %pr-xs;}
 .pr-s       { @extend %pr-s;}
@@ -122,6 +135,7 @@
 
 
 //margin helpers
+.mt-0       { @extend %mt-0;}
 .mt-xxs     { @extend %mt-xxs;}
 .mt-xs      { @extend %mt-xs;}
 .mt-s       { @extend %mt-s;}
@@ -132,6 +146,7 @@
 .mt-xxxl    { @extend %mt-xxxl;}
 .mt-xxxxl   { @extend %mt-xxxxl;}
 
+.mb-0       { @extend %mb-0;}
 .mb-xxs     { @extend %mb-xxs;}
 .mb-xs      { @extend %mb-xs;}
 .mb-s       { @extend %mb-s;}
@@ -142,6 +157,7 @@
 .mb-xxxl    { @extend %mb-xxxl;}
 .mb-xxxxl   { @extend %mb-xxxxl;}
 
+.ml-0       { @extend %ml-0;}
 .ml-xxs     { @extend %ml-xxs;}
 .ml-xs      { @extend %ml-xs;}
 .ml-s       { @extend %ml-s;}
@@ -152,6 +168,7 @@
 .ml-xxxl    { @extend %ml-xxxl;}
 .ml-xxxxl   { @extend %ml-xxxxl;}
 
+.mr-0       { @extend %mr-0;}
 .mr-xxs     { @extend %mr-xxs;}
 .mr-xs      { @extend %mr-xs;}
 .mr-s       { @extend %mr-s;}

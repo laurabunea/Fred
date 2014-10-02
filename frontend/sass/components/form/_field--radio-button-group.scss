@@ -34,8 +34,8 @@
         & > li {
             @extend %inline-block;
             @extend %margin-0;
-            @extend %left;
-            @extend %relative;
+            float:left;
+            position:relative;
             border: 1px solid $base-link-color;
             margin-right: -1px;
             margin-bottom: -1px;
@@ -45,20 +45,20 @@
         }
 
         input {
-            @extend %absolute;
-            @extend %hidden;
+            position:absolute;
+            visibility: hidden;
         }
 
         label {
             @extend %cursor-on-hover;
             @extend %pt-xs;
             @extend %pb-s;
-            @extend %text-center;
-            @extend %font-weight-bold;
+            font-weight:$font-bold;
+            text-align:center;
             color: $base-link-color;
             
             span {
-                @extend %block-element;
+                display:block;
                 @extend %font-weight-normal;
                 @extend %font-size-xs;
                 cursor:pointer;
@@ -73,14 +73,14 @@
 
     .segmented-control--timeslots {
         & label {
-            @extend %text-left;
             @extend %pt-s;
             @extend %pb-s;
             @extend %pl-s;
             @extend %pr-s;
+            text-align: left;
         }
         & label span {
-            @extend %right;
+           float:right;
             @extend %pt-xxs;
         }
     }

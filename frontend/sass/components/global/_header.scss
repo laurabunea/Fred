@@ -12,8 +12,8 @@
     overflow: hidden;
 
     img {
-        @extend %block-element;
-        @extend %full-width;
+        display:block;;
+        width:100%;
         //todo wtf
         @include medium-only() {
             width: 150%;
@@ -32,7 +32,7 @@
     }
     
     .header__image + & {
-        @extend %absolute;
+        position:absolute;
         bottom: 0;
         left: 0;
         right: 0;

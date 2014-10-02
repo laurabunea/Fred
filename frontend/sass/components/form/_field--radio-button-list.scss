@@ -10,12 +10,12 @@
         
         & > li {
             @extend %mt-0;
-            @extend %relative;
             @extend %bt--primary;
             @extend %clearfix;
+            position:relative;
         }
         input {
-            @extend %absolute;
+            position: absolute;
             left:0;
             top:32%; 
         }
@@ -28,7 +28,7 @@
             
             span {
                 @extend %font-size-xxs;
-                @extend %block-element; 
+                display:block; 
             }
         }
     }

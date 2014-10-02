@@ -27,6 +27,10 @@ $line-height-m: 24/16;      // p, h5, h6
 $line-height-s: 20/14;      // small
 $line-height-xs: 16/12;     // x-small
 
+//font-weights
+$font-light:300;
+$font-normal:400;
+$font-bold:600;
 
 // -----------------------------------------------------------------------------
 // Media queries
@@ -110,32 +114,6 @@ $space-xxl: $space * 1.75;  //28px
 $space-xxxl: $space * 2;    //32px
 $space-xxxxl: $space * 3;   //48px
 
-
-// $sizePrefixes:
-//     "-0",
-//     "-xxs",
-//     "-xs",
-//     "-s",
-//     "-m",
-//     "-l",
-//     "-xl",
-//     "-xxl",
-//     "-xxxl",
-//     "-xxxxl";
-
-// $sizes:
-//     $space-0,
-//     $space-xxs,
-//     $space-xs, 
-//     $space-s, 
-//     $space-m, 
-//     $space-l, 
-//     $space-xl, 
-//     $space-xxl, 
-//     $space-xxxl,
-//     $space-xxxxl;
-
-
 // -----------------------------------------------------------------------------
 // Colours
 // -----------------------------------------------------------------------------
@@ -190,21 +168,3 @@ $base-link-visited-color: lighten($base-link-color, 5%); //#c3c;
 //do we need this
 $primary-border-color: #F2F2EB;
 
-
-
-
-// -----------------------------------------------------------------------------
-// Icon colouring
-// -----------------------------------------------------------------------------
-// these need to to in steps of 100/(number_of_colours-1)
-// -----------------------------------------------------------------------------
-
-$icon-bg-black: 0;
-$icon-bg-white: 12.5%; // 100% / (no. colours-1)
-$icon-bg-blue: 25%;
-$icon-bg-dark-blue: 37.5%;
-$icon-bg-grey: 50%;
-$icon-bg-dark-grey: 62.5%;
-$icon-bg-green: 75%;
-$icon-bg-orange: 87.5%;
-$icon-bg-red: 100%;

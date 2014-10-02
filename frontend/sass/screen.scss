@@ -67,8 +67,6 @@ https://github.com/nDmitry/grunt-autoprefixer
 *
 * Mixins............... Useful mixins.
 *
-* Reset................ A level playing fields.
-*
 * Utilities ............. Globally-available extends and core classes
 *
 * Type ................ Text sizes, Heirarchy, H1–H6 styles..
@@ -81,9 +79,7 @@ https://github.com/nDmitry/grunt-autoprefixer
 *
 * Playpen ............. The place where we solve design problems without dirtying up the sass structure 
 *
-* Components .......... Components (See below for the component list) 
-*
-* Form Components ..... Form Components (See below for the component list) 
+* Components .......... Components (See below for the component list)  
 *
 * Pages ............... Page specific styles
 *
@@ -112,13 +108,16 @@ body {
     min-height: 100%;
 }
 
+// Remove border when inside `a` element in IE 8/9.
+img { border: 0;}
 
-@import "reset";
+
 @import "spacing";
 @import "utilities";
+@import "icons";
 @import "type";
 @import "layout";
-@import "icons";
+
 @import "themes";
 
 @import "playpen";
@@ -186,22 +185,75 @@ body {
 
 
 
+// -----------------------------------------------------------------------------
+// utilities -- typography
+// -----------------------------------------------------------------------------
 
-%visible {visibility: visible !important;}
-%hidden {visibility: hidden !important;}
+.font-bold { font-weight:$font-bold; }
+.font-light { font-weight:$font-light; }
+.font-normal {font-weight:$font-normal;}
 
-.visible { @extend %visible; }
-.hidden { @extend %hidden; }
+.uppercase { text-transform:uppercase; }
+.lowercase { text-transform:lowercase; }
 
-%hide { display: none; }
-%show { display: block; }
+.text-center { text-align:center; }
+.text-left { text-align:left;}
+.text-right { text-align:right;}
 
-.hide { @extend %hide; }
-.show { @extend %show; }
+.text-right--medium {
+    @include medium {
+        text-align: right;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// utilities -- layout
+// -----------------------------------------------------------------------------
+.block-element { display:block;}
+
+.prepend{
+    &:before{
+        content: attr(data-prepend);
+        display: inline-block;
+    }
+}
+
+.append{
+    &:after{
+        content: attr(data-append);
+        display: inline-block;
+    }
+}
+
+//responsive helpers 
+@include medium() {
+    .append--q-medium {
+        &:after{
+            content: attr(data-append-medium);
+            display: inline-block;
+        }
+    }
+}
+
+@include small-down() {
+    .append--q-small {
+        &:after{
+            content: attr(data-append-small);
+            display: inline-block;
+        }
+    }
+}
+
+.visible { visibility: visible !important; }
+.hidden { visibility: hidden !important; }
+
+
+.hide { display: none; }
+.show { display: block; }
 
 
 .hide-small {
-    @include small-down {
+    @include small-down() {
         & {
             display:none;
         }

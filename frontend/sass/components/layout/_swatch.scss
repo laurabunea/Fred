@@ -25,6 +25,6 @@
         @extend %swatch;
     }
     .swatch__top,
-    .swatch__bottom {   @extend %text-center; }
+    .swatch__bottom {   text-align:center;}
     .swatch__top {      @extend %swatch__top; }
     .swatch__bottom {   @extend %swatch__bottom; }

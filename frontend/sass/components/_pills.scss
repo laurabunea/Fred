@@ -4,14 +4,14 @@
 
 %pill {
     @extend %font-size-s;
-    @extend %align--middle;
+    vertical-align: middle;
     @include rem(border-radius, 2);
     display: inline-block;
     vertical-align: middle;
     font-weight: normal;
     padding: .428571429em .571428571em;
     & strong {
-        @extend %font-weight-bold;
+        font-weight:$font-bold;
         margin-left: .1em;
         margin-right: .2em;
     }

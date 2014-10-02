@@ -16,11 +16,11 @@
 .field--select { @extend %field; }
 
 .field__label,
-.field__input { @extend %block-element; }
+.field__input { display:block; }
 
 .field__label {
-    @extend %font-weight-bold;
-    span { @extend %font-weight-normal; }
+   font-weight:$font-bold;
+    span { font-weight:$font-normal; }
 }
 
 .field__note { @extend %font-size-s; }
@@ -40,15 +40,15 @@
 
 // native controls
 %text-input {
-    @extend %margin-0;
     @extend %pt-s;
     @extend %pb-s;
     @extend %pl-s;
     @extend %pr-s;
-    @extend %block-element;
-    @extend %border-box;
-    @extend %full-width;
     @include rem(border-radius, $space-xxs);
+    box-sizing:border-box;
+    margin:0;
+    width:100%;
+    display:block;
     -webkit-appearance:none;
     border:1px solid $form-input-color;
     background-color:$form-input-color;
@@ -98,13 +98,13 @@
 }
 
 label {
-    @extend %block-element;
+    display:block;;
     color:$form-label-color;
 }
 
 select {
-    @extend %block-element;
-    @extend %full-width;
+    display:block;
+    width:100%;
     padding:.5rem;
     font-family: inherit;
     font-size: inherit;

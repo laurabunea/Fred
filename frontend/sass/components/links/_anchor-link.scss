@@ -9,10 +9,10 @@
     
     li {
         @extend %mt-0;
-        @extend %relative;
+        position:relative;
         &:before, 
         &:after {
-            @extend %absolute;
+            position:absolute;
             width:0;
             height:0;
             @include rem(top, $space-s);

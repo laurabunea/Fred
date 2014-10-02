@@ -207,7 +207,7 @@
 
 
 .layout {
-    @extend %border-box;
+    box-sizing:border-box;
     @extend %layout-left;
     @extend %layout-right;
 }
@@ -235,7 +235,7 @@
     layout modifiers
 ******************************/
 .layout--nudge {
-    @extend %relative;
+    position:relative;
 
     @include large() {
         margin-top: -2em;

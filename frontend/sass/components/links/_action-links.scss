@@ -141,4 +141,4 @@ $large-icon: $height-circle-large + 20;
     }
 }
 
-.action--bold span { @extend %font-weight-bold; }
+.action--bold span { font-weight:$font-bold; }

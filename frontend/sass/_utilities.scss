@@ -1,3 +1,6 @@
+//extends are good as it saves you writing heaps of code twice
+//whats the diff between extending plcace holders and classes.
+
 /*------------------------------------*\
     #Utilities
 \*------------------------------------*/
@@ -13,13 +16,8 @@
     *display: inline;
     *zoom: 1;
 }
+
 .inline-block { @extend %inline-block; }
-
-
-%block-element { display:block; }
-
-.block-element { @extend %block-element; }
-
 
 // -----------------------------------------------------------------------------
 // First child helpers  
@@ -69,42 +67,7 @@
 }
 
 
-// -----------------------------------------------------------------------------
-// Append and prepend
-// -----------------------------------------------------------------------------
 
-.prepend{
-    &:before{
-        content: attr(data-prepend);
-        display: inline-block;
-    }
-}
-
-.append{
-    &:after{
-        content: attr(data-append);
-        display: inline-block;
-    }
-}
-
-//responsive helpers 
-@include medium() {
-    .append--q-medium {
-        &:after{
-            content: attr(data-append-medium);
-            display: inline-block;
-        }
-    }
-}
-
-@include small-down() {
-    .append--q-small {
-        &:after{
-            content: attr(data-append-small);
-            display: inline-block;
-        }
-    }
-}
 
 // -----------------------------------------------------------------------------
 // Clearfix
@@ -151,42 +114,6 @@
 
 .sr-only {  @extend %sr-only; }
 
-
-
-
-// -----------------------------------------------------------------------------
-// Text helpers
-// -----------------------------------------------------------------------------
-
-%text-center { text-align:center; }
-%text-left { text-align:left; }
-%text-right { text-align:right; }
-
-.text-center { @extend %text-center; }
-.text-left { @extend %text-left;}
-.text-right { @extend %text-right;}
-
-.text-right--medium {
-    @include medium {
-        text-align: right;
-    }
-}
-
-%uppercase { text-transform:uppercase; }
-%lowercase { text-transform:lowercase; }
-
-.uppercase { @extend %uppercase; }
-.lowercase { @extend %lowercase; }
-
-
-%font-weight-bold { font-weight:600; }
-%font-weight-normal { font-weight:400; }
-%font-weight-light { font-weight:300; }
-%font-italic { font-style:italic;}
-
-.font-bold { @extend %font-weight-bold; }
-.font-light { @extend %font-weight-light; }
-.font-italic { @extend %font-italic; }
 
 .font-bold-italic { 
     @extend %font-italic; 
@@ -254,52 +181,42 @@
 // Floating 
 // -----------------------------------------------------------------------------
 
-
-%left { float:left; }
-%right { float:right; }
-
-.left { @extend %left; }
-.right { @extend %right; }
+.left { float:left; }
+.right { float:right; }
 
 // -----------------------------------------------------------------------------
 // Positioning - Absolute, Floating and Clearfixing
 // -----------------------------------------------------------------------------
 
 
-%absolute { position: absolute; }
-%relative { position: relative; }
+.relative { position: relative; }
+.absolute { position: absolute; }
 
-.relative { @extend %relative; }
-.absolute { @extend %absolute; }
-
-    %absolute--bottom-left {
-        @extend %absolute;
+    .absolute--bottom-left {
+        position: absolute;
         bottom:0;
         left:0;
     }
 
-    %absolute--bottom-right {
-        @extend %absolute;
+    .absolute--bottom-right {
+        position: absolute;
         bottom:0;
         right:0;
     }
 
-    %absolute--top-left {
-        @extend %absolute;
+    .absolute--top-left {
+        position: absolute;
         top:0;
         left:0;
     }
 
-    %absolute--top-right {
-        @extend %absolute;
+    .absolute--top-right {
+        position: absolute;
         top:0;
         right:0;
     }
 
-.absolute--bottom-left { @extend %absolute--bottom-left; }  
-.absolute--bottom-right { @extend %absolute--bottom-right; }  
-.absolute--top-left { @extend %absolute--top-left; }  
-.absolute--top-right { @extend %absolute--top-right; } 
+
 
 %center-element {
     margin-left:auto;
@@ -309,23 +226,12 @@
 .center-element { @extend %center-element; } 
 
 
-%align--top {vertical-align: top;}
-%align--middle {vertical-align: middle;}
-%align--baseline {vertical-align: baseline;}
-%align--bottom {vertical-align: bottom;}
+.align--top { vertical-align: top; } 
+.align--middle { vertical-align: middle; } 
+.align--baseline {vertical-align: baseline; } 
+.align--bottom { vertical-align: bottom; } 
 
-
-//add to docs
-.align--top { @extend %align--top; } 
-.align--middle { @extend %align--middle; } 
-.align--baseline { @extend %align--baseline; } 
-.align--bottom { @extend %align--bottom; } 
-
-
-%overflow-hidden { overflow: hidden; }
-.overflow-hidden {
-    @extend %overflow-hidden;
-}
+.overflow-hidden { overflow: hidden; }
 
 
 .fixed--bottom {
@@ -339,19 +245,10 @@
 }
 
 
-
 // -----------------------------------------------------------------------------
 // Images
 // -----------------------------------------------------------------------------
-
-%img--responsive {
-    max-width:100%;
-}
-
-.img--responsive {
-    @extend %img--responsive;
-}
-
+.img--responsive { max-width:100%;}
 
 
 // -----------------------------------------------------------------------------
@@ -454,11 +351,3 @@
 
 %round { border-radius: 50em; }
 
-
-//layout helpers
-%full-width { width: 100%; }
-
-//do we need this
-%border-box {
-    box-sizing:border-box;
-}

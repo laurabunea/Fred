@@ -1,6 +1,22 @@
 /*------------------------------------*\
     #ICONS
 \*------------------------------------*/
+// -----------------------------------------------------------------------------
+// Icon colouring
+// -----------------------------------------------------------------------------
+// these need to to in steps of 100/(number_of_colours-1)
+// -----------------------------------------------------------------------------
+
+$icon-bg-black: 0;
+$icon-bg-white: 12.5%; // 100% / (no. colours-1)
+$icon-bg-blue: 25%;
+$icon-bg-dark-blue: 37.5%;
+$icon-bg-grey: 50%;
+$icon-bg-dark-grey: 62.5%;
+$icon-bg-green: 75%;
+$icon-bg-orange: 87.5%;
+$icon-bg-red: 100%;
+
 
 %i {
     @extend %inline-block;
@@ -31,7 +47,6 @@
 // -----------------------------------------------------------------------------
 
 /* colourised icons */
-
 %i--link,
 %i--blue { background-position: 0 $icon-bg-blue; }
 %i--dark-blue { background-position: 0 $icon-bg-dark-blue; }
@@ -50,8 +65,6 @@
 .i--orange { @extend %i--orange; }
 .i--green { @extend %i--green; }
 .i--white { @extend %i--white; }
-
-
 
 
 // -----------------------------------------------------------------------------

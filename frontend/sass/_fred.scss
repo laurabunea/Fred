@@ -24,7 +24,7 @@
     }
 }
     .flego-navigation--active {
-        @extend %font-weight-bold;
+        font-weight:$font-bold;
     }
 
 
@@ -43,6 +43,7 @@ pre {
     @extend %pr-m;
     @extend %font-size-xs;
     @include rem(border-radius, $space-xxs);
+    white-space: pre-wrap;
     background-color:$dark-grey;
     border: solid 1px $dark-grey; 
     overflow: scroll;
@@ -92,15 +93,15 @@ pre {
 .device {
     @extend %ml-m;
     @extend %mr-m;
-    background-color:#efefef;
-    border-color:#555555;
-    border-style: solid;
+    @extend %mb-xxxxl; 
     @include rem('border-left-width', $space-xxxxl);
     @include rem('border-right-width', $space-xxxxl);
     @include rem('border-top-width', $space-xxxxl);
     @include rem('border-bottom-width', $space-xxxxl);
-    @extend %mb-xxxxl; 
-    @extend %border-box;
+    border-style: solid;
+    background-color:#efefef;
+    border-color:#555555;
+    box-sizing:border-box;
 
     .device__menu {
         @extend %pt-xs;

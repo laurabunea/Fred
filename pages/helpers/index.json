@@ -60,7 +60,7 @@
                 {
                     "type": "code/code",
                     "data": [
-                        "%block-element { display: block; }\n.my-anchor { @extend %block-element; }"
+                        ".block-element { display: block; }"
                     ]
                 }
             ]

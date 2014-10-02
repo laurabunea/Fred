@@ -63,8 +63,6 @@ https://github.com/nDmitry/grunt-autoprefixer
 *
 * Mixins............... Useful mixins.
 *
-* Reset................ A level playing fields.
-*
 * Utilities ............. Globally-available extends and core classes
 *
 * Type ................ Text sizes, Heirarchy, H1–H6 styles..
@@ -77,9 +75,7 @@ https://github.com/nDmitry/grunt-autoprefixer
 *
 * Playpen ............. The place where we solve design problems without dirtying up the sass structure 
 *
-* Components .......... Components (See below for the component list) 
-*
-* Form Components ..... Form Components (See below for the component list) 
+* Components .......... Components (See below for the component list)  
 *
 * Pages ............... Page specific styles
 *
@@ -111,49 +107,11 @@ body {
   position: relative;
   min-height: 100%; }
 
-audio, canvas, video {
-  display: inline-block; }
-
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-[hidden], template {
-  display: none; }
-
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-pre {
-  white-space: pre-wrap; }
-
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019"; }
-
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-del {
-  text-decoration: line-through; }
-
 img {
   border: 0; }
 
-svg:not(:root) {
-  overflow: hidden; }
-
-figure {
-  display: block;
-  margin: 0; }
+.pt-0, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item {
+  padding-top: 0; }
 
 .pt-xxs, .segmented-control--timeslots label span {
   padding-top: 4px;
@@ -163,7 +121,7 @@ figure {
   padding-top: 8px;
   padding-top: 0.5rem; }
 
-.pt-s, .section-s, .swatch__top, .swatch__bottom, .swatch, .field, [type='text'], [type='email'], [type='date'], [type='number'], .radio-button-list label, .segmented-control--timeslots label {
+.pt-s, dl dt, dd, .section-s, .swatch__top, .swatch__bottom, .swatch, .field, [type='text'], [type='email'], [type='date'], [type='number'], .radio-button-list label, .segmented-control--timeslots label {
   padding-top: 12px;
   padding-top: 0.75rem; }
 
@@ -191,6 +149,9 @@ figure {
   padding-top: 48px;
   padding-top: 3rem; }
 
+.pb-0, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item {
+  padding-bottom: 0; }
+
 .pb-xxs {
   padding-bottom: 4px;
   padding-bottom: 0.25rem; }
@@ -199,7 +160,7 @@ figure {
   padding-bottom: 8px;
   padding-bottom: 0.5rem; }
 
-.pb-s, .section-s, .swatch__top, .swatch__bottom, .swatch, .field, [type='text'], [type='email'], [type='date'], [type='number'], .radio-button-list label, .segmented-control label, .segmented-control--timeslots label {
+.pb-s, dl dt, dd, .section-s, .swatch__top, .swatch__bottom, .swatch, .field, [type='text'], [type='email'], [type='date'], [type='number'], .radio-button-list label, .segmented-control label, .segmented-control--timeslots label {
   padding-bottom: 12px;
   padding-bottom: 0.75rem; }
 
@@ -227,6 +188,9 @@ figure {
   padding-bottom: 48px;
   padding-bottom: 3rem; }
 
+.pr-0, .nav_item, .radio-button-list label {
+  padding-right: 0; }
+
 .pr-xxs, .breadcrumb > li a:after, .breadcrumb > li .back:before, .breadcrumb > li .close:before {
   padding-right: 4px;
   padding-right: 0.25rem; }
@@ -235,7 +199,7 @@ figure {
   padding-right: 8px;
   padding-right: 0.5rem; }
 
-.pr-s, .layout-s, .swatch, .btn.btn--small, .nav_item.theme.small, .field, [type='text'], [type='email'], [type='date'], [type='number'], .segmented-control--timeslots label {
+.pr-s, dl dt, .layout-s, .swatch, .btn.btn--small, .nav_item.theme.small, .field, [type='text'], [type='email'], [type='date'], [type='number'], .segmented-control--timeslots label {
   padding-right: 12px;
   padding-right: 0.75rem; }
 
@@ -262,6 +226,9 @@ figure {
 .pr-xxxxl, .pr-xxxxl, .layout-xxxxl {
   padding-right: 48px;
   padding-right: 3rem; }
+
+.pl-0 {
+  padding-left: 0; }
 
 .pl-xxs, .breadcrumb > li a:after, .breadcrumb > li .back:before, .breadcrumb > li .close:before {
   padding-left: 4px;
@@ -299,6 +266,9 @@ figure {
   padding-left: 48px;
   padding-left: 3rem; }
 
+.mt-0, h1, h2, h3, h4, h5, h6, p, .text, li, code, .intro, ul, li, p, .text, code, ul, ol, td, dl, dd, .breadcrumb > li, .anchor-links li, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item, .prev-link, .next-link, .radio-button-list > li {
+  margin-top: 0; }
+
 .mt-xxs, .field__label + .field__note {
   margin-top: 4px;
   margin-top: 0.25rem; }
@@ -334,6 +304,9 @@ figure {
 .mt-xxxxl {
   margin-top: 48px;
   margin-top: 3rem; }
+
+.mb-0, .anchor-links, .nav_item, li ul, li ol, .flego-navigation, .device .device__menu {
+  margin-bottom: 0; }
 
 .mb-xxs {
   margin-bottom: 4px;
@@ -371,6 +344,9 @@ figure {
   margin-bottom: 48px;
   margin-bottom: 3rem; }
 
+.mr-0 {
+  margin-right: 0; }
+
 .mr-xxs {
   margin-right: 4px;
   margin-right: 0.25rem; }
@@ -402,6 +378,9 @@ figure {
 .mr-xxxl {
   margin-right: 32px;
   margin-right: 2rem; }
+
+.ml-0, dd, .nav_item + .nav_item {
+  margin-left: 0; }
 
 .ml-xxs {
   margin-left: 4px;
@@ -2325,9 +2304,6 @@ fieldset {
   *display: inline;
   *zoom: 1; }
 
-.block-element, .link-complex, .header__image img, .field__label, .field__input, .field, [type='text'], [type='email'], [type='date'], [type='number'], label, select, .radio-button-list label span, .segmented-control label span {
-  display: block; }
-
 .first-child-no-top:first-child, .btn--block:first-child, .btn--submit:first-child {
   margin-top: 0; }
 
@@ -2339,24 +2315,6 @@ fieldset {
   -moz-osx-font-smoothing: grayscale; }
   .isWindowsChrome .antialiased {
     -webkit-font-smoothing: subpixel-antialiased; }
-
-.prepend:before {
-  content: attr(data-prepend);
-  display: inline-block; }
-
-.append:after {
-  content: attr(data-append);
-  display: inline-block; }
-
-@media only screen and (min-width: 37.5em) {
-  .append--q-medium:after {
-    content: attr(data-append-medium);
-    display: inline-block; } }
-
-@media only screen and (max-width: 59em) {
-  .append--q-small:after {
-    content: attr(data-append-small);
-    display: inline-block; } }
 
 .clearfix, .list--inline, .breadcrumb, .nav, .flego-navigation, .grid--float, .field--link, .field--prev-next, .radio-button-list > li, .field--radio-button-group, .segmented-control {
   /**
@@ -2388,37 +2346,6 @@ fieldset {
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
-.text-center, .grid--center, .swatch__top, .swatch__bottom, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item, .segmented-control label {
-  text-align: center; }
-
-.text-left, dd, .grid--justify > *, .segmented-control--timeslots label {
-  text-align: left; }
-
-.text-right {
-  text-align: right; }
-
-@media only screen and (min-width: 37.5em) {
-  .text-right--medium {
-    text-align: right; } }
-
-.uppercase {
-  text-transform: uppercase; }
-
-.lowercase {
-  text-transform: lowercase; }
-
-.font-bold, h3, .font-size-xl, h4, .font-size-l, h5, .font-size-m, strong, b, .action--bold span, .field__label, .segmented-control label, .flego-navigation--active {
-  font-weight: 600; }
-
-h1, .font-font-size-xxxl, h2, .font-size-xxl, h6, p, .text, code, dt, dd, td, th, .field__label span, .segmented-control label span {
-  font-weight: 400; }
-
-.font-light, .intro {
-  font-weight: 300; }
-
-.font-italic, .font-bold-italic, .font-light-italic, em, i, cite, dfn {
-  font-style: italic; }
-
 .text--overflow, .breadcrumb > li {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2440,31 +2367,35 @@ h1, .font-font-size-xxxl, h2, .font-size-xxl, h6, p, .text, code, dt, dd, td, th
 .list--block > li {
   display: block; }
 
-.left, dl dt, .grid--float > *, .prev-link, .email-wrapper [type='email'], .segmented-control > li {
+.left {
   float: left; }
 
-.right, .global-nav__items > *, .next-link, .segmented-control--timeslots label span {
+.right {
   float: right; }
 
-.absolute, .absolute--bottom-left, .absolute--bottom-right, .absolute--top-left, .absolute--top-right, .anchor-links li:before, .anchor-links li:after, .header__image + .header__title, .prev-link:before, .next-link:after, .radio-button-list input, .segmented-control input {
-  position: absolute; }
-
-.relative, .layout--nudge, .anchor-links li, .field--prev-next, .radio-button-list > li, .segmented-control > li {
+.relative {
   position: relative; }
 
+.absolute {
+  position: absolute; }
+
 .absolute--bottom-left {
+  position: absolute;
   bottom: 0;
   left: 0; }
 
 .absolute--bottom-right {
+  position: absolute;
   bottom: 0;
   right: 0; }
 
 .absolute--top-left {
+  position: absolute;
   top: 0;
   left: 0; }
 
 .absolute--top-right {
+  position: absolute;
   top: 0;
   right: 0; }
 
@@ -2472,16 +2403,16 @@ h1, .font-font-size-xxxl, h2, .font-size-xxl, h6, p, .text, code, dt, dd, td, th
   margin-left: auto;
   margin-right: auto; }
 
-.align--top, .grid > *, .grid__item {
+.align--top {
   vertical-align: top; }
 
-.align--middle, .grid--middle > *, .pill, .pill--roadworks, .pill--orange {
+.align--middle {
   vertical-align: middle; }
 
 .align--baseline {
   vertical-align: baseline; }
 
-.align--bottom, .grid--bottom > * {
+.align--bottom {
   vertical-align: bottom; }
 
 .overflow-hidden {
@@ -2572,11 +2503,181 @@ h1, .font-font-size-xxxl, h2, .font-size-xxl, h6, p, .text, code, dt, dd, td, th
 .i-section, .action__icon {
   border-radius: 50em; }
 
-.col, .col--no-gutters, .header__image img, .field, [type='text'], [type='email'], [type='date'], [type='number'], select {
-  width: 100%; }
+/*------------------------------------*\
+    #ICONS
+\*------------------------------------*/
+.i {
+  width: 1em;
+  height: 1em;
+  background-size: cover;
+  vertical-align: middle; }
 
-.layout, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item, .field, [type='text'], [type='email'], [type='date'], [type='number'], .device {
-  box-sizing: border-box; }
+/* colourised icons */
+.i--blue {
+  background-position: 0 25%; }
+
+.i--dark-blue {
+  background-position: 0 37.5%; }
+
+.i--grey {
+  background-position: 0 50%; }
+
+.i--dark-grey {
+  background-position: 0 62.5%; }
+
+.i--green {
+  background-position: 0 75%; }
+
+.i--red {
+  background-position: 0 100%; }
+
+.i--orange {
+  background-position: 0 87.5%; }
+
+.i--white {
+  background-position: 0 12.5%; }
+
+.i--large {
+  width: 1.5em;
+  height: 1.5em; }
+
+.i--xlarge {
+  width: 2em;
+  height: 2em; }
+
+.i-section {
+  width: 40px;
+  width: 2.5rem;
+  height: 40px;
+  height: 2.5rem;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  background-position: 0 37.5%;
+  background-color: #fff; }
+  .section--nav .i-section, .i-section.-blue {
+    background-position: 0 12.5%;
+    background-color: #004771; }
+  .nav-about .i-section {
+    background-color: #236FA6; }
+
+/***************************
+    Icon sizes
+****************************/
+.i-search {
+  width: 1em;
+  height: 1em; }
+
+.i-menu, .i-search {
+  background-position: 0 12.5%; }
+  .global-nav .i-menu, .global-nav .i-search {
+    opacity: 0.5; }
+    .global-nav .i-menu:hover, .global-nav .i-search:hover {
+      opacity: 0.75; }
+
+.i-nzta-logo, .i-nzta-logo-coloured {
+  height: 32px;
+  height: 2rem;
+  width: 144px;
+  width: 9rem; }
+
+.i-newzealand-government {
+  width: 12em;
+  height: 1.25em; }
+
+.i-nzgovt {
+  width: 7.56em;
+  height: 1em; }
+
+.i-nav-section {
+  background-color: transparent;
+  border: solid 2px #fff; }
+
+.i-nav-caret {
+  margin-left: 0.5em;
+  width: 1.25em;
+  height: 1.25em; }
+
+.i-facebook-grey {
+  width: 1.25em;
+  height: 1.25em; }
+
+.i-youtube-grey {
+  width: 1.5em;
+  height: 1.125em; }
+
+.i-twitter-grey {
+  width: 1.375em;
+  height: 1.125em; }
+
+.i-linkedin-grey {
+  width: 1.25em;
+  height: 1.25em; }
+
+.i-pinterest-grey {
+  width: 1.25em;
+  height: 1.375em; }
+
+.i-about-grey {
+  width: 1.5em;
+  height: 1em; }
+
+.i-contact-grey {
+  width: 1.4375em;
+  height: 1.125em; }
+
+.i-search-grey {
+  width: 1.125em;
+  height: 1.125em; }
+
+.i-nzoa-logo {
+  width: 7.25em;
+  height: 4.5em; }
+
+.i-springload {
+  width: 10em;
+  height: 1.75em; }
+
+.i-kiwibank-logo {
+  width: 3.5em;
+  height: 3.5em; }
+
+.i-map-caret-down, .i-map-caret-up, .i-map-plus, .i-map-minus, .i-map-compass, .i-map-cog {
+  width: 0.875em;
+  height: 0.875em; }
+
+.i-map-tools-cameras, .i-map-tools-roadworks, .i-map-tools-warnings {
+  width: 26px;
+  width: 1.625rem;
+  height: 34px;
+  height: 2.125rem;
+  margin-top: -0.2em; }
+
+.i-map-tools-traffic-flow {
+  width: 20px;
+  width: 1.25rem;
+  height: 18px;
+  height: 1.125rem;
+  margin-left: 3px;
+  margin-left: 0.1875rem;
+  margin-right: 3px;
+  margin-right: 0.1875rem; }
+
+.i-sh {
+  width: 1.625em;
+  height: 1.625em; }
+
+.i-route {
+  width: 0.875em;
+  height: 1.25em; }
+
+.i-twitter, .i-facebook, .i-google {
+  width: 1.375em;
+  height: 1.375em; }
+
+.i-distance, .i-speed, .i-duration {
+  width: 1.5em;
+  height: 1.5em; }
 
 h1, .font-font-size-xxxl {
   font-size: 48px;
@@ -2628,33 +2729,58 @@ h5, .font-size-m, h6, p, .text, code, dt, dd, td, th, li {
   font-size: 0.75rem;
   line-height: 1.3333333333; }
 
-@media only screen and (max-width: 59em) {
-  h2, .font-size-xxl {
-    margin-bottom: 12px;
-    margin-bottom: 0.75rem; } }
+h1, .font-font-size-xxxl {
+  font-weight: 400; }
 
-@media only screen and (max-width: 59em) {
-  h3, .font-size-xl {
-    margin-bottom: 12px;
-    margin-bottom: 0.75rem; } }
+h2, .font-size-xxl {
+  font-weight: 400; }
+  @media only screen and (max-width: 59em) {
+    h2, .font-size-xxl {
+      margin-bottom: 12px;
+      margin-bottom: 0.75rem; } }
 
-@media only screen and (max-width: 59em) {
-  h4, .font-size-l {
-    margin-bottom: 12px;
-    margin-bottom: 0.75rem; } }
+h3, .font-size-xl {
+  font-weight: 600; }
+  @media only screen and (max-width: 59em) {
+    h3, .font-size-xl {
+      margin-bottom: 12px;
+      margin-bottom: 0.75rem; } }
 
-@media only screen and (max-width: 59em) {
-  h5, .font-size-m {
-    margin-bottom: 12px;
-    margin-bottom: 0.75rem; } }
+h4, .font-size-l {
+  font-weight: 600; }
+  @media only screen and (max-width: 59em) {
+    h4, .font-size-l {
+      margin-bottom: 12px;
+      margin-bottom: 0.75rem; } }
 
-@media only screen and (max-width: 59em) {
-  h6 {
-    margin-bottom: 12px;
-    margin-bottom: 0.75rem; } }
+h5, .font-size-m {
+  font-weight: 600; }
+  @media only screen and (max-width: 59em) {
+    h5, .font-size-m {
+      margin-bottom: 12px;
+      margin-bottom: 0.75rem; } }
+
+h6 {
+  font-weight: 400; }
+  @media only screen and (max-width: 59em) {
+    h6 {
+      margin-bottom: 12px;
+      margin-bottom: 0.75rem; } }
+
+p, .text, code, dt, dd, td, th {
+  font-weight: 400; }
 
 li {
   margin-bottom: 0; }
+
+.intro {
+  font-weight: 300; }
+
+strong, b {
+  font-weight: 600; }
+
+em, i, cite, dfn, .font-italic {
+  font-style: italic; }
 
 a {
   outline: 0;
@@ -2669,19 +2795,10 @@ hr {
   background-color: #ddd; }
 
 dl dt {
-  font-weight: bold;
-  padding-top: 12px;
-  padding-top: 0.75rem;
-  padding-right: 12px;
-  padding-right: 0.75rem;
-  padding-bottom: 12px;
-  padding-bottom: 0.75rem; }
+  float: left;
+  font-weight: bold; }
 
 dd {
-  padding-top: 12px;
-  padding-top: 0.75rem;
-  padding-bottom: 12px;
-  padding-bottom: 0.75rem;
   text-align: right; }
 
 @media only screen and (max-width: 59em) {
@@ -2705,6 +2822,21 @@ blockquote {
 
 blockquote:before, blockquote:after {
   content: none; }
+
+del {
+  text-decoration: line-through; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
 
 .content-block > :last-child {
   margin-bottom: 0 !important; }
@@ -2762,6 +2894,9 @@ blockquote:before, blockquote:after {
     .layout, .layout--right, .col.layout--right {
       padding-right: 6em; } }
 
+.layout {
+  box-sizing: border-box; }
+
 @media only screen and (min-width: 60em) {
   .layout--half {
     padding-left: 25%;
@@ -2770,11 +2905,13 @@ blockquote:before, blockquote:after {
 /******************************
     layout modifiers
 ******************************/
-@media only screen and (min-width: 60em) {
-  .layout--nudge {
-    margin-top: -2em; } }
-.layout--nudge + .layout--nudge {
-  margin-top: 0; }
+.layout--nudge {
+  position: relative; }
+  @media only screen and (min-width: 60em) {
+    .layout--nudge {
+      margin-top: -2em; } }
+  .layout--nudge + .layout--nudge {
+    margin-top: 0; }
 
 .ratio-square, .ratio-filmic {
   position: relative;
@@ -2976,182 +3113,6 @@ blockquote:before, blockquote:after {
 @media only screen and (min-width: 60em) {
   .large-10 {
     width: 100%; } }
-
-/*------------------------------------*\
-    #ICONS
-\*------------------------------------*/
-.i {
-  width: 1em;
-  height: 1em;
-  background-size: cover;
-  vertical-align: middle; }
-
-/* colourised icons */
-.i--blue {
-  background-position: 0 25%; }
-
-.i--dark-blue {
-  background-position: 0 37.5%; }
-
-.i--grey {
-  background-position: 0 50%; }
-
-.i--dark-grey {
-  background-position: 0 62.5%; }
-
-.i--green {
-  background-position: 0 75%; }
-
-.i--red {
-  background-position: 0 100%; }
-
-.i--orange {
-  background-position: 0 87.5%; }
-
-.i--white {
-  background-position: 0 12.5%; }
-
-.i--large {
-  width: 1.5em;
-  height: 1.5em; }
-
-.i--xlarge {
-  width: 2em;
-  height: 2em; }
-
-.i-section {
-  width: 40px;
-  width: 2.5rem;
-  height: 40px;
-  height: 2.5rem;
-  background-size: cover;
-  display: inline-block;
-  vertical-align: middle;
-  background-position: 0 37.5%;
-  background-color: #fff; }
-  .section--nav .i-section, .i-section.-blue {
-    background-position: 0 12.5%;
-    background-color: #004771; }
-  .nav-about .i-section {
-    background-color: #236FA6; }
-
-/***************************
-    Icon sizes
-****************************/
-.i-search {
-  width: 1em;
-  height: 1em; }
-
-.i-menu, .i-search {
-  background-position: 0 12.5%; }
-  .global-nav .i-menu, .global-nav .i-search {
-    opacity: 0.5; }
-    .global-nav .i-menu:hover, .global-nav .i-search:hover {
-      opacity: 0.75; }
-
-.i-nzta-logo, .i-nzta-logo-coloured {
-  height: 32px;
-  height: 2rem;
-  width: 144px;
-  width: 9rem; }
-
-.i-newzealand-government {
-  width: 12em;
-  height: 1.25em; }
-
-.i-nzgovt {
-  width: 7.56em;
-  height: 1em; }
-
-.i-nav-section {
-  background-color: transparent;
-  border: solid 2px #fff; }
-
-.i-nav-caret {
-  margin-left: 0.5em;
-  width: 1.25em;
-  height: 1.25em; }
-
-.i-facebook-grey {
-  width: 1.25em;
-  height: 1.25em; }
-
-.i-youtube-grey {
-  width: 1.5em;
-  height: 1.125em; }
-
-.i-twitter-grey {
-  width: 1.375em;
-  height: 1.125em; }
-
-.i-linkedin-grey {
-  width: 1.25em;
-  height: 1.25em; }
-
-.i-pinterest-grey {
-  width: 1.25em;
-  height: 1.375em; }
-
-.i-about-grey {
-  width: 1.5em;
-  height: 1em; }
-
-.i-contact-grey {
-  width: 1.4375em;
-  height: 1.125em; }
-
-.i-search-grey {
-  width: 1.125em;
-  height: 1.125em; }
-
-.i-nzoa-logo {
-  width: 7.25em;
-  height: 4.5em; }
-
-.i-springload {
-  width: 10em;
-  height: 1.75em; }
-
-.i-kiwibank-logo {
-  width: 3.5em;
-  height: 3.5em; }
-
-.i-map-caret-down, .i-map-caret-up, .i-map-plus, .i-map-minus, .i-map-compass, .i-map-cog {
-  width: 0.875em;
-  height: 0.875em; }
-
-.i-map-tools-cameras, .i-map-tools-roadworks, .i-map-tools-warnings {
-  width: 26px;
-  width: 1.625rem;
-  height: 34px;
-  height: 2.125rem;
-  margin-top: -0.2em; }
-
-.i-map-tools-traffic-flow {
-  width: 20px;
-  width: 1.25rem;
-  height: 18px;
-  height: 1.125rem;
-  margin-left: 3px;
-  margin-left: 0.1875rem;
-  margin-right: 3px;
-  margin-right: 0.1875rem; }
-
-.i-sh {
-  width: 1.625em;
-  height: 1.625em; }
-
-.i-route {
-  width: 0.875em;
-  height: 1.25em; }
-
-.i-twitter, .i-facebook, .i-google {
-  width: 1.375em;
-  height: 1.375em; }
-
-.i-distance, .i-speed, .i-duration {
-  width: 1.5em;
-  height: 1.5em; }
 
 .theme--soft {
   border-color: #F49AC2;
@@ -3529,12 +3490,25 @@ blockquote:before, blockquote:after {
   text-align: justify;
   font-size: 0; }
   .grid--justify > * {
+    text-align: left;
     float: none;
     font-size: medium; }
   .grid--justify:after {
     height: 0;
     width: 100%;
     content: ''; }
+
+.grid > *, .grid__item {
+  vertical-align: top; }
+
+.grid--center {
+  text-align: center; }
+
+.grid--middle > * {
+  vertical-align: middle; }
+
+.grid--bottom > * {
+  vertical-align: bottom; }
 
 @media only screen and (max-width: 59em) {
   .grid--flip-small {
@@ -3554,6 +3528,9 @@ blockquote:before, blockquote:after {
 .grid.large-grid--table, .grid.medium-grid--table {
   margin-left: 0;
   margin-right: 0; }
+
+.grid--float > * {
+  float: left; }
 
 @media only screen and (min-width: 37.5em) {
   .medium-grid--table {
@@ -3578,6 +3555,12 @@ blockquote:before, blockquote:after {
     .col, .gutters, .col__padding {
       padding-left: 1rem;
       padding-right: 1rem; } }
+
+.col {
+  width: 100%; }
+
+.col--no-gutters {
+  width: 100%; }
 
 /*------------------------------------*\
     #TABLES
@@ -3646,6 +3629,9 @@ blockquote:before, blockquote:after {
       margin-left: -100%;
       color: #777; } }
 
+.swatch__top, .swatch__bottom {
+  text-align: center; }
+
 /*------------------------------------*\
     #BREADCRUMBS
 \*------------------------------------*/
@@ -3670,25 +3656,28 @@ blockquote:before, blockquote:after {
     .breadcrumb > li .back:after, .breadcrumb > li .close:after {
       content: none; }
 
-.anchor-links li:before, .anchor-links li:after {
-  width: 0;
-  height: 0;
-  top: 12px;
-  top: 0.75rem; }
-.anchor-links li:before {
-  left: 0;
-  content: '';
-  border: 4px solid transparent;
-  border-top: 4px solid #5e5c5c; }
-.anchor-links li:after {
-  content: '';
-  left: 2px;
-  border: 2px solid transparent;
-  border-top: 2px solid #F2F4F7; }
-@media only screen and (max-width: 59em) {
-  .anchor-links li a {
-    padding-left: 10px;
-    padding-left: 0.625rem; } }
+.anchor-links li {
+  position: relative; }
+  .anchor-links li:before, .anchor-links li:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 12px;
+    top: 0.75rem; }
+  .anchor-links li:before {
+    left: 0;
+    content: '';
+    border: 4px solid transparent;
+    border-top: 4px solid #5e5c5c; }
+  .anchor-links li:after {
+    content: '';
+    left: 2px;
+    border: 2px solid transparent;
+    border-top: 2px solid #F2F4F7; }
+  @media only screen and (max-width: 59em) {
+    .anchor-links li a {
+      padding-left: 10px;
+      padding-left: 0.625rem; } }
 .anchor-links .grid {
   margin: 0; }
 
@@ -3696,6 +3685,8 @@ blockquote:before, blockquote:after {
     #BUTTONS
 \*------------------------------------*/
 .btn, button, .btn--submit, .email-wrapper input[type='submit'] {
+  box-sizing: border-box;
+  text-align: center;
   line-height: 2.5rem;
   white-space: nowrap;
   border: none;
@@ -3858,6 +3849,9 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
   .action--horizontal.action--tiny > span {
     padding-left: 0.5em; }
 
+.action--bold span {
+  font-weight: 600; }
+
 .link-more {
   font-style: italic; }
   .link-more:after {
@@ -3880,6 +3874,7 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
     background-color: #1f6191; }
 
 .link-complex {
+  display: block;
   color: inherit; }
   .noTouchEvents .link-complex:hover {
     text-decoration: none; }
@@ -3908,11 +3903,14 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
 .header__image {
   min-height: 4em;
   overflow: hidden; }
-  @media only screen and (min-width: 37.5em) and (max-width: 74em) {
-    .header__image img {
-      width: 150%;
-      margin-left: -25%;
-      margin-right: -25%; } }
+  .header__image img {
+    display: block;
+    width: 100%; }
+    @media only screen and (min-width: 37.5em) and (max-width: 74em) {
+      .header__image img {
+        width: 150%;
+        margin-left: -25%;
+        margin-right: -25%; } }
 
 .header__title {
   padding-bottom: 16px;
@@ -3922,6 +3920,7 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
       padding-bottom: 48px;
       padding-bottom: 3rem; } }
   .header__image + .header__title {
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0; }
@@ -3981,7 +3980,12 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
 /*------------------------------------*\
     #GLOBAL NAV
 \*------------------------------------*/
+.global-nav__items > * {
+  float: right; }
+
 .nav_item {
+  box-sizing: border-box;
+  text-align: center;
   line-height: 2.5rem;
   white-space: nowrap;
   border: none;
@@ -4052,6 +4056,7 @@ li ul, li ol {
     #PILLS
 \*------------------------------------*/
 .pill, .pill--roadworks, .pill--orange {
+  vertical-align: middle;
   border-radius: 2px;
   border-radius: 0.125rem;
   display: inline-block;
@@ -4062,6 +4067,7 @@ li ul, li ol {
   margin-top: 0.142857143em;
   margin-bottom: 0.142857143em; }
   .pill strong, .pill--roadworks strong, .pill--orange strong {
+    font-weight: 600;
     margin-left: 0.1em;
     margin-right: 0.2em; }
   .pill i, .pill--roadworks i, .pill--orange i {
@@ -4164,9 +4170,21 @@ fieldset {
     margin-bottom: 20px;
     margin-bottom: 1.25rem; } }
 
+.field__label, .field__input {
+  display: block; }
+
+.field__label {
+  font-weight: 600; }
+  .field__label span {
+    font-weight: 400; }
+
 .field, [type='text'], [type='email'], [type='date'], [type='number'] {
   border-radius: 4px;
   border-radius: 0.25rem;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  display: block;
   -webkit-appearance: none;
   border: 1px solid #F2F2EB;
   background-color: #F2F2EB;
@@ -4191,9 +4209,12 @@ fieldset {
     background-color: #fff; }
 
 label {
+  display: block;
   color: #00456B; }
 
 select {
+  display: block;
+  width: 100%;
   padding: 0.5rem;
   font-family: inherit;
   font-size: inherit; }
@@ -4229,6 +4250,9 @@ select {
 /*------------------------------------*\
     #FIELD PREV AND NEXT BUTTONS
 \*------------------------------------*/
+.field--prev-next {
+  position: relative; }
+
 .prev-link:before, .next-link:after {
   margin-top: -2px;
   margin-top: -0.125rem;
@@ -4236,18 +4260,23 @@ select {
   border-width: 0.25rem;
   width: 0;
   height: 0;
+  position: relative;
   top: 50%;
   content: '';
   border-color: transparent;
   border-style: solid; }
 
-.prev-link:before {
-  left: 0;
-  border-right-color: #236FA6; }
+.prev-link {
+  float: left; }
+  .prev-link:before {
+    left: 0;
+    border-right-color: #236FA6; }
 
-.next-link:after {
-  right: 0;
-  border-left-color: #236FA6; }
+.next-link {
+  float: right; }
+  .next-link:after {
+    right: 0;
+    border-left-color: #236FA6; }
 
 /*------------------------------------*\
     #Field email plus submit
@@ -4260,6 +4289,7 @@ select {
   border-top: 0.25rem;
   border-left: 4px;
   border-left: 0.25rem;
+  float: left;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   width: 70%; }
@@ -4283,9 +4313,14 @@ select {
 /*------------------------------------*\
     #RADIO BUTTON LIST
 \*------------------------------------*/
+.radio-button-list > li {
+  position: relative; }
 .radio-button-list input {
+  position: absolute;
   left: 0;
   top: 32%; }
+.radio-button-list label span {
+  display: block; }
 
 /*------------------------------------*\
     #Field details
@@ -4299,16 +4334,29 @@ select {
     margin-bottom: 0.25rem; } }
 
 .segmented-control > li {
+  float: left;
+  position: relative;
   border: 1px solid #236FA6;
   margin-right: -1px;
   margin-bottom: -1px; }
+.segmented-control input {
+  position: absolute;
+  visibility: hidden; }
 .segmented-control label {
+  font-weight: 600;
+  text-align: center;
   color: #236FA6; }
   .segmented-control label span {
+    display: block;
     cursor: pointer; }
 .segmented-control input:checked + label {
   background: #236FA6;
   color: #fff; }
+
+.segmented-control--timeslots label {
+  text-align: left; }
+.segmented-control--timeslots label span {
+  float: right; }
 
 .segmented-control--2-segments li {
   width: 50%; }
@@ -4344,9 +4392,13 @@ select {
   color: #fff !important;
   font-weight: bold; }
 
+.flego-navigation--active {
+  font-weight: 600; }
+
 pre {
   border-radius: 4px;
   border-radius: 0.25rem;
+  white-space: pre-wrap;
   background-color: #5e5c5c;
   border: solid 1px #5e5c5c;
   overflow: scroll;
@@ -4377,9 +4429,6 @@ pre {
   animation: FadeIn 300ms backwards 500ms cubic-bezier(0.645, 0.045, 0.355, 1); }
 
 .device {
-  background-color: #efefef;
-  border-color: #555555;
-  border-style: solid;
   border-left-width: 48px;
   border-left-width: 3rem;
   border-right-width: 48px;
@@ -4388,6 +4437,10 @@ pre {
   border-top-width: 3rem;
   border-bottom-width: 48px;
   border-bottom-width: 3rem;
+  border-style: solid;
+  background-color: #efefef;
+  border-color: #555555;
+  box-sizing: border-box;
   border-radius: 50px; }
   .device .device__menu {
     border-bottom: 1px solid #D6D6D6; }
@@ -4404,10 +4457,59 @@ pre {
 *:focus {
   outline: solid 3px #ff5c00; }
 
+.font-bold {
+  font-weight: 600; }
+
+.font-light {
+  font-weight: 300; }
+
+.font-normal {
+  font-weight: 400; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.lowercase {
+  text-transform: lowercase; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+@media only screen and (min-width: 37.5em) {
+  .text-right--medium {
+    text-align: right; } }
+
+.block-element {
+  display: block; }
+
+.prepend:before {
+  content: attr(data-prepend);
+  display: inline-block; }
+
+.append:after {
+  content: attr(data-append);
+  display: inline-block; }
+
+@media only screen and (min-width: 37.5em) {
+  .append--q-medium:after {
+    content: attr(data-append-medium);
+    display: inline-block; } }
+
+@media only screen and (max-width: 59em) {
+  .append--q-small:after {
+    content: attr(data-append-small);
+    display: inline-block; } }
+
 .visible {
   visibility: visible !important; }
 
-.segmented-control input, .hidden {
+.hidden {
   visibility: hidden !important; }
 
 .hide {
