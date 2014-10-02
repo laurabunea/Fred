@@ -30,7 +30,7 @@
             border-top: 2px solid $ultra-light-grey;
         }
         
-        @include media('small-down') {
+        @include small-down() {
             a {
                 @include rem(padding-left, 10);
             }

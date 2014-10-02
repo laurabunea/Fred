@@ -7,7 +7,7 @@
     @extend %clearfix;
 
     .field__note {
-        @include media('small-down') {
+        @include small-down() {
             @include rem('margin-bottom', $space-xxs);
         }
     }

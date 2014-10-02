@@ -15,7 +15,7 @@
         @extend %block-element;
         @extend %full-width;
         //todo wtf
-        @include between(medium, medium) {
+        @include medium-only() {
             width: 150%;
             margin-left: -25%;
             margin-right: -25%;
@@ -27,7 +27,7 @@
     
     @include rem(padding-bottom, $space-m);
 
-    @include media('large') {
+    @include large() {
         @include rem(padding-bottom, $space-xxxxl);
     }
     
@@ -38,7 +38,7 @@
         right: 0;
     }
     
-    @include up-to(small) {
+    @include small-down() {
         padding-bottom:0;
         .breadcrumb {
             margin-top:0;

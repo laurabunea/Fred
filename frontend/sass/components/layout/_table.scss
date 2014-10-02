@@ -5,7 +5,8 @@ $hr-colour: #eee;
 \*------------------------------------*/
 
 .table {
-
+    border-collapse: collapse;//// Remove most spacing between table cells.
+    border-spacing: 0;// Remove most spacing between table cells.
     border: 1px solid $hr-colour;
     width: 100%;
 
@@ -54,7 +55,7 @@ $hr-colour: #eee;
 }
 
 .table--responsive {
-    @include media(small-down) {
+    @include small-down() {
         display: block;
         border: none;
 

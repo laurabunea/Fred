@@ -4,11 +4,10 @@
 
 $sans-serif-stack: "Source Sans Pro", "Helvetica Neue", sans-serif;
 $base-line-height: 1.5;
-$base-font-size: 16;
-  
+
+
 // Specify some font sizes to get your project rolling. These are predominantly
 // used by _typography.scss
-
 
 $font-size-xxxxl: 64;       // big statistics figures and the like
 $font-size-xxxl: 48;        // h1
@@ -33,89 +32,25 @@ $line-height-xs: 16/12;     // x-small
 // Media queries
 // -----------------------------------------------------------------------------
 
-// General approach to media queries:
-// - Assume `no media` as the first query.
-// - The `small` breakpoint just gets @media only screen { @content }
-// - `small-only` applies a max-width to prevent an upward cascade.
-//
-// Sizing guide:
-//
-// xsmall       | small mobiles, fridges, watches etc
-// small        | mobiles, some internet-of-things displays
-// medium       | tablet devices, netbooks, mobiles in landscape
-// large        | screens > 960px
-// xlarge       | wide screen devices > 1200px
-// xxlarge      | in our experience, things need adjusting > 1440px
-// xxxlarge     | Full HD
-
-$breakpoint-none: "";
-$breakpoint-xxlarge-name: "xxlarge";
-$breakpoint-xlarge-name: "xlarge";
-$breakpoint-large-name: "large";
-$breakpoint-medium-name: "medium";
-$breakpoint-small-name: "small";
-$breakpoint-classname-prefix: "--q-";
-
-// Set media queries in ems. If you're wondering, we remove 0.01em
-// from the next breakpoint up, so that the breakpoints don't
-// overlap. For instance:
-//
-// @media only screen and (max-width: 47.99em);
-// @media only screen and (min-width: 48em);
-
 $breakpoint-xsmall:     25em;   // The mighty LG Android!
 $breakpoint-small:      30em;   // Portrait regular mobiles//480px
-$breakpoint-small-max:  37.49em;
 $breakpoint-medium:     37.5em;   // Skinny 600px
-$breakpoint-medium-max: 59.99em;
 $breakpoint-large:      60em;   // Desktop 960px
-$breakpoint-large-max:  74.99em;
 $breakpoint-xlarge:     75em;   // Wide 1200px
-$breakpoint-xxlarge:    90em;   // Wide 1440px
-$breakpoint-xxxlarge:   120em;  // Full HD
 
-
-$breakpoints:
-        (
-            small "only screen"  $breakpoint-small ($breakpoint-medium - 0.01)
-        ),
-        (
-            small-down "only screen and (max-width: #{$breakpoint-small-max})"
-        ),
-        (
-            medium "only screen and (min-width: #{$breakpoint-medium})" $breakpoint-medium ($breakpoint-large - 0.01)
-        ),
-        (
-            medium-only "only screen and (min-width: #{$breakpoint-medium}) and (max-width: #{$breakpoint-medium-max})"
-        ),
-        (
-            medium-down "only screen and (max-width: #{$breakpoint-medium-max})"
-        ),
-        (
-            large "only screen and (min-width: #{$breakpoint-large})" 
-        ),
-        (
-            large-only "only screen and (min-width: #{$breakpoint-large}) and (max-width: #{$breakpoint-large-max})"
-        ),
-        (
-            large-down "only screen and (max-width: #{$breakpoint-large})"
-        ),
-        (
-            xlarge "only screen and (min-width: #{$breakpoint-xlarge})" $breakpoint-xlarge ($breakpoint-xxlarge - 0.01)
-        ),
-        (
-            screen "only screen"
-        ),
-        (
-            landscape "only screen and (orientation: landscape)"
-        ),
-        (
-            portrait "only screen and (orientation: portrait)"
-        )
-;
+$breakpoint-x-small-max:  $breakpoint-small - 1 ;
+$breakpoint-small-max:  $breakpoint-medium - 1 ;
+$breakpoint-medium-max: $breakpoint-large - 1;
+$breakpoint-large-max: $breakpoint-xlarge - 1;
 
 
 // Media shortcuts
+
+@mixin xsmall() {
+    @media only screen and (max-width:#{$breakpoint-x-small-max}) {
+        @content;
+    }
+}
 
 @mixin small() {
     @media only screen and (min-width:#{$breakpoint-small}) {
@@ -123,15 +58,25 @@ $breakpoints:
     }
 }
 
-
-@mixin small-only() {
-    @media only screen and (max-width: #{$breakpoint-small-max}) {
+@mixin small-down() {
+    @media only screen and (max-width: #{$breakpoint-medium-max} ) {
         @content;
     }
 }
 
+@mixin medium-down() {
+    @media only screen and (max-width: #{$breakpoint-medium-max}) {
+        @content;
+    }
+}
 @mixin medium() {
     @media only screen and (min-width: #{$breakpoint-medium}) {
+        @content;
+    }
+}
+
+@mixin medium-only {
+    @media only screen and (min-width: #{$breakpoint-medium}) and (max-width: #{$breakpoint-large-max})  {
         @content;
     }
 }
@@ -142,25 +87,11 @@ $breakpoints:
     }
 }
 
-
-
-
-
-
-
-
-// -----------------------------------------------------------------------------
-// Grid
-// -----------------------------------------------------------------------------
-
-$grid-breakpoints: default, small-down, small, medium, medium-only, medium-down, large, xlarge;
-$grid-column-name: "col";
-$grid-divisions: 3, 4, 5, 8, 10, 12;
-$grid-float-padding: 1em; // false to disable.
-//$grid-responsive-breakpoints: small-only, medium-only, large;
-$grid-responsive-breakpoints: default, small-down, medium-only, large;
-$grid-responsive-margin: 6%;
-$grid-responsive-columns: 1, 2, 3, 4, 6;
+@mixin xlarge() {
+    @media only screen and (min-width: #{$breakpoint-xlarge}) {
+        @content;
+    }
+}
 
 // ----------------------------------------------------------------------------
 // Spacing
@@ -214,8 +145,8 @@ $sizes:
 // mr   | margin-right
 // ml   | margin-left
 
-$margin-breakpoints: default, small, medium, medium-down, large, xlarge;
-$margin-types: "mt", "mb", "ml", "mr";
+// $margin-breakpoints: default, small, medium, medium-down, large, xlarge;
+// $margin-types: "mt", "mb", "ml", "mr";
 
 // Generate padding classes for the given breakpoints
 //
@@ -224,8 +155,8 @@ $margin-types: "mt", "mb", "ml", "mr";
 // pr   | padding-right
 // pl   | padding-left
 
-$padding-breakpoints: default, small, medium, medium-down, large, xlarge;
-$padding-types: "pt", "pb", "pl", "pr";
+// $padding-breakpoints: default, small, medium, medium-down, large, xlarge;
+// $padding-types: "pt", "pb", "pl", "pr";
 
 
 

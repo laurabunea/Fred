@@ -19,7 +19,7 @@ $height-icon-tiny: 2.5em;
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    @include up-to(small) {
+    @include small-down() {
         @include rem(width, $height-circle-small);
         @include rem(height, $height-circle-small);
     }
@@ -59,7 +59,7 @@ $height-icon-tiny: 2.5em;
             width: $height-icon-large;
             height: $height-icon-large;
     }
-    @include up-to(small) {
+    @include small-down() {
         text-align: left;
 
         & > div,

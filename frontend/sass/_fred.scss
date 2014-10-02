@@ -81,10 +81,6 @@ pre {
 }
 
     .showhide-autoheight > div {
-        -webkit-animation: FadeIn 300ms backwards 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
-        -moz-animation: FadeIn 300ms backwards 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
-        -ms-animation: FadeIn 300ms backwards 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
-        -o-animation: FadeIn 300ms backwards 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
         animation: FadeIn 300ms backwards 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
     }
 
@@ -116,7 +112,7 @@ pre {
     }
 
     border-radius: 50px;
-    @include media(medium-down) {
+    @include medium-down() {
         border-radius: 30px;
     }
 }

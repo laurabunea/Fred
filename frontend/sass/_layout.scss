@@ -33,7 +33,7 @@
     @extend %pb-xxxxl;
 
     //responsinate
-    @include media("small-down") {
+    @include small-down() {
         & {
             @include rem(padding-top, $space-xxxl);
             @include rem(padding-bottom, $space-xxxl);
@@ -101,7 +101,7 @@
     @extend %pl-xxxxl;
     @extend %pr-xxxxl;
 
-    @include media("small-down") {
+    @include small-down() {
         & {
             @include rem(padding-left, $space-xxxl);
             @include rem(padding-right, $space-xxxl);

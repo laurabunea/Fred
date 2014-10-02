@@ -5,7 +5,7 @@
 %pill {
     @extend %font-size-s;
     @extend %align--middle;
-    @include vendor(border-radius, 2px);
+    @include rem(border-radius, 2);
     display: inline-block;
     vertical-align: middle;
     font-weight: normal;

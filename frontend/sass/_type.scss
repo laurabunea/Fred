@@ -2,11 +2,11 @@
 // ----------------------------------------------------------------------------
 // Font sizing
 // ----------------------------------------------------------------------------
-
+//do we want to extend these .. or do we just want to add a class ? 
 %font-size-xxxxl {
     @include rem('font-size', $font-size-xxxxl);
     line-height: $line-height-xxxl;
-    @include media('small-down') {
+    @include small-down() {
         & {
             @include rem('font-size', $font-size-xxxl);
             line-height: $line-height-xxxl;
@@ -18,7 +18,7 @@
     //@include font-size($font-size-xxxl);
     @include rem('font-size', $font-size-xxxl);
     line-height: $line-height-xxxl;
-    @include media('small-down') {
+    @include small-down() {
         & {
             @include rem('font-size', $font-size-xxl);
             line-height: $line-height-xxl;
@@ -29,7 +29,7 @@
 %font-size-xxl {
     @include rem('font-size', $font-size-xxl);
     line-height: $line-height-xxl;
-    @include media('small-down') {
+    @include small-down() {
         & {
             @include rem('font-size', $font-size-xl);
             line-height: $line-height-xl;
@@ -40,7 +40,7 @@
 %font-size-xl {
     @include rem('font-size', $font-size-xl);
     line-height: $line-height-xl;
-    @include media('small-down') {
+    @include small-down() {
         & {
             @include rem('font-size', $font-size-l);
             line-height: $line-height-l;
@@ -68,14 +68,7 @@
     line-height: $line-height-xs;
 }
 
-.font-size-xxxxl { @extend %font-size-xxxxl; }
-.font-size-xxxl { @extend %font-size-xxxl; }
-.font-size-xxl { @extend %font-size-xxl; }
-.font-size-xl { @extend %font-size-xl; }
-.font-size-l { @extend %font-size-l; }
-.font-size-m { @extend %font-size-m; }
-.font-size-s { @extend %font-size-s; }
-.font-size-xs { @extend %font-size-xs; }
+
 
 // ----------------------------------------------------------------------------
 // Headings
@@ -86,42 +79,47 @@ h1, h2, h3, h4, h5, h6, p, .text, li, code, .intro, ul, li {
     @extend %mt-0;
 }
 
-h1 {
+h1, 
+.font-font-size-xxxl {
     @extend %mb-xxxl;
     @extend %font-size-xxxl;
     @extend %font-weight-normal;
 }
 
-h2 {
+h2, 
+.font-size-xxl {
     @extend %mb-m;
-    @include media ('small-down') {
+    @include small-down() {
         @include rem('margin-bottom', $space-s);
     }
     @extend %font-size-xxl;
     @extend %font-weight-normal;
 }
 
-h3 {
+h3,
+.font-size-xl {
     @extend %mb-m;
     @extend %font-weight-bold;
     @extend %font-size-xl;
-    @include media ('small-down') { 
+    @include small-down() { 
         @include rem('margin-bottom', $space-s);
     }
 }
 
-h4 {
+h4,
+.font-size-l {
     @extend %mb-m;
-    @include media ('small-down') {
+    @include small-down() {
         @include rem('margin-bottom', $space-s);
     }
     @extend %font-size-l;
     @extend %font-weight-bold;
 }
 
-h5 {
+h5,
+.font-size-m {
     @extend %mb-m;
-    @include media ('small-down') {
+    @include small-only {
         @include rem('margin-bottom', $space-s);
     }
     @extend %font-size-m;
@@ -130,7 +128,7 @@ h5 {
 
 h6 {
     @extend %mb-m;
-    @include media ('small-down') {
+    @include small-only {
         @include rem('margin-bottom', $space-s);
     }
     @extend %font-size-m;
@@ -184,7 +182,7 @@ li {
 
 strong, 
 b { @extend %font-weight-bold; }
-em, i, cite { @extend %font-italic;}
+em, i, cite, dfn { @extend %font-italic;}
 
 
 // ----------------------------------------------------------------------------
@@ -259,7 +257,7 @@ dd {
 
 }
 
- @include media('small-down') {
+ @include small-down() {
      dt {
         border-top: 1px solid $primary-border-color;
         float:none!important;
@@ -281,7 +279,15 @@ blockquote {
     border-left:0 solid $ultra-light-grey;
     @include rem(border-width, $space-xs);
 }
+//reset stuff
+blockquote {
+    quotes:none;
+}
 
+blockquote:before,
+blockquote:after {
+    content:none;
+}
 
 // ----------------------------------------------------------------------------
 // Remove last childs margin

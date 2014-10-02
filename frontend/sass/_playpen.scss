@@ -4,7 +4,70 @@
     problems without dirtying up the 
     sass structure 
 \*------------------------------------*/
+.large {
+ height:100px; 
+ width:100%;
 
+    @include large() {
+        background-color:pink;
+    }
+
+}
+
+.xlarge {
+ height:100px; 
+ width:100%;
+    
+    @include xlarge() {
+        background-color:purple;
+    }
+}
+
+.xsmall {
+ height:100px; 
+ width:100%;
+    
+    @include xsmall() {
+        background-color:white;
+    }
+}
+
+.small {
+ height:100px; 
+ width:100%;
+    
+    @include small() {
+        background-color:yellow;
+    }
+}
+
+.small-only {
+ height:100px; 
+ width:100%;
+    
+    @include small-down() {
+        background-color:blue;
+    }
+}
+
+
+.medium {
+ height:100px; 
+ width:100%;
+    
+    @include medium() {
+        background-color:green;
+    }
+}
+
+.medium-only {
+ height:100px; 
+ width:100%;
+    
+     @include medium-only() {
+        background-color:orange;
+    }
+}
 /**
 * Media blocks
 * ---------------------------------------------------------------------------

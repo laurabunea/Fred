@@ -20,7 +20,7 @@
             @extend %inline-block;
         }
 
-        @include media(medium) {
+        @include medium() {
             display: inline-block;
             *display: inline;
             *zoom: 1;
@@ -28,6 +28,7 @@
 
         & a:after {
             @extend %pl-xxs;
+            
             @extend %pr-xxs;
             content: ' › ';
             color: #C7D900;

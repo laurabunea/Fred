@@ -1,0 +1,92 @@
+%pt-xxs { padding-top:$space-xxs;}
+%pt-xs { padding-top:$space-xxs;}
+%pt-s { padding-top:$space-xxs;}
+%pt-m { padding-top:$space-xxs;}
+%pt-l { padding-top:$space-xxs;}
+%pt-xl { padding-top:$space-xxs;}
+%pt-xxl { padding-top:$space-xxs;}
+%pt-xxxl { padding-top:$space-xxs;}
+%pt-xxxxl { padding-top:$space-xxs;}
+
+%pb-xxs { padding-bottom:$space-xxs;}
+%pb-xs { padding-bottom:$space-xxs;}
+%pb-s { padding-bottom:$space-xxs;}
+%pb-m { padding-bottom:$space-xxs;}
+%pb-l { padding-bottom:$space-xxs;}
+%pb-xl { padding-bottom:$space-xxs;}
+%pb-xxl { padding-bottom:$space-xxs;}
+%pb-xxxl { padding-bottom:$space-xxs;}
+%pb-xxxxl { padding-bottom:$space-xxs;}
+
+%pr-xxs { padding-right:$space-xxs;}
+%pr-xs { padding-right:$space-xxs;}
+%pr-s { padding-right:$space-xxs;}
+%pr-m { padding-right:$space-xxs;}
+%pr-l { padding-right:$space-xxs;}
+%pr-xl { padding-right:$space-xxs;}
+%pr-xxl { padding-right:$space-xxs;}
+%pr-xxxl { padding-right:$space-xxs;}
+%pr-xxxxl { padding-right:$space-xxs;}
+
+%pl-xxs { padding-left:$space-xxs;}
+%pl-xs { padding-left:$space-xxs;}
+%pl-s { padding-left:$space-xxs;}
+%pl-m { padding-left:$space-xxs;}
+%pl-l { padding-left:$space-xxs;}
+%pl-xl { padding-left:$space-xxs;}
+%pl-xxl { padding-left:$space-xxs;}
+%pl-xxxl { padding-left:$space-xxs;}
+%pl-xxxxl { padding-left:$space-xxs;}
+
+.pt-xxs { @extend %pt-xxs;}
+.pt-xs { @extend %pt-xs;}
+.pt-s { @extend %pt-s;}
+.pt-m { @extend %pt-m;}
+.pt-l { @extend %pt-l;}
+.pt-xl { @extend %pt-xl;}
+.pt-xxl { @extend %pt-xxl;}
+.pt-xxxl { @extend %pt-xxxl;}
+.pt-xxxxl { @extend %pt-xxxxl;}
+
+.pb-xxs { @extend %pb-xxs;}
+.pb-xs { @extend %pb-xs;}
+.pb-s { @extend %pb-s;}
+.pb-m { @extend %pb-m;}
+.pb-l { @extend %pb-l;}
+.pb-xl { @extend %pb-xl;}
+.pb-xxl { @extend %pb-xxl;}
+.pb-xxxl { @extend %pb-xxxl;}
+.pb-xxxxl { @extend %pb-xxxxl;}
+
+.pl-xxs { @extend %pl-xxs;}
+.pl-xs { @extend %pl-xs;}
+.pl-s { @extend %pl-s;}
+.pl-m { @extend %pl-m;}
+.pl-l { @extend %pl-l;}
+.pl-xl { @extend %pl-xl;}
+.pl-xxl { @extend %pl-xxl;}
+.pl-xxxl { @extend %pl-xxxl;}
+.pl-xxxxl { @extend %pl-xxxxl;}
+
+.pr-xxs { @extend %pr-xxs;}
+.pr-xs { @extend %pr-xs;}
+.pr-s { @extend %pr-s;}
+.pr-m { @extend %pr-m;}
+.pr-l { @extend %pr-l;}
+.pr-xl { @extend %pr-xl;}
+.pr-xxl { @extend %pr-xxl;}
+.pr-xxxl { @extend %pr-xxxl;}
+.pr-xxxxl { @extend %pr-xxxxl;}
+
+%remove-padding {  padding:0; }
+%remove-margin { margin:0;}
+
+
+@include xsmall() {}
+@include small-down() {}
+@include small() {}
+@include medium() {}
+@include medium-down() {}
+@include medium-only() {}
+@include large() {}
+@include xlarge() {}

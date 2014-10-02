@@ -114,10 +114,10 @@ body {
 
 
 @import "reset";
+@import "spacing";
 @import "utilities";
 @import "type";
 @import "layout";
-
 @import "icons";
 @import "themes";
 
@@ -201,7 +201,7 @@ body {
 
 
 .hide-small {
-    @include media("small-down") {
+    @include small-only {
         & {
             display:none;
         }
@@ -209,7 +209,7 @@ body {
 }
 
 .hide-medium {
-    @include media("medium") {
+    @include medium() {
         & {
             display:none;
         }
