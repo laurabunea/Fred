@@ -119,7 +119,7 @@ h4,
 h5,
 .font-size-m {
     @extend %mb-m;
-    @include small-only {
+    @include small-down {
         @include rem('margin-bottom', $space-s);
     }
     @extend %font-size-m;
@@ -128,7 +128,7 @@ h5,
 
 h6 {
     @extend %mb-m;
-    @include small-only {
+    @include small-down {
         @include rem('margin-bottom', $space-s);
     }
     @extend %font-size-m;

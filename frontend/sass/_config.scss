@@ -97,9 +97,6 @@ $breakpoint-large-max: $breakpoint-xlarge - 1;
 // Spacing
 // ----------------------------------------------------------------------------
 
-
-$base-spacing-unit: 1.5em;
-
 $space: 16; //px
 
 $space-0: 0;
@@ -143,57 +140,58 @@ $sizes:
 // Colours
 // -----------------------------------------------------------------------------
 
+
+/* global colours */
+
 $black: #000;
 $white: #fff;
-
 $ultra-light-grey: #F2F4F7;
 $light-grey: #ddd;
 $mid-grey: #999;
 $dark-grey: #5e5c5c;
 $ultra-dark-grey: #444;
-
 $light-blue:#f6fcfb;
 $blue:#1392b2;
 $dark-blue:#00456B;
 $teal: #008b97;
-
 $green:#37b67f;
-
 $soft-pink:#F49AC2;
 $orange:#e78547;
 $red:#e2534a;
 
 
 
+/* base colours */
+$base-font-color: $dark-grey;
+$base-bg-color: $ultra-light-grey;
+
+
+
+/* colour focus */
 $color-focus: rgb(255, 92, 0);
 
+
+/* form colours */
 $error-red: #c44;
 $warning-red: #CA4142;
 $confirmation-green: #59B359;
 $color-orange: #FF8C19;
 
-/* base colours */
-$base-font-color: $dark-grey;
-$base-bg-color: $ultra-light-grey;
+$form-input-color: #F2F2EB;
+$form-label-color: $dark-blue;
+
 
 /* link colours */
 $base-link-color: #236FA6;
 $base-link-hover-color: darken($base-link-color, 15%);
 $base-link-visited-color: lighten($base-link-color, 5%); //#c3c;
 
-$base-link-color-reversed: #83BFEB;
-$base-link-hover-color-reversed: lighten($base-link-color-reversed, 15%);
-$base-link-visited-color-reversed: lighten($base-link-color-reversed, 15%);
 
+//do we need this
 $primary-border-color: #F2F2EB;
 
 
-// header colour
-$color-bg-header: #004771; // lighten(#00456B, 5%);
 
-// form colours
-$form-input-color: #F2F2EB;
-$form-label-color: $dark-blue;
 
 // -----------------------------------------------------------------------------
 // Icon colouring

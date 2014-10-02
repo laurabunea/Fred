@@ -36,13 +36,9 @@
 %link-hover-color {
     &:hover {
         color: darken($base-link-color, 10%);
-//        @include custom-line-color--modified(darken($base-link-color, 10%));
 
         &.link--action  > div {
             background-color: darken($base-link-color, 5%);
-        }
-        & .nav-main__icon > i {
-            background-color: darken($color-bg-header, 4%);
         }
     }
 }

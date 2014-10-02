@@ -71,9 +71,8 @@ $hr-colour: #eee;
             display: none;
         }
         td:first-child, th {
-
+            @extend %mt-xl;
             padding: 0;
-            margin-top: $base-spacing-unit;
             font-weight: bold; // ideally this would extend the h5
 
         }

@@ -81,7 +81,7 @@
 }
 
 .grid--flip-small {
-    @include small-only {
+    @include small-down {
         direction: rtl;
         & > * {
             direction: ltr;

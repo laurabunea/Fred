@@ -201,7 +201,7 @@ body {
 
 
 .hide-small {
-    @include small-only {
+    @include small-down {
         & {
             display:none;
         }
