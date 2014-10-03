@@ -1,0 +1,30 @@
+/**
+ * Media blocks
+ * ---------------------------------------------------------------------------
+ */
+
+.media {
+    overflow: hidden;
+    margin-bottom: 32px;
+    margin-bottom: 2rem;
+}
+
+.media--squishy {
+    img {
+        width: 100%;
+    }
+}
+
+
+    .media__image {
+        float: left;
+        margin-right: $space;
+
+        > img {
+            display: block;
+
+        }
+    }
+
+    .media__body {
+            }

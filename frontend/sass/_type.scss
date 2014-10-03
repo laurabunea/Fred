@@ -240,55 +240,102 @@ hr {
 // Definition lists
 // ----------------------------------------------------------------------------
 
-dl dt {
-    @extend %pt-s;
-    @extend %pr-s;
-    @extend %pb-s;
-    float:left;
-    font-weight: bold;
-}
+// dl dt {
+//     @extend %pt-s;
+//     @extend %pr-s;
+//     @extend %pb-s;
+//     float:left;
+//     font-weight: bold;
+// }
 
-dd {
-    @extend %bt--primary;  
-    @extend %mt-0;
-    @extend %ml-0;
-    @extend %pt-s;
-    @extend %pb-s;
-    text-align:right;
-}
+// dd {
+//     @extend %bt--primary;  
+//     @extend %mt-0;
+//     @extend %ml-0;
+//     @extend %pt-s;
+//     @extend %pb-s;
+//     text-align:right;
+// }
 
- @include small-down() {
-     dt {
-        border-top: 1px solid $primary-border-color;
-        float:none!important;
-     }
+//  @include small-down() {
+//      dt {
+//         border-top: 1px solid $primary-border-color;
+//         float:none!important;
+//      }
+//     dd {
+//          text-align:left!important;
+//      }
+//  }
+
+/**
+ * Definition lists
+ */
+
+dl {
+
+}
+    dt {
+        font-weight: 600;
+    }
+
     dd {
-         text-align:left!important;
-     }
- }
+        margin-left: 0;
+        margin-bottom: $space/2;
+    }
+
+
+.dl--inline {
+    dd, dt {
+        display: inline;
+        margin: 0;
+    }
+
+    dt:after {
+        content: "\2014";
+        margin-left: $space/8;
+        color: #999;
+        font-weight: 300;
+    }
+}
 
 
 // ----------------------------------------------------------------------------
 // blockquote
 // ----------------------------------------------------------------------------
+// blockquote {
+//     margin:0;
+//     padding:0;
+//     @include rem(padding-left, $space-xxl);
+//     border-left:0 solid $ultra-light-grey;
+//     @include rem(border-width, $space-xs);
+// }
+// //reset stuff
+// blockquote {
+//     quotes:none;
+// }
+
+// blockquote:before,
+// blockquote:after {
+//     content:none;
+// }
+
 blockquote {
-    margin:0;
-    padding:0;
-    @include rem(padding-left, $space-xxl);
-    border-left:0 solid $ultra-light-grey;
-    @include rem(border-width, $space-xs);
-}
-//reset stuff
-blockquote {
-    quotes:none;
-}
-
-blockquote:before,
-blockquote:after {
-    content:none;
+    @extend %pt-l;
+    @extend %font-size-l;
+    margin-left: 0;
+    border-left: solid 3px #eee;
+    color: $light-grey;
 }
 
 
+    cite {
+        &:before {
+            content: "\2014\00a0";
+            font-weight: $font-light;
+        }
+        @extend %font-size-s;
+        color: #666;
+    }
 
 // ----------------------------------------------------------------------------
 // strikethrough

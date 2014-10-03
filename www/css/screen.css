@@ -129,7 +129,7 @@ img {
   padding-top: 16px;
   padding-top: 1rem; }
 
-.pt-l, .section-l, .highlight-top, .flego-navigation, .flego-components {
+.pt-l, blockquote, .section-l, .highlight-top, .flego-navigation, .flego-components {
   padding-top: 20px;
   padding-top: 1.25rem; }
 
@@ -2367,67 +2367,9 @@ fieldset {
 .list--block > li {
   display: block; }
 
-.left {
-  float: left; }
-
-.right {
-  float: right; }
-
-.relative {
-  position: relative; }
-
-.absolute {
-  position: absolute; }
-
-.absolute--bottom-left {
-  position: absolute;
-  bottom: 0;
-  left: 0; }
-
-.absolute--bottom-right {
-  position: absolute;
-  bottom: 0;
-  right: 0; }
-
-.absolute--top-left {
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-.absolute--top-right {
-  position: absolute;
-  top: 0;
-  right: 0; }
-
 .center-element {
   margin-left: auto;
   margin-right: auto; }
-
-.align--top {
-  vertical-align: top; }
-
-.align--middle {
-  vertical-align: middle; }
-
-.align--baseline {
-  vertical-align: baseline; }
-
-.align--bottom {
-  vertical-align: bottom; }
-
-.overflow-hidden {
-  overflow: hidden; }
-
-.fixed--bottom {
-  position: fixed;
-  bottom: 0; }
-
-.fixed--top {
-  position: fixed;
-  top: 0; }
-
-.img--responsive {
-  max-width: 100%; }
 
 .bt--primary, dd, .radio-button-list > li {
   border-top: 1px solid #F2F2EB; }
@@ -2443,13 +2385,6 @@ fieldset {
 
 .cursor-on-hover:hover, .btn--submit:hover, .segmented-control label:hover {
   cursor: pointer; }
-
-.is-draggable {
-  cursor: move; }
-
-.is-disabled, .is-disabled * {
-  cursor: default;
-  pointer-events: none !important; }
 
 .clean-link {
   text-decoration: none; }
@@ -2709,7 +2644,7 @@ h3, .font-size-xl, .intro {
       font-size: 1.125rem;
       line-height: 1.5555555556; } }
 
-h4, .font-size-l, .emphasis, .btn.btn--x-large {
+h4, .font-size-l, .emphasis, blockquote, .btn.btn--x-large {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.5555555556; }
@@ -2719,7 +2654,7 @@ h5, .font-size-m, h6, p, .text, code, dt, dd, td, th, li {
   font-size: 1rem;
   line-height: 1.5; }
 
-.small, .btn.btn--x-small, .btn.btn--small, .action > span, .pill, .pill--roadworks, .pill--orange, .field__note {
+.small, cite, .btn.btn--x-small, .btn.btn--small, .action > span, .pill, .pill--roadworks, .pill--orange, .field__note {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.4285714286; }
@@ -2809,19 +2744,15 @@ dd {
     text-align: left !important; } }
 
 blockquote {
-  margin: 0;
-  padding: 0;
-  padding-left: 28px;
-  padding-left: 1.75rem;
-  border-left: 0 solid #F2F4F7;
-  border-width: 8px;
-  border-width: 0.5rem; }
+  margin-left: 0;
+  border-left: solid 3px #eee;
+  color: #ddd; }
 
-blockquote {
-  quotes: none; }
-
-blockquote:before, blockquote:after {
-  content: none; }
+cite {
+  color: #666; }
+  cite:before {
+    content: "\2014\00a0";
+    font-weight: 300; }
 
 del {
   text-decoration: line-through; }
@@ -4485,6 +4416,64 @@ pre {
   .text-right--medium {
     text-align: right; } }
 
+.img--responsive {
+  max-width: 100%; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.absolute--bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.absolute--bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.absolute--top-left {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.absolute--top-right {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.align--top {
+  vertical-align: top; }
+
+.align--middle {
+  vertical-align: middle; }
+
+.align--baseline {
+  vertical-align: baseline; }
+
+.align--bottom {
+  vertical-align: bottom; }
+
+.overflow-hidden {
+  overflow: hidden; }
+
+.fixed--bottom {
+  position: fixed;
+  bottom: 0; }
+
+.fixed--top {
+  position: fixed;
+  top: 0; }
+
 .block-element {
   display: block; }
 
@@ -4525,3 +4514,10 @@ pre {
 @media only screen and (min-width: 37.5em) {
   .hide-medium {
     display: none; } }
+
+.is-draggable {
+  cursor: move; }
+
+.is-disabled, .is-disabled * {
+  cursor: default;
+  pointer-events: none !important; }

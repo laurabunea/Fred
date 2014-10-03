@@ -68,55 +68,6 @@
 //         background-color:orange;
 //     }
 // }
-/**
-* Media blocks
-* ---------------------------------------------------------------------------
-*/
-.media {
-    overflow: hidden;
-    margin-bottom: 32px;
-    margin-bottom: 2rem; 
-}
- 
-.media--squishy img {
-    width: 100%; 
-}
- 
-.media__image {
-    float: left;
-    margin-right: 2em; 
-}
-
-.media__image > img {
-    display: block; 
-}
-
-
-/**
-* Inset panels/cards
-* ---------------------------------------------------------------------------
-*/
-.card {
-    border-radius: 0.25em;
-    padding-top: 1.25em;
-    padding-bottom: 1.25em;
-    margin-bottom: 2em;
-    border: solid 1px #e2e2e2;
-    background: #fff;
-    box-shadow: 0 1px 5px rgba(10, 15, 37, 0.05);
-    padding-left: 1em;
-    padding-right: 1em; 
-}
-
-@media only screen and (min-width: 37.5em) {
-    .card {
-        padding-left: 2em;
-        padding-right: 2em; 
-    } 
-}
-    .card > :last-child {
-        margin-bottom: 0; 
-    }
 
 
 
@@ -166,7 +117,8 @@ margin-bottom: 0.25em; }
 color: #FA4C3D; }
  
 .is-hidden {
-display: none; }
+    display: none; 
+}
  
 .is-overlay:after {
 content: "";
