@@ -280,13 +280,8 @@ img { border: 0;}
     }
 }
 
-.visible { visibility: visible !important; }
-.hidden { visibility: hidden !important; }
-
 .hide { display: none; }
 .show { display: block; }
-
-
 
 // -----------------------------------------------------------------------------
 // utilities -- responsive helpers 
@@ -341,18 +336,26 @@ img { border: 0;}
         display: inline-block;
     }
 
-
+}
     
 
 // -----------------------------------------------------------------------------
-// utilities -- states
+// utilities -- States
 // -----------------------------------------------------------------------------
 
 .is-draggable {  cursor: move; }
 
+/**
+ * Prevent all user interaction with the element
+ */
 
-.is-disabled,
-.is-disabled * {
+.is-disabled {
+    pointer-events: none;
     cursor: default;
-    pointer-events: none !important;
+    opacity: .5;
 }
+
+
+.is-visible { visibility: visible ; }
+.is-hidden { visibility: hidden ; }
+
