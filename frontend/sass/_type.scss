@@ -280,7 +280,7 @@ dl {
 
     dd {
         margin-left: 0;
-        margin-bottom: $space/2;
+        @extend %mb-s;
     }
 
 
