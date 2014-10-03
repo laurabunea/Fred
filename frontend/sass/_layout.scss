@@ -222,6 +222,7 @@
     @extend %layout-right;
 }
 
+//todo test to see if i need col - usedon kb prototype
 .layout--left, 
 .col.layout--left { @extend %layout-left; }
 

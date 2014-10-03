@@ -1,4 +1,4 @@
-%pt-0     { padding-top:0;}
+%pt-0       { padding-top:0;}
 %pt-xxs     { @include rem(padding-top,$space-xxs);}
 %pt-xs      { @include rem(padding-top,$space-xs);}
 %pt-s       { @include rem(padding-top,$space-s);}
@@ -9,7 +9,7 @@
 %pt-xxxl    { @include rem(padding-top,$space-xxxl);}
 %pt-xxxxl   { @include rem(padding-top,$space-xxxxl);}
 
-%pb-0     { padding-bottom:0;}
+%pb-0       { padding-bottom:0;}
 %pb-xxs     { @include rem(padding-bottom,$space-xxs);}
 %pb-xs      { @include rem(padding-bottom,$space-xs);}
 %pb-s       { @include rem(padding-bottom,$space-s);}
@@ -20,7 +20,7 @@
 %pb-xxxl    { @include rem(padding-bottom,$space-xxxl);}
 %pb-xxxxl   { @include rem(padding-bottom,$space-xxxxl);}
 
-%pr-0     { padding-right:0;}
+%pr-0       { padding-right:0;}
 %pr-xxs     { @include rem(padding-right,$space-xxs);}
 %pr-xs      { @include rem(padding-right,$space-xs);}
 %pr-s       { @include rem(padding-right,$space-s);}
@@ -31,7 +31,7 @@
 %pr-xxxl    { @include rem(padding-right,$space-xxxl);}
 %pr-xxxxl   { @include rem(padding-right,$space-xxxxl);}
 
-%pl-0     { padding-left:0;}
+%pl-0       { padding-left:0;}
 %pl-xxs     { @include rem(padding-left,$space-xxs);}
 %pl-xs      { @include rem(padding-left,$space-xs);}
 %pl-s       { @include rem(padding-left,$space-s);}
