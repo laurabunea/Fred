@@ -129,7 +129,7 @@ img {
   padding-top: 16px;
   padding-top: 1rem; }
 
-.pt-l, blockquote, .section-l, .highlight-top, .flego-navigation, .flego-components {
+.pt-l, .section-l, blockquote, .highlight-top, .flego-navigation, .flego-components {
   padding-top: 20px;
   padding-top: 1.25rem; }
 
@@ -145,7 +145,7 @@ img {
   padding-top: 32px;
   padding-top: 2rem; }
 
-.pt-xxxxl, .section-xxxxl, .section {
+.pt-xxxxl, .section {
   padding-top: 48px;
   padding-top: 3rem; }
 
@@ -184,7 +184,7 @@ img {
   padding-bottom: 32px;
   padding-bottom: 2rem; }
 
-.pb-xxxxl, .section-xxxxl, .section {
+.pb-xxxxl, .section {
   padding-bottom: 48px;
   padding-bottom: 3rem; }
 
@@ -203,7 +203,7 @@ img {
   padding-right: 12px;
   padding-right: 0.75rem; }
 
-.pr-m, .layout-m, .anchor-links, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item.theme, .next-link, pre {
+.pr-m, .layout-m, .layout, .layout--right, .col.layout--right, .anchor-links, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item.theme, .next-link, pre {
   padding-right: 16px;
   padding-right: 1rem; }
 
@@ -223,7 +223,7 @@ img {
   padding-right: 32px;
   padding-right: 2rem; }
 
-.pr-xxxxl, .pr-xxxxl, .layout-xxxxl {
+.pr-xxxxl, .pr-xxxxl {
   padding-right: 48px;
   padding-right: 3rem; }
 
@@ -242,7 +242,7 @@ img {
   padding-left: 12px;
   padding-left: 0.75rem; }
 
-.pl-m, .layout-m, .anchor-links, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item, ul, ol, .prev-link, pre, .code__anchor {
+.pl-m, .layout-m, .layout, .layout--left, .col.layout--left, .anchor-links, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item, ul, ol, .prev-link, pre, .code__anchor {
   padding-left: 16px;
   padding-left: 1rem; }
 
@@ -262,7 +262,7 @@ img {
   padding-left: 32px;
   padding-left: 2rem; }
 
-.pl-xxxxl, .layout-xxxxl {
+.pl-xxxxl {
   padding-left: 48px;
   padding-left: 3rem; }
 
@@ -2892,36 +2892,19 @@ sub {
   width: 100%; }
 
 @media only screen and (max-width: 59em) {
-  .section-xxxxl, .section {
+  .section {
     padding-top: 32px;
     padding-top: 2rem;
     padding-bottom: 32px;
     padding-bottom: 2rem; } }
 
-@media only screen and (max-width: 59em) {
-  .layout-xxxxl {
-    padding-left: 32px;
-    padding-left: 2rem;
-    padding-right: 32px;
-    padding-right: 2rem; } }
+@media only screen and (min-width: 60em) {
+  .layout, .layout--left, .col.layout--left {
+    padding-left: 6em; } }
 
-.layout, .layout--left, .col.layout--left {
-  padding-left: 1rem; }
-  @media only screen and (min-width: 37.5em) {
-    .layout, .layout--left, .col.layout--left {
-      padding-left: 4em; } }
-  @media only screen and (min-width: 60em) {
-    .layout, .layout--left, .col.layout--left {
-      padding-left: 6em; } }
-
-.layout, .layout--right, .col.layout--right {
-  padding-right: 1rem; }
-  @media only screen and (min-width: 37.5em) {
-    .layout, .layout--right, .col.layout--right {
-      padding-right: 4em; } }
-  @media only screen and (min-width: 60em) {
-    .layout, .layout--right, .col.layout--right {
-      padding-right: 6em; } }
+@media only screen and (min-width: 60em) {
+  .layout, .layout--right, .col.layout--right {
+    padding-right: 6em; } }
 
 .layout {
   box-sizing: border-box; }

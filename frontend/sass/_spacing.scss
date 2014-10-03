@@ -913,3 +913,84 @@
     .ml-xxxl--xlarge    { @include rem(margin-left,$space-xxxl);}
     .ml-xxxxl--xlarge   { @include rem(margin-left,$space-xxxxl);}
 }
+
+%remove-section {
+    padding-bottom:0;
+    padding-top:0;
+}
+
+%remove-layout {
+    padding-left:0;
+    padding-right:0;
+}
+
+.layout-xxxl {
+    @extend %pl-xxxl;
+    @extend %pr-xxxl;
+}
+
+.layout-xxl {
+    @extend %pl-xxl;
+    @extend %pr-xxl;
+}
+
+.layout-xl {
+    @extend %pl-xl;
+    @extend %pr-xl;
+}
+
+.layout-l {
+    @extend %pl-l;
+    @extend %pr-l;
+}
+
+.layout-m {
+    @extend %pl-m;
+    @extend %pr-m;
+}
+
+.layout-s {
+    @extend %pl-s;
+    @extend %pr-s;
+}
+
+.layout-xs {
+    @extend %pl-xs;
+    @extend %pr-xs;
+}
+
+
+.section-xxxl {
+    @extend %pt-xxxl;
+    @extend %pb-xxxl;
+}
+
+.section-xxl {
+    @extend %pt-xxl;
+    @extend %pb-xxl;
+}
+
+.section-xl {
+    @extend %pt-xl;
+    @extend %pb-xl;
+}
+
+.section-l {
+    @extend %pt-l;
+    @extend %pb-l;
+}
+
+.section-m {
+    @extend %pt-m;
+    @extend %pb-m;
+}
+
+.section-s {
+    @extend %pt-s;
+    @extend %pb-s;
+}
+
+.section-xs {
+    @extend %pt-xs;
+    @extend %pb-xs;
+}

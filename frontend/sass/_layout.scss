@@ -183,11 +183,11 @@
 
 
 // ----------------------------------------------------------------------------
-// vertical spacing combines padding helpers :) 
+// main section's vertical spacing
 // ----------------------------------------------------------------------------
 
 
-.section-xxxxl, 
+//.section-xxxxl, 
 .section {
     @extend %pt-xxxxl;
     @extend %pb-xxxxl;
@@ -201,147 +201,13 @@
     }
 }
 
-%section-xxxl {
-    @extend %pt-xxxl;
-    @extend %pb-xxxl;
-}
-
-%section-xxl {
-    @extend %pt-xxl;
-    @extend %pb-xxl;
-}
-
-%section-xl {
-    @extend %pt-xl;
-    @extend %pb-xl;
-}
-
-%section-l {
-    @extend %pt-l;
-    @extend %pb-l;
-}
-
-%section-m {
-    @extend %pt-m;
-    @extend %pb-m;
-}
-
-%section-s {
-    @extend %pt-s;
-    @extend %pb-s;
-}
-
-%section-xs {
-    @extend %pt-xs;
-    @extend %pb-xs;
-}
-
-.section-xxxxl { @extend %section-xxxxl;}
-.section-xxxl { @extend %section-xxxl;}
-.section-xxl { @extend %section-xxl;}
-.section-xl { @extend %section-xl;}
-.section-l { @extend %section-l;}
-.section-m { @extend %section-m;}
-.section-s { @extend %section-s;}
-.section-xs { @extend %section-xs;}
-
-
-%remove-section {
-    padding-bottom:0;
-    padding-top:0;
-}
-
-
-
 // ----------------------------------------------------------------------------
-// horizontal spacing - work on this 
+// main sections vertical spacing 
 // ----------------------------------------------------------------------------
-
-.layout-xxxxl {
-    @extend %pl-xxxxl;
-    @extend %pr-xxxxl;
-
-    @include small-down() {
-        & {
-            @include rem(padding-left, $space-xxxl);
-            @include rem(padding-right, $space-xxxl);
-        }
-    }
-}
-
-%layout-xxxl {
-    @extend %pl-xxxl;
-    @extend %pr-xxxl;
-}
-
-%layout-xxl {
-    @extend %pl-xxl;
-    @extend %pr-xxl;
-}
-
-%layout-xl {
-    @extend %pl-xl;
-    @extend %pr-xl;
-}
-
-%layout-l {
-    @extend %pl-l;
-    @extend %pr-l;
-}
-
-%layout-m {
-    @extend %pl-m;
-    @extend %pr-m;
-}
-
-%layout-s {
-    @extend %pl-s;
-    @extend %pr-s;
-}
-
-%layout-xs {
-    @extend %pl-xs;
-    @extend %pr-xs;
-}
-
-.layout-xxxxl { @extend %layout-xxxxl;}
-.layout-xxxl { @extend %layout-xxxl;}
-.layout-xxl { @extend %layout-xxl;}
-.layout-xl { @extend %layout-xl;}
-.layout-l { @extend %layout-l;}
-.layout-m { @extend %layout-m;}
-.layout-s { @extend %layout-s;}
-.layout-xs { @extend %layout-xs;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 %layout-left {
-    padding-left: 1rem;
-    @include medium {
-        & {
-            padding-left: 4em;
-        }
-    }
+    @extend %pl-m;
+    @extend %pl-xxxxl--medium;
     @include large {
         & {
             padding-left: 6em;
@@ -350,21 +216,14 @@
 }
 
 %layout-right {
-    padding-right: 1rem;
-    @include medium {
-        & {
-            padding-right: 4em;
-        }
-    }
+    @extend %pr-m;
+    @extend %pr-xxxxl--medium;
     @include large {
         & {
             padding-right: 6em;
         }
     }
 }
-
-
-
 
 .layout {
     box-sizing:border-box;
@@ -386,14 +245,13 @@
     }
 }
 
-%remove-layout {
-    padding-left:0;
-    padding-right:0;
-}
+
+
 
 /******************************
     layout modifiers
 ******************************/
+
 .layout--nudge {
     position:relative;
 
