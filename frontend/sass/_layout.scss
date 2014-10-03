@@ -21,6 +21,166 @@
 }
 
 // add different sizes :) 
+// ----------------------------------------------------------------------------
+// Grid
+// ----------------------------------------------------------------------------
+
+/*------------------------------------*\
+    #GRID STYLES
+\*------------------------------------*/
+
+.grid {
+    font-size: 0;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    
+    @include medium {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    & > * {
+        @extend %inline-block;
+        font-size: medium;
+    }
+
+    & > .grid {
+        @extend %inline-block;
+        font-size: 0;  
+    }
+}
+
+    .grid > *,
+    .grid__item {
+        vertical-align: top;
+    }
+
+
+// ----------------------------------------------------------------------------
+// grid modififers
+// ----------------------------------------------------------------------------
+.grid--justify {
+    text-align: justify;
+    font-size: 0;
+
+    & > * {
+        @extend %inline-block;
+        text-align: left;
+        float: none;
+        font-size: medium;
+    }
+
+    &:after {
+        @extend %inline-block;
+        height: 0;
+        width: 100%;
+        content: '';
+    }
+}
+
+.grid--center { text-align:center;}
+
+.grid--middle {
+    > * { vertical-align: middle; }
+}
+
+.grid--bottom {
+    > * { vertical-align: bottom; }
+}
+
+.grid--flip-small {
+    @include small-down {
+        direction: rtl;
+        & > * {
+            direction: ltr;
+        }
+    }
+}
+
+
+.grid--float {
+    @extend %clearfix;
+    & > * {
+        @extend %inline-block;
+        float:left;
+    } 
+}
+
+
+.grid--table {
+
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    .col & {
+        //if the grid is nested reset the width
+        width:auto;
+    }
+    & > * {
+        display: table-cell;
+    }
+   
+}
+
+/* extends grid--table */
+
+    .grid.large-grid--table,
+    .grid.medium-grid--table {
+        margin-left:0;
+        margin-right:0;
+    }
+
+    .medium-grid--table {
+
+        @include medium {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+            & > * {
+                display: table-cell;
+            }
+        }
+    }
+
+    .large-grid--table {
+        @include large {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+            & > * {
+                display: table-cell;
+            }
+        }
+    }
+
+// ----------------------------------------------------------------------------
+// column info
+// ----------------------------------------------------------------------------
+
+
+%column-padding {
+
+    padding-left: .5rem;
+    padding-right: .5rem;
+
+    @include medium {
+        & {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}
+
+.col {
+    @extend %column-padding;
+    width:100%;
+}
+
+.gutters { @extend %column-padding;}
+
+.col--no-gutters { width:100%; }
+
+
 
 // ----------------------------------------------------------------------------
 // vertical spacing combines padding helpers :) 

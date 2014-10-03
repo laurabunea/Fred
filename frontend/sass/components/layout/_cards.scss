@@ -4,21 +4,16 @@
  */
 
 .card {
-    border-radius: $r-small;
+    @extend %mb-m;
+    @extend %pl-s;
+    @extend %pr-s;
+    @extend %pl-s--medium;
+    @extend %pr-s--medium;
+    border-radius: .25rem;
     padding-top: 1.25em;
     padding-bottom: 1.25em;
-
-    margin-bottom: $space;
     border: solid 1px #e2e2e2;
     background: #fff;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 
-    padding-left: $space/2;
-    padding-right: $space/2;
-
-
-    @include medium {
-        padding-left: $space;
-        padding-right: $space;
-    }
 }

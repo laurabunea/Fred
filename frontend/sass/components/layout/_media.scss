@@ -4,9 +4,9 @@
  */
 
 .media {
+    @extend %mr-xxxl;
+    @extend %mb-xxl;
     overflow: hidden;
-    margin-bottom: 32px;
-    margin-bottom: 2rem;
 }
 
 .media--squishy {
@@ -15,10 +15,9 @@
     }
 }
 
-
     .media__image {
         float: left;
-        margin-right: $space;
+        @extend %mr-m;
 
         > img {
             display: block;

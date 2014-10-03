@@ -1,173 +1,143 @@
-/*------------------------------------*\
-    #GRID STYLES
-\*------------------------------------*/
+// /*------------------------------------*\
+//     #GRID STYLES
+// \*------------------------------------*/
 
-.grid {
-    font-size: 0;
-    margin-left: -.5rem;
-    margin-right: -.5rem;
+// .grid {
+//     font-size: 0;
+//     margin-left: -.5rem;
+//     margin-right: -.5rem;
     
-    @include medium {
-        margin-left: -1rem;
-        margin-right: -1rem;
-    }
+//     @include medium {
+//         margin-left: -1rem;
+//         margin-right: -1rem;
+//     }
 
-    & > * {
-        @extend %inline-block;
-        font-size: medium;
-    }
+//     & > * {
+//         @extend %inline-block;
+//         font-size: medium;
+//     }
 
-    & > .grid {
-        @extend %inline-block;
-        font-size: 0;  
-    }
-}
+//     & > .grid {
+//         @extend %inline-block;
+//         font-size: 0;  
+//     }
+// }
 
-.grid--justify {
-    text-align: justify;
-    font-size: 0;
+// .grid--justify {
+//     text-align: justify;
+//     font-size: 0;
 
-    & > * {
-        @extend %inline-block;
-        text-align: left;
-        float: none;
-        font-size: medium;
-    }
+//     & > * {
+//         @extend %inline-block;
+//         text-align: left;
+//         float: none;
+//         font-size: medium;
+//     }
 
-    &:after {
-        @extend %inline-block;
-        height: 0;
-        width: 100%;
-        content: '';
-    }
-}
+//     &:after {
+//         @extend %inline-block;
+//         height: 0;
+//         width: 100%;
+//         content: '';
+//     }
+// }
 
 
-    // Font-size medium reset the block to the context of body (ie, 16px)
-    %grid__item {
-        @extend %inline-block;
-        vertical-align: top;
-        text-align:left;
-        font-size: medium;
-        text-justify: auto;                 /* [3] */
-    }
+//     // Font-size medium reset the block to the context of body (ie, 16px)
+//     %grid__item {
+//         @extend %inline-block;
+//         vertical-align: top;
+//         text-align:left;
+//         font-size: medium;
+//         text-justify: auto;                 /* [3] */
+//     }
 
-    .grid > *,
-    .grid__item {
-        vertical-align: top;
-    }
+//     .grid > *,
+//     .grid__item {
+//         vertical-align: top;
+//     }
     
-    %grid:after,
-    %grid__break {
-        @extend %inline-block; // This extend is found in core 
-        @extend %col-padding;
-        width:100%;
-        height: 0;
-        content: '';
-    }
+//     %grid:after,
+//     %grid__break {
+//         @extend %inline-block; // This extend is found in core 
+//         @extend %column-padding;
+//         width:100%;
+//         height: 0;
+//         content: '';
+//     }
 
 
-// ----------------------------------------------------------------------------
-// grid modififers
-// ----------------------------------------------------------------------------
+// // ----------------------------------------------------------------------------
+// // grid modififers
+// // ----------------------------------------------------------------------------
 
-.grid--center { text-align:center;}
+// .grid--center { text-align:center;}
 
-.grid--middle {
-    > * { vertical-align: middle; }
-}
+// .grid--middle {
+//     > * { vertical-align: middle; }
+// }
 
-.grid--bottom {
-    > * { vertical-align: bottom; }
-}
+// .grid--bottom {
+//     > * { vertical-align: bottom; }
+// }
 
-.grid--flip-small {
-    @include small-down {
-        direction: rtl;
-        & > * {
-            direction: ltr;
-        }
-    }
-}
+// .grid--flip-small {
+//     @include small-down {
+//         direction: rtl;
+//         & > * {
+//             direction: ltr;
+//         }
+//     }
+// }
 
-.grid--table {
-//do we need this to be just above large and why the 100% as this breaks with nested grids 
-    //@include large {
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-        .col & {
-            //if the grid is nested reset the width
-            width:auto;
-        }
-        & > * {
-            display: table-cell;
+// .grid--float {
+//     @extend %clearfix;
+//     & > * {
+//         @extend %inline-block;
+//         float:left;
+//     } 
+// }
 
-        }
-    //}
+// .grid--table {
 
-}
+//     display: table;
+//     table-layout: fixed;
+//     width: 100%;
+//     .col & {
+//         //if the grid is nested reset the width
+//         width:auto;
+//     }
+//     & > * {
+//         display: table-cell;
+//     }
+   
+// }
 
-.grid.large-grid--table,
-.grid.medium-grid--table {
-    margin-left:0;
-    margin-right:0;
-}
+// .grid.large-grid--table,
+// .grid.medium-grid--table {
+//     margin-left:0;
+//     margin-right:0;
+// }
 
-.grid--float {
-    @extend %clearfix;
-    & > * {
-        @extend %inline-block;
-        float:left;
-    } 
-}
-.medium-grid--table {
+// .medium-grid--table {
 
-    @include medium {
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-        & > * {
-            display: table-cell;
-        }
-    }
-}
+//     @include medium {
+//         display: table;
+//         table-layout: fixed;
+//         width: 100%;
+//         & > * {
+//             display: table-cell;
+//         }
+//     }
+// }
 
-.large-grid--table {
-    @include large {
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-        & > * {
-            display: table-cell;
-        }
-    }
-}
-
-
-%col-padding {
-
-    padding-left: .5rem;
-    padding-right: .5rem;
-
-    @include medium {
-        & {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-    }
-}
-
-.col {
-    @extend %col-padding;
-    width:100%;
-}
-.gutters {
-    @extend %col-padding;
-}
-.col__padding {
-    @extend %col-padding;
-}
-.col--no-gutters {
-    width:100%;
-}
+// .large-grid--table {
+//     @include large {
+//         display: table;
+//         table-layout: fixed;
+//         width: 100%;
+//         & > * {
+//             display: table-cell;
+//         }
+//     }
+// }
