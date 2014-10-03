@@ -20,7 +20,6 @@
 // First child helpers  
 // -----------------------------------------------------------------------------
 
-
 //Remove top margin
 %first-child-no-top:first-child {
     margin-top: 0;
@@ -129,6 +128,7 @@
     white-space: nowrap;
     max-width: 100%;
 }
+
 .text--overflow {
     @extend %text--overflow;
 }
@@ -170,15 +170,6 @@
 .list--block { @extend %list--block; }
 .list--inline { @extend %list--inline; }
 .list--unstyled { @extend %list--unstyled; }
-
-
-
-%center-element {
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.center-element { @extend %center-element; } 
 
 
 

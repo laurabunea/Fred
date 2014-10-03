@@ -128,7 +128,6 @@ img { border: 0;}
 */
 
 //layout
-@import "components/layout/grid";
 @import "components/layout/table";
 @import "components/layout/swatch";
 @import "components/layout/media";
@@ -150,20 +149,6 @@ img { border: 0;}
 @import "components/list";
 @import "components/pills";
 @import "components/avatar";
-
-//forms
-@import "components/form/_fieldset";
-@import "components/form/_field";
-@import "components/form/_field--number";
-@import "components/form/_field--text";
-@import "components/form/_field--error";
-@import "components/form/_field--link";
-@import "components/form/_field--prev-next";
-@import "components/form/_field--email-plus-submit";
-@import "components/form/_field--radio-button-list";
-@import "components/form/_field--details";
-@import "components/form/_field--radio-button-group";
-@import "components/form/_field--submit";
 
 
 
@@ -251,6 +236,12 @@ img { border: 0;}
 //.align--middle { vertical-align: middle; }
 .align--baseline {vertical-align: baseline; } 
 .align--bottom { vertical-align: bottom; } 
+
+.center-element { 
+    margin-left:auto;
+    margin-right:auto; 
+} 
+
 
 .overflow-hidden { overflow: hidden; }
 

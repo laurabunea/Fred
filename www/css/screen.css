@@ -2367,10 +2367,6 @@ fieldset {
 .list--block > li {
   display: block; }
 
-.center-element {
-  margin-left: auto;
-  margin-right: auto; }
-
 .bt--primary, .radio-button-list > li {
   border-top: 1px solid #F2F2EB; }
 
@@ -2798,9 +2794,6 @@ sub {
   margin-left: auto;
   margin-right: auto; }
 
-/*------------------------------------*\
-    #GRID STYLES
-\*------------------------------------*/
 .grid {
   font-size: 0;
   margin-left: -0.5rem;
@@ -4432,6 +4425,10 @@ pre {
 
 .align--bottom {
   vertical-align: bottom; }
+
+.center-element {
+  margin-left: auto;
+  margin-right: auto; }
 
 .overflow-hidden {
   overflow: hidden; }
