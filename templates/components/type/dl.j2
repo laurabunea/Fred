@@ -6,7 +6,7 @@
         </h3>
 
     {% endif %}
-    <dl>
+    <dl {% if item.inline %}class='dl--inline'{% endif %}>
 
     {% for item in item.data %}
 

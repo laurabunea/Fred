@@ -22,6 +22,26 @@
                 ],
                 "total":"<strong>$111.70</strong>"
             }
+        },
+        {
+            "title": "Inline definition list",
+            "notes":"",
+            "example": {
+                "type": "type/dl",
+                "inline":true,
+                "heading":"Full licence costs",
+                "data": [
+                    {
+                        "left": "Application fee",
+                        "right": "$50"
+                    },
+                    {
+                        "left": "Test fee",
+                        "right": "$61.70"
+                    }
+                ],
+                "total":"<strong>$111.70</strong>"
+            }
         }
     ]
 }

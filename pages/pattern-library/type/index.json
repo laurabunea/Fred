@@ -67,6 +67,11 @@
             "type" : "/pattern-library/section-block-with-api-example",
             "anchor": "dl",
             "component": "components/type/dl"
+        },
+        {
+            "type" : "/pattern-library/section-block-with-api-example",
+            "anchor": "dl",
+            "component": "components/type/blockquote"
         }
     ]
 }

@@ -110,18 +110,18 @@ body {
 img {
   border: 0; }
 
-.pt-0, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item {
+.pt-0, .btn, button, .btn--submit, .nav_item {
   padding-top: 0; }
 
-.pt-xxs, .segmented-control--timeslots label span {
+.pt-xxs {
   padding-top: 4px;
   padding-top: 0.25rem; }
 
-.pt-xs, .section-xs, li ul, li ol, .segmented-control label, .device .device__menu {
+.pt-xs, .section-xs, li ul, li ol, .device .device__menu {
   padding-top: 8px;
   padding-top: 0.5rem; }
 
-.pt-s, .section-s, .swatch__top, .swatch__bottom, .swatch, .field, [type='text'], [type='email'], [type='date'], [type='number'], .radio-button-list label, .segmented-control--timeslots label {
+.pt-s, .section-s, .swatch__top, .swatch__bottom, .swatch {
   padding-top: 12px;
   padding-top: 0.75rem; }
 
@@ -129,7 +129,7 @@ img {
   padding-top: 16px;
   padding-top: 1rem; }
 
-.pt-l, .section-l, blockquote, .highlight-top, .flego-navigation, .flego-components {
+.pt-l, .section-l, blockquote, .highlight-top, .card, .flego-navigation, .flego-components {
   padding-top: 20px;
   padding-top: 1.25rem; }
 
@@ -149,7 +149,7 @@ img {
   padding-top: 48px;
   padding-top: 3rem; }
 
-.pb-0, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item {
+.pb-0, .btn, button, .btn--submit, .nav_item {
   padding-bottom: 0; }
 
 .pb-xxs {
@@ -160,7 +160,7 @@ img {
   padding-bottom: 8px;
   padding-bottom: 0.5rem; }
 
-.pb-s, .section-s, .swatch__top, .swatch__bottom, .swatch, .field, [type='text'], [type='email'], [type='date'], [type='number'], .radio-button-list label, .segmented-control label, .segmented-control--timeslots label {
+.pb-s, .section-s, .swatch__top, .swatch__bottom, .swatch {
   padding-bottom: 12px;
   padding-bottom: 0.75rem; }
 
@@ -168,7 +168,7 @@ img {
   padding-bottom: 16px;
   padding-bottom: 1rem; }
 
-.pb-l, .section-l, .highlight-bottom {
+.pb-l, .section-l, .highlight-bottom, .card {
   padding-bottom: 20px;
   padding-bottom: 1.25rem; }
 
@@ -188,7 +188,7 @@ img {
   padding-bottom: 48px;
   padding-bottom: 3rem; }
 
-.pr-0, .nav_item, .radio-button-list label {
+.pr-0, .nav_item {
   padding-right: 0; }
 
 .pr-xxs, .breadcrumb > li a:after, .breadcrumb > li .back:before, .breadcrumb > li .close:before {
@@ -199,11 +199,11 @@ img {
   padding-right: 8px;
   padding-right: 0.5rem; }
 
-.pr-s, .layout-s, .swatch, .card, .btn.btn--small, .nav_item.theme.small, .field, [type='text'], [type='email'], [type='date'], [type='number'], .segmented-control--timeslots label {
+.pr-s, .layout-s, .swatch, .card, .btn.btn--small, .nav_item.theme.small {
   padding-right: 12px;
   padding-right: 0.75rem; }
 
-.pr-m, .layout-m, .layout, .layout--right, .col.layout--right, .anchor-links, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item.theme, .next-link, pre {
+.pr-m, .layout-m, .layout, .layout--right, .col.layout--right, .anchor-links, .btn, button, .btn--submit, .nav_item.theme, pre {
   padding-right: 16px;
   padding-right: 1rem; }
 
@@ -238,11 +238,11 @@ img {
   padding-left: 8px;
   padding-left: 0.5rem; }
 
-.pl-s, .layout-s, .swatch, .card, .btn.btn--small, .nav_item.small, .field, [type='text'], [type='email'], [type='date'], [type='number'], .segmented-control--timeslots label {
+.pl-s, .layout-s, .swatch, .card, .btn.btn--small, .nav_item.small {
   padding-left: 12px;
   padding-left: 0.75rem; }
 
-.pl-m, .layout-m, .layout, .layout--left, .col.layout--left, .anchor-links, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item, ul, ol, .prev-link, pre, .code__anchor {
+.pl-m, .layout-m, .layout, .layout--left, .col.layout--left, .anchor-links, .btn, button, .btn--submit, .nav_item, ul, ol, pre, .code__anchor {
   padding-left: 16px;
   padding-left: 1rem; }
 
@@ -258,7 +258,7 @@ img {
   padding-left: 28px;
   padding-left: 1.75rem; }
 
-.pl-xxxl, .layout-xxxl, .radio-button-list label {
+.pl-xxxl, .layout-xxxl {
   padding-left: 32px;
   padding-left: 2rem; }
 
@@ -266,18 +266,18 @@ img {
   padding-left: 48px;
   padding-left: 3rem; }
 
-.mt-0, h1, h2, h3, h4, h5, h6, p, .text, li, code, .intro, ul, li, p, .text, code, ul, ol, td, dl, .breadcrumb > li, .anchor-links li, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .nav_item, .prev-link, .next-link, .radio-button-list > li {
+.mt-0, h1, h2, h3, h4, h5, h6, p, .text, li, code, .intro, ul, li, p, .text, code, ul, ol, td, dl, .breadcrumb > li, .anchor-links li, .btn, button, .btn--submit, .nav_item {
   margin-top: 0; }
 
-.mt-xxs, .field__label + .field__note {
+.mt-xxs {
   margin-top: 4px;
   margin-top: 0.25rem; }
 
-.mt-xs, li, .action > span, .field__label + .field__input, .field__note + .field__note, .field__input + .field__note {
+.mt-xs, li, .action > span {
   margin-top: 8px;
   margin-top: 0.5rem; }
 
-.mt-s, .field__note + .field__input {
+.mt-s {
   margin-top: 12px;
   margin-top: 0.75rem; }
 
@@ -293,7 +293,7 @@ img {
   margin-top: 24px;
   margin-top: 1.5rem; }
 
-.mt-xxl, hr, .field--link {
+.mt-xxl, hr {
   margin-top: 28px;
   margin-top: 1.75rem; }
 
@@ -316,7 +316,7 @@ img {
   margin-bottom: 8px;
   margin-bottom: 0.5rem; }
 
-.mb-s, .breadcrumb {
+.mb-s, dd, .breadcrumb {
   margin-bottom: 12px;
   margin-bottom: 0.75rem; }
 
@@ -336,7 +336,7 @@ img {
   margin-bottom: 28px;
   margin-bottom: 1.75rem; }
 
-.mb-xxxl, h1, .font-font-size-xxxl, .intro:last-child, .field, .field--select, .field--number, .field--text, .field--prev-next, .field--email-plus-submit, .field--radio-button-list, .field--details, .field--radio-button-group, .field--submit {
+.mb-xxxl, h1, .font-font-size-xxxl, .intro:last-child {
   margin-bottom: 32px;
   margin-bottom: 2rem; }
 
@@ -417,12 +417,6 @@ img {
 .ml-xxxxl {
   margin-left: 48px;
   margin-left: 3rem; }
-
-fieldset {
-  padding: 0; }
-
-fieldset {
-  margin: 0; }
 
 @media only screen and (max-width: 29em) {
   .pt-0--xsmall {
@@ -2299,7 +2293,7 @@ fieldset {
 /*------------------------------------*\
     #Utilities
 \*------------------------------------*/
-.inline-block, .text--overflow, .breadcrumb > li, .i, .grid > *, .grid > .grid, .grid--justify > *, .grid--justify:after, .grid--float > *, .breadcrumb > li:last-child, .btn, button, .btn--submit, .email-wrapper input[type='submit'], .action__icon, .nav_item, .field--bare, .segmented-control > li {
+.inline-block, .text--overflow, .breadcrumb > li, .i, .grid > *, .grid > .grid, .grid--justify > *, .grid--justify:after, .grid--float > *, .breadcrumb > li:last-child, .btn, button, .btn--submit, .action__icon, .nav_item {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
@@ -2316,20 +2310,20 @@ fieldset {
   .isWindowsChrome .antialiased {
     -webkit-font-smoothing: subpixel-antialiased; }
 
-.clearfix, .list--inline, .breadcrumb, .nav, .flego-navigation, .grid--float, .field--link, .field--prev-next, .radio-button-list > li, .field--radio-button-group, .segmented-control {
+.clearfix, .list--inline, .breadcrumb, .nav, .flego-navigation, .grid--float {
   /**
      * For IE 6/7 only
      * Include this rule to trigger hasLayout and contain floats.
      */
   *zoom: 1; }
 
-.clearfix:before, .list--inline:before, .breadcrumb:before, .nav:before, .flego-navigation:before, .grid--float:before, .field--link:before, .field--prev-next:before, .radio-button-list > li:before, .field--radio-button-group:before, .segmented-control:before {
+.clearfix:before, .list--inline:before, .breadcrumb:before, .nav:before, .flego-navigation:before, .grid--float:before {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after, .list--inline:after, .breadcrumb:after, .nav:after, .flego-navigation:after, .grid--float:after, .field--link:after, .field--prev-next:after, .radio-button-list > li:after, .field--radio-button-group:after, .segmented-control:after {
+.clearfix:after, .list--inline:after, .breadcrumb:after, .nav:after, .flego-navigation:after, .grid--float:after {
   clear: both;
   content: " ";
   /* 1 */
@@ -2352,10 +2346,10 @@ fieldset {
   white-space: nowrap;
   max-width: 100%; }
 
-.list--inline, .breadcrumb, .nav, .flego-navigation, .list--block, .list--unstyled, .anchor-links, .radio-button-list, .segmented-control, .segmented-control--1-segments, .segmented-control--2-segments, .segmented-control--3-segments, .segmented-control--4-segments, .segmented-control--5-segments, .segmented-control--6-segments, .segmented-control--7-segments, .segmented-control--8-segments, .segmented-control--9-segments, .segmented-control--10-segments, .segmented-control--11-segments, .segmented-control--12-segments {
+.list--inline, .breadcrumb, .nav, .flego-navigation, .list--block, .list--unstyled, .anchor-links {
   list-style: none;
   padding-left: 0; }
-  .list--unstyled > li, .anchor-links > li, .radio-button-list > li, .segmented-control > li, .segmented-control--1-segments > li, .segmented-control--2-segments > li, .segmented-control--3-segments > li, .segmented-control--4-segments > li, .segmented-control--5-segments > li, .segmented-control--6-segments > li, .segmented-control--7-segments > li, .segmented-control--8-segments > li, .segmented-control--9-segments > li, .segmented-control--10-segments > li, .segmented-control--11-segments > li, .segmented-control--12-segments > li {
+  .list--unstyled > li, .anchor-links > li {
     list-style: none;
     margin: 0; }
 
@@ -2367,10 +2361,10 @@ fieldset {
 .list--block > li {
   display: block; }
 
-.bt--primary, .radio-button-list > li {
+.bt--primary {
   border-top: 1px solid #F2F2EB; }
 
-.bb--primary, .radio-button-list {
+.bb--primary {
   border-bottom: 1px solid #F2F2EB; }
 
 .bl--primary {
@@ -2379,7 +2373,7 @@ fieldset {
 .br--primary {
   border-right: 1px solid #F2F2EB; }
 
-.cursor-on-hover:hover, .btn--submit:hover, .segmented-control label:hover {
+.cursor-on-hover:hover, .btn--submit:hover {
   cursor: pointer; }
 
 .clean-link {
@@ -2387,7 +2381,7 @@ fieldset {
   .clean-link:hover, .clean-link:active, .clean-link:focus {
     text-decoration: none; }
 
-.swatch, .segmented-control--1-segments li {
+.swatch {
   border-radius: 4px;
   border-radius: 0.25rem; }
 
@@ -2402,34 +2396,6 @@ fieldset {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 4px;
   border-top-right-radius: 0.25rem; }
-
-.segmented-control--2-segments li:first-child, .segmented-control--3-segments li:first-child, .segmented-control--4-segments li:first-child, .segmented-control--5-segments li:first-child {
-  border-top-left-radius: 4px;
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 4px;
-  border-bottom-left-radius: 0.25rem; }
-
-.segmented-control--2-segments li:last-child, .segmented-control--3-segments li:last-child, .segmented-control--4-segments li:last-child, .segmented-control--5-segments li:last-child, .segmented-control--7-segments li:nth-child(4) {
-  border-top-right-radius: 4px;
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 4px;
-  border-bottom-right-radius: 0.25rem; }
-
-.segmented-control--6-segments li:nth-child(3), .segmented-control--8-segments li:nth-child(4), .segmented-control--9-segments li:nth-child(3), .segmented-control--10-segments li:nth-child(5), .segmented-control--11-segments li:nth-child(4), .segmented-control--12-segments li:nth-child(4) {
-  border-top-right-radius: 4px;
-  border-top-right-radius: 0.25rem; }
-
-.segmented-control > li:last-child, .segmented-control--11-segments li:nth-child(8) {
-  border-bottom-right-radius: 4px;
-  border-bottom-right-radius: 0.25rem; }
-
-.segmented-control > li:first-child {
-  border-top-left-radius: 4px;
-  border-top-left-radius: 0.25rem; }
-
-.segmented-control--6-segments li:nth-child(4), .segmented-control--7-segments li:nth-child(5), .segmented-control--8-segments li:nth-child(5), .segmented-control--9-segments li:nth-child(7), .segmented-control--10-segments li:nth-child(6), .segmented-control--11-segments li:nth-child(9), .segmented-control--12-segments li:nth-child(9) {
-  border-bottom-left-radius: 4px;
-  border-bottom-left-radius: 0.25rem; }
 
 .i-section, .action__icon {
   border-radius: 50em; }
@@ -2650,12 +2616,12 @@ h5, .font-size-m, h6, p, .text, code, dt, dd, td, th, li {
   font-size: 1rem;
   line-height: 1.5; }
 
-.small, cite, .btn.btn--x-small, .btn.btn--small, .action > span, .pill, .pill--roadworks, .pill--orange, .field__note {
+.small, cite, .btn.btn--x-small, .btn.btn--small, .action > span, .pill, .pill--roadworks, .pill--orange {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.4285714286; }
 
-.tiny, .segmented-control label span, pre {
+.tiny, pre {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1.3333333333; }
@@ -2732,8 +2698,7 @@ dt {
   font-weight: 600; }
 
 dd {
-  margin-left: 0;
-  margin-bottom: 8; }
+  margin-left: 0; }
 
 .dl--inline dd, .dl--inline dt {
   display: inline;
@@ -2884,13 +2849,6 @@ sub {
 .col--no-gutters {
   width: 100%; }
 
-@media only screen and (max-width: 59em) {
-  .section {
-    padding-top: 32px;
-    padding-top: 2rem;
-    padding-bottom: 32px;
-    padding-bottom: 2rem; } }
-
 @media only screen and (min-width: 60em) {
   .layout, .layout--left, .col.layout--left {
     padding-left: 6em; } }
@@ -2917,30 +2875,6 @@ sub {
       margin-top: -2em; } }
   .layout--nudge + .layout--nudge {
     margin-top: 0; }
-
-.ratio-square, .ratio-filmic {
-  position: relative;
-  height: 0; }
-  .ratio-square > *, .ratio-filmic > * {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0; }
-
-.ratio-square {
-  padding-bottom: 100%; }
-
-.crop {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden; }
-
-.crop--bottom > img {
-  width: 100%;
-  position: absolute;
-  bottom: 0; }
 
 .full-width {
   width: 100%; }
@@ -3332,16 +3266,16 @@ sub {
   background-color: #5e9b91;
   color: #fff; }
 
-.btn--primary, .btn--submit, .email-wrapper input[type='submit'] {
+.btn--primary, .btn--submit {
   background-color: #37b67f;
   color: #fff;
   border: #37b67f; }
-  .btn--primary:visited, .btn--submit:visited, .email-wrapper input[type='submit']:visited {
+  .btn--primary:visited, .btn--submit:visited {
     color: #fff; }
-  .btn--primary:hover, .btn--submit:hover, .email-wrapper input[type='submit']:hover {
+  .btn--primary:hover, .btn--submit:hover {
     background-color: #2b8f64;
     color: #fff; }
-  .btn--primary:active, .btn--submit:active, .email-wrapper input[type='submit']:active {
+  .btn--primary:active, .btn--submit:active {
     color: #fff;
     background-color: #37b67f; }
 
@@ -3429,6 +3363,30 @@ sub {
   background: rgba(255, 255, 255, 0.85);
   -webkit-animation: fadeIn 0.1s ease-out backwards;
   animation: fadeIn 0.1s ease-out backwards; }
+
+.ratio-square, .ratio-filmic {
+  position: relative;
+  height: 0; }
+  .ratio-square > *, .ratio-filmic > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; }
+
+.ratio-square {
+  padding-bottom: 100%; }
+
+.crop {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden; }
+
+.crop--bottom > img {
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
 
 /**
 ## Components
@@ -3524,8 +3482,6 @@ sub {
  */
 .card {
   border-radius: 0.25rem;
-  padding-top: 1.25em;
-  padding-bottom: 1.25em;
   border: solid 1px #e2e2e2;
   background: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
@@ -3582,7 +3538,7 @@ sub {
 /*------------------------------------*\
     #BUTTONS
 \*------------------------------------*/
-.btn, button, .btn--submit, .email-wrapper input[type='submit'] {
+.btn, button, .btn--submit {
   box-sizing: border-box;
   text-align: center;
   line-height: 2.5rem;
@@ -3594,7 +3550,7 @@ sub {
   -webkit-appearance: none;
   -moz-appearance: none;
   font-size: inherit; }
-  .btn:hover, button:hover, .btn--submit:hover, .email-wrapper input[type='submit']:hover {
+  .btn:hover, button:hover, .btn--submit:hover {
     text-decoration: none; }
 
 button {
@@ -4054,234 +4010,6 @@ li ul, li ol {
 .team__role {
   color: #888; }
 
-/*------------------------------------*\
-    #Fieldset
-\*------------------------------------*/
-fieldset {
-  border: 0; }
-
-/*------------------------------------*\
-    #FIELD
-\*------------------------------------*/
-@media only screen and (max-width: 59em) {
-  .field, .field--select, .field--number, .field--text, .field--prev-next, .field--email-plus-submit, .field--radio-button-list, .field--details, .field--radio-button-group, .field--submit {
-    margin-bottom: 20px;
-    margin-bottom: 1.25rem; } }
-
-.field__label, .field__input {
-  display: block; }
-
-.field__label {
-  font-weight: 600; }
-  .field__label span {
-    font-weight: 400; }
-
-.field, [type='text'], [type='email'], [type='date'], [type='number'] {
-  border-radius: 4px;
-  border-radius: 0.25rem;
-  box-sizing: border-box;
-  margin: 0;
-  width: 100%;
-  display: block;
-  -webkit-appearance: none;
-  border: 1px solid #F2F2EB;
-  background-color: #F2F2EB;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  line-height: 1; }
-
-.field--bare {
-  border: none;
-  background-color: transparent;
-  border-radius: none; }
-
-.field--knockout {
-  color: #555;
-  transition: background-color 0.1s, box-shadow 0.1s;
-  border-width: 3px;
-  border-color: transparent; }
-  .field--knockout:focus, .field--knockout:active {
-    outline: none;
-    border: solid 3px #ff5c00;
-    background-color: #fff; }
-
-label {
-  display: block;
-  color: #00456B; }
-
-select {
-  display: block;
-  width: 100%;
-  padding: 0.5rem;
-  font-family: inherit;
-  font-size: inherit; }
-
-/*------------------------------------*\
-    #FIELD NUMBER
-\*------------------------------------*/
-/*------------------------------------*\
-    #FIELD TEXT
-\*------------------------------------*/
-/*------------------------------------*\
-    #Field error
-\*------------------------------------*/
-.field--error {
-  color: #c44; }
-  .field--error .field__label, .field--error label {
-    color: #c44; }
-
-.field--error [type='text'], .field--error [type='date'], .field--error [type='email'], .field--error [type='number'] {
-  color: #5e5c5c; }
-
-.form--has-errors .field, .form--has-errors .field--select, .form--has-errors .field--number, .form--has-errors .field--text, .form--has-errors .field--prev-next, .form--has-errors .field--email-plus-submit, .form--has-errors .field--radio-button-list, .form--has-errors .field--details, .form--has-errors .field--radio-button-group, .form--has-errors .field--submit {
-  display: none; }
-
-.form--has-errors .field--error, .form--has-errors .field--submit {
-  display: block; }
-
-/*------------------------------------*\
-    #Field link - 
-    this wraps a link in a container so it can apply a consistent top margin to 
-    match the other field components
-\*------------------------------------*/
-/*------------------------------------*\
-    #FIELD PREV AND NEXT BUTTONS
-\*------------------------------------*/
-.field--prev-next {
-  position: relative; }
-
-.prev-link:before, .next-link:after {
-  margin-top: -2px;
-  margin-top: -0.125rem;
-  border-width: 4px;
-  border-width: 0.25rem;
-  width: 0;
-  height: 0;
-  position: relative;
-  top: 50%;
-  content: '';
-  border-color: transparent;
-  border-style: solid; }
-
-.prev-link {
-  float: left; }
-  .prev-link:before {
-    left: 0;
-    border-right-color: #236FA6; }
-
-.next-link {
-  float: right; }
-  .next-link:after {
-    right: 0;
-    border-left-color: #236FA6; }
-
-/*------------------------------------*\
-    #Field email plus submit
-\*------------------------------------*/
-.email-wrapper [type='email'], .email-wrapper input[type='submit'] {
-  height: 44px; }
-
-.email-wrapper [type='email'] {
-  border-top: 4px;
-  border-top: 0.25rem;
-  border-left: 4px;
-  border-left: 0.25rem;
-  float: left;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  width: 70%; }
-.email-wrapper input[type='submit'] {
-  padding: 4px;
-  padding: 0.25rem;
-  line-height: 16px;
-  line-height: 1rem;
-  border-top-left-radius: 0px;
-  border-top-left-radius: 0rem;
-  border-bottom-left-radius: 0px;
-  border-bottom-left-radius: 0rem;
-  border-top-right-radius: 4px;
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 4px;
-  border-bottom-right-radius: 0.25rem;
-  width: 30%;
-  margin-top: 0;
-  margin-bottom: 0; }
-
-/*------------------------------------*\
-    #RADIO BUTTON LIST
-\*------------------------------------*/
-.radio-button-list > li {
-  position: relative; }
-.radio-button-list input {
-  position: absolute;
-  left: 0;
-  top: 32%; }
-.radio-button-list label span {
-  display: block; }
-
-/*------------------------------------*\
-    #Field details
-\*------------------------------------*/
-/*------------------------------------*\
-    #RADIO BUTTON GROUP
-\*------------------------------------*/
-@media only screen and (max-width: 59em) {
-  .field--radio-button-group .field__note {
-    margin-bottom: 4px;
-    margin-bottom: 0.25rem; } }
-
-.segmented-control > li {
-  float: left;
-  position: relative;
-  border: 1px solid #236FA6;
-  margin-right: -1px;
-  margin-bottom: -1px; }
-.segmented-control input {
-  position: absolute;
-  visibility: hidden; }
-.segmented-control label {
-  font-weight: 600;
-  text-align: center;
-  color: #236FA6; }
-  .segmented-control label span {
-    display: block;
-    cursor: pointer; }
-.segmented-control input:checked + label {
-  background: #236FA6;
-  color: #fff; }
-
-.segmented-control--timeslots label {
-  text-align: left; }
-.segmented-control--timeslots label span {
-  float: right; }
-
-.segmented-control--2-segments li {
-  width: 50%; }
-.segmented-control--3-segments li {
-  width: 33.33333333%; }
-.segmented-control--4-segments li {
-  width: 25%; }
-.segmented-control--5-segments li {
-  width: 20%; }
-.segmented-control--6-segments li {
-  width: 33.33333333%; }
-.segmented-control--7-segments li {
-  width: 25%; }
-.segmented-control--8-segments li {
-  width: 25%; }
-.segmented-control--9-segments li {
-  width: 33.33333333%; }
-.segmented-control--10-segments li {
-  width: 20%; }
-.segmented-control--11-segments li {
-  width: 25%; }
-.segmented-control--12-segments li {
-  width: 25%; }
-
-/*------------------------------------*\
-    #FIELD SUBMIT
-\*------------------------------------*/
 /**
  * These styles are just related to the fred prototype website so dirty really need to clean this up 
  */
@@ -4312,12 +4040,6 @@ pre {
   padding: 0 1rem;
   right: 2em;
   margin-bottom: 0; }
-
-.showhide-hidden {
-  display: none !important; }
-
-.showhide-open {
-  display: block !important; }
 
 .showhide-autoheight {
   transition: height 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);

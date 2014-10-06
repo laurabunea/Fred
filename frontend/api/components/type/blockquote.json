@@ -1,0 +1,17 @@
+{
+    "api": {
+        "type": "type/blockquote",
+        "data": []
+    },
+    "examples": [
+        {
+            "title": "Blockquote",
+            "notes":"",
+            "example": {
+                "type": "type/blockquote",
+                "quote": "It was a nice idea",
+                "author": "Arthur t-pot"
+            }
+        }
+    ]
+}
