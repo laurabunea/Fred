@@ -22,7 +22,6 @@
                         "<a href='#first-child' class='pill'>First child helpers</a>",
                         "<a href='#type-rendering' class='pill'>Webkit rendering</a>",
                         "<a href='#append-prepend' class='pill'>Append and Prepend </a>",
-                        "<a href='#clearfixing' class='pill'>Clearfixing</a>",
                         "<a href='#screen-reader' class='pill'>Screen reader content </a>",
                         "<a href='#typography-helpers' class='pill'>Typography helpers </a>",
                         "<a href='#list-helpers' class='pill'>List helpers </a>",
@@ -49,7 +48,7 @@
                 {
                     "type": "code/code",
                     "data": [
-                        "%inline-block { display: inline-block; *display: inline; *zoom: 1;}\n.my-icon { @extend %inline-block; }"
+                        ".inline-block { display: inline-block; }"
                     ]
                 },
                 { 

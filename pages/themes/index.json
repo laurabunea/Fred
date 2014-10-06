@@ -3,12 +3,34 @@
     "headline": "Theme helpers",
     "template":"template.j2",
     "data": [
-        
         {
-            "type": "gallery/dynamic",
+            "type" : "/pattern-library/content-block",
+            "data": [
+                { 
+                    "type": "type/h1",
+                    "data": "Theme Helpers"
+                },
+                { 
+                    "type": "type/intro",
+                    "data": "Here are some handy little classes that will come in useful when building modules for this site."
+                },
+                {
+                    "type": "type/list",
+                    "class": "list--inline",
+                    "data": [
+                        "<a href='#background-colours' class='pill'>Background colours</a>",
+                        "<a href='#text-colours' class='pill'>Text colours</a>",
+                        "<a href='#border-colours' class='pill'>Border colours</a>",
+                        "<a href='#themes' class='pill'>Themes</a>"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "pattern-library/styleguide-container",
             "internal_theme":"theme--white",
             "container_padding":"layout section",
-            "anchor":"themes",
+            "anchor":"background-colours",
             "intro":[
                 {
                     "grid_modifier":"grid--center",
@@ -61,10 +83,10 @@
             ]
         },
         {
-            "type": "gallery/dynamic",
+            "type": "pattern-library/styleguide-container",
             "internal_theme":"theme--dark",
             "container_padding":"layout section",
-            "anchor":"themes",
+            "anchor":"text-colours",
             "intro":[
                 {
                     "grid_modifier":"grid--center",
@@ -124,10 +146,10 @@
             ]
         },
         {
-            "type": "gallery/dynamic",
+            "type": "pattern-library/styleguide-container",
             "internal_theme":"theme--white",
             "container_padding":"layout section",
-            "anchor":"themes",
+            "anchor":"border-colours",
             "intro":[
                 {
                     "grid_modifier":"grid--center",
@@ -176,7 +198,7 @@
             ]
         },
         {
-            "type": "gallery/dynamic",
+            "type": "pattern-library/styleguide-container",
             "internal_theme":"theme--dark",
             "container_padding":"layout section",
             "anchor":"themes",
