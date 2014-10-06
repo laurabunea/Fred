@@ -19,7 +19,7 @@ $icon-bg-red: 100%;
 
 
 %i {
-    @extend %inline-block;
+    display:inline-block;
     width: 1em;
     height: 1em;
     background-size: cover;

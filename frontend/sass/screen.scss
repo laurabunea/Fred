@@ -115,11 +115,7 @@ img { border: 0;}
     -webkit-font-smoothing: antialiased;
 }
 
-%inline-block {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-}
+
 
 %clearfix {
     /**
@@ -240,7 +236,6 @@ img { border: 0;}
 // -----------------------------------------------------------------------------
 // utilities -- Layout
 // -----------------------------------------------------------------------------
-.inline-block { @extend %inline-block; }
 .clearfix { @extend %clearfix; }
 .left { float:left; }
 .right { float:right; }
@@ -298,7 +293,9 @@ img { border: 0;}
     top:0;
 }
 
-.block-element { display:block;}
+.block-element { display:block; }
+
+.inline-block { display: inline-block; }
 
 .prepend{
     &:before{

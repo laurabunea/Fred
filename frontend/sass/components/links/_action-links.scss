@@ -14,7 +14,7 @@ $height-icon-tiny: 2.5em;
 
 .action__icon {
     @extend %round;
-    @extend %inline-block;
+    display:inline-block;
     @include rem(width, $height-circle-large);
     @include rem(height, $height-circle-large);
     text-align: center;

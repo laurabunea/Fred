@@ -37,12 +37,12 @@
     }
 
     & > * {
-        @extend %inline-block;
+        display:inline-block;
         font-size: medium;
     }
 
     & > .grid {
-        @extend %inline-block;
+        display:inline-block;
         font-size: 0;  
     }
 }
@@ -61,14 +61,14 @@
     font-size: 0;
 
     & > * {
-        @extend %inline-block;
+        display:inline-block;
         text-align: left;
         float: none;
         font-size: medium;
     }
 
     &:after {
-        @extend %inline-block;
+        display:inline-block;
         height: 0;
         width: 100%;
         content: '';
@@ -98,7 +98,7 @@
 .grid--float {
     @extend %clearfix;
     & > * {
-        @extend %inline-block;
+        display:inline-block;
         float:left;
     } 
 }

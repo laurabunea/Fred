@@ -17,10 +17,10 @@
         a { @extend %remove-anchor-decoration;}
         
         &:last-child {
-            @extend %inline-block;
+            display:inline-block;
         }
 
-        @include medium() {
+        @include medium {
             display: inline-block;
             *display: inline;
             *zoom: 1;

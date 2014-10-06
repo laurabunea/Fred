@@ -12,12 +12,12 @@ $btn--x-large:3rem;
 
 %btn {
     @extend %remove-anchor-decoration;
-    @extend %inline-block;
     @extend %mt-0;
     @extend %pl-m;
     @extend %pr-m;
     @extend %pb-0;
     @extend %pt-0;
+    display:inline-block;
     box-sizing:border-box;
     text-align:center;
     line-height:$btn--medium;
