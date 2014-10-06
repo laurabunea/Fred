@@ -9,8 +9,40 @@
             "notes":"",
             "example": {
                 "type": "type/blockquote",
-                "quote": "It was a nice idea",
-                "author": "Arthur t-pot"
+                "quote": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+                "author": "Martin Fowler"
+            }
+        },
+        {
+            "title": "Blockquote with quote marks",
+            "notes":"The default colour is the parent colour it inherits, you can overide this by applying a border colour",
+            "example": {
+                "type": "type/blockquote",
+                "quote": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+                "author": "Martin Fowler",
+                "quotes":true
+            }
+        },
+        {
+            "title": "Blockquote with some theme modifiers applied",
+            "notes":"The default colour is the parent colour it inherits, you can overide this by applying a border colour",
+            "example": {
+                "type": "type/blockquote",
+                "quote": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+                "author": "Martin Fowler",
+                "theme":"border--red bg--light-grey"
+            }
+        },
+        {
+            "title": "Blockquote with some handy helpers applied",
+            "notes":"",
+            "example": {
+                "type": "type/blockquote",
+                "quote": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+                "author": "Martin Fowler",
+                "class":"font-italic",
+                "quotes":true,
+                "theme":"border--transparent"
             }
         }
     ]

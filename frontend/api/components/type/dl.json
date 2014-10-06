@@ -29,7 +29,6 @@
             "example": {
                 "type": "type/dl",
                 "inline":true,
-                "heading":"Full licence costs",
                 "data": [
                     {
                         "left": "Application fee",

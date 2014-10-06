@@ -200,6 +200,7 @@ $link-color:
 .bg--black {  background:$black;  }
 .bg--white {  background:$white;  }
 .bg--light-blue {background-color:$light-blue;}
+.bg--light-grey {background-color:$light-grey;}
 .bg--dark-grey {background-color:$dark-grey;}
 .bg--red {background-color:$red;}
 .bg--blue {background-color:$blue;}
@@ -218,40 +219,49 @@ $link-color:
 .text--link-color {color:$base-link-color;}
 .text--soft-pink {color:$soft-pink;}
 
+.border--transparent {  border-color:transparent; }
+.border--red         {  border-color:$red; }
+.border--soft-pink   {  border-color:$soft-pink; }
+.border--orange      {  border-color:$soft-pink; }
+.border--blue        {  border-color:$blue; }
+.border--green       {  border-color:$blue; }
+.border--link-colour {  border-color:$base-link-color; }
 
-.highlight-top { 
-  @extend %pt-l;
-  border-top-width: 4px;
-  border-top-style: solid;
-  border-top-color: inherit;
-}
 
-.highlight-bottom { 
-  @extend %pb-l;
-  border-bottom-width: 4px;
-  border-bottom-style: solid;
-  border-bottom-color: inherit;
-}
-.highlight-left { 
-  @extend %pl-l;
-  border-left-width: 4px;
-  border-left-style: solid;
-  border-left-color: inherit;
-}
 
-.highlight-right { 
-  @extend %pr-l;
-  border-right-width: 4px;
-  border-right-style: solid;
-  border-right-color: inherit;
-}
+// .highlight-top { 
+//   @extend %pt-l;
+//   border-top-width: 4px;
+//   border-top-style: solid;
+//   border-top-color: inherit;
+// }
 
-.highlight--red         {  border-color:$red; }
-.highlight--soft-pink   {  border-color:$soft-pink; }
-.highlight--orange      {  border-color:$soft-pink; }
-.highlight--blue        {  border-color:$blue; }
-.highlight--green       {  border-color:$blue; }
-.highlight--link-colour {  border-color:$base-link-color; }
+// .highlight-bottom { 
+//   @extend %pb-l;
+//   border-bottom-width: 4px;
+//   border-bottom-style: solid;
+//   border-bottom-color: inherit;
+// }
+// .highlight-left { 
+//   @extend %pl-l;
+//   border-left-width: 4px;
+//   border-left-style: solid;
+//   border-left-color: inherit;
+// }
+
+// .highlight-right { 
+//   @extend %pr-l;
+//   border-right-width: 4px;
+//   border-right-style: solid;
+//   border-right-color: inherit;
+// }
+
+// .highlight--red         {  border-color:$red; }
+// .highlight--soft-pink   {  border-color:$soft-pink; }
+// .highlight--orange      {  border-color:$soft-pink; }
+// .highlight--blue        {  border-color:$blue; }
+// .highlight--green       {  border-color:$blue; }
+// .highlight--link-colour {  border-color:$base-link-color; }
 
 
 // ----------------------------------------------------------------------------

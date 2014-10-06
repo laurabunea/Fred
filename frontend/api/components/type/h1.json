@@ -19,15 +19,6 @@
                 "data": " H1 heading",
                 "theme": "text--red"
             }
-        },
-        {
-            "title": "Heading 1 with another theme modifier",
-            "notes":"The highlight left modifier inherits the fonts colour, if you want to change this colour you can apply a colour to overide this. For more theme modifiers <a href ='#'>link to add</a>",
-            "example": {
-                "type": "type/h1",
-                "data": " H1 heading",
-                "theme": "highlight-left highlight--red"
-            }
         }
     ]
 }

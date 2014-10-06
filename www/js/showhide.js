@@ -9,7 +9,7 @@
             var self = this;
             this.$container = $container;
             this.$triggers = $triggers;
-            this.activeClass = "open";
+            this.activeClass = "show";
             this.triggerClass = "showhide-active";
             this.animInClass = false;
             this.animOutClass = false;
