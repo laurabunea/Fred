@@ -111,6 +111,44 @@ body {
 // Remove border when inside `a` element in IE 8/9.
 img { border: 0;}
 
+%fix-text {
+    -webkit-font-smoothing: antialiased;
+}
+
+%inline-block {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+%clearfix {
+    /**
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+    *zoom: 1;
+}
+
+    %clearfix:before {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    %clearfix:after {
+        clear: both;
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+//Remove top margin
+%first-child-no-top:first-child {
+    margin-top: 0;
+}
+
+//Remove top border
+%first-child-no-top-border:first-child {
+    border-top: none;
+}
 
 @import "spacing";
 @import "utilities";
@@ -187,7 +225,11 @@ img { border: 0;}
 .text-left { text-align:left;}
 .text-right { text-align:right;}
 
-
+.text-truncate {
+    white-space: nowrap;           
+    overflow: hidden;       
+    text-overflow: ellipsis;   
+}
 // -----------------------------------------------------------------------------
 // utilities -- Images
 // -----------------------------------------------------------------------------
@@ -198,7 +240,8 @@ img { border: 0;}
 // -----------------------------------------------------------------------------
 // utilities -- Layout
 // -----------------------------------------------------------------------------
-
+.inline-block { @extend %inline-block; }
+.clearfix { @extend %clearfix; }
 .left { float:left; }
 .right { float:right; }
 
@@ -274,6 +317,17 @@ img { border: 0;}
 .hide { display: none; }
 .show { display: block; }
 
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
 // -----------------------------------------------------------------------------
 // utilities -- responsive helpers 
 // -----------------------------------------------------------------------------

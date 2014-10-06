@@ -3,60 +3,7 @@
     "headline": "Theme helpers",
     "template":"template.j2",
     "data": [
-        {
-            "type": "gallery/dynamic",
-            "internal_theme":"theme--dark",
-            "container_padding":"layout section",
-            "anchor":"themes",
-            "intro":[
-                {
-                    "grid_modifier":"grid--center",
-                    "data":[
-                        {
-                            "type":"type/h2",
-                            "data":"Themes "
-                        },
-                        "Themes are modifier classes that control the colour scheme of an individual pattern or component."
-                    ]
-                }
-            ],
-            "columns":[
-                {
-                    "column_size":"",
-                    "data":[
-                         {
-                            "type": "/pattern-library/swatch",
-                            "themes":[
-                                { 
-                                    "name":"theme--hot",
-                                    "data":"Aa <a href=''>a</a>" 
-                                },
-                                { 
-                                    "name":"theme--warm",
-                                    "data":"Aa <a href=''>a</a>" 
-                                },
-                                { 
-                                    "name":"theme--soft",
-                                    "data":"Aa <a href=''>a</a>" 
-                                },
-                                { 
-                                    "name":"theme--cool",
-                                    "data":"Aa <a href=''>a</a>"  
-                                },
-                                { 
-                                    "name":"theme--fred",
-                                    "data":"Aa <a href=''>a</a>" 
-                                },
-                                { 
-                                    "name":"theme--dark",
-                                    "data":"Aa <a href=''>a</a>" 
-                                }
-                            ]  
-                        }
-                    ]
-                }
-            ]
-        },
+        
         {
             "type": "gallery/dynamic",
             "internal_theme":"theme--white",
@@ -136,7 +83,7 @@
                     "column_size":"",
                     "data":[
                          {
-                            "type": "/pattern-library/swatch",
+                            "type": "/pattern-library/text-colours",
                             "themes":[
                                 { 
                                     "name":"text--black",
@@ -169,6 +116,112 @@
                                  { 
                                     "name":"text--soft-pink",
                                     "data":"<span class='font-size-xl'>Aa</span>"
+                                }
+                            ]  
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "gallery/dynamic",
+            "internal_theme":"theme--white",
+            "container_padding":"layout section",
+            "anchor":"themes",
+            "intro":[
+                {
+                    "grid_modifier":"grid--center",
+                    "column_size":"",
+                    "data":[
+                        {
+                            "type":"type/h2",
+                            "data":"Border colours"
+                        },
+                        "blah blah."
+                    ]
+                }
+            ],
+            "columns":[
+                {
+                    "column_size":"",
+                    "data":[
+                         {
+                            "type": "/pattern-library/border-colours",
+                            "themes":[
+                                { 
+                                    "name":"border--red"
+                                },
+                                { 
+                                    "name":"border--soft-pink"
+                                },
+                                { 
+                                    "name":"border--orange"
+                                },
+                                { 
+                                    "name":"border--blue"
+                                },
+                                { 
+                                    "name":"border--green"
+                                },
+                                { 
+                                    "name":"border--link-colour"
+                                },
+                                { 
+                                    "name":"border--light-grey"
+                                }
+                            ]  
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "gallery/dynamic",
+            "internal_theme":"theme--dark",
+            "container_padding":"layout section",
+            "anchor":"themes",
+            "intro":[
+                {
+                    "grid_modifier":"grid--center",
+                    "data":[
+                        {
+                            "type":"type/h2",
+                            "data":"Themes "
+                        },
+                        "Themes are modifier classes that control the colour scheme of an individual pattern or component."
+                    ]
+                }
+            ],
+            "columns":[
+                {
+                    "column_size":"",
+                    "data":[
+                         {
+                            "type": "/pattern-library/swatch",
+                            "themes":[
+                                { 
+                                    "name":"theme--hot",
+                                    "data":"Aa <a href=''>a</a>" 
+                                },
+                                { 
+                                    "name":"theme--warm",
+                                    "data":"Aa <a href=''>a</a>" 
+                                },
+                                { 
+                                    "name":"theme--soft",
+                                    "data":"Aa <a href=''>a</a>" 
+                                },
+                                { 
+                                    "name":"theme--cool",
+                                    "data":"Aa <a href=''>a</a>"  
+                                },
+                                { 
+                                    "name":"theme--fred",
+                                    "data":"Aa <a href=''>a</a>" 
+                                },
+                                { 
+                                    "name":"theme--dark",
+                                    "data":"Aa <a href=''>a</a>" 
                                 }
                             ]  
                         }

@@ -1,0 +1,21 @@
+<div class='theme-container [ grid ]'>
+
+    {% for theme in item.themes %}
+        
+        <div class='theme-swatch [ col large-fifth medium-half ]'>
+      
+            <div  class='swatch__top '>
+                <div class='{{theme.name}} pt-l mt-l ml-xs mr-xs' style='border-top-weight:3px; border-top-style:solid;'></div>
+            </div>
+
+            <div class='swatch__bottom theme--dark'>
+            
+                {{theme.name}}
+      
+            </div>
+            
+        </div>
+
+    {% endfor %}
+
+</div>

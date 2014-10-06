@@ -44,6 +44,16 @@
                 "quotes":true,
                 "theme":"border--transparent"
             }
+        },
+        {
+            "title": "blockquote-harry",
+            "notes":"",
+            "example": {
+                "type": "type/blockquote",
+                "quote": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+                "author": "Martin Fowler",
+                "class":"blockquote-harry"
+            }
         }
     ]
 }

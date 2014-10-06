@@ -338,6 +338,30 @@ blockquote {
         }
     }
 
+.blockquote-harry {
+    @extend %pt-m;
+    @extend %pb-m;
+    position:relative;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-left:none;
+}  
+
+    .blockquote-harry:before {
+        background-color: #fff;
+        background-position: 50% 50%;
+        background-size: 22px 16px;
+        content: "";
+        height: 38px;
+        left: 50%;
+        margin-left: -19px;
+        position: absolute;
+        top: -19px;
+        width: 38px;
+        background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2244.003px%22%20height%3D%2231.302px%22%20viewBox%3D%220%200%2044.003%2031.302%22%20enable-background%3D%22new%200%200%2044.003%2031.302%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%20%3Cpath%20d%3D%22M16.201%2C0l5.3%2C5.5C17.9%2C7%2C12.801%2C10.2%2C11%2C13.9c0.301-0.1%2C0.9-0.1%2C1.101-0.1c3.9%2C0%2C7.2%2C2.5%2C7.2%2C7.5%20%20c0%2C5.5-5.2%2C10.002-10.4%2C10.002c-4.6%2C0-8.9-3.201-8.9-9.4C0%2C13.601%2C6.9%2C4.5%2C16.201%2C0z%20M38.702%2C0l5.301%2C5.5%20%20c-3.601%2C1.5-8.701%2C4.7-10.501%2C8.4c0.3-0.1%2C0.9-0.1%2C1.2-0.1c3.7%2C0%2C7.101%2C2.5%2C7.101%2C7.5c0%2C5.5-5.101%2C10.002-10.301%2C10.002%20%20c-4.7%2C0-9-3.201-9-9.4C22.502%2C13.601%2C29.401%2C4.5%2C38.702%2C0z%22%2F%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+        background-repeat: no-repeat;
+       
+    }
 
 
 // ----------------------------------------------------------------------------
