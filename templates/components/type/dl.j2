@@ -6,7 +6,7 @@
         </h3>
 
     {% endif %}
-    <dl {% if item.inline %}class='dl--inline'{% endif %}>
+    <dl class='{{item.theme}} {% if item.class %}{{item.class}}{% endif %}'>
 
     {% for item in item.data %}
 

@@ -121,7 +121,7 @@ img {
   padding-top: 8px;
   padding-top: 0.5rem; }
 
-.pt-s, .section-s, .swatch__top, .swatch__bottom, .swatch {
+.pt-s, .section-s, .dl--stripey dt, .dl--stripey dd, .swatch__top, .swatch__bottom, .swatch {
   padding-top: 12px;
   padding-top: 0.75rem; }
 
@@ -160,7 +160,7 @@ img {
   padding-bottom: 8px;
   padding-bottom: 0.5rem; }
 
-.pb-s, .section-s, .swatch__top, .swatch__bottom, .swatch {
+.pb-s, .section-s, .dl--stripey dt, .dl--stripey dd, .swatch__top, .swatch__bottom, .swatch {
   padding-bottom: 12px;
   padding-bottom: 0.75rem; }
 
@@ -199,7 +199,7 @@ img {
   padding-right: 8px;
   padding-right: 0.5rem; }
 
-.pr-s, .layout-s, .swatch, .card, .btn.btn--small, .nav_item.theme.small {
+.pr-s, .layout-s, .dl--stripey dt, .swatch, .card, .btn.btn--small, .nav_item.theme.small {
   padding-right: 12px;
   padding-right: 0.75rem; }
 
@@ -266,7 +266,7 @@ img {
   padding-left: 48px;
   padding-left: 3rem; }
 
-.mt-0, h1, h2, h3, h4, h5, h6, p, .text, li, code, .intro, ul, li, p, .text, code, ul, ol, td, dl, .breadcrumb > li, .anchor-links li, .btn, button, .btn--submit, .nav_item {
+.mt-0, h1, h2, h3, h4, h5, h6, p, .text, li, code, .intro, ul, li, p, .text, code, ul, ol, td, dl, .dl--stripey dd, .breadcrumb > li, .anchor-links li, .btn, button, .btn--submit, .nav_item {
   margin-top: 0; }
 
 .mt-xxs {
@@ -305,7 +305,7 @@ img {
   margin-top: 48px;
   margin-top: 3rem; }
 
-.mb-0, .anchor-links, .nav_item, li ul, li ol, .flego-navigation, .device .device__menu {
+.mb-0, .dl--stripey dd, .anchor-links, .nav_item, li ul, li ol, .flego-navigation, .device .device__menu {
   margin-bottom: 0; }
 
 .mb-xxs {
@@ -379,7 +379,7 @@ img {
   margin-right: 32px;
   margin-right: 2rem; }
 
-.ml-0, blockquote, .nav_item + .nav_item {
+.ml-0, .dl--stripey dd, blockquote, .nav_item + .nav_item {
   margin-left: 0; }
 
 .ml-xxs {
@@ -2691,14 +2691,27 @@ hr {
   border: none;
   background-color: #ddd; }
 
-/**
- * Definition lists
- */
 dt {
   font-weight: 600; }
 
 dd {
   margin-left: 0; }
+
+.dl--stripey dt {
+  float: left; }
+.dl--stripey dd {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: inherit;
+  text-align: right; }
+@media only screen and (max-width: 59em) {
+  .dl--stripey dt {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: inherit;
+    float: none !important; }
+  .dl--stripey dd {
+    text-align: left !important; } }
 
 .dl--inline dd, .dl--inline dt {
   display: inline;
@@ -3246,6 +3259,9 @@ sub {
 
 .border--link-colour {
   border-color: #236FA6; }
+
+.border--light-grey {
+  border-color: #ddd; }
 
 .btn--dark {
   background-color: #293f54;

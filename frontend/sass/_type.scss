@@ -240,37 +240,6 @@ hr {
 // Definition lists
 // ----------------------------------------------------------------------------
 
-// dl dt {
-//     @extend %pt-s;
-//     @extend %pr-s;
-//     @extend %pb-s;
-//     float:left;
-//     font-weight: bold;
-// }
-
-// dd {
-//     @extend %bt--primary;  
-//     @extend %mt-0;
-//     @extend %ml-0;
-//     @extend %pt-s;
-//     @extend %pb-s;
-//     text-align:right;
-// }
-
-//  @include small-down() {
-//      dt {
-//         border-top: 1px solid $primary-border-color;
-//         float:none!important;
-//      }
-//     dd {
-//          text-align:left!important;
-//      }
-//  }
-
-/**
- * Definition lists
- */
-
 dl {
 
 }
@@ -282,6 +251,39 @@ dl {
         margin-left: 0;
         @extend %mb-s;
     }
+
+.dl--stripey {
+    dt {
+        @extend %pt-s;
+        @extend %pr-s;
+        @extend %pb-s;
+        float:left;
+    }
+
+    dd {
+        @extend %mt-0;
+        @extend %ml-0;
+        @extend %mb-0;
+        @extend %pt-s;
+        @extend %pb-s;
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-top-color: inherit;
+        text-align:right; 
+    }
+    @include small-down {
+        dt {
+            border-top-style: solid;
+            border-top-width: 1px;
+            border-top-color: inherit;
+            float:none!important;
+        }
+        dd {
+          text-align:left!important;
+        } 
+    }
+
+}
 
 
 .dl--inline {
