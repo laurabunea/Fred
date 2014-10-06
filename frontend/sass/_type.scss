@@ -302,47 +302,36 @@ dl {
 // ----------------------------------------------------------------------------
 // blockquote
 // ----------------------------------------------------------------------------
+
  blockquote {
-     margin:0;
-     padding:0;
-     @include rem(padding-left, $space-xxl);
-     border-left:0 solid $ultra-light-grey;
-     @include rem(border-width, $space-xs);
- }
- //reset stuff
- blockquote {
-     quotes:none;
+     //@extend %pt-l;
+     @extend %font-size-l;
+     @extend %pl-l;
+     //@extend %pt-0;
+     margin-left: 0;
+     border-left: solid 3px #eee;
+     color: $light-grey;
  }
 
- blockquote:before,
- blockquote:after {
-     content:none 
 
-}
-
-// blockquote {
-//     @extend %pt-l;
-//     @extend %font-size-l;
-//     @extend %pl-l;
-//     margin-left: 0;
-//     border-left: solid 3px #eee;
-//     color: $light-grey;
-// }
+    cite {
+        &:before {
+            content: "\2014\00a0";
+            font-weight: $font-light;
+        }
+        @extend %font-size-s;
+        color: #666;
+    }
 
 
-//     cite {
-//         &:before {
-//             content: "\2014\00a0";
-//             font-weight: $font-light;
-//         }
-//         @extend %font-size-s;
-//         color: #666;
-//     }
 
 // ----------------------------------------------------------------------------
 // strikethrough
 // ----------------------------------------------------------------------------
+
 del { text-decoration:line-through; }
+
+
 
 // ----------------------------------------------------------------------------
 // Sub and sup

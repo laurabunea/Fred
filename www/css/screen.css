@@ -129,7 +129,7 @@ img {
   padding-top: 16px;
   padding-top: 1rem; }
 
-.pt-l, .section-l, blockquote, .highlight-top, .card, .flego-navigation, .flego-components {
+.pt-l, .section-l, .highlight-top, .card, .flego-navigation, .flego-components {
   padding-top: 20px;
   padding-top: 1.25rem; }
 
@@ -246,7 +246,7 @@ img {
   padding-left: 16px;
   padding-left: 1rem; }
 
-.pl-l, .layout-l, .highlight-left, .btn.btn--large {
+.pl-l, .layout-l, blockquote, .highlight-left, .btn.btn--large {
   padding-left: 20px;
   padding-left: 1.25rem; }
 
