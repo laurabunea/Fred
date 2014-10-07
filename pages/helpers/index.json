@@ -209,7 +209,7 @@
                 {
                     "type": "code/code-and-example",
                     "data": [
-                        "<p class='prepend' data-prepend='email:'>\n email@gmail.com\n</p>\n<p class='append' data-append='is my email'>\n email@gmail.com\n</p>"
+                        "<p class='u-prepend' data-prepend='email:'>\n email@gmail.com\n</p>\n<p class='u-append' data-append='is my email'>\n email@gmail.com\n</p>"
                     ]
                 },
                 {
@@ -218,13 +218,13 @@
                 },
                 { 
                     "type": "type/h3",
-                    "data": "Inline blocks and blocks"
+                    "data": "Inline block and block elements"
                 },
                 "Inline blocks are handy for everything. We don't often support projects in IE7 and below, but since it's trivial to hack it in, we've included it here.",
                 {
                     "type": "code/code-and-example",
                     "data": [
-                        "<div class='u-inline theme--white'>I am a inline block.</div><div class='u-block theme--blue'>I am a block element.</div>"
+                        "<div class='u-inline bg--red'>I am a inline block.</div><div class='u-block bg--blue'>I am a block element.</div>"
                     ]
                 }
             ]
