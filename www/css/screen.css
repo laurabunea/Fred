@@ -3190,6 +3190,12 @@ sub {
 .bg--dark-grey {
   background-color: #5e5c5c; }
 
+.bg--orange {
+  background-color: #e78547; }
+
+.bg--green {
+  background-color: #37b67f; }
+
 .bg--red {
   background-color: #e2534a; }
 
@@ -4145,16 +4151,16 @@ pre {
   top: 0;
   right: 0; }
 
-.u-align-top {
+.u-align-top > * {
   vertical-align: top; }
 
 .u-align-middle > * {
   vertical-align: middle; }
 
-.u-align-baseline {
+.u-align-baseline > * {
   vertical-align: baseline; }
 
-.u-align-bottom {
+.u-align-bottom > * {
   vertical-align: bottom; }
 
 .u-center {

@@ -141,10 +141,10 @@ h6 {
 // Body copy
 // ----------------------------------------------------------------------------
 
-%body-spacing {
-    @extend %mt-0;
-    @extend %mb-m;
-}
+// %body-spacing {
+//     @extend %mt-0;
+//     @extend %mb-m;
+// }
 
 %body-font-size {
     @extend %font-size-m;
@@ -152,7 +152,8 @@ h6 {
 }
 
 p, .text, code, ul, ol, td, dl {
-    @extend %body-spacing;
+    @extend %mt-0;
+    @extend %mb-m;
 }
 
 p, .text, code, dt, dd, td, th {

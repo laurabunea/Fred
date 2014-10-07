@@ -104,6 +104,7 @@
                     "type": "type/h3",
                     "data": "Inline list"
                 },
+                "Displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box",
                 {
                     "type": "code/code-and-example",
                     "data": [
@@ -111,9 +112,14 @@
                     ]
                 },
                 {
-                    "type": "type/h3",
-                    "data": "Block lists"
+                    "type": "raw",
+                    "data":"<hr />"
                 },
+                {
+                    "type": "type/h3",
+                    "data": "Block list"
+                },
+                "Displays an element as a block element (like <p>).",
                 {
                     "type": "code/code-and-example",
                     "data": [
@@ -200,6 +206,56 @@
                     "type": "raw",
                     "data":"<hr />"
                 },
+                {
+                    "type": "type/h3",
+                    "data": "Alligning elements"
+                },
+                "These helpers are predominately used on the grid.",
+                {
+                    "type": "type/h4",
+                    "data": "Vertical align top"
+                },
+              
+                {
+                    "type": "code/code-and-example",
+                    "data": [
+                        "<div class='u-align-top'><p class='u-inline'>text top</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--red'></div><img src='/images/fred-logo.png'/></div>"
+                    ]
+                },
+                {
+                    "type": "type/h4",
+                    "data": "Vertical align bottom"
+                },
+                {
+                    "type": "code/code-and-example",
+                    "data": [
+                        "<div class='u-align-bottom'><p class='u-inline'>text bottom</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--red'></div><img src='/images/fred-logo.png'/></div>"
+                    ]
+                },
+                {
+                    "type": "type/h4",
+                    "data": "Vertical align middle"
+                },
+                {
+                    "type": "code/code-and-example",
+                    "data": [
+                        "<div class='u-align-middle'><p class='u-inline'>text middle</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--red'></div><img src='/images/fred-logo.png'/></div>"
+                    ]
+                },
+                {
+                    "type": "type/h4",
+                    "data": "Vertical align baseline"
+                },
+                {
+                    "type": "code/code-and-example",
+                    "data": [
+                        "<div class='u-align-baseline'><p class='u-inline'>text baseline</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--red'></div><img src='/images/fred-logo.png'/></div>"
+                    ]
+                },
+                {
+                    "type": "raw",
+                    "data":"<hr />"
+                },
                 { 
                     "type": "type/h3",
                     "data": "Append and Prepend"
@@ -220,7 +276,7 @@
                     "type": "type/h3",
                     "data": "Inline block and block elements"
                 },
-                "Inline blocks are handy for everything. We don't often support projects in IE7 and below, but since it's trivial to hack it in, we've included it here.",
+                "A block-level element starts on a new line and stretches out to the left and right as far as it can.",
                 {
                     "type": "code/code-and-example",
                     "data": [
