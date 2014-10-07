@@ -4091,6 +4091,9 @@ pre {
 .u-normal {
   font-weight: 400; }
 
+.u-italic {
+  font-style: italic; }
+
 .u-uppercase {
   text-transform: uppercase; }
 

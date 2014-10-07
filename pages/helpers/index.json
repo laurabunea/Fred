@@ -18,14 +18,11 @@
                     "type": "type/list",
                     "class": "list--inline",
                     "data": [
-                        "<a href='#blocks' class='pill'>Typography</a>",
-                        "<a href='#first-child' class='pill'>Images</a>",
-                        "<a href='#type-rendering' class='pill'>Layout</a>",
-                        "<a href='#append-prepend' class='pill'>Append and Prepend </a>",
-                        "<a href='#screen-reader' class='pill'>Screen reader content </a>",
-                        "<a href='#typography-helpers' class='pill'>Typography helpers </a>",
+                        "<a href='#typography-helpers' class='pill'>Typography</a>",
                         "<a href='#list-helpers' class='pill'>List helpers </a>",
-                        "<a href='#layout-helpers' class='pill'>Layout helpers </a>",
+                        "<a href='#layout-helpers' class='pill'>Layout</a>",
+                        "<a href='#first-child' class='pill'>Images</a>",
+                        "<a href='#screen-reader' class='pill'>Screen reader content </a>",
                         "<a href='#link-helpers' class='pill'>Links</a>"
                     ]
                 }
@@ -33,37 +30,206 @@
         },
         {
             "type" : "/pattern-library/content-block",
-            "anchor":"blocks",
+            "anchor":"typography-helpers",
             "data": [
                 { 
                     "type": "type/h2",
-                    "data": "Blocks"
+                    "data": "Typography helpers"
                 },
-                { 
-                    "type": "type/h3",
-                    "data": "Inline blocks"
-                },
-                "Inline blocks are handy for everything. We don't often support projects in IE7 and below, but since it's trivial to hack it in, we've included it here.",
-                "To cut down on rules in your stylesheet, you can extend this placeholder in your code.",
+                "Here are some handy little typography classes that will come in useful when building modules for this site.",
                 {
-                    "type": "code/code",
+                    "type": "type/h3",
+                    "data": "Text alignment classes"
+                },
+                {
+                    "type": "code/code-and-example",
                     "data": [
-                        ".inline-block { display: inline-block; }"
+                        "<p class='u-text-center'>I am some centered text.</p>\n<p class='u-text-left'>I am some text aligned to the left.</p>\n<p class='u-text-right'>I am some right alligned text.</p>"
                     ]
                 },
-                { 
-                    "type": "type/h3",
-                    "data": "Block elements"
-                },
-                "Blocks are handy for everything",
                 {
-                    "type": "code/code",
+                    "type": "raw",
+                    "data":"<hr />"
+                },        
+                {
+                    "type": "type/h3",
+                    "data": "Uppercase and lowercase"
+                },
+                {
+                    "type": "code/code-and-example",
                     "data": [
-                        ".block-element { display: block; }"
+                        "<p class='u-uppercase'>I've been transformed to uppercase.</p>\n<p class='u-lowercase'>I'VE BEEN TRANSFORMED TO LOWERCASE.</p>"
+                    ] 
+                },
+                {
+                    "type": "raw",
+                    "data":"<hr />"
+                }, 
+                {
+                    "type": "type/h3",
+                    "data": "Font weights "
+                },
+                {
+                    "type": "code/code-and-example",
+                    "data": [
+                        "<p class='u-bold'>I am some bold.</p>\n<p class='u-light'>I am some light.</p>\n<p class='u-italic'>I am italic.</p>\n<p class='u-italic u-bold'>I am bold and italic.</p>\n<p class='u-italic u-light'>I am light and italic.</p>"
+                    ]
+                },
+                {
+                    "type": "raw",
+                    "data":"<hr />"
+                }, 
+                {
+                    "type": "type/h3",
+                    "data": "Text truncate"
+                },
+                {
+                    "type": "code/code-and-example",
+                    "data": [
+                        "<p class='u-truncate'>I am a really really really really really really really really really really really long sentence that just keeps going and going and going and going and going.</p>"
                     ]
                 }
             ]
-        },         
+        },
+        {
+            "type" : "/pattern-library/content-block",
+            "anchor":"list-helpers",
+            "data": [
+                { 
+                    "type": "type/h2",
+                    "data": "List helpers"
+                },
+                "blah",
+                {
+                    "type": "type/h3",
+                    "data": "Inline list"
+                },
+                {
+                    "type": "code/code-and-example",
+                    "data": [
+                        "<ul class='list--inline'>\n  <li>List item one</li>\n  <li>List item two</li>\n</ul>"
+                    ]
+                },
+                {
+                    "type": "type/h3",
+                    "data": "Block lists"
+                },
+                {
+                    "type": "code/code-and-example",
+                    "data": [
+                        "<ul class='list--block'>\n  <li>List item one</li>\n  <li>List item two</li>\n</ul>"
+                    ]
+                }
+            ]
+        },
+        {
+            "type" : "/pattern-library/content-block",
+            "anchor":"layout-helpers",
+            "data": [
+                { 
+                    "type": "type/h2",
+                    "data": "Layout helpers"
+                },
+                {
+                    "type": "type/h3",
+                    "data": "Floating helpers"
+                },
+                {
+                    "type": "code/code-and-example",
+                    "data": [
+                        "<div class='u-clearfix'>\n  <p class='u-right'>I'm floating right.</p>\n  <p class='u-left'>I'm floating left.</p>\n</div>"
+                    ]
+                },
+                {
+                    "type": "raw",
+                    "data":"<hr />"
+                },
+                {
+                    "type": "type/h3",
+                    "data": "Absolute and Relative helpers"
+                },
+                {
+                    "type": "code/code-and-example",
+                    "data": [
+                        "<div class='u-relative' style='height:100px; width:100%'>\n  <p class='u-absolute u-top-right'/>I'm positioned top right.</p>\n  <p class='u-absolute u-top-left'/>I'm positioned top left.</p>\n  <p class='u-absolute u-bottom-left'/>I'm positioned bottom left.</p>\n  <p class='u-absolute u-bottom-right'/>I'm positioned bottom right.</p>\n</div>"
+                    ]
+                },
+                {
+                    "type": "raw",
+                    "data":"<hr />"
+                },
+                {
+                    "type": "type/h3",
+                    "data": "Centering elements"
+                },
+                {
+                    "type": "code/code-and-example",
+                    "data": [
+                        "<div class='u-center' style='width:100px;' >\n   <div>I am centered, wohoo.</div>\n</div>"
+                    ]
+                },
+                {
+                    "type": "raw",
+                    "data":"<hr />"
+                },
+                {
+                    "type": "type/h3",
+                    "data": "Alligning elements"
+                },
+                {
+                    "type": "code/code-and-example",
+                    "data": [
+                        "example here please"
+                    ]
+                },
+                {
+                    "type": "raw",
+                    "data":"<hr />"
+                },
+                {
+                    "type": "type/h3",
+                    "data": "Overflow hidden"
+                },
+                {
+                    "type": "code/code-and-example",
+                    "data": [
+                        "add stuff"
+                    ]
+                },
+                {
+                    "type": "raw",
+                    "data":"<hr />"
+                },
+                { 
+                    "type": "type/h3",
+                    "data": "Append and Prepend"
+                },
+                "Place something before or after an element",
+               
+                {
+                    "type": "code/code-and-example",
+                    "data": [
+                        "<p class='prepend' data-prepend='email:'>\n email@gmail.com\n</p>\n<p class='append' data-append='is my email'>\n email@gmail.com\n</p>"
+                    ]
+                },
+                {
+                    "type": "raw",
+                    "data":"<hr />"
+                },
+                { 
+                    "type": "type/h3",
+                    "data": "Inline blocks and blocks"
+                },
+                "Inline blocks are handy for everything. We don't often support projects in IE7 and below, but since it's trivial to hack it in, we've included it here.",
+                {
+                    "type": "code/code-and-example",
+                    "data": [
+                        "<div class='u-inline theme--white'>I am a inline block.</div><div class='u-block theme--blue'>I am a block element.</div>"
+                    ]
+                }
+            ]
+        },
+               
         {
             "type" : "/pattern-library/content-block",
             "anchor":"first-child",
@@ -127,25 +293,7 @@
                 }
             ]
         },
-        {
-            "type" : "/pattern-library/content-block",
-            "anchor":"append-prepend",
-            "data": [
-                { 
-                    "type": "type/h2",
-                    "data": "Append and Prepend"
-                },
-                "Place something before or after an element",
-               
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<p class='prepend' data-prepend='email:'>\n email@gmail.com\n</p>\n<p class='append' data-append='is my email'>\n email@gmail.com\n</p>"
-                    ]
-                }
-
-            ]
-        },
+        
         {
             "type" : "/pattern-library/content-block",
             "anchor":"clearfixing",
@@ -192,163 +340,8 @@
                 }
             ]
         },
-        {
-            "type" : "/pattern-library/content-block",
-            "anchor":"typography-helpers",
-            "data": [
-                { 
-                    "type": "type/h2",
-                    "data": "Typography helpers"
-                },
-                "Here are some handy little typography classes that will come in useful when building modules for this site.",
-                {
-                    "type": "type/h3",
-                    "data": "Text alignment classes"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<p class='text-center'>text-center</p>\n<p class='text-left'>text-left</p>\n<p class='text-right'>text-right</p>"
-                    ]
-                },
-                {
-                    "type": "raw",
-                    "data":"<hr />"
-                },        
-                {
-                    "type": "type/h3",
-                    "data": "Uppercase and lowercase"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<p class='uppercase'>uppercase</p>\n<p class='lowercase'>lowercase</p>"
-                    ] 
-                },
-                {
-                    "type": "raw",
-                    "data":"<hr />"
-                }, 
-                {
-                    "type": "type/h3",
-                    "data": "Font weights "
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<p class='u-bold'>u-bold</p>\n<p class='u-light'>u-light</p>\n<p class='font-italic'>font-italic</p>\n<p class='font-italic u-bold'>font-italic and font bold</p>\n<p class='font-italic u-light'>font-italic and font light</p>"
-                    ]
-                },
-                {
-                    "type": "raw",
-                    "data":"<hr />"
-                }, 
-                {
-                    "type": "type/h3",
-                    "data": "Text truncate"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<p class='truncate'>I am a really really really really really really really really really really really long sentence that just keeps going and going and going and going and going.</p>"
-                    ]
-                }
-                    
-                
-            ]
-        },
-        {
-            "type" : "/pattern-library/content-block",
-            "anchor":"list-helpers",
-            "data": [
-                { 
-                    "type": "type/h2",
-                    "data": "List helpers"
-                },
-                "blah",
-                {
-                    "type": "type/h3",
-                    "data": "Inline list"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<ul class='list--inline'>\n  <li>List item one</li>\n  <li>List item two</li>\n</ul>"
-                    ]
-                },
-                {
-                    "type": "type/h3",
-                    "data": "Block lists"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<ul class='list--block'>\n  <li>List item one</li>\n  <li>List item two</li>\n</ul>"
-                    ]
-                }
-            ]
-        },
-        {
-            "type" : "/pattern-library/content-block",
-            "anchor":"layout-helpers",
-            "data": [
-                { 
-                    "type": "type/h2",
-                    "data": "Layout helpers"
-                },
-                "blah",
-                {
-                    "type": "type/h3",
-                    "data": "Floating helpers"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<div class='clearfix'>\n  <p class='right'/>I'm floating left</p>\n  <p>I'm floating right</p>\n</div>"
-                    ]
-                },
-                {
-                    "type": "type/h3",
-                    "data": "Absolute and Relative helpers"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<div class='relative' style='height:100px; width:100%'>\n  <p class='absolute--top-right'/>I'm positioned top right</p>\n  <p class='absolute--top-left'/>I'm positioned top left</p>\n  <p class='absolute--bottom-left'/>I'm positioned bottom left</p>\n  <p class='absolute--bottom-right'/>I'm positioned bottom right</p>\n</div>"
-                    ]
-                },
-                {
-                    "type": "type/h3",
-                    "data": "Centering elements"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<div class='u-center' style='width:100px;' >\n   <p>I am centered</p>\n</div>"
-                    ]
-                },
-                {
-                    "type": "type/h3",
-                    "data": "Alligning elements"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "example here please"
-                    ]
-                },
-                {
-                    "type": "type/h3",
-                    "data": "Overflow"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<div class=clearfix'>\n  <p class='right'/>I'm floating left</p>\n  <p>I'm floating right</p>\n</div>"
-                    ]
-                }
-            ]
-        },
+        
+        
         {
             "type" : "/pattern-library/content-block",
             "anchor":"link-helpers",
