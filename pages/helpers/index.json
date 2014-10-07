@@ -8,7 +8,7 @@
             "data": [
                 { 
                     "type": "type/h1",
-                    "data": "Helpers"
+                    "data": "Utility helpers"
                 },
                 { 
                     "type": "type/intro",
