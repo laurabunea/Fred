@@ -40,7 +40,7 @@
                 
                     <div class='[ grid {{grid_modifier }} ] gutters'>
                         
-                        {% for item in left_column %}
+                        {% for item in u-left_column %}
                         
                         <div class="[ col--no-gutters {{item.column_padding}} {{item.column_size }} ] {{item.column_theme }}">
                            
@@ -51,11 +51,11 @@
                         {% endfor %}
 
 
-                        {% for item in right_column %}
+                        {% for item in u-right_column %}
 
                         <div class="[ col--no-gutters {{item.column_padding}} {{item.column_size }} ] {{item.column_theme }}">
                            
-                            {% for item in right_column %}
+                            {% for item in u-right_column %}
 
                                 {{ item|component }}
 

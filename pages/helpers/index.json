@@ -18,9 +18,9 @@
                     "type": "type/list",
                     "class": "list--inline",
                     "data": [
-                        "<a href='#blocks' class='pill'>Blocks</a>",
-                        "<a href='#first-child' class='pill'>First child helpers</a>",
-                        "<a href='#type-rendering' class='pill'>Webkit rendering</a>",
+                        "<a href='#blocks' class='pill'>Typography</a>",
+                        "<a href='#first-child' class='pill'>Images</a>",
+                        "<a href='#type-rendering' class='pill'>Layout</a>",
                         "<a href='#append-prepend' class='pill'>Append and Prepend </a>",
                         "<a href='#screen-reader' class='pill'>Screen reader content </a>",
                         "<a href='#typography-helpers' class='pill'>Typography helpers </a>",
@@ -200,7 +200,7 @@
                     "type": "type/h2",
                     "data": "Typography helpers"
                 },
-                "Here are some handy little classes that will come in useful when building modules for this site.",
+                "Here are some handy little typography classes that will come in useful when building modules for this site.",
                 {
                     "type": "type/h3",
                     "data": "Text alignment classes"
@@ -210,6 +210,10 @@
                     "data": [
                         "<p class='text-center'>text-center</p>\n<p class='text-left'>text-left</p>\n<p class='text-right'>text-right</p>"
                     ]
+                },
+                {
+                    "type": "raw",
+                    "data":"<hr />"
                 },        
                 {
                     "type": "type/h3",
@@ -222,24 +226,31 @@
                     ] 
                 },
                 {
+                    "type": "raw",
+                    "data":"<hr />"
+                }, 
+                {
                     "type": "type/h3",
                     "data": "Font weights "
                 },
                 {
                     "type": "code/code-and-example",
                     "data": [
-                        "<p class='font-bold'>font-bold</p>\n<p class='font-light'>font-light</p>\n<p class='font-italic'>font-italic</p>\n<p class='font-italic font-bold'>font-italic and font bold</p>\n<p class='font-italic font-light'>font-italic and font light</p>"
+                        "<p class='u-bold'>u-bold</p>\n<p class='u-light'>u-light</p>\n<p class='font-italic'>font-italic</p>\n<p class='font-italic u-bold'>font-italic and font bold</p>\n<p class='font-italic u-light'>font-italic and font light</p>"
                     ]
                 },
-               
+                {
+                    "type": "raw",
+                    "data":"<hr />"
+                }, 
                 {
                     "type": "type/h3",
-                    "data": "Text overflow"
+                    "data": "Text truncate"
                 },
                 {
                     "type": "code/code-and-example",
                     "data": [
-                        "<p class='text--overflow'>I am a really really really really really really long sentence that just keeps going and going and going and going and going.</p>"
+                        "<p class='truncate'>I am a really really really really really really really really really really really long sentence that just keeps going and going and going and going and going.</p>"
                     ]
                 }
                     
@@ -313,7 +324,7 @@
                 {
                     "type": "code/code-and-example",
                     "data": [
-                        "<div class='center-element' style='width:100px;' >\n   <p>I am centered</p>\n</div>"
+                        "<div class='u-center' style='width:100px;' >\n   <p>I am centered</p>\n</div>"
                     ]
                 },
                 {

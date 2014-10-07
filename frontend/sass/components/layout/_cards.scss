@@ -11,9 +11,5 @@
     @extend %pb-l;
     @extend %pl-s--medium;
     @extend %pr-s--medium;
-    border-radius: .25rem;
-    border: solid 1px #e2e2e2;
-    background: #fff;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-
+    @include rem(border-radius, $space-xxs);
 }

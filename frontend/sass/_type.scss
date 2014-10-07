@@ -6,7 +6,7 @@
 %font-size-xxxxl {
     @include rem('font-size', $font-size-xxxxl);
     line-height: $line-height-xxxl;
-    @include small-down() {
+    @include small-down {
         & {
             @include rem('font-size', $font-size-xxxl);
             line-height: $line-height-xxxl;
@@ -18,7 +18,7 @@
     //@include font-size($font-size-xxxl);
     @include rem('font-size', $font-size-xxxl);
     line-height: $line-height-xxxl;
-    @include small-down() {
+    @include small-down {
         & {
             @include rem('font-size', $font-size-xxl);
             line-height: $line-height-xxl;
@@ -29,7 +29,7 @@
 %font-size-xxl {
     @include rem('font-size', $font-size-xxl);
     line-height: $line-height-xxl;
-    @include small-down() {
+    @include small-down {
         & {
             @include rem('font-size', $font-size-xl);
             line-height: $line-height-xl;
@@ -40,7 +40,7 @@
 %font-size-xl {
     @include rem('font-size', $font-size-xl);
     line-height: $line-height-xl;
-    @include small-down() {
+    @include small-down {
         & {
             @include rem('font-size', $font-size-l);
             line-height: $line-height-l;

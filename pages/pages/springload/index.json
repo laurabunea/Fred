@@ -65,14 +65,14 @@
               "data":[
                 {
                   "type":"type/h3",
-                  "class":"font-light",
+                  "class":"u-light",
                   "data":"Helping NZ on Air express the great work they do"
                 },
                 {
                   "type":"img",
                   "src":"/images/springload-1.png",
                   "responsive":true,
-                  "class":"align--bottom"
+                  "class":"align-bottom"
                 }
               ]
             },
@@ -83,14 +83,14 @@
               "data":[
                 {
                   "type":"type/h3",
-                  "class":"font-light",
+                  "class":"u-light",
                   "data":"Helping A disaster-resistant site that increases donations & first-aid bookings"
                 },
                 {
                   "type":"img",
                   "src":"/images/springload-2.png",
                   "responsive":true,
-                  "class":"align--bottom"
+                  "class":"align-bottom"
                 }
               ]
             }
@@ -108,14 +108,14 @@
               "data":[
                 {
                   "type":"type/h2",
-                  "class":"font-light",
+                  "class":"u-light",
                   "data":"Creating loyal bank customers one happy user at a time"
                 },
                 {
                   "type":"img",
                   "src":"/images/springload-3.png",
                   "responsive":true,
-                  "class":"align--bottom"
+                  "class":"align-bottom"
                 }
               ]
                 

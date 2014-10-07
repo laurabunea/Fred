@@ -210,18 +210,18 @@ img { border: 0;}
 // utilities -- typography
 // -----------------------------------------------------------------------------
 
-.font-bold { font-weight:$font-bold; }
-.font-light { font-weight:$font-light; }
-.font-normal {font-weight:$font-normal;}
+.u-bold { font-weight:$font-bold; }
+.u-light { font-weight:$font-light; }
+.u-normal {font-weight:$font-normal;}
 
-.uppercase { text-transform:uppercase; }
-.lowercase { text-transform:lowercase; }
+.u-uppercase { text-transform:uppercase; }
+.u-lowercase { text-transform:lowercase; }
 
-.text-center { text-align:center; }
-.text-left { text-align:left;}
-.text-right { text-align:right;}
+.u-text-center { text-align:center; }
+.u-text-left { text-align:left;}
+.u-text-right { text-align:right;}
 
-.text-truncate {
+.u-truncate {
     white-space: nowrap;           
     overflow: hidden;       
     text-overflow: ellipsis;   
@@ -229,93 +229,86 @@ img { border: 0;}
 // -----------------------------------------------------------------------------
 // utilities -- Images
 // -----------------------------------------------------------------------------
-
+//todo change name
 .img--responsive { max-width:100%;}
 
 
 // -----------------------------------------------------------------------------
 // utilities -- Layout
 // -----------------------------------------------------------------------------
-.clearfix { @extend %clearfix; }
-.left { float:left; }
-.right { float:right; }
+.u-clearfix { @extend %clearfix; }
+.u-left { float:left; }
+.u-right { float:right; }
 
 
-.relative { position: relative; }
-.absolute { position: absolute; }
+.u-relative { position: relative; }
+.u-absolute { position: absolute; }
 
-    .absolute--bottom-left {
-        position: absolute;
+    .u-bottom-left {
         bottom:0;
         left:0;
     }
 
-    .absolute--bottom-right {
-        position: absolute;
+    .u-bottom-right {
         bottom:0;
         right:0;
     }
 
-    .absolute--top-left {
-        position: absolute;
+    .u-top-left { 
         top:0;
         left:0;
     }
 
-    .absolute--top-right {
-        position: absolute;
+    .u-top-right {
         top:0;
         right:0;
     }
 
+.u-align-top { vertical-align: top; } 
+.u-align-middle > * { vertical-align: middle; } 
+.u-align-baseline {vertical-align: baseline; } 
+.u-align-bottom { vertical-align: bottom; } 
 
-.align--top { vertical-align: top; } 
-.align--middle > * { vertical-align: middle; } 
-//.align--middle { vertical-align: middle; }
-.align--baseline {vertical-align: baseline; } 
-.align--bottom { vertical-align: bottom; } 
-
-.center-element { 
+.u-center { 
     margin-left:auto;
     margin-right:auto; 
 } 
 
 
-.overflow-hidden { overflow: hidden; }
+.u-overflow-hidden { overflow: hidden; }
 
-.fixed--bottom {
+.u-fixed-bottom {
     position:fixed; 
     bottom:0;
 }
 
-.fixed--top {
+.u-fixed-top {
     position:fixed; 
     top:0;
 }
 
-.block-element { display:block; }
+.u-block { display:block; }
+.u-inline{ display: inline-block; }
 
-.inline-block { display: inline-block; }
-
-.prepend{
+.u-prepend{
     &:before{
         content: attr(data-prepend);
         display: inline-block;
     }
 }
 
-.append{
+.u-append{
     &:after{
         content: attr(data-append);
         display: inline-block;
     }
 }
 
-.hide { display: none; }
-.show { display: block; }
+.u-hide { display: none; }
+.u-show { display: block; }
 
 
-.sr-only {
+.u-sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -332,14 +325,14 @@ img { border: 0;}
 
 @include small-down {
 
-    .hide--small-down {  display:none; }
-    .show--small-down {  display:block; }
+    .u-hide--small-down {  display:none; }
+    .u-show--small-down {  display:block; }
 
-    .text-center--small-down {  text-align: center; }
-    .text-right--small-down { text-align: right; }
-    .text-left--small-down { text-align: left; }
+    .u-text-center--small-down {  text-align: center; }
+    .u-text-right--small-down { text-align: right; }
+    .u-text-left--small-down { text-align: left; }
 
-    .append--q-small-down:after { 
+    .u-append--small-down:after { 
         content: attr(data-append-small);
         display: inline-block;
     }
@@ -350,14 +343,14 @@ img { border: 0;}
 
 @include medium {
         
-    .hide-medium { display:none; }
-    .show--medium {  display:block; }
+    .u-hide--medium { display:none; }
+    .u-show--medium {  display:block; }
     
-    .text-center--medium { text-align: center; }
-    .text-right--medium { text-align: right; }
-    .text-left--medium { text-align: left; }
+    .u-text-center--medium { text-align: center; }
+    .u-text-right--medium { text-align: right; }
+    .u-text-left--medium { text-align: left; }
 
-    .append--q-medium:after {
+    .u-append--medium:after {
         content: attr(data-append-medium);
         display: inline-block;
     }
@@ -366,14 +359,14 @@ img { border: 0;}
 
 @include large {
         
-    .hide-large { display:none; }
-    .show--large {  display:block; }
+    .u-hide--large { display:none; }
+    .u-show--large {  display:block; }
 
-    .text-right--large { text-align: center; }
-    .text-right--large { text-align: right; }
-    .text-left--large { text-align: left; }
+    .u-text-right--large { text-align: center; }
+    .u-text-right--large { text-align: right; }
+    .u-text-left--large { text-align: left; }
 
-    .append--q-large:after { 
+    .u-append--large:after { 
         content: attr(data-append-medium);
         display: inline-block;
     }

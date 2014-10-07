@@ -40,17 +40,17 @@
         display:inline-block;
         font-size: medium;
     }
-
-    & > .grid {
-        display:inline-block;
-        font-size: 0;  
-    }
+    
+    // & > .grid {
+    //     display:inline-block;
+    //     font-size: 0;
+    // }
 }
 
-    .grid > *,
-    .grid__item {
-        vertical-align: top;
-    }
+    // .grid > *,
+    // .grid__item {
+    //     vertical-align: top;
+    // }
 
 
 // ----------------------------------------------------------------------------
