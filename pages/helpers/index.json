@@ -4,7 +4,7 @@
     "template":"/pages/helpers.j2",
     "data": [ 
         {
-            "type" : "/pattern-library/content-block",
+            "type" : "/layout/content-block",
             "grid_modifier":"grid--center",
             "column_size":"large-8",
             "data": [
@@ -93,164 +93,218 @@
             ]
         },
         {
-            "type" : "/pattern-library/content-block",
-            "anchor":"layout-helpers",
-            "data": [
-                { 
-                    "type": "type/h2",
-                    "data": "Layout helpers"
-                },
+            "type": "layout/dynamic",
+            "internal_theme":"theme--fred-dark",
+            "container_padding":"layout section",
+            "anchor":"themes",
+            "columns":[
                 {
-                    "type": "type/h3",
-                    "data": "Floating helpers"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<div class='u-clearfix'>\n  <p class='u-right'>I'm floating right.</p>\n  <p class='u-left'>I'm floating left.</p>\n</div>"
-                    ]
-                },
-                {
-                    "type": "raw",
-                    "data":"<hr />"
-                },
-                {
-                    "type": "type/h3",
-                    "data": "Absolute and Relative helpers"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<div class='u-relative' style='height:100px; width:100%'>\n  <p class='u-absolute u-top-right'/>I'm positioned top right.</p>\n  <p class='u-absolute u-top-left'/>I'm positioned top left.</p>\n  <p class='u-absolute u-bottom-left'/>I'm positioned bottom left.</p>\n  <p class='u-absolute u-bottom-right'/>I'm positioned bottom right.</p>\n</div>"
-                    ]
-                },
-                {
-                    "type": "raw",
-                    "data":"<hr />"
-                },
-                {
-                    "type": "type/h3",
-                    "data": "Centering elements"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<div class='u-center' style='width:100px;' >\n   <div>I am centered, wohoo.</div>\n</div>"
-                    ]
-                },
-                {
-                    "type": "raw",
-                    "data":"<hr />"
-                },
-                {
-                    "type": "type/h3",
-                    "data": "Alligning elements"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "example here please"
-                    ]
-                },
-                {
-                    "type": "raw",
-                    "data":"<hr />"
-                },
-                {
-                    "type": "type/h3",
-                    "data": "Overflow hidden and scoll"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<div class='u-overflow-hidden bg--green' style='width:200px; height:100px;'><p>You can use the overflow property when you want to have better control of the layout. The default value is visible.</p></div>"
-                    ]
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<div class='u-overflow-scroll bg--green' style='width:200px; height:100px;'><p>You can use the overflow property when you want to have better control of the layout. The default value is visible.</p></div>"
-                    ]
-                },
-                {
-                    "type": "raw",
-                    "data":"<hr />"
-                },
-                {
-                    "type": "type/h3",
-                    "data": "Alligning elements"
-                },
-                "These helpers are predominately used on the grid.",
-                {
-                    "type": "type/h4",
-                    "data": "Vertical align top"
-                },
-              
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<div class='u-align-top'><p class='u-inline'>text top</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--red'></div><img src='/images/fred-logo.png'/></div>"
-                    ]
-                },
-                {
-                    "type": "type/h4",
-                    "data": "Vertical align bottom"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<div class='u-align-bottom'><p class='u-inline'>text bottom</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--red'></div><img src='/images/fred-logo.png'/></div>"
-                    ]
-                },
-                {
-                    "type": "type/h4",
-                    "data": "Vertical align middle"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<div class='u-align-middle'><p class='u-inline'>text middle</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--red'></div><img src='/images/fred-logo.png'/></div>"
-                    ]
-                },
-                {
-                    "type": "type/h4",
-                    "data": "Vertical align baseline"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<div class='u-align-baseline'><p class='u-inline'>text baseline</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--red'></div><img src='/images/fred-logo.png'/></div>"
-                    ]
-                },
-                {
-                    "type": "raw",
-                    "data":"<hr />"
-                },
-                { 
-                    "type": "type/h3",
-                    "data": "Append and Prepend"
-                },
-                "Place something before or after an element",
-               
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<p class='u-prepend' data-prepend='email:'>\n email@gmail.com\n</p>\n<p class='u-append' data-append='is my email'>\n email@gmail.com\n</p>"
-                    ]
-                },
-                {
-                    "type": "raw",
-                    "data":"<hr />"
-                },
-                { 
-                    "type": "type/h3",
-                    "data": "Inline block and block elements"
-                },
-                "A block-level element starts on a new line and stretches out to the left and right as far as it can.",
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<div class='u-inline bg--red'>I am a inline block.</div><div class='u-block bg--blue'>I am a block element.</div>"
+                    "column_size":"",
+                    "data":[
+                        {
+                            "type":"layout/content-block",
+                            "padding":"pb-xxxl",
+                            "class":"u-text-center",
+                            "data":[
+                                { 
+                                    "type": "type/h2",
+                                    "data": "Layout helpers"
+                                },
+                                { 
+                                    "type": "type/intro",
+                                    "data": "blah blah blah"
+                                }
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "padding":"pb-xxxxl pt-xxxl",
+                            "theme":"bt--fred-dark",
+                            "class":"",
+                            "data":[
+                                {
+                                    "type": "type/h3",
+                                    "data": "Floating helpers"
+                                },
+                                {
+                                    "type": "code/code-and-example",
+                                    "data": [
+                                        "<div class='u-clearfix'>\n  <p class='u-right bg--orange pl-m pr-m'>I'm floating right.</p>\n  <p class='u-left bg--orange pl-m pr-m'>I'm floating left.</p>\n</div>"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "padding":"pb-xxxxl pt-xxxl",
+                            "theme":"bt--fred-dark",
+                            "class":"",
+                            "data":[
+                               {
+                                    "type": "type/h3",
+                                    "data": "Absolute and Relative helpers"
+                                },
+                                {
+                                    "type": "code/code-and-example",
+                                    "data": [
+                                        "<div class='u-relative' style='height:100px; width:100%'>\n  <p class='u-absolute u-top-right bg--orange pl-m pr-m'/>I'm positioned top right.</p>\n  <p class='u-absolute u-top-left bg--orange pl-m pr-m'/>I'm positioned top left.</p>\n  <p class='u-absolute u-bottom-left bg--orange pl-m pr-m'/>I'm positioned bottom left.</p>\n  <p class='u-absolute u-bottom-right bg--orange pl-m pr-m'/>I'm positioned bottom right.</p>\n</div>"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "padding":"pb-xxxxl pt-xxxl",
+                            "theme":"bt--fred-dark",
+                            "class":"",
+                            "data":[
+                               {
+                                    "type": "type/h3",
+                                    "data": "Centering elements"
+                                },
+                                {
+                                    "type": "code/code-and-example",
+                                    "data": [
+                                        "<div class='u-center' style='width:100px;' >\n   <div class='bg--orange pl-m pr-m'>I am centered, wohoo.</div>\n</div>"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "padding":"pb-xxxxl pt-xxxl",
+                            "theme":"bt--fred-dark",
+                            "class":"",
+                            "data":[
+                               {
+                                    "type": "type/h3",
+                                    "data": "Alligning elements"
+                                },
+                                {
+                                    "type": "code/code-and-example",
+                                    "data": [
+                                        "example here please"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "padding":"pb-xxxxl pt-xxxl",
+                            "theme":"bt--fred-dark",
+                            "class":"",
+                            "data":[
+                               {
+                                    "type": "type/h3",
+                                    "data": "Overflow hidden and scoll"
+                                },
+                                {
+                                    "type": "code/code-and-example",
+                                    "data": [
+                                        "<div class='u-overflow-hidden bg--orange' style='width:200px; height:100px;'><p class='pl-m pr-m'>You can use the overflow property when you want to have better control of the layout. The default value is visible.</p></div>"
+                                    ]
+                                },
+                                {
+                                    "type": "code/code-and-example",
+                                    "data": [
+                                        "<div class='u-overflow-scroll bg--orange' style='width:200px; height:100px;'><p class='pl-m pr-m'>You can use the overflow property when you want to have better control of the layout. The default value is visible.</p></div>"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "padding":"pb-xxxxl pt-xxxl",
+                            "theme":"bt--fred-dark",
+                            "class":"",
+                            "data":[
+                               {
+                                    "type": "type/h3",
+                                    "data": "Alligning elements"
+                                },
+                                "These helpers are predominately used on the grid.",
+                                {
+                                    "type": "type/h4",
+                                    "data": "Vertical align top"
+                                },
+                              
+                                {
+                                    "type": "code/code-and-example",
+                                    "data": [
+                                        "<div class='u-align-top'><p class='u-inline'>text top</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--orange'></div><img src='/images/fred-logo.png'/></div>"
+                                    ]
+                                },
+                                {
+                                    "type": "type/h4",
+                                    "data": "Vertical align bottom"
+                                },
+                                {
+                                    "type": "code/code-and-example",
+                                    "data": [
+                                        "<div class='u-align-bottom'><p class='u-inline'>text bottom</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--orange'></div><img src='/images/fred-logo.png'/></div>"
+                                    ]
+                                },
+                                {
+                                    "type": "type/h4",
+                                    "data": "Vertical align middle"
+                                },
+                                {
+                                    "type": "code/code-and-example",
+                                    "data": [
+                                        "<div class='u-align-middle'><p class='u-inline'>text middle</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--orange'></div><img src='/images/fred-logo.png'/></div>"
+                                    ]
+                                },
+                                {
+                                    "type": "type/h4",
+                                    "data": "Vertical align baseline"
+                                },
+                                {
+                                    "type": "code/code-and-example",
+                                    "data": [
+                                        "<div class='u-align-baseline'><p class='u-inline'>text baseline</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--orange'></div><img src='/images/fred-logo.png'/></div>"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "padding":"pb-xxxxl pt-xxxl",
+                            "theme":"bt--fred-dark",
+                            "class":"",
+                            "data":[
+                               { 
+                                    "type": "type/h3",
+                                    "data": "Append and Prepend"
+                                },
+                                "Place something before or after an element",
+                               
+                                {
+                                    "type": "code/code-and-example",
+                                    "data": [
+                                        "<p class='u-prepend' data-prepend='email:'>\n email@gmail.com\n</p>\n<p class='u-append' data-append='is my email'>\n email@gmail.com\n</p>"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "padding":"pb-xxxxl pt-xxxl",
+                            "theme":"bt--fred-dark",
+                            "class":"",
+                            "data":[
+                               { 
+                                    "type": "type/h3",
+                                    "data": "Inline block and block elements"
+                                },
+                                "A block-level element starts on a new line and stretches out to the left and right as far as it can.",
+                                {
+                                    "type": "code/code-and-example",
+                                    "data": [
+                                        "<div class='u-inline bg--orange pl-m pr-m'>I am a inline block.</div><div class='u-block bg--orange pl-m pr-m'>I am a block element.</div>"
+                                    ]
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
@@ -266,7 +320,7 @@
                     "data":[
                         {
                             "type":"layout/content-block",
-                            "padding":"pb-xxl",
+                            "padding":"pb-xxxl",
                             "class":"u-text-center",
                             "data":[
                                 {
@@ -275,14 +329,15 @@
                                 },
                                 {
                                     "type":"type/intro",
-                                    "data":"blah blah"
+                                    "data":"blah blah blah blah blah blah blah blah blah blah"
                                 }
                             ]
                         },
                         {
                             "type":"layout/content-block",
                             "class":"u-text-center",
-                            "padding":"pb-xl",
+                            "padding":"pb-xxl pt-xxxl",
+                            "theme":"bt--secondary",
                             "data":[
                                 {
                                     "type":"type/h3",
@@ -294,6 +349,7 @@
                         {
                             "type":"layout/content-block",
                             "class":"u-text-center",
+                            "padding":"pb-xxl",
                             "data":[
                                  {
                                     "type": "/pattern-library/swatch",
@@ -330,6 +386,8 @@
                         {
                             "type":"layout/content-block",
                             "class":"u-text-center",
+                            "theme":"bt--secondary",
+                            "padding":"pt-xxxl",
                             "data":[
                                 {   
                                     "type":"type/h3",
@@ -342,6 +400,7 @@
                         {
                             "type":"layout/content-block",
                             "class":"u-text-center",
+                            "padding":"pb-xl",
                             "data":[
                                 
                                 {
@@ -375,6 +434,8 @@
                         {
                             "type":"layout/content-block",
                             "class":"u-text-center",
+                            "theme":"bt--secondary",
+                            "padding":"pt-xxxl pb-xxl",
                             "data":[
                                 {   
                                     "type":"type/h3",
@@ -387,6 +448,7 @@
                         {
                             "type":"layout/content-block",
                             "class":"u-text-center",
+                            "padding":"pb-xxl",
                             "data":[
                                 {
                                     "type": "/pattern-library/text-colours",
@@ -430,6 +492,8 @@
                         {
                             "type":"layout/content-block",
                             "class":"u-text-center",
+                            "padding":"pb-xxl pt-xxxl",
+                            "theme":"bt--secondary",
                             "data":[
                                 {   
                                     "type":"type/h3",
@@ -489,6 +553,7 @@
                         {
                             "type":"layout/content-block",
                             "class":"u-text-center",
+                            "padding":"pb-xxl",
                             "data":[
                                 {
                                     "type":"type/h2",
@@ -559,6 +624,7 @@
                         {
                             "type":"layout/content-block",
                             "class":"u-text-center",
+                            "padding":"pb-xxl",
                             "data":[
                                 {
                                     "type":"type/h2",

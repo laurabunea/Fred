@@ -75,7 +75,7 @@
     border-width:1px;
     border-style:solid;
 }
-
+.bt--secondary { border-top: 1px solid lighten( #293f54, 10%); }
 %bt--primary { border-top: 1px solid $primary-border-color; }
 
 %bb--primary { border-bottom: 1px solid $primary-border-color; }
