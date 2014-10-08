@@ -11,7 +11,9 @@
     
     > li {
         margin-top:0;
-        @extend %text--overflow;
+        white-space: nowrap;           
+        overflow: hidden;       
+        text-overflow: ellipsis;
         display: none;
 
         a { @extend %remove-anchor-decoration;}
@@ -28,7 +30,6 @@
 
         & a:after {
             @include rem(padding-left,$space-xxs);;
-            
             @include rem(padding-right,$space-xxs);
             content: ' › ';
             color: #C7D900;
@@ -53,6 +54,6 @@
 
     a {
         @extend %remove-dashed-border;
-        @extend %font-size-xxs;
+        @include rem(font-size,$font-size-xs);
     }
 }

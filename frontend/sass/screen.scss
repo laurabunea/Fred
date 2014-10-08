@@ -136,15 +136,6 @@ img { border: 0;}
         display: table; /* 2 */
     }
 
-//Remove top margin
-%first-child-no-top:first-child {
-    margin-top: 0;
-}
-
-//Remove top border
-%first-child-no-top-border:first-child {
-    border-top: none;
-}
 
 @import "spacing";
 @import "utilities";

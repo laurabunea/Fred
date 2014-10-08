@@ -188,8 +188,10 @@
 .section {
     @include rem(padding-top,$space-xxxxl);
     @include rem(padding-bottom,$space-xxxxl);
-    @extend %pt-xxxl--small-down;
-    @extend %pb-xxxl--small-down;
+    @include small-down {
+        @include rem(padding-top,$space-xxxl);
+        @include rem(padding-bottom,$space-xxxl);
+    }
 }
 
 // ----------------------------------------------------------------------------
@@ -198,7 +200,9 @@
 
 %layout-left {
     @include rem(padding-left,$space-m);
-    @extend %pl-xxxxl--medium;
+    @include medium {
+        @include rem(padding-left,$space-xxxxl);
+    }
     @include large {
         & {
             padding-left: 6em;
@@ -208,7 +212,9 @@
 
 %layout-right {
     @include rem(padding-right,$space-m);
-    @extend %pr-xxxxl--medium;
+    @include medium {
+        @include rem(padding-right,$space-xxxxl);
+    }
     @include large {
         & {
             padding-right: 6em;

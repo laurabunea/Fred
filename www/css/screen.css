@@ -130,9 +130,6 @@ img {
   display: table;
   /* 2 */ }
 
-.btn--block:first-child, .btn--submit:first-child {
-  margin-top: 0; }
-
 .pt-0 {
   padding-top: 0; }
 
@@ -3034,10 +3031,20 @@ sub {
   padding-top: 3rem;
   padding-bottom: 48px;
   padding-bottom: 3rem; }
+  @media only screen and (max-width: 59em) {
+    .section {
+      padding-top: 32px;
+      padding-top: 2rem;
+      padding-bottom: 32px;
+      padding-bottom: 2rem; } }
 
 .layout, .layout--left, .col.layout--left {
   padding-left: 16px;
   padding-left: 1rem; }
+  @media only screen and (min-width: 37.5em) {
+    %layout-left {
+      padding-left: 48px;
+      padding-left: 3rem; } }
   @media only screen and (min-width: 60em) {
     .layout, .layout--left, .col.layout--left {
       padding-left: 6em; } }
@@ -3045,6 +3052,10 @@ sub {
 .layout, .layout--right, .col.layout--right {
   padding-right: 16px;
   padding-right: 1rem; }
+  @media only screen and (min-width: 37.5em) {
+    %layout-right {
+      padding-right: 48px;
+      padding-right: 3rem; } }
   @media only screen and (min-width: 60em) {
     .layout, .layout--right, .col.layout--right {
       padding-right: 6em; } }
@@ -3441,49 +3452,6 @@ sub {
 .border--light-grey {
   border-color: #ddd; }
 
-.btn--dark {
-  background-color: #293f54;
-  color: #fff; }
-
-.btn--red {
-  background-color: #e2534a;
-  color: #fff; }
-
-.btn--mysuper-green {
-  background-color: #5e9b91;
-  color: #fff; }
-
-.btn--primary, .btn--submit {
-  background-color: #37b67f;
-  color: #fff;
-  border: #37b67f; }
-  .btn--primary:visited, .btn--submit:visited {
-    color: #fff; }
-  .btn--primary:hover, .btn--submit:hover {
-    background-color: #2b8f64;
-    color: #fff; }
-  .btn--primary:active, .btn--submit:active {
-    color: #fff;
-    background-color: #37b67f; }
-
-.btn--secondary {
-  background: #293f54;
-  color: #fff; }
-  .btn--secondary:visited {
-    color: #236FA6; }
-  .btn--secondary:hover {
-    background: #182532;
-    color: #fff; }
-  .btn--secondary:active {
-    color: #fff;
-    background: #293f54; }
-
-.btn--tertiary {
-  background: none;
-  color: #236FA6; }
-  .btn--tertiary:visited {
-    color: #236FA6; }
-
 /*------------------------------------*\
     #PLAYPEN
     The place where we solve design 
@@ -3735,6 +3703,9 @@ sub {
   letter-spacing: 0.03em; }
   .breadcrumb > li {
     margin-top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     display: none; }
     .breadcrumb > li:last-child {
       display: inline-block; }
@@ -3761,6 +3732,9 @@ sub {
       content: '\d7'; }
     .breadcrumb > li .back:after, .breadcrumb > li .close:after {
       content: none; }
+  .breadcrumb a {
+    font-size: 12px;
+    font-size: 0.75rem; }
 
 .anchor-links {
   padding-top: 32px;
@@ -3842,20 +3816,22 @@ button {
 /*********************************
     Pill/softness modifier
 ********************************/
-.btn--soft, .btn--submit {
+.btn--soft {
   border-radius: 4px;
   border-radius: 0.25rem; }
 
 /*********************************
     block modifier
 ********************************/
-.btn--block, .btn--submit {
+.btn--block {
   margin-top: 16px;
   margin-top: 1rem;
   display: block;
   width: 100%;
   padding-left: 0;
   padding-right: 0; }
+  .btn--block:first-child {
+    margin-top: 0; }
 
 /*****************************************************************************
     Make a button behave like a block at mobile only (also handy)
@@ -3917,6 +3893,49 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
   padding-right: 24px;
   padding-right: 1.5rem;
   line-height: 3rem; }
+
+.btn--dark {
+  background-color: #293f54;
+  color: #fff; }
+
+.btn--red {
+  background-color: #e2534a;
+  color: #fff; }
+
+.btn--mysuper-green {
+  background-color: #5e9b91;
+  color: #fff; }
+
+.btn-primary {
+  background-color: #37b67f;
+  color: #fff;
+  border: #37b67f; }
+  .btn-primary:visited {
+    color: #fff; }
+  .btn-primary:hover {
+    background-color: #2b8f64;
+    color: #fff; }
+  .btn-primary:active {
+    color: #fff;
+    background-color: #37b67f; }
+
+.btn-secondary {
+  background: #293f54;
+  color: #fff; }
+  .btn-secondary:visited {
+    color: #236FA6; }
+  .btn-secondary:hover {
+    background: #182532;
+    color: #fff; }
+  .btn-secondary:active {
+    color: #fff;
+    background: #293f54; }
+
+.btn-tertiary {
+  background: none;
+  color: #236FA6; }
+  .btn-tertiary:visited {
+    color: #236FA6; }
 
 .action__icon {
   display: inline-block;
