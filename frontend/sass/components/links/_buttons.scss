@@ -11,7 +11,7 @@ $btn--x-large:3rem;
 
 
 %btn {
-    @extend %remove-anchor-decoration;
+    text-decoration:none;
     margin-top:0;
     @include rem(padding-left,$space-m);
     @include rem(padding-right,$space-m);
@@ -98,22 +98,16 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
 */
 
 
-%btn--submit {
+.btn--submit {
     @extend %btn;
-    @extend %btn--block;
-    @extend %btn--soft;
-    @extend %btn-primary;
-    @extend %cursor-on-hover;
 }
 
-
-.btn--submit { @extend %btn--submit;}
 
 
 /*********************************
     bounce modifier
 *********************************/
-%btn--bounce {
+.btn--bounce {
     position: relative;
     top: 0;
 
@@ -121,9 +115,6 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
         top: .1em; 
     }
 }
-
-.btn--bounce {  @extend %btn--bounce; }
-
 
 /*********************************
     Size modifiers
