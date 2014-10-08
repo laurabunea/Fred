@@ -266,6 +266,7 @@
                     "data":[
                         {
                             "type":"layout/content-block",
+                            "padding":"pb-xxl",
                             "class":"u-text-center",
                             "data":[
                                 {
@@ -281,13 +282,20 @@
                         {
                             "type":"layout/content-block",
                             "class":"u-text-center",
+                            "padding":"pb-xl",
                             "data":[
                                 {
                                     "type":"type/h3",
                                     "data":"Background colours"
                                 },
-                                "To add a background colour to a component just add a class shown below.",
-                                {
+                                "To add a background colour to a component just add a class shown below." 
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "class":"u-text-center",
+                            "data":[
+                                 {
                                     "type": "/pattern-library/swatch",
                                     "bottom_theme":"theme--white",
                                     "themes":[
@@ -328,7 +336,14 @@
                                     "data":"Border colours",
                                     "class":"u-text-center"
                                 },
-                                "blah blah",
+                                "blah blah"
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "class":"u-text-center",
+                            "data":[
+                                
                                 {
                                     "type": "/pattern-library/border-colours",
                                     "themes":[
@@ -366,7 +381,13 @@
                                     "data":"Font colours",
                                     "class":"u-text-center"
                                 },
-                                "To change the colour of the text in your component just add a class shown below.",
+                                "To change the colour of the text in your component just add a class shown below."
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "class":"u-text-center",
+                            "data":[
                                 {
                                     "type": "/pattern-library/text-colours",
                                     "themes":[
@@ -415,7 +436,13 @@
                                     "data":"Themes",
                                     "class":"u-text-center"
                                 },
-                                "A theme is made up from text colours, background colours and border colours. Here are some premade themes. To select the theme you want just choose a class name from below.",
+                                "A theme is made up from text colours, background colours and border colours. Here are some premade themes. To select the theme you want just choose a class name from below."
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "class":"u-text-center",
+                            "data":[
                                 {
                                     "type": "/pattern-library/swatch",
                                     "themes":[
@@ -458,7 +485,6 @@
             "anchor":"font-sizes",
             "columns":[
                 {
-                    "column_size":"",
                     "data":[
                         {
                             "type":"layout/content-block",
@@ -468,7 +494,14 @@
                                     "type":"type/h2",
                                     "data":"Font size helpers"
                                 },
-                                "To change the font just add the follwing class name to 'font-size-'.",
+                                "To change the font just add the follwing class name to 'font-size-'."
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "class":"u-text-center",
+                            "data":[
+                                
                                 {
                                     "type": "/pattern-library/swatch",
                                     "top_theme":"theme--white",
@@ -516,66 +549,70 @@
             ]
         },
         {
-            "type": "pattern-library/styleguide-container",
+            "type": "layout/dynamic",
             "internal_theme":"theme--dark",
             "container_padding":"layout section",
-            "anchor":"themes",
-            "intro":[
-                {
-                    "grid_modifier":"grid--center",
-                    "data":[
-                        {
-                            "type":"type/h2",
-                            "data":"Spacing helpers "
-                        },
-                        "Say p = padding m = margin, then t = top b = bottom l = left r = right and then you can prefix it with the media queries to change the padding :)"
-                    ]
-                }
-            ],
+            "anchor":"spacing-helpers",
             "columns":[
                 {
-                    "column_size":"",
                     "data":[
-                         {
-                            "type": "/pattern-library/spacing-helpers",
-                            "sizes":[
-                                {  
-                                    "name":"xxs",
-                                    "px":"4"
+                        {
+                            "type":"layout/content-block",
+                            "class":"u-text-center",
+                            "data":[
+                                {
+                                    "type":"type/h2",
+                                    "data":"Spacing helpers "
                                 },
-                                {  
-                                    "name":"xs",
-                                    "px":"8"
-                                },
-                                {  
-                                    "name":"s",
-                                    "px":"12"
-                                },
-                                {  
-                                    "name":"m",
-                                    "px":"16"
-                                },
-                                {  
-                                    "name":"l",
-                                    "px":"20"
-                                },
-                                {  
-                                    "name":"xl",
-                                    "px":"24"
-                                },
-                                {  
-                                    "name":"xxl",
-                                    "px":"28"
-                                },
-                                {  
-                                    "name":"xxxl",
-                                    "px":"32"
-                                },
-                                {  
-                                    "name":"xxxxl",
-                                    "px":"48"
-                                }
-                            ]  
+                                "Say p = padding m = margin, then t = top b = bottom l = left r = right and then you can prefix it with the media queries to change the padding :)"
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "class":"u-text-center",
+                            "data":[
+                                {
+                                    "type": "/pattern-library/spacing-helpers",
+                                    "sizes":[
+                                        {  
+                                            "name":"xxs",
+                                            "px":"4"
+                                        },
+                                        {  
+                                            "name":"xs",
+                                            "px":"8"
+                                        },
+                                        {  
+                                            "name":"s",
+                                            "px":"12"
+                                        },
+                                        {  
+                                            "name":"m",
+                                            "px":"16"
+                                        },
+                                        {  
+                                            "name":"l",
+                                            "px":"20"
+                                        },
+                                        {  
+                                            "name":"xl",
+                                            "px":"24"
+                                        },
+                                        {  
+                                            "name":"xxl",
+                                            "px":"28"
+                                        },
+                                        {  
+                                            "name":"xxxl",
+                                            "px":"32"
+                                        },
+                                        {  
+                                            "name":"xxxxl",
+                                            "px":"48"
+                                        }
+                                    ]  
+                                }   
+                            ]
                         }
                     ]
                 }
