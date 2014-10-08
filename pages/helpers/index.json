@@ -3,13 +3,14 @@
     "headline": "Helpers",
     "template":"/pages/helpers.j2",
     "data": [ 
-        
         {
             "type": "layout/dynamic",
             "internal_theme":"theme--white",
+            "grid_modifier":"grid--center",
             "container_padding":"layout section mb-xxl",
             "columns":[
                 {
+                    "column_size":"large-8",
                     "data":[
                         { 
                             "type": "type/h1",
@@ -19,21 +20,40 @@
                             "type": "type/intro",
                             "data": "Here are some handy little utility classes you can add to your components when building your pages prototype."
                         },
-                         { 
+                        { 
                             "type": "links/btn",
                             "label": "Typography",
-                            "theme": "primary"
+                            "theme": "primary",
+                            "soft":true,
+                            "href":"#typography-helpers"
                         },
-                        {
-                            "type": "type/list",
-                            "class": "list--inline",
-                            "data": [
-                                "<a href='#typography-helpers' class='pill'>Typography</a>",
-                                "<a href='#layout-helpers' class='pill'>Layout</a>",
-                                "<a href='#theme-helpers' class='pill'>Theme</a>",
-                                "<a href='#spacing-helpers' class='pill'>Spacing</a>",
-                                "<a href='#font-sizes' class='pill'>Font sizes</a>"
-                            ]
+                        { 
+                            "type": "links/btn",
+                            "label": "Layout",
+                            "theme": "primary",
+                            "soft":true,
+                            "href":"#layout-helpers"
+                        },
+                        { 
+                            "type": "links/btn",
+                            "label": "Themes",
+                            "theme": "primary",
+                            "soft":true,
+                            "href":"#theme-helpers"
+                        },
+                        { 
+                            "type": "links/btn",
+                            "label": "Spacing",
+                            "theme": "primary",
+                            "soft":true,
+                            "href":"#spacing-helpers"
+                        },
+                        { 
+                            "type": "links/btn",
+                            "label": "Font sizes",
+                            "theme": "primary",
+                            "soft":true,
+                            "href":"#font-sizes"
                         }
                     ]
                 }
@@ -120,9 +140,9 @@
                         },
                         {
                             "type":"layout/content-block",
-                            "padding":"pb-xxxxl pt-xxxl",
+                            "padding":"pb-xxxl pt-xxxl",
                             "class":"",
-                            "theme":"bt--secondry",
+                            "theme":"bt--secondary",
                             "data":[
                                 {
                                     "type": "type/h3",
@@ -176,7 +196,7 @@
                                 {
                                     "type": "code/code-and-example",
                                     "data": [
-                                        "<div class='u-clearfix'>\n  <p class='u-right bg--orange pl-m pr-m'>I'm floating right.</p>\n  <p class='u-left bg--orange pl-m pr-m'>I'm floating left.</p>\n</div>"
+                                        "<div class='u-clearfix'>\n  <p class='u-right bg--light-grey pl-m pr-m'>I'm floating right.</p>\n  <p class='u-left bg--light-grey pl-m pr-m'>I'm floating left.</p>\n</div>"
                                     ]
                                 }
                             ]
@@ -212,7 +232,7 @@
                                 {
                                     "type": "code/code-and-example",
                                     "data": [
-                                        "<div class='u-center' style='width:100px;' >\n   <div class='bg--orange pl-m pr-m'>I am centered, wohoo.</div>\n</div>"
+                                        "<div class='u-center' style='width:100px;' >\n   <div class='bg--light-grey pl-m pr-m'>I am centered, wohoo.</div>\n</div>"
                                     ]
                                 }
                             ]
@@ -248,13 +268,13 @@
                                 {
                                     "type": "code/code-and-example",
                                     "data": [
-                                        "<div class='u-overflow-hidden bg--orange' style='width:200px; height:100px;'><p class='pl-m pr-m'>You can use the overflow property when you want to have better control of the layout. The default value is visible.</p></div>"
+                                        "<div class='u-overflow-hidden bg--light-grey' style='width:200px; height:100px;'><p class='pl-m pr-m'>You can use the overflow property when you want to have better control of the layout. The default value is visible.</p></div>"
                                     ]
                                 },
                                 {
                                     "type": "code/code-and-example",
                                     "data": [
-                                        "<div class='u-overflow-scroll bg--orange' style='width:200px; height:100px;'><p class='pl-m pr-m'>You can use the overflow property when you want to have better control of the layout. The default value is visible.</p></div>"
+                                        "<div class='u-overflow-scroll bg--light-grey' style='width:200px; height:100px;'><p class='pl-m pr-m'>You can use the overflow property when you want to have better control of the layout. The default value is visible.</p></div>"
                                     ]
                                 }
                             ]
@@ -278,7 +298,7 @@
                                 {
                                     "type": "code/code-and-example",
                                     "data": [
-                                        "<div class='u-align-top'><p class='u-inline'>text top</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--orange'></div><img src='/images/fred-logo.png'/></div>"
+                                        "<div class='u-align-top'><p class='u-inline'>text top</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--light-grey'></div><img src='/images/fred-logo.png'/></div>"
                                     ]
                                 },
                                 {
@@ -288,7 +308,7 @@
                                 {
                                     "type": "code/code-and-example",
                                     "data": [
-                                        "<div class='u-align-bottom'><p class='u-inline'>text bottom</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--orange'></div><img src='/images/fred-logo.png'/></div>"
+                                        "<div class='u-align-bottom'><p class='u-inline'>text bottom</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--light-grey'></div><img src='/images/fred-logo.png'/></div>"
                                     ]
                                 },
                                 {
@@ -298,7 +318,7 @@
                                 {
                                     "type": "code/code-and-example",
                                     "data": [
-                                        "<div class='u-align-middle'><p class='u-inline'>text middle</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--orange'></div><img src='/images/fred-logo.png'/></div>"
+                                        "<div class='u-align-middle'><p class='u-inline'>text middle</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--light-grey'></div><img src='/images/fred-logo.png'/></div>"
                                     ]
                                 },
                                 {
@@ -308,7 +328,7 @@
                                 {
                                     "type": "code/code-and-example",
                                     "data": [
-                                        "<div class='u-align-baseline'><p class='u-inline'>text baseline</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--orange'></div><img src='/images/fred-logo.png'/></div>"
+                                        "<div class='u-align-baseline'><p class='u-inline'>text baseline</p> <div style='height:150px; width:150px;' class='ml-l mr-l u-inline bg--light-grey'></div><img src='/images/fred-logo.png'/></div>"
                                     ]
                                 }
                             ]
@@ -347,7 +367,7 @@
                                 {
                                     "type": "code/code-and-example",
                                     "data": [
-                                        "<div class='u-inline bg--orange pl-m pr-m'>I am a inline block.</div><div class='u-block bg--orange pl-m pr-m'>I am a block element.</div>"
+                                        "<div class='u-inline bg--light-grey pl-m pr-m'>I am a inline block.</div><div class='u-block bg--light-grey pl-m pr-m'>I am a block element.</div>"
                                     ]
                                 }
                             ]
@@ -732,5 +752,4 @@
             ]
         }
     ]
-   
 }

@@ -762,10 +762,10 @@ sub {
   width: 100%; }
 
 .section {
-  padding-top: 48px;
-  padding-top: 3rem;
-  padding-bottom: 48px;
-  padding-bottom: 3rem; }
+  padding-top: 64px;
+  padding-top: 4rem;
+  padding-bottom: 64px;
+  padding-bottom: 4rem; }
   @media only screen and (max-width: 59em) {
     .section {
       padding-top: 32px;

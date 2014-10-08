@@ -184,10 +184,11 @@
 // ----------------------------------------------------------------------------
 
 
-//.section-xxxxl, 
+$section-desktop:64;
+
 .section {
-    @include rem(padding-top,$space-xxxxl);
-    @include rem(padding-bottom,$space-xxxxl);
+    @include rem(padding-top,$section-desktop);
+    @include rem(padding-bottom,$section-desktop);
     @include small-down {
         @include rem(padding-top,$space-xxxl);
         @include rem(padding-bottom,$space-xxxl);
