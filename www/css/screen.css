@@ -1100,6 +1100,10 @@ sub {
   background-color: #6aa41e;
   color: #fff; }
 
+.theme--dark pre {
+  background-color: #37b67f;
+  color: #293f54; }
+
 .theme--fred-dark {
   background-color: #37b67f;
   color: #293f54; }
@@ -1651,35 +1655,35 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
   background-color: #5e9b91;
   color: #fff; }
 
-.btn-primary {
+.btn--primary {
   background-color: #37b67f;
   color: #fff;
   border: #37b67f; }
-  .btn-primary:visited {
+  .btn--primary:visited {
     color: #fff; }
-  .btn-primary:hover {
+  .btn--primary:hover {
     background-color: #2b8f64;
     color: #fff; }
-  .btn-primary:active {
+  .btn--primary:active {
     color: #fff;
     background-color: #37b67f; }
 
-.btn-secondary {
+.btn--secondary {
   background: #293f54;
   color: #fff; }
-  .btn-secondary:visited {
+  .btn--secondary:visited {
     color: #236FA6; }
-  .btn-secondary:hover {
+  .btn--secondary:hover {
     background: #182532;
     color: #fff; }
-  .btn-secondary:active {
+  .btn--secondary:active {
     color: #fff;
     background: #293f54; }
 
-.btn-tertiary {
+.btn--tertiary {
   background: none;
   color: #236FA6; }
-  .btn-tertiary:visited {
+  .btn--tertiary:visited {
     color: #236FA6; }
 
 .action__icon {

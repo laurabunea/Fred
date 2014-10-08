@@ -190,7 +190,12 @@ $link-color:
   background-color:#6aa41e;
   color:#fff;
 }
-
+.theme--dark {
+  pre {
+    background-color:#37b67f;
+    color:#293f54;
+  }
+}
 .theme--fred-dark {
   background-color:#37b67f;
   color:#293f54;

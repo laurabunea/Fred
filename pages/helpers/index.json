@@ -3,91 +3,139 @@
     "headline": "Helpers",
     "template":"/pages/helpers.j2",
     "data": [ 
+        
         {
-            "type" : "/layout/content-block",
-            "grid_modifier":"grid--center",
-            "column_size":"large-8",
-            "data": [
-                { 
-                    "type": "type/h1",
-                    "data": "Helpers"
-                },
-                { 
-                    "type": "type/intro",
-                    "data": "Here are some handy little utility classes you can add to your components when building your pages prototype."
-                },
+            "type": "layout/dynamic",
+            "internal_theme":"theme--white",
+            "container_padding":"layout section mb-xxl",
+            "columns":[
                 {
-                    "type": "type/list",
-                    "class": "list--inline",
-                    "data": [
-                        "<a href='#typography-helpers' class='pill'>Typography</a>",
-                        "<a href='#layout-helpers' class='pill'>Layout</a>",
-                        "<a href='#theme-helpers' class='pill'>Theme</a>",
-                        "<a href='#spacing-helpers' class='pill'>Spacing</a>",
-                        "<a href='#font-sizes' class='pill'>Font sizes</a>"
+                    "data":[
+                        { 
+                            "type": "type/h1",
+                            "data": "Helpers"
+                        },
+                        { 
+                            "type": "type/intro",
+                            "data": "Here are some handy little utility classes you can add to your components when building your pages prototype."
+                        },
+                         { 
+                            "type": "links/btn",
+                            "label": "Typography",
+                            "theme": "primary"
+                        },
+                        {
+                            "type": "type/list",
+                            "class": "list--inline",
+                            "data": [
+                                "<a href='#typography-helpers' class='pill'>Typography</a>",
+                                "<a href='#layout-helpers' class='pill'>Layout</a>",
+                                "<a href='#theme-helpers' class='pill'>Theme</a>",
+                                "<a href='#spacing-helpers' class='pill'>Spacing</a>",
+                                "<a href='#font-sizes' class='pill'>Font sizes</a>"
+                            ]
+                        }
                     ]
                 }
             ]
         },
         {
-            "type" : "/pattern-library/content-block",
+            "type": "layout/dynamic",
+            "internal_theme":"theme--dark",
+            "container_padding":"layout section",
             "anchor":"typography-helpers",
-            "data": [
-                { 
-                    "type": "type/h2",
-                    "data": "Typography helpers"
-                },
-                "Here are some handy little typography classes that will come in useful when building modules for this site.",
+            "columns":[
                 {
-                    "type": "type/h3",
-                    "data": "Text alignment classes"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<p class='u-text-center'>I am some centered text.</p>\n<p class='u-text-left'>I am some text aligned to the left.</p>\n<p class='u-text-right'>I am some right alligned text.</p>"
-                    ]
-                },
-                {
-                    "type": "raw",
-                    "data":"<hr />"
-                },        
-                {
-                    "type": "type/h3",
-                    "data": "Uppercase and lowercase"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<p class='u-uppercase'>I've been transformed to uppercase.</p>\n<p class='u-lowercase'>I'VE BEEN TRANSFORMED TO LOWERCASE.</p>"
-                    ] 
-                },
-                {
-                    "type": "raw",
-                    "data":"<hr />"
-                }, 
-                {
-                    "type": "type/h3",
-                    "data": "Font weights "
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<p class='u-bold'>I am some bold.</p>\n<p class='u-light'>I am some light.</p>\n<p class='u-italic'>I am italic.</p>\n<p class='u-italic u-bold'>I am bold and italic.</p>\n<p class='u-italic u-light'>I am light and italic.</p>"
-                    ]
-                },
-                {
-                    "type": "raw",
-                    "data":"<hr />"
-                }, 
-                {
-                    "type": "type/h3",
-                    "data": "Text truncate"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<p class='u-truncate'>I am a really really really really really really really really really really really long sentence that just keeps going and going and going and going and going.</p>"
+                    "column_size":"",
+                    "data":[
+                        {
+                            "type":"layout/content-block",
+                            "padding":"pb-xxxxl",
+                            "class":"u-text-center",
+                            "data":[
+                                { 
+                                    "type": "type/h2",
+                                    "data": "Typography helpers"
+                                },
+                                { 
+                                    "type": "type/intro",
+                                    "data": "blah blah blah"
+                                }
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "padding":"pb-xxxxl pt-xxxl",
+                            "class":"",
+                            "theme":"bt--secondary",
+                            "data":[
+                                {
+                                    "type": "type/h3",
+                                    "data": "Text alignment classes"
+                                },
+                                {
+                                    "type": "code/code-and-example",
+                                    "data": [
+                                        "<p class='u-text-center'>I am some centered text.</p>\n<p class='u-text-left'>I am some text aligned to the left.</p>\n<p class='u-text-right'>I am some right alligned text.</p>"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "padding":"pb-xxxxl pt-xxxl",
+                            "class":"",
+                            "theme":"bt--secondary",
+                            "data":[
+                                {
+                                    "type": "type/h3",
+                                    "data": "Uppercase and lowercase"
+                                },
+                                {
+                                    "type": "code/code-and-example",
+                                    "data": [
+                                        "<p class='u-uppercase'>I've been transformed to uppercase.</p>\n<p class='u-lowercase'>I'VE BEEN TRANSFORMED TO LOWERCASE.</p>"
+                       
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "padding":"pb-xxxxl pt-xxxl",
+                            "class":"",
+                            "theme":"bt--secondary",
+                            "data":[
+                                {
+                                    "type": "type/h3",
+                                    "data": "Font weights "
+                                },
+                                {
+                                    "type": "code/code-and-example",
+                                    "data": [
+                                        "<p class='u-bold'>I am some bold.</p>\n<p class='u-light'>I am some light.</p>\n<p class='u-italic'>I am italic.</p>\n<p class='u-italic u-bold'>I am bold and italic.</p>\n<p class='u-italic u-light'>I am light and italic.</p>"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "padding":"pb-xxxxl pt-xxxl",
+                            "class":"",
+                            "theme":"bt--secondry",
+                            "data":[
+                                {
+                                    "type": "type/h3",
+                                    "data": "Text truncate"
+                                },
+                                {
+                                    "type": "code/code-and-example",
+                                    "data": [
+                                        "<p class='u-truncate'>I am a really really really really really really really really really really really long sentence that just keeps going and going and going and going and going.</p>"
+                                    ]
+                                }
+                            ]
+                        }     
                     ]
                 }
             ]
@@ -96,10 +144,9 @@
             "type": "layout/dynamic",
             "internal_theme":"theme--fred-dark",
             "container_padding":"layout section",
-            "anchor":"themes",
+            "anchor":"layout-helpers",
             "columns":[
                 {
-                    "column_size":"",
                     "data":[
                         {
                             "type":"layout/content-block",
@@ -616,7 +663,7 @@
         {
             "type": "layout/dynamic",
             "internal_theme":"theme--dark",
-            "container_padding":"layout section",
+            "container_padding":"layout section mb-xxxxl",
             "anchor":"spacing-helpers",
             "columns":[
                 {

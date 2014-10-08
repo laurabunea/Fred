@@ -168,7 +168,7 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
     color:#fff;
 }
 
-.btn-primary {
+.btn--primary {
     background-color: #37b67f;
     color: $white; 
     border: #37b67f;
@@ -185,7 +185,7 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
     }
 }
 
-.btn-secondary {
+.btn--secondary {
 
     background: #293f54;
     color: #fff;
@@ -202,7 +202,7 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
 }
 
 
-.btn-tertiary {
+.btn--tertiary {
     background: none;
     color: $base-link-color;
     &:visited {
