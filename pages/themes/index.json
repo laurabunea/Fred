@@ -266,7 +266,7 @@
                             "type":"type/h2",
                             "data":"Spacing helpers "
                         },
-                        "Say p = padding m = margin, then t = top b = bottom l = left r = right "
+                        "Say p = padding m = margin, then t = top b = bottom l = left r = right and then you can prefix it with the media queries to change the padding :)"
                     ]
                 }
             ],
@@ -312,6 +312,68 @@
                                 {  
                                     "name":"xxxxl",
                                     "px":"48"
+                                }
+                            ]  
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "pattern-library/styleguide-container",
+            "internal_theme":"theme--white",
+            "container_padding":"layout section",
+            "anchor":"themes",
+            "intro":[
+                {
+                    "grid_modifier":"grid--center",
+                    "data":[
+                        {
+                            "type":"type/h2",
+                            "data":"Font size classes"
+                        },
+                        "To change the font just add the follwing class name to 'font-size-'."
+                    ]
+                }
+            ],
+            "columns":[
+                {
+                    "column_size":"",
+                    "data":[
+                         {
+                            "type": "/pattern-library/swatch",
+                            "themes":[
+                                { 
+                                    "name":"font-size-xs",
+                                    "data":"xs" 
+                                },
+                                { 
+                                    "name":"font-size-s",
+                                    "data":"s" 
+                                },
+                                { 
+                                    "name":"font-size-m",
+                                    "data":"m" 
+                                },
+                                { 
+                                    "name":"font-size-l",
+                                    "data":"l" 
+                                },
+                                { 
+                                    "name":"font-size-xl",
+                                    "data":"xl" 
+                                },
+                                { 
+                                    "name":"font-size-xxl",
+                                    "data":"xxl" 
+                                },
+                                { 
+                                    "name":"font-size-xxxl",
+                                    "data":"xxxl" 
+                                },
+                                { 
+                                    "name":"font-size-xxxxl",
+                                    "data":"xxxxl" 
                                 }
                             ]  
                         }

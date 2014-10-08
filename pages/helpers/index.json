@@ -10,7 +10,7 @@
             "data": [
                 { 
                     "type": "type/h1",
-                    "data": "Utility helpers"
+                    "data": "Helpers"
                 },
                 { 
                     "type": "type/intro",
@@ -21,7 +21,10 @@
                     "class": "list--inline",
                     "data": [
                         "<a href='#typography-helpers' class='pill'>Typography</a>",
-                        "<a href='#layout-helpers' class='pill'>Layout</a>"
+                        "<a href='#layout-helpers' class='pill'>Layout</a>",
+                        "<a href='#theme-helpers' class='pill'>Theme</a>",
+                        "<a href='#spacing-helpers' class='pill'>Spacing</a>",
+                        "<a href='#font-sizes' class='pill'>Font sizes</a>"
                     ]
                 }
             ]
@@ -248,6 +251,332 @@
                     "type": "code/code-and-example",
                     "data": [
                         "<div class='u-inline bg--red'>I am a inline block.</div><div class='u-block bg--blue'>I am a block element.</div>"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "layout/dynamic",
+            "internal_theme":"theme--dark",
+            "container_padding":"layout section",
+            "anchor":"themes",
+            "columns":[
+                {
+                    "column_size":"",
+                    "data":[
+                        {
+                            "type":"layout/content-block",
+                            "class":"u-text-center",
+                            "data":[
+                                {
+                                    "type":"type/h2",
+                                    "data":"Theme helpers"
+                                },
+                                {
+                                    "type":"type/intro",
+                                    "data":"blah blah"
+                                }
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "class":"u-text-center",
+                            "data":[
+                                {
+                                    "type":"type/h3",
+                                    "data":"Background colours"
+                                },
+                                "To add a background colour to a component just add a class shown below.",
+                                {
+                                    "type": "/pattern-library/swatch",
+                                    "bottom_theme":"theme--white",
+                                    "themes":[
+                                        { 
+                                            "name":"bg--black" 
+                                        },
+                                        { 
+                                            "name":"bg--white" 
+                                        },
+                                        { 
+                                            "name":"bg--light-blue" 
+                                        },
+                                        { 
+                                            "name":"bg--dark-grey" 
+                                        },
+                                        { 
+                                            "name":"bg--red" 
+                                        },
+                                        { 
+                                            "name":"bg--blue" 
+                                        },
+                                         { 
+                                            "name":"bg--link-color" 
+                                        },
+                                         { 
+                                            "name":"bg--soft-pink" 
+                                        }
+                                    ]  
+                                }
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "class":"u-text-center",
+                            "data":[
+                                {   
+                                    "type":"type/h3",
+                                    "data":"Border colours",
+                                    "class":"u-text-center"
+                                },
+                                "blah blah",
+                                {
+                                    "type": "/pattern-library/border-colours",
+                                    "themes":[
+                                        { 
+                                            "name":"border--red"
+                                        },
+                                        { 
+                                            "name":"border--soft-pink"
+                                        },
+                                        { 
+                                            "name":"border--orange"
+                                        },
+                                        { 
+                                            "name":"border--blue"
+                                        },
+                                        { 
+                                            "name":"border--green"
+                                        },
+                                        { 
+                                            "name":"border--link-colour"
+                                        },
+                                        { 
+                                            "name":"border--light-grey"
+                                        }
+                                    ]  
+                                }
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "class":"u-text-center",
+                            "data":[
+                                {   
+                                    "type":"type/h3",
+                                    "data":"Font colours",
+                                    "class":"u-text-center"
+                                },
+                                "To change the colour of the text in your component just add a class shown below.",
+                                {
+                                    "type": "/pattern-library/text-colours",
+                                    "themes":[
+                                        { 
+                                            "name":"text--black",
+                                            "data":"<span class='font-size-xxl'>Aa</span>"
+                                        },
+                                        { 
+                                            "name":"text--white",
+                                            "data":"<span class='font-size-xxl'>Aa</span>"
+                                        },
+                                        { 
+                                            "name":"text--light-blue",
+                                            "data":"<span class='font-size-xxl'>Aa</span>"
+                                        },
+                                        { 
+                                            "name":"text--dark-grey",
+                                            "data":"<span class='font-size-xxl'>Aa</span>"
+                                        },
+                                        { 
+                                            "name":"text--red",
+                                            "data":"<span class='font-size-xxl'>Aa</span>"
+                                        },
+                                        { 
+                                            "name":"text--blue",
+                                            "data":"<span class='font-size-xxl'>Aa</span>"
+                                        },
+                                         { 
+                                            "name":"text--link-color",
+                                            "data":"<span class='font-size-xxl'>Aa</span>"
+                                        },
+                                         { 
+                                            "name":"text--soft-pink",
+                                            "data":"<span class='font-size-xxl'>Aa</span>"
+                                        }
+                                    ]  
+                                }
+                            ]
+                        },
+                        {
+                            "type":"layout/content-block",
+                            "class":"u-text-center",
+                            "data":[
+                                {   
+                                    "type":"type/h3",
+                                    "data":"Themes",
+                                    "class":"u-text-center"
+                                },
+                                "A theme is made up from text colours, background colours and border colours. Here are some premade themes. To select the theme you want just choose a class name from below.",
+                                {
+                                    "type": "/pattern-library/swatch",
+                                    "themes":[
+                                        { 
+                                            "name":"theme--hot",
+                                            "data":"Aa <a href=''>a</a>" 
+                                        },
+                                        { 
+                                            "name":"theme--warm",
+                                            "data":"Aa <a href=''>a</a>" 
+                                        },
+                                        { 
+                                            "name":"theme--soft",
+                                            "data":"Aa <a href=''>a</a>" 
+                                        },
+                                        { 
+                                            "name":"theme--cool",
+                                            "data":"Aa <a href=''>a</a>"  
+                                        },
+                                        { 
+                                            "name":"theme--fred",
+                                            "data":"Aa <a href=''>a</a>" 
+                                        },
+                                        { 
+                                            "name":"theme--dark",
+                                            "data":"Aa <a href=''>a</a>" 
+                                        }
+                                    ]  
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "layout/dynamic",
+            "internal_theme":"theme--fred",
+            "container_padding":"layout section",
+            "anchor":"font-sizes",
+            "columns":[
+                {
+                    "column_size":"",
+                    "data":[
+                        {
+                            "type":"layout/content-block",
+                            "class":"u-text-center",
+                            "data":[
+                                {
+                                    "type":"type/h2",
+                                    "data":"Font size helpers"
+                                },
+                                "To change the font just add the follwing class name to 'font-size-'.",
+                                {
+                                    "type": "/pattern-library/swatch",
+                                    "top_theme":"theme--white",
+                                    "bottom_theme":"theme--dark",
+                                    "swatch_size":"large-quarter medium-half",
+                                    "themes":[
+                                        { 
+                                            "name":"font-size-xs",
+                                            "data":"xs" 
+                                        },
+                                        { 
+                                            "name":"font-size-s",
+                                            "data":"s" 
+                                        },
+                                        { 
+                                            "name":"font-size-m",
+                                            "data":"m" 
+                                        },
+                                        { 
+                                            "name":"font-size-l",
+                                            "data":"l" 
+                                        },
+                                        { 
+                                            "name":"font-size-xl",
+                                            "data":"xl" 
+                                        },
+                                        { 
+                                            "name":"font-size-xxl",
+                                            "data":"xxl" 
+                                        },
+                                        { 
+                                            "name":"font-size-xxxl",
+                                            "data":"xxxl" 
+                                        },
+                                        { 
+                                            "name":"font-size-xxxxl",
+                                            "data":"xxxxl" 
+                                        }
+                                    ]  
+                                }     
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "pattern-library/styleguide-container",
+            "internal_theme":"theme--dark",
+            "container_padding":"layout section",
+            "anchor":"themes",
+            "intro":[
+                {
+                    "grid_modifier":"grid--center",
+                    "data":[
+                        {
+                            "type":"type/h2",
+                            "data":"Spacing helpers "
+                        },
+                        "Say p = padding m = margin, then t = top b = bottom l = left r = right and then you can prefix it with the media queries to change the padding :)"
+                    ]
+                }
+            ],
+            "columns":[
+                {
+                    "column_size":"",
+                    "data":[
+                         {
+                            "type": "/pattern-library/spacing-helpers",
+                            "sizes":[
+                                {  
+                                    "name":"xxs",
+                                    "px":"4"
+                                },
+                                {  
+                                    "name":"xs",
+                                    "px":"8"
+                                },
+                                {  
+                                    "name":"s",
+                                    "px":"12"
+                                },
+                                {  
+                                    "name":"m",
+                                    "px":"16"
+                                },
+                                {  
+                                    "name":"l",
+                                    "px":"20"
+                                },
+                                {  
+                                    "name":"xl",
+                                    "px":"24"
+                                },
+                                {  
+                                    "name":"xxl",
+                                    "px":"28"
+                                },
+                                {  
+                                    "name":"xxxl",
+                                    "px":"32"
+                                },
+                                {  
+                                    "name":"xxxxl",
+                                    "px":"48"
+                                }
+                            ]  
+                        }
                     ]
                 }
             ]

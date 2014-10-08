@@ -2,9 +2,9 @@
 
     {% for theme in item.themes %}
         
-        <div class='theme-swatch [ col large-fifth medium-half ]'>
+        <div class='theme-swatch [ col {{item.swatch_size | default('large-fifth medium-half')}} ]'>
       
-            <div class='swatch__top {% if theme.data %} {% else %}pt-xxl{% endif %} {{theme.name}}'>
+            <div class='swatch__top {{item.top_theme}} {% if theme.data %} {% else %}pt-xxl{% endif %} {{theme.name}}'>
                
                 {{theme.data | safe }}
         
