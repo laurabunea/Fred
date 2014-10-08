@@ -214,7 +214,7 @@
                                 {
                                     "type": "code/code-and-example",
                                     "data": [
-                                        "<div class='u-relative' style='height:100px; width:100%'>\n  <p class='u-absolute u-top-right bg--orange pl-m pr-m'/>I'm positioned top right.</p>\n  <p class='u-absolute u-top-left bg--orange pl-m pr-m'/>I'm positioned top left.</p>\n  <p class='u-absolute u-bottom-left bg--orange pl-m pr-m'/>I'm positioned bottom left.</p>\n  <p class='u-absolute u-bottom-right bg--orange pl-m pr-m'/>I'm positioned bottom right.</p>\n</div>"
+                                        "<div class='u-relative' style='height:100px; width:100%'>\n  <p class='u-absolute u-top-right bg--light-grey pl-m pr-m'/>I'm positioned top right.</p>\n  <p class='u-absolute u-top-left bg--light-grey pl-m pr-m'/>I'm positioned top left.</p>\n  <p class='u-absolute u-bottom-left bg--light-grey pl-m pr-m'/>I'm positioned bottom left.</p>\n  <p class='u-absolute u-bottom-right bg--light-grey pl-m pr-m'/>I'm positioned bottom right.</p>\n</div>"
                                     ]
                                 }
                             ]
@@ -626,7 +626,11 @@
                                     "type":"type/h2",
                                     "data":"Font size helpers"
                                 },
-                                "To change the font just add the follwing class name to 'font-size-'."
+                                {
+                                    "type":"type/intro",
+                                    "data":"To change the font just add one of the follwing class names to your component."
+                                }
+                             
                             ]
                         },
                         {
@@ -686,18 +690,22 @@
             "container_padding":"layout section mb-xxxxl",
             "anchor":"spacing-helpers",
             "columns":[
-                {
+                {  
                     "data":[
                         {
                             "type":"layout/content-block",
-                            "class":"u-text-center",
-                            "padding":"pb-xxl",
+                            "class":"u-text-center wrapper-small",
+                            "padding":"pb-xxl  u-text-center",
                             "data":[
                                 {
                                     "type":"type/h2",
                                     "data":"Spacing helpers "
                                 },
-                                "Say p = padding m = margin, then t = top b = bottom l = left r = right and then you can prefix it with the media queries to change the padding :)"
+                                {
+                                    "type":"type/intro",
+                                    "data":"If you want to tweak the padding or margin of a component you can use these handy little classes to overide the components default margin/padding."
+                                },
+                                "add the class equation"
                             ]
                         },
                         {

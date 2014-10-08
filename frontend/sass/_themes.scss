@@ -191,21 +191,24 @@ $link-color:
   color:#fff;
 }
 .theme--dark {
+  @extend %font-smoothing;
   pre {
     background-color:#37b67f;
     color:#293f54;
   }
 }
 .theme--fred-dark {
+  @extend %font-smoothing;
   background-color:#37b67f;
   color:#293f54;
   pre {
     background-color:#293f54;
+    border-color:darken(#293f54,10%);
   }
 
 }
 .bt--fred-dark {
-  border-top:1px solid darken(#37b67f, 10%);
+  border-top:1px solid darken(#37b67f, 5%);
 }
 // ----------------------------------------------------------------------------
 // Colours

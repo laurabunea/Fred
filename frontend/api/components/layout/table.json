@@ -10,29 +10,29 @@
             "example": {
                 "type": "layout/table",
                 "data": {
-                        "thead": [
-                            { "data": "Action" },
-                            { "data": "Key" }
+                    "thead": [
+                        { "data": "Action" },
+                        { "data": "Key" }
+                    ],
+                    "tbody": [
+                        [
+                            {
+                                "data": "Show the menu"
+                            },
+                            {
+                                "data": "alt + control + m"
+                            }
                         ],
-                        "tbody": [
-                            [
-                                {
-                                    "data": "Show the menu"
-                                },
-                                {
-                                    "data": "alt + control + m"
-                                }
-                            ],
-                            [
-                                {
-                                    "data": "Navigate to the homepage"
-                                },
-                                {
-                                    "data": "alt + control + h"
-                                }
-                            ]
+                        [
+                            {
+                                "data": "Navigate to the homepage"
+                            },
+                            {
+                                "data": "alt + control + h"
+                            }
                         ]
-                    }
+                    ]
+                }
             }
         }
     ]

@@ -130,10 +130,10 @@ img {
   display: table;
   /* 2 */ }
 
-.antialiased {
+.antialiased, .theme--dark, .theme--fred-dark {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-  .isWindowsChrome .antialiased {
+  .isWindowsChrome .antialiased, .isWindowsChrome .theme--dark, .isWindowsChrome .theme--fred-dark {
     -webkit-font-smoothing: subpixel-antialiased; }
 
 .list--inline, .breadcrumb, .nav, .flego-navigation, .list--block, .list--unstyled, .anchor-links {
@@ -1108,10 +1108,11 @@ sub {
   background-color: #37b67f;
   color: #293f54; }
   .theme--fred-dark pre {
-    background-color: #293f54; }
+    background-color: #293f54;
+    border-color: #182532; }
 
 .bt--fred-dark {
-  border-top: 1px solid #2b8f64; }
+  border-top: 1px solid #31a271; }
 
 .bg--black {
   background: #000; }
@@ -2151,7 +2152,7 @@ li ul, li ol {
   padding-top: 20px;
   padding-top: 1.25rem; }
 
-pre {
+pre, code {
   padding-top: 16px;
   padding-top: 1rem;
   padding-bottom: 16px;
@@ -2160,8 +2161,8 @@ pre {
   padding-left: 1rem;
   padding-right: 16px;
   padding-right: 1rem;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   border-radius: 4px;
   border-radius: 0.25rem;
   white-space: pre-wrap;
@@ -2169,7 +2170,7 @@ pre {
   border: solid 1px #5e5c5c;
   overflow: scroll;
   color: #fff; }
-  pre.styleguide--html {
+  pre.styleguide--html, code.styleguide--html {
     color: #9DFFE5; }
 
 .code__anchor {
