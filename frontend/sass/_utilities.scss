@@ -27,19 +27,6 @@
 
 
 
-// -----------------------------------------------------------------------------
-// Screen reader content -------------- This is borrowed from Bootstrap.
-// -----------------------------------------------------------------------------
-
-.font-bold-italic { 
-    @extend %font-italic; 
-    @extend %font-bold;
-}
-
-.u-light-italic { 
-    @extend %font-italic; 
-    @extend %font-light; 
-}
 
 
 // -----------------------------------------------------------------------------

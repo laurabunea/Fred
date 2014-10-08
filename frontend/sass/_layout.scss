@@ -186,8 +186,8 @@
 
 //.section-xxxxl, 
 .section {
-    @extend %pt-xxxxl;
-    @extend %pb-xxxxl;
+    @include rem(padding-top,$space-xxxxl);
+    @include rem(padding-bottom,$space-xxxxl);
     @extend %pt-xxxl--small-down;
     @extend %pb-xxxl--small-down;
 }
@@ -197,7 +197,7 @@
 // ----------------------------------------------------------------------------
 
 %layout-left {
-    @extend %pl-m;
+    @include rem(padding-left,$space-m);
     @extend %pl-xxxxl--medium;
     @include large {
         & {
@@ -207,7 +207,7 @@
 }
 
 %layout-right {
-    @extend %pr-m;
+    @include rem(padding-right,$space-m);
     @extend %pr-xxxxl--medium;
     @include large {
         & {

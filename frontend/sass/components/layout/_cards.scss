@@ -4,12 +4,14 @@
  */
 
 .card {
-    @extend %mb-m;
-    @extend %pl-s;
-    @extend %pr-s;
-    @extend %pt-l;
-    @extend %pb-l;
-    @extend %pl-s--medium;
-    @extend %pr-s--medium;
+    @include rem(margin-bottom,$space-m);
+    @include rem(padding-left,$space-s);;
+    @include rem(padding-right,$space-s);
+    @include rem(padding-top,$space-l);
+    @include rem(padding-bottom,$space-l);
+    @include rem(padding-left,$space-s);
     @include rem(border-radius, $space-xxs);
+    @include medium {
+        @include rem(padding-right,$space-s);
+    }
 }

@@ -23,7 +23,7 @@
      */
     .nav--links {
         & > li {
-            @extend %mr-xs;
+            @include rem(margin-right,$space-xs);
             line-height: 1;
             &:last-child {
                 margin-right: 0;
@@ -39,11 +39,11 @@
  */
 
 .tabs {
-    @extend %pb-s;
+    @include rem(padding-bottom,$space-s);
 }
 
     .tab {
-        @extend %pb-xs;
+        @include rem(padding-bottom,$space-xs);
         color: $light-grey;
         border-bottom: solid 2px #eee;
     }

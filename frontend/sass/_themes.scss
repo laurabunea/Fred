@@ -233,27 +233,27 @@ $link-color:
 
 
 // .highlight-top { 
-//   @extend %pt-l;
+//   @include rem(padding-top,$space-l);
 //   border-top-width: 4px;
 //   border-top-style: solid;
 //   border-top-color: inherit;
 // }
 
 // .highlight-bottom { 
-//   @extend %pb-l;
+//   @include rem(padding-bottom,$space-l);
 //   border-bottom-width: 4px;
 //   border-bottom-style: solid;
 //   border-bottom-color: inherit;
 // }
 // .highlight-left { 
-//   @extend %pl-l;
+//   @include rem(padding-left,$space-l);
 //   border-left-width: 4px;
 //   border-left-style: solid;
 //   border-left-color: inherit;
 // }
 
 // .highlight-right { 
-//   @extend %pr-l;
+//   @include rem(padding-right,$space-l);
 //   border-right-width: 4px;
 //   border-right-style: solid;
 //   border-right-color: inherit;

@@ -16,11 +16,11 @@
 // PATTERN LIBRARY
 // ----------------------------------------------------------------------------
 .flego-navigation {
-    @extend %pt-l;
-    @extend %mb-0;
+    @include rem(padding-top,$space-l);
+    margin-bottom:0;
     @extend %list--inline;
     a {
-        @extend %pr-l;
+        @include rem(padding-right,$space-l);
     }
 }
     .flego-navigation--active {
@@ -29,7 +29,7 @@
 
 
 .flego-components {
-    @extend %pt-l;
+    @include rem(padding-top,$space-l);
 }
 
 
@@ -37,10 +37,10 @@
 
     
 pre {
-    @extend %pt-m;
-    @extend %pb-m;
-    @extend %pl-m;
-    @extend %pr-m;
+    @include rem(padding-top,$space-m);
+    @include rem(padding-bottom,$space-m);
+    @include rem(padding-left,$space-m);
+    @include rem(padding-right,$space-m);
     @extend %font-size-xs;
     @include rem(border-radius, $space-xxs);
     white-space: pre-wrap;
@@ -54,7 +54,7 @@ pre {
     }
 }
 .code__anchor {
-    @extend %pl-m;
+    @include rem(padding-left,$space-m);
     cursor: pointer;
 }
 
@@ -88,9 +88,9 @@ pre {
 // ----------------------------------------------------------------------------
 
 .device {
-    @extend %ml-m;
-    @extend %mr-m;
-    @extend %mb-xxxxl; 
+    @include rem(margin-left,$space-m);
+    @include rem(margin-right,$space-m);
+    @include rem(margin-bottom,$space-xxxxl); 
     @include rem('border-left-width', $space-xxxxl);
     @include rem('border-right-width', $space-xxxxl);
     @include rem('border-top-width', $space-xxxxl);
@@ -101,9 +101,9 @@ pre {
     box-sizing:border-box;
 
     .device__menu {
-        @extend %pt-xs;
-        @extend %pb-xs;
-        @extend %mb-0;
+        @include rem(padding-top,$space-xs);
+        @include rem(padding-bottom,$space-xs);
+        margin-bottom:0;
         @extend %text-small;
         border-bottom:1px solid #D6D6D6;
 

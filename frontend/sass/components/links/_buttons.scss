@@ -12,11 +12,11 @@ $btn--x-large:3rem;
 
 %btn {
     @extend %remove-anchor-decoration;
-    @extend %mt-0;
-    @extend %pl-m;
-    @extend %pr-m;
-    @extend %pb-0;
-    @extend %pt-0;
+    margin-top:0;
+    @include rem(padding-left,$space-m);
+    @include rem(padding-right,$space-m);
+    padding-bottom:0;
+    padding-top:0;
     display:inline-block;
     box-sizing:border-box;
     text-align:center;
@@ -41,7 +41,7 @@ $btn--x-large:3rem;
 .btn, 
 button {
     @extend %btn;
-    @extend %mb-m;
+    @include rem(margin-bottom,$space-m);
 }
 
 
@@ -50,7 +50,7 @@ button {
     background-color: transparent;
 }
 
-.btn + .btn {  @extend %ml-m; }
+.btn + .btn {  @include rem(margin-left,$space-m); }
 
 
 .btn--block + .btn--block { margin-left:0; }
@@ -74,7 +74,7 @@ button {
 
 %btn--block {
     @extend %first-child-no-top;
-    @extend %mt-m;
+    @include rem(margin-top,$space-m);
     display: block;
     width: 100%;
     padding-left: 0;
@@ -136,28 +136,28 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
 *********************************/
 
 .btn.btn--x-small {
-    @extend %pl-xs;
-    @extend %pr-xs;
+    @include rem(padding-left,$space-xs);;
+    @include rem(padding-right,$space-xs);
     @extend %font-size-s;
     line-height:$btn--x-small;
 }
 
 .btn.btn--small {
-    @extend %pl-s;
-    @extend %pr-s;
+    @include rem(padding-left,$space-s);;
+    @include rem(padding-right,$space-s);
     @extend %font-size-s;
     line-height:$btn--small;
 }
 
 .btn.btn--large {
-    @extend %pl-l;
-    @extend %pr-l;
+    @include rem(padding-left,$space-l);
+    @include rem(padding-right,$space-l);
     line-height:$btn--large;
 }
 
 .btn.btn--x-large {
     @extend %font-size-l;
-    @extend %pl-xl;
-    @extend %pr-xl;
+    @include rem(padding-left,$space-xl);
+    @include rem(padding-right,$space-xl);
     line-height:$btn--x-large;
 }

@@ -4,8 +4,8 @@
  */
 
 .media {
-    @extend %mr-xxxl;
-    @extend %mb-xxl;
+    @include rem(margin-right,$space-xxxl);
+    @include rem(margin-bottom,$space-xxl);
     overflow: hidden;
 }
 
@@ -17,7 +17,7 @@
 
     .media__image {
         float: left;
-        @extend %mr-m;
+        @include rem(margin-right,$space-m);
 
         > img {
             display: block;

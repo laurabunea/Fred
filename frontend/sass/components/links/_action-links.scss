@@ -19,7 +19,8 @@ $height-icon-tiny: 2.5em;
     @include rem(height, $height-circle-large);
     text-align: center;
     vertical-align: middle;
-    @include small-down() {
+    
+    @include small-down {
         @include rem(width, $height-circle-small);
         @include rem(height, $height-circle-small);
     }
@@ -38,13 +39,13 @@ $height-icon-tiny: 2.5em;
 
 .action {
     @extend %link-hover-color;
-    @extend %pt-m;
+    @include rem(padding-top,$space-m);
     text-align: center;
     display: block;
 
     & > span {
         
-        @extend %mt-xs;
+        @include rem(margin-top,$space-xs);
         @extend %font-size-s;
 
         display: block;

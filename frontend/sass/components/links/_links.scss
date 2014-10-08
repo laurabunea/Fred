@@ -68,7 +68,7 @@
     color: inherit;
     
     & + .link-complex  { 
-        @extend %mt-xl;
+        @include rem(margin-top,$space-xl);
     }
 
     .noTouchEvents &:hover {

@@ -5,6 +5,8 @@
     "data": [ 
         {
             "type" : "/pattern-library/content-block",
+            "grid_modifier":"grid--center",
+            "column_size":"large-8",
             "data": [
                 { 
                     "type": "type/h1",
@@ -12,18 +14,14 @@
                 },
                 { 
                     "type": "type/intro",
-                    "data": "Here are some handy little classes that will come in useful when building modules for this site."
+                    "data": "Here are some handy little utility classes you can add to your components when building your pages prototype."
                 },
                 {
                     "type": "type/list",
                     "class": "list--inline",
                     "data": [
                         "<a href='#typography-helpers' class='pill'>Typography</a>",
-                        "<a href='#list-helpers' class='pill'>List helpers </a>",
-                        "<a href='#layout-helpers' class='pill'>Layout</a>",
-                        "<a href='#first-child' class='pill'>Images</a>",
-                        "<a href='#screen-reader' class='pill'>Screen reader content </a>",
-                        "<a href='#link-helpers' class='pill'>Links</a>"
+                        "<a href='#layout-helpers' class='pill'>Layout</a>"
                     ]
                 }
             ]
@@ -87,43 +85,6 @@
                     "type": "code/code-and-example",
                     "data": [
                         "<p class='u-truncate'>I am a really really really really really really really really really really really long sentence that just keeps going and going and going and going and going.</p>"
-                    ]
-                }
-            ]
-        },
-        {
-            "type" : "/pattern-library/content-block",
-            "anchor":"list-helpers",
-            "data": [
-                { 
-                    "type": "type/h2",
-                    "data": "List helpers"
-                },
-                "blah",
-                {
-                    "type": "type/h3",
-                    "data": "Inline list"
-                },
-                "Displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box",
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<ul class='list--inline'>\n  <li>List item one</li>\n  <li>List item two</li>\n</ul>"
-                    ]
-                },
-                {
-                    "type": "raw",
-                    "data":"<hr />"
-                },
-                {
-                    "type": "type/h3",
-                    "data": "Block list"
-                },
-                "Displays an element as a block element (like <p>).",
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<ul class='list--block'>\n  <li>List item one</li>\n  <li>List item two</li>\n</ul>"
                     ]
                 }
             ]
@@ -194,12 +155,18 @@
                 },
                 {
                     "type": "type/h3",
-                    "data": "Overflow hidden"
+                    "data": "Overflow hidden and scoll"
                 },
                 {
                     "type": "code/code-and-example",
                     "data": [
-                        "add stuff"
+                        "<div class='u-overflow-hidden bg--green' style='width:200px; height:100px;'><p>You can use the overflow property when you want to have better control of the layout. The default value is visible.</p></div>"
+                    ]
+                },
+                {
+                    "type": "code/code-and-example",
+                    "data": [
+                        "<div class='u-overflow-scroll bg--green' style='width:200px; height:100px;'><p>You can use the overflow property when you want to have better control of the layout. The default value is visible.</p></div>"
                     ]
                 },
                 {
@@ -281,160 +248,6 @@
                     "type": "code/code-and-example",
                     "data": [
                         "<div class='u-inline bg--red'>I am a inline block.</div><div class='u-block bg--blue'>I am a block element.</div>"
-                    ]
-                }
-            ]
-        },
-               
-        {
-            "type" : "/pattern-library/content-block",
-            "anchor":"first-child",
-            "data": [
-                { 
-                    "type": "type/h2",
-                    "data": "First child helpers"
-                },
-                { 
-                    "type": "type/h3",
-                    "data": "Remove top margin from first-child elements"
-                },
-                {
-                    "type": "code/code",
-                    "data": [
-                        "h2 { @extend %first-child-no-top; }"
-                    ]
-                },
-                { 
-                    "type": "type/h3",
-                    "data": "Remove top border from first-child elements"
-                },
-                {
-                    "type": "code/code",
-                    "data": [
-                        "h2 { @extend %first-child-no-top-border; }"
-                    ]
-                }
-
-            ]
-        },
-        {
-            "type" : "/pattern-library/content-block",
-            "anchor":"type-rendering",
-            "data": [
-                { 
-                    "type": "type/h2",
-                    "data": "Fixing Chrome/WebKit type rendering"
-                },
-               "Since v22, Chrome makes fat sausage horrible web typography. Fix it with these properties right here:",
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<div class='my-black-box antialiased'>\n <h1>Knocked out white text!</h1> \n</div>"
-                    ]
-                },
-                "But wait! That screws with everything on Windows Vista Chrome... right?",
-                "Yeah, it does. If you're using our <a href=''>Browser.js </a>., it'll automatically add isWindowsChrome to the documentElement, and we set the antialiasing back to classic sub-pixel mode:",
-                {
-                    "type": "code/code",
-                    "data": [
-                        ".isWindowsChrome %font-smoothing  { -webkit-font-smoothing: subpixel-antialiased; }"
-                    ]
-                },
-                "In yoru  markup:",
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<html class='isWindowsChrome'>\n <!-- some time later -->\n <div class='my-black-box antialiased'>\n  <h1>Hey i'll look good on Vista!</h1>\n </div>"
-                    ]
-                }
-            ]
-        },
-        
-        {
-            "type" : "/pattern-library/content-block",
-            "anchor":"clearfixing",
-            "data": [
-
-                { 
-                    "type": "type/h2",
-                    "data": "Clearfixing"
-                },
-                "Table-pseudo element clearfix. It is good.",
-                {
-                    "type": "code/code",
-                    "data": [
-                        "my-floater { @extend %clearfix; }"
-                    ]
-                },
-                "Or, heaven forbid, in your markup:",
-                {
-                    "type": "code/code",
-                    "data": [
-                        "<div class='clearfix'>\n  <div class='left'>\n    Hey I'm floating!\n  </div>\n</div>"
-                    ]
-                }
-
-
-            ]
-        },
-        {
-            "type" : "/pattern-library/content-block",
-            "anchor":"screen-reader",
-            "data": [
-
-                { 
-                    "type": "type/h2",
-                    "data": "Screen reader content"
-                },
-                "We've found some odd bugs with the -999px textindent hack. Clipping is much better since it doesn't require a 999 x [your-line-height]px region to be drawn.",
-                "This is borrowed from Bootstrap.",
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<a class='sr-only' href='#content'>Skip to main content</a>"
-                    ]
-                }
-            ]
-        },
-        
-        
-        {
-            "type" : "/pattern-library/content-block",
-            "anchor":"link-helpers",
-            "data": [
-                { 
-                    "type": "type/h2",
-                    "data": "Link helpers"
-                },
-                "blah",
-                {
-                    "type": "type/h3",
-                    "data": "Disabled link"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<a href='' class='is-disabled'>I'm a disabled link</a>"
-                    ]
-                },
-                {
-                    "type": "type/h3",
-                    "data": "Draggable link"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<a href='' class='is-draggable'>I'm a disabled link</a>"
-                    ]
-                },
-                {
-                    "type": "type/h3",
-                    "data": "Clean link"
-                },
-                {
-                    "type": "code/code-and-example",
-                    "data": [
-                        "<a href='' class='clean-link'>I'm a clean link</a>"
                     ]
                 }
             ]

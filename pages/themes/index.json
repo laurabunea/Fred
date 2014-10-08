@@ -5,6 +5,8 @@
     "data": [
         {
             "type" : "/pattern-library/content-block",
+            "grid_modifier":"grid--center",
+            "column_size":"large-8",
             "data": [
                 { 
                     "type": "type/h1",
@@ -12,7 +14,7 @@
                 },
                 { 
                     "type": "type/intro",
-                    "data": "Here are some handy little classes that will come in useful when building modules for this site."
+                    "data": "Here are some handy little theme classes you can add to your components when building your pages prototype."
                 },
                 {
                     "type": "type/list",
@@ -40,7 +42,7 @@
                             "type":"type/h2",
                             "data":"Background-colours "
                         },
-                        "blah blah."
+                        "To add a background colour to a component just add a class shown below."
                     ]
                 }
             ],
@@ -96,7 +98,7 @@
                             "type":"type/h2",
                             "data":"Text colours"
                         },
-                        "blah blah."
+                        "To change the colour of the text in your component just add a class shown below."
                     ]
                 }
             ],
@@ -159,7 +161,7 @@
                             "type":"type/h2",
                             "data":"Border colours"
                         },
-                        "blah blah."
+                        "To change the border colour just select a class shown below."
                     ]
                 }
             ],
@@ -210,7 +212,7 @@
                             "type":"type/h2",
                             "data":"Themes "
                         },
-                        "Themes are modifier classes that control the colour scheme of an individual pattern or component."
+                        "A theme is made up from text colours, background colours and border colours. Here are some premade themes. To select the theme you want just choose a class name from below."
                     ]
                 }
             ],

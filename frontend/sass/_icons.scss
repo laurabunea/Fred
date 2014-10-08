@@ -32,11 +32,11 @@ $icon-bg-red: 100%;
     @extend %i;
     .icon-text &,
     .btn--icon & {
-        @extend %mr-xs;
+        @include rem(margin-right,$space-xs);
     }
     .icon-text--rev &,
     .btn--icon-rev & {
-        @extend %ml-xs;
+        @include rem(margin-left,$space-xs);
     }
 }
 

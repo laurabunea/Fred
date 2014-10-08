@@ -10,7 +10,7 @@ $hr-colour: #eee;
     border: 1px solid $hr-colour;
     width: 100%;
 
-    @extend %mb-xxl;
+    @include rem(margin-bottom,$space-xxl);
     text-align: left;
 
 
@@ -71,7 +71,7 @@ $hr-colour: #eee;
             display: none;
         }
         td:first-child, th {
-            @extend %mt-xl;
+            @include rem(margin-top,$space-xl);
             padding: 0;
             font-weight: bold; // ideally this would extend the h5
 

@@ -76,19 +76,19 @@
 
 h1, h2, h3, h4, h5, h6, p, .text, li, code, .intro, ul, li {
     //remove top margin from typographic elements
-    @extend %mt-0;
+    margin-top:0;
 }
 
 h1, 
 .font-font-size-xxxl {
-    @extend %mb-xxxl;
+    @include rem(margin-bottom,$space-xxxl);
     @extend %font-size-xxxl;
     font-weight:$font-normal;
 }
 
 h2, 
 .font-size-xxl {
-    @extend %mb-m;
+    @include rem(margin-bottom,$space-m);
     @include small-down() {
         @include rem('margin-bottom', $space-s);
     }
@@ -98,7 +98,7 @@ h2,
 
 h3,
 .font-size-xl {
-    @extend %mb-m;
+    @include rem(margin-bottom,$space-m);
     @extend %font-size-xl;
     font-weight:$font-bold;
     @include small-down() { 
@@ -108,7 +108,7 @@ h3,
 
 h4,
 .font-size-l {
-    @extend %mb-m;
+    @include rem(margin-bottom,$space-m);
     @extend %font-size-l;
     font-weight:$font-bold;
     @include small-down() {
@@ -119,7 +119,7 @@ h4,
 
 h5,
 .font-size-m {
-    @extend %mb-m;
+    @include rem(margin-bottom,$space-m);
     @extend %font-size-m;
     @include small-down {
         @include rem('margin-bottom', $space-s);
@@ -128,7 +128,7 @@ h5,
 }
 
 h6 {
-    @extend %mb-m;
+    @include rem(margin-bottom,$space-m);
     @include small-down {
         @include rem('margin-bottom', $space-s);
     }
@@ -142,8 +142,8 @@ h6 {
 // ----------------------------------------------------------------------------
 
 // %body-spacing {
-//     @extend %mt-0;
-//     @extend %mb-m;
+//     margin-top:0;
+//     @include rem(margin-bottom,$space-m);
 // }
 
 %body-font-size {
@@ -152,8 +152,8 @@ h6 {
 }
 
 p, .text, code, ul, ol, td, dl {
-    @extend %mt-0;
-    @extend %mb-m;
+    margin-top:0;
+    @include rem(margin-bottom,$space-m);
 }
 
 p, .text, code, dt, dd, td, th {
@@ -162,16 +162,16 @@ p, .text, code, dt, dd, td, th {
 
 li {
     @extend %font-size-m;
-    @extend %mt-xs;
+    @include rem(margin-top,$space-xs);
     margin-bottom: 0;
 }
 
 .intro {
     @extend %font-size-xl;
-    @extend %mb-m;
+    @include rem(margin-bottom,$space-m);
     font-weight:$font-light;
     &:last-child {
-        @extend %mb-xxxl;
+        @include rem(margin-bottom,$space-xxxl);
     }
 }
 
@@ -207,8 +207,8 @@ a {
 // ----------------------------------------------------------------------------
 
 hr {
-    @extend %mt-xxl;
-    @extend %mb-xxl;
+    @include rem(margin-top,$space-xxl);
+    @include rem(margin-bottom,$space-xxl);
     height: 1px;
     border: none;
     background-color: #ddd;
@@ -233,7 +233,7 @@ hr {
 //clean up
 
 // dt, dd, td {
-//     @extend %mt-0;
+//     margin-top:0;
 // }
 
 
@@ -250,23 +250,23 @@ dl {
 
     dd {
         margin-left: 0;
-        @extend %mb-s;
+        @include rem(margin-bottom,$space-s);
     }
 
 .dl--stripey {
     dt {
-        @extend %pt-s;
-        @extend %pr-s;
-        @extend %pb-s;
+        @include rem(padding-top,$space-s);
+        @include rem(padding-right,$space-s);
+        @include rem(padding-bottom,$space-s);
         float:left;
     }
 
     dd {
-        @extend %mt-0;
-        @extend %ml-0;
-        @extend %mb-0;
-        @extend %pt-s;
-        @extend %pb-s;
+        margin-top:0;
+        margin-left:0;
+        margin-bottom:0;
+        @include rem(padding-top,$space-s);
+        @include rem(padding-bottom,$space-s);
         border-top-style: solid;
         border-top-width: 1px;
         border-top-color: inherit;
@@ -293,7 +293,7 @@ dl {
         margin: 0;
     }
     dd {
-        @extend %pr-l;
+        @include rem(padding-right,$space-l);
     }
     dt:after {
         content: "\2014";
@@ -310,11 +310,11 @@ dl {
 
 blockquote {
     @extend %font-size-l;
-    @extend %pl-l;
-    @extend %pr-l;
-    @extend %pt-xs;
-    @extend %pb-xs;
-    @extend %ml-0;
+    @include rem(padding-left,$space-l);
+    @include rem(padding-right,$space-l);
+    @include rem(padding-top,$space-xs);
+    @include rem(padding-bottom,$space-xs);
+    margin-left:0;
     border-left-weight:3px;
     border-left-style:solid;
     border-left-color: inherit;
@@ -340,8 +340,8 @@ blockquote {
     }
 
 .blockquote-harry {
-    @extend %pt-m;
-    @extend %pb-m;
+    @include rem(padding-top,$space-m);
+    @include rem(padding-bottom,$space-m);
     position:relative;
     border-top:1px solid #ccc;
     border-bottom:1px solid #ccc;

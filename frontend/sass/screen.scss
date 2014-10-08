@@ -233,7 +233,6 @@ img { border: 0;}
 //todo change name
 .img--responsive { max-width:100%;}
 
-
 // -----------------------------------------------------------------------------
 // utilities -- Layout
 // -----------------------------------------------------------------------------
@@ -277,6 +276,7 @@ img { border: 0;}
 
 
 .u-overflow-hidden { overflow: hidden; }
+.u-overflow-scroll { overflow: scroll; }
 
 .u-fixed-bottom {
     position:fixed; 

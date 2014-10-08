@@ -1,25 +1,25 @@
 .swatch-container {
-    @extend %mb-l;
+    @include rem(margin-bottom,$space-l);
 }
     %swatch__top {
         @extend %br-top-xxs; 
-        @extend %pt-s;
-        @extend %pb-s;   
+        @include rem(padding-top,$space-s);
+        @include rem(padding-bottom,$space-s);   
     }
 
     %swatch__bottom {
         @extend %br-bottom-xxs;
-        @extend %pt-s;
-        @extend %pb-s;
-        @extend %mb-l;
+        @include rem(padding-top,$space-s);
+        @include rem(padding-bottom,$space-s);
+        @include rem(margin-bottom,$space-l);
     }
 
     %swatch {
         @extend %br-xxs;
-        @extend %pt-s;
-        @extend %pb-s;
-        @extend %pl-s; 
-        @extend %pr-s;  
+        @include rem(padding-top,$space-s);
+        @include rem(padding-bottom,$space-s);
+        @include rem(padding-left,$space-s);; 
+        @include rem(padding-right,$space-s);  
     }
     .swatch {
         @extend %swatch;

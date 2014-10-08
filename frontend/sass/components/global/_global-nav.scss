@@ -12,12 +12,12 @@
 %nav_item {
     @extend %remove-anchor-decoration;
     
-    @extend %mt-0;
-    @extend %mb-0;
-    @extend %pl-m;
-    @extend %pr-0;
-    @extend %pb-0;
-    @extend %pt-0;
+    margin-top:0;
+    margin-bottom:0;
+    @include rem(padding-left,$space-m);
+    padding-right:0;
+    padding-bottom:0;
+    padding-top:0;
     display:inline-block;
     box-sizing:border-box;
     text-align:center;
@@ -40,20 +40,20 @@
     @extend %nav_item;
 
     &.small {
-        @extend %pl-s;
+        @include rem(padding-left,$space-s);;
     }
 
     &.theme {
-        @extend %pr-m;
-        @extend %ml-m;
+        @include rem(padding-right,$space-m);
+        @include rem(margin-left,$space-m);
         &.small {
-            @extend %ml-s;
-            @extend %pr-s;
+            @include rem(margin-left,$space-s);
+            @include rem(padding-right,$space-s);
         }
     }
     
     & +  .nav_item {
-        @extend %ml-0;
-        @extend %mr-m;
+        margin-left:0;
+        @include rem(margin-right,$space-m);
     }
 }

@@ -5,12 +5,12 @@
 
 .breadcrumb {
     @extend %list--inline;
-    @extend %mb-s;
+    @include rem(margin-bottom,$space-s);
     font-weight: 100;
     letter-spacing: .03em;
     
     > li {
-        @extend %mt-0;
+        margin-top:0;
         @extend %text--overflow;
         display: none;
 
@@ -27,17 +27,17 @@
         }
 
         & a:after {
-            @extend %pl-xxs;
+            @include rem(padding-left,$space-xxs);;
             
-            @extend %pr-xxs;
+            @include rem(padding-right,$space-xxs);
             content: ' › ';
             color: #C7D900;
         }
 
         & .back:before,
         & .close:before {
-            @extend %pl-xxs;
-            @extend %pr-xxs;
+            @include rem(padding-left,$space-xxs);;
+            @include rem(padding-right,$space-xxs);
             content: ' ‹ ';
             color: #C7D900;
         }
