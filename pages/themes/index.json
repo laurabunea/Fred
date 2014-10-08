@@ -252,6 +252,72 @@
                     ]
                 }
             ]
+        },
+        {
+            "type": "pattern-library/styleguide-container",
+            "internal_theme":"theme--dark",
+            "container_padding":"layout section",
+            "anchor":"themes",
+            "intro":[
+                {
+                    "grid_modifier":"grid--center",
+                    "data":[
+                        {
+                            "type":"type/h2",
+                            "data":"Spacing helpers "
+                        },
+                        "Say p = padding m = margin, then t = top b = bottom l = left r = right "
+                    ]
+                }
+            ],
+            "columns":[
+                {
+                    "column_size":"",
+                    "data":[
+                         {
+                            "type": "/pattern-library/spacing-helpers",
+                            "sizes":[
+                                {  
+                                    "name":"xxs",
+                                    "px":"4"
+                                },
+                                {  
+                                    "name":"xs",
+                                    "px":"8"
+                                },
+                                {  
+                                    "name":"s",
+                                    "px":"12"
+                                },
+                                {  
+                                    "name":"m",
+                                    "px":"16"
+                                },
+                                {  
+                                    "name":"l",
+                                    "px":"20"
+                                },
+                                {  
+                                    "name":"xl",
+                                    "px":"24"
+                                },
+                                {  
+                                    "name":"xxl",
+                                    "px":"28"
+                                },
+                                {  
+                                    "name":"xxxl",
+                                    "px":"32"
+                                },
+                                {  
+                                    "name":"xxxxl",
+                                    "px":"48"
+                                }
+                            ]  
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

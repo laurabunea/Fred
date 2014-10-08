@@ -137,7 +137,6 @@ img { border: 0;}
     }
 
 
-@import "spacing";
 @import "utilities";
 @import "icons";
 @import "type";
@@ -183,6 +182,8 @@ img { border: 0;}
 ## Misc
 */
 
+//utility helpers to overide component spacing
+@import "spacing";
 *,
 *:before,
 *:after {

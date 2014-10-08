@@ -50,14 +50,16 @@ li ol {
 */
 .nav {
 /* ul, ol */
-margin-top: 0;
-margin-bottom: 0;
-list-style: none;
-padding-left: 0;
-font-size: medium; }
-.nav > li {
-display: inline-block;
-vertical-align: middle; }
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+    font-size: medium; 
+}
+    .nav > li {
+        display: inline-block;
+        vertical-align: middle; 
+    }
 
 
 /**

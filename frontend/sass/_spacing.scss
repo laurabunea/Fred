@@ -89,8 +89,6 @@
 .mr-xxxl    { @include rem(margin-right,$space-xxxl);}
 .pr-xxxxl { @include rem(padding-right,$space-xxxxl);}
 
-%remove-padding {  padding:0; }
-%remove-margin { margin:0; }
 
 //add in the classes as you need them :)
 @include xsmall() {
@@ -822,76 +820,4 @@
     .ml-xxl--xlarge     { @include rem(margin-left,$space-xxl);}
     .ml-xxxl--xlarge    { @include rem(margin-left,$space-xxxl);}
     .ml-xxxxl--xlarge   { @include rem(margin-left,$space-xxxxl);}
-}
-
-
-.layout-xxxl {
-    @include rem(padding-left,$space-xxxl);
-    @include rem(padding-right,$space-xxxl);
-}
-
-.layout-xxl {
-    @include rem(padding-left,$space-xxl);
-    @include rem(padding-right,$space-xxl);
-}
-
-.layout-xl {
-    @include rem(padding-left,$space-xl);
-    @include rem(padding-right,$space-xl);
-}
-
-.layout-l {
-    @include rem(padding-left,$space-l);
-    @include rem(padding-right,$space-l);
-}
-
-.layout-m {
-    @include rem(padding-left,$space-m);
-    @include rem(padding-right,$space-m);
-}
-
-.layout-s {
-    @include rem(padding-left,$space-s);;
-    @include rem(padding-right,$space-s);
-}
-
-.layout-xs {
-    @include rem(padding-left,$space-xs);;
-    @include rem(padding-right,$space-xs);
-}
-
-
-.section-xxxl {
-    @include rem(padding-top,$space-xxxl);
-    @include rem(padding-bottom,$space-xxxl);
-}
-
-.section-xxl {
-    @include rem(padding-top,$space-xxl);
-    @include rem(padding-bottom,$space-xxl);
-}
-
-.section-xl {
-    @include rem(padding-top,$space-xl);
-    @include rem(padding-bottom,$space-xl);
-}
-
-.section-l {
-    @include rem(padding-top,$space-l);
-    @include rem(padding-bottom,$space-l);
-}
-
-.section-m {
-    @include rem(padding-top,$space-m);
-    @include rem(padding-bottom,$space-m);
-}
-
-.section-s {
-    @include rem(padding-top,$space-s);
-    @include rem(padding-bottom,$space-s);
-}
-
-.section-xs {
-    @include rem(padding-top,$space-xs);
-    @include rem(padding-bottom,$space-xs);
 }
