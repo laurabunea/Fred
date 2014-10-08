@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 %pill {
-    @extend %font-size-s;
+    @include rem(font-size, $font-size-s);
     vertical-align: middle;
     @include rem(border-radius, 2);
     display: inline-block;

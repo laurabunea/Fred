@@ -46,7 +46,7 @@ $height-icon-tiny: 2.5em;
     & > span {
         
         @include rem(margin-top,$space-xs);
-        @extend %font-size-s;
+        @include rem(font-size, $font-size-s);
 
         display: block;
         @include medium {

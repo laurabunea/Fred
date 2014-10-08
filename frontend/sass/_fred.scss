@@ -41,7 +41,7 @@ pre {
     @include rem(padding-bottom,$space-m);
     @include rem(padding-left,$space-m);
     @include rem(padding-right,$space-m);
-    @extend %font-size-xs;
+    @include rem(font-size, $font-size-xs);
     @include rem(border-radius, $space-xxs);
     white-space: pre-wrap;
     background-color:$dark-grey;

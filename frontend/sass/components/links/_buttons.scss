@@ -138,14 +138,14 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
 .btn.btn--x-small {
     @include rem(padding-left,$space-xs);;
     @include rem(padding-right,$space-xs);
-    @extend %font-size-s;
+    @include rem(font-size, $font-size-s);
     line-height:$btn--x-small;
 }
 
 .btn.btn--small {
     @include rem(padding-left,$space-s);;
     @include rem(padding-right,$space-s);
-    @extend %font-size-s;
+    @include rem(font-size, $font-size-s);
     line-height:$btn--small;
 }
 
@@ -156,7 +156,7 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
 }
 
 .btn.btn--x-large {
-    @extend %font-size-l;
+    @include rem(font-size, $font-size-l);
     @include rem(padding-left,$space-xl);
     @include rem(padding-right,$space-xl);
     line-height:$btn--x-large;

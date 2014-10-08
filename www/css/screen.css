@@ -2645,12 +2645,22 @@ img {
   width: 1.5em;
   height: 1.5em; }
 
-h1, .font-font-size-xxxl {
+.font-size-xxxxl {
+  font-size: 64px;
+  font-size: 4rem;
+  line-height: 1.1666666667; }
+  @media only screen and (max-width: 59em) {
+    .font-size-xxxxl {
+      font-size: 48px;
+      font-size: 3rem;
+      line-height: 1.1666666667; } }
+
+h1, .font-size-xxxl {
   font-size: 48px;
   font-size: 3rem;
   line-height: 1.1666666667; }
   @media only screen and (max-width: 59em) {
-    h1, .font-font-size-xxxl {
+    h1, .font-size-xxxl {
       font-size: 32px;
       font-size: 2rem;
       line-height: 1.25; } }
@@ -2665,32 +2675,32 @@ h2, .font-size-xxl {
       font-size: 1.5rem;
       line-height: 1.5; } }
 
-h3, .font-size-xl, .intro {
+h3, .intro, .font-size-xl {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1.5; }
   @media only screen and (max-width: 59em) {
-    h3, .font-size-xl, .intro {
+    h3, .intro, .font-size-xl {
       font-size: 18px;
       font-size: 1.125rem;
       line-height: 1.5555555556; } }
 
-h4, .font-size-l, .emphasis, blockquote, .btn.btn--x-large {
+h4, .font-size-l {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.5555555556; }
 
-h5, .font-size-m, h6, p, .text, code, dt, dd, td, th, li {
+h5, h6, p, .text, code, dt, dd, td, th, li .font-size-m {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
-.small, cite, .btn.btn--x-small, .btn.btn--small, .action > span, .pill, .pill--roadworks, .pill--orange {
+.small, .font-size-s {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.4285714286; }
 
-.tiny, pre {
+.tiny, .font-size-xs {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1.3333333333; }
@@ -2698,58 +2708,49 @@ h5, .font-size-m, h6, p, .text, code, dt, dd, td, th, li {
 h1, h2, h3, h4, h5, h6, p, .text, li, code, .intro, ul, li {
   margin-top: 0; }
 
-h1, .font-font-size-xxxl {
+h1 {
   margin-bottom: 32px;
-  margin-bottom: 2rem;
-  font-weight: 400; }
+  margin-bottom: 2rem; }
 
-h2, .font-size-xxl {
+h2 {
   margin-bottom: 16px;
-  margin-bottom: 1rem;
-  font-weight: 400; }
+  margin-bottom: 1rem; }
   @media only screen and (max-width: 59em) {
-    h2, .font-size-xxl {
+    h2 {
       margin-bottom: 12px;
       margin-bottom: 0.75rem; } }
 
-h3, .font-size-xl {
+h3 {
   margin-bottom: 16px;
-  margin-bottom: 1rem;
-  font-weight: 600; }
+  margin-bottom: 1rem; }
   @media only screen and (max-width: 59em) {
-    h3, .font-size-xl {
+    h3 {
       margin-bottom: 12px;
       margin-bottom: 0.75rem; } }
 
-h4, .font-size-l {
+h4 {
   margin-bottom: 16px;
-  margin-bottom: 1rem;
-  font-weight: 600; }
+  margin-bottom: 1rem; }
   @media only screen and (max-width: 59em) {
-    h4, .font-size-l {
+    h4 {
       margin-bottom: 12px;
       margin-bottom: 0.75rem; } }
 
-h5, .font-size-m {
+h5 {
   margin-bottom: 16px;
-  margin-bottom: 1rem;
-  font-weight: 600; }
+  margin-bottom: 1rem; }
   @media only screen and (max-width: 59em) {
-    h5, .font-size-m {
+    h5 {
       margin-bottom: 12px;
       margin-bottom: 0.75rem; } }
 
 h6 {
   margin-bottom: 16px;
-  margin-bottom: 1rem;
-  font-weight: 400; }
+  margin-bottom: 1rem; }
   @media only screen and (max-width: 59em) {
     h6 {
       margin-bottom: 12px;
       margin-bottom: 0.75rem; } }
-
-p, .text, code, dt, dd, td, th {
-  font-weight: 400; }
 
 p, .text, code, ul, ol, td, dl {
   margin-top: 0;
@@ -2763,14 +2764,19 @@ li {
 
 .intro {
   margin-bottom: 16px;
-  margin-bottom: 1rem;
-  font-weight: 300; }
+  margin-bottom: 1rem; }
   .intro:last-child {
     margin-bottom: 32px;
     margin-bottom: 2rem; }
 
-strong, b {
+h1, h2, h6, p, .text, code, dt, dd, td, th {
+  font-weight: 400; }
+
+h3, h4, h5, strong, b {
   font-weight: 600; }
+
+.intro {
+  font-weight: 300; }
 
 em, i, cite, dfn, .font-italic {
   font-style: italic; }
@@ -2841,6 +2847,8 @@ dd {
   font-weight: 300; }
 
 blockquote {
+  font-size: 18px;
+  font-size: 1.125rem;
   padding-left: 20px;
   padding-left: 1.25rem;
   padding-right: 20px;
@@ -2855,6 +2863,8 @@ blockquote {
   border-left-color: inherit; }
 
 cite {
+  font-size: 14px;
+  font-size: 0.875rem;
   color: #666; }
   cite:before {
     content: "\2014\00a0";
@@ -3879,6 +3889,8 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
   padding-left: 0.5rem;
   padding-right: 8px;
   padding-right: 0.5rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.75rem; }
 
 .btn.btn--small {
@@ -3886,6 +3898,8 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
   padding-left: 0.75rem;
   padding-right: 12px;
   padding-right: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 2rem; }
 
 .btn.btn--large {
@@ -3896,6 +3910,8 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
   line-height: 2.75rem; }
 
 .btn.btn--x-large {
+  font-size: 18px;
+  font-size: 1.125rem;
   padding-left: 24px;
   padding-left: 1.5rem;
   padding-right: 24px;
@@ -3932,6 +3948,8 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
   .action > span {
     margin-top: 8px;
     margin-top: 0.5rem;
+    font-size: 14px;
+    font-size: 0.875rem;
     display: block;
     margin-left: auto;
     margin-right: auto; }
@@ -4240,6 +4258,8 @@ li ul, li ol {
     #PILLS
 \*------------------------------------*/
 .pill, .pill--roadworks, .pill--orange {
+  font-size: 14px;
+  font-size: 0.875rem;
   vertical-align: middle;
   border-radius: 2px;
   border-radius: 0.125rem;
@@ -4372,6 +4392,8 @@ pre {
   padding-left: 1rem;
   padding-right: 16px;
   padding-right: 1rem;
+  font-size: 12px;
+  font-size: 0.75rem;
   border-radius: 4px;
   border-radius: 0.25rem;
   white-space: pre-wrap;

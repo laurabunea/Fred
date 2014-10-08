@@ -1,9 +1,9 @@
 
 // ----------------------------------------------------------------------------
-// Font sizing
+// Type sizes
 // ----------------------------------------------------------------------------
-//do we want to extend these .. or do we just want to add a class ? 
-%font-size-xxxxl {
+
+.font-size-xxxxl {
     @include rem('font-size', $font-size-xxxxl);
     line-height: $line-height-xxxl;
     @include small-down {
@@ -14,7 +14,8 @@
     }
 }
 
-%font-size-xxxl {
+h1, 
+.font-size-xxxl {
     //@include font-size($font-size-xxxl);
     @include rem('font-size', $font-size-xxxl);
     line-height: $line-height-xxxl;
@@ -26,7 +27,8 @@
     }
 }
 
-%font-size-xxl {
+h2, 
+.font-size-xxl {
     @include rem('font-size', $font-size-xxl);
     line-height: $line-height-xxl;
     @include small-down {
@@ -37,7 +39,9 @@
     }
 }
 
-%font-size-xl {
+h3,
+.intro,
+.font-size-xl {
     @include rem('font-size', $font-size-xl);
     line-height: $line-height-xl;
     @include small-down {
@@ -48,22 +52,35 @@
     }
 }
 
-%font-size-l {
+h4,
+.font-size-l {
     @include rem('font-size', $font-size-l);
     line-height: $line-height-l;
 }
 
-%font-size-m {
+h5, 
+h6,
+p, 
+.text, 
+code, 
+dt, 
+dd, 
+td, 
+th, 
+li
+.font-size-m {
     @include rem('font-size', $font-size-m);
     line-height: $line-height-m;
 }
 
-%font-size-s {
+.small,
+.font-size-s {
     @include rem('font-size', $font-size-s);
     line-height: $line-height-s;
 }
 
-%font-size-xs {
+.tiny, 
+.font-size-xs {
     @include rem('font-size', $font-size-xs);
     line-height: $line-height-xs;
 }
@@ -71,7 +88,7 @@
 
 
 // ----------------------------------------------------------------------------
-// Headings
+// Type heirarchy (margins spacing)
 // ----------------------------------------------------------------------------
 
 h1, h2, h3, h4, h5, h6, p, .text, li, code, .intro, ul, li {
@@ -79,52 +96,35 @@ h1, h2, h3, h4, h5, h6, p, .text, li, code, .intro, ul, li {
     margin-top:0;
 }
 
-h1, 
-.font-font-size-xxxl {
-    @include rem(margin-bottom,$space-xxxl);
-    @extend %font-size-xxxl;
-    font-weight:$font-normal;
-}
+h1 {   @include rem(margin-bottom,$space-xxxl);}
 
-h2, 
-.font-size-xxl {
+h2 {
     @include rem(margin-bottom,$space-m);
-    @include small-down() {
-        @include rem('margin-bottom', $space-s);
-    }
-    @extend %font-size-xxl;
-   font-weight:$font-normal;
-}
-
-h3,
-.font-size-xl {
-    @include rem(margin-bottom,$space-m);
-    @extend %font-size-xl;
-    font-weight:$font-bold;
-    @include small-down() { 
-        @include rem('margin-bottom', $space-s);
-    }
-}
-
-h4,
-.font-size-l {
-    @include rem(margin-bottom,$space-m);
-    @extend %font-size-l;
-    font-weight:$font-bold;
-    @include small-down() {
-        @include rem('margin-bottom', $space-s);
-    }
-
-}
-
-h5,
-.font-size-m {
-    @include rem(margin-bottom,$space-m);
-    @extend %font-size-m;
     @include small-down {
         @include rem('margin-bottom', $space-s);
     }
-    font-weight:$font-bold;
+}
+
+h3 {
+    @include rem(margin-bottom,$space-m);
+    @include small-down { 
+        @include rem('margin-bottom', $space-s);
+    }
+}
+
+h4 {
+    @include rem(margin-bottom,$space-m);
+    @include small-down {
+        @include rem('margin-bottom', $space-s);
+    }
+
+}
+
+h5 {
+    @include rem(margin-bottom,$space-m);
+    @include small-down {
+        @include rem('margin-bottom', $space-s);
+    }
 }
 
 h6 {
@@ -132,23 +132,6 @@ h6 {
     @include small-down {
         @include rem('margin-bottom', $space-s);
     }
-    @extend %font-size-m;
-    font-weight:$font-normal;
-}
-
-
-// ----------------------------------------------------------------------------
-// Body copy
-// ----------------------------------------------------------------------------
-
-// %body-spacing {
-//     margin-top:0;
-//     @include rem(margin-bottom,$space-m);
-// }
-
-%body-font-size {
-    @extend %font-size-m;
-    font-weight:$font-normal;
 }
 
 p, .text, code, ul, ol, td, dl {
@@ -156,34 +139,48 @@ p, .text, code, ul, ol, td, dl {
     @include rem(margin-bottom,$space-m);
 }
 
-p, .text, code, dt, dd, td, th {
-    @extend %body-font-size;
-}
-
 li {
-    @extend %font-size-m;
     @include rem(margin-top,$space-xs);
     margin-bottom: 0;
 }
 
 .intro {
-    @extend %font-size-xl;
     @include rem(margin-bottom,$space-m);
-    font-weight:$font-light;
     &:last-child {
         @include rem(margin-bottom,$space-xxxl);
     }
 }
 
-.emphasis { @extend %font-size-l;}
-.small { @extend %font-size-s; }
-.tiny { @extend %font-size-xs; }
+// ----------------------------------------------------------------------------
+// Type weights 
+// ----------------------------------------------------------------------------
 
+h1, 
+h2, 
+h6,
+p, 
+.text, 
+code, 
+dt, 
+dd, 
+td, 
+th { font-weight:$font-normal; }
 
-
+h3, 
+h4, 
+h5,
 strong, 
 b { font-weight:$font-bold; }
-em, i, cite, dfn,.font-italic { 
+
+
+.intro { font-weight:$font-light; }
+
+
+
+em, 
+i, 
+cite, 
+dfn,.font-italic { 
     font-style:italic; 
 }
 
@@ -217,24 +214,6 @@ hr {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-//clean up
-
-// dt, dd, td {
-//     margin-top:0;
-// }
 
 
 // ----------------------------------------------------------------------------
@@ -309,7 +288,7 @@ dl {
 // ----------------------------------------------------------------------------
 
 blockquote {
-    @extend %font-size-l;
+    @include rem(font-size, $font-size-l);
     @include rem(padding-left,$space-l);
     @include rem(padding-right,$space-l);
     @include rem(padding-top,$space-xs);
@@ -324,7 +303,7 @@ blockquote {
             content: "\2014\00a0";
             font-weight: $font-light;
         }
-        @extend %font-size-s;
+        @include rem(font-size, $font-size-s);
         color: #666;
     }
 
