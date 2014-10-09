@@ -9,7 +9,7 @@
         "external_theme": "theme--kiwibank",
         "internal_theme": "theme--dark-green",
         "logo":"kiwibank-logo",
-        "section":"section-s",
+        "section":"pt-s",
         "icon_color": "",
         "pages":[
           {
@@ -32,7 +32,7 @@
             "data":[
               {
                 "type": "grid/two-col",
-                "container_padding":"section-xl layout--left",
+                "container_padding":"pt-xl pb-xl  layout--left",
                 "container_theme":"theme--grey",
                 "columns": [
                   {
@@ -49,7 +49,7 @@
               },
               {
                 "type": "grid/three-col",
-                "container_padding":"section-xl layout--left",
+                "container_padding":"pt-xl pb-xl  layout--left",
                 "container_theme":"theme--white",
                 "columns": [
                   {
@@ -93,7 +93,7 @@
             "data":[
               {
                 "type": "grid/one-col",
-                "container_padding":"section-xl layout--left",
+                "container_padding":"pt-xl pb-xl  layout--left",
                 "container_theme":"theme--white",
                 "columns": [
                   {

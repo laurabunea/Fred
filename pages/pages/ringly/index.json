@@ -8,7 +8,7 @@
       "type": "global/global-nav",
       "external_theme":"theme--white",
       "logo":"-logo",
-      "container_padding":"layout section-s",
+      "container_padding":"layout pt-s pb-s",
       "pages":[
         {
           "title":"pre order now",

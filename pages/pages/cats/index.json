@@ -8,7 +8,7 @@
         "type": "global/global-nav",
         "external_theme":"bg--black",
         "logo":"-logo",
-        "container_padding":"layout section-s",
+        "container_padding":"layout pt-s pb-s",
         "pages":[
           {
             "title":"menu",

@@ -8,7 +8,7 @@
           "type": "global/global-nav",
           "external_theme":"theme--black",
           "logo":"-logo",
-          "container_padding":"layout section-s",
+          "container_padding":"layout pt-s pb-s",
           "pages":[
               {
                   "title":"Checkout",
@@ -24,7 +24,7 @@
         "type": "global/global-nav",
         "internal_theme":"theme--white",
         "logo":"-logo",
-        "container_padding":"layout section-s",
+        "container_padding":"layout pt-s pb-s",
         "pages":[
             {
               "title":"Donate",
@@ -97,7 +97,7 @@
               {
                 "remove_content_gutters":true,
                 "content_theme":"theme--grey",
-                "content_padding":"section-xl layout",
+                "content_padding":"pt-xl pb-xl  layout",
                 "data":[
                   "Our new free app offers step-by-step first aid advice, tips on how to prepare for disasters and instructions on what to do during an emergency. Read more",
                   {

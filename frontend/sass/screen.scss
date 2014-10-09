@@ -256,10 +256,10 @@ img { border: 0;}
         right:0;
     }
 
-.u-align-top > * { vertical-align: top; } 
-.u-align-middle > * { vertical-align: middle; } 
-.u-align-baseline > * {vertical-align: baseline; } 
-.u-align-bottom > * { vertical-align: bottom; } 
+.u-align-top,.u-align-top > * { vertical-align: top; } 
+.u-align-middle,.u-align-middle > * { vertical-align: middle; } 
+.u-align-baseline,.u-align-baseline > * {vertical-align: baseline; } 
+.u-align-bottom,.u-align-bottom > * { vertical-align: bottom; } 
 
 .u-center { 
     margin-left:auto;

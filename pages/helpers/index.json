@@ -23,7 +23,7 @@
                         { 
                             "type": "links/btn",
                             "label": "Typography",
-                            "theme": "primary",
+                            "theme": "primary mt-xl",
                             "soft":true,
                             "href":"#typography-helpers"
                         },
