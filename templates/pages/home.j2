@@ -1,119 +1,80 @@
 {% extends "template.j2" %}
 {% set body_class =  'homepage' %}
-{% block global_nav %}
 
-    {{ macros.global_nav( "global-nav--home  theme--full-colour ", "", "dark-blue" ) }}
 
-{% endblock %}
-
-{% block header %}
-
-    {#{{ macros.banner("/images/home/banner-bikes.jpg", "A thriving transport network", "Delivering New Zealand ", "theme--family") }}#}
-
-{% endblock %}
 
 {% block content %}
 
-<div class="global-nav theme--dark">
 
-        <div class="[ wrapper ]">
+<div class=''>
+  <div class="[ wrapper ]">
 
-            <div class="[ layout section ]">
+    <div class="[ layout section ]">
 
-                <div class="[ grid grid--middle ]">
-                    
-                    <div class='[ col large-8 ] '>
-                        
-                      <h1>
-                        Meet Fred, the friendly front-end framework
-                      </h1>             
-                      
-                      <p>
-                        Fred helps jump-start your front-end projects. 
-                      </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+      <div class="[ grid grid--center ]">
+              
+        <div class='[ col large-8 ] '>
+                  
+          <h1>
+            Meet <span class='text--green'>Fred</span>, he is amazing!
+          </h1>             
+          
+          <p class='intro'>
+            Fred can bring your wireframes to life fast. Thus giving you more time to revise the designs more often and refine them sooner.
+          </p>
         </div>
+
+      </div>
 
     </div>
 
-    <div class="global-nav theme--light">
+  </div>
+</div>
+<div class='theme--white'>
 
-        <div class="[ wrapper ]">
+  <div class="[ wrapper ]">
 
-            <div class="[ layout section ]">
+      <div class="[ layout section ]">
 
-                <div class="[ grid grid--middle ]">
+        <div class="[ grid ]">
+                
+          <div class='[ col large-8 ] '>
                     
-                    <div class='[ col large-8 ] '>
-                    
-                      <h3>
-                        How Fred Works
-                      </h3>
+            <h3>
+              Why use Fred
+            </h3>             
+            <ul>
+           
+              <li>
+                Fred can quickly prototype ideas and test them with colleagues and clients without committing time, resources and budget.
+              </li>
 
-                      <p>
-                        Fred aims to solve a classic front-end problem: sharing and re-using common components between projects, while allowing each project to retain custom variables and configuration.
-                      </p> 
+              <li>
+                Fred can bring potential problems with responsive design to light sooner.
+              </li>
+            
+              <li>
+                Fred encourages a much more modular approach to design and development, the idea being that any pattern could be used anywhere on a template.
+              </li>
 
-                      <h4>
-                        Overview 
-                      </h4>
+              <li>
+                Fred is a library of common design patterns. The primary benefit of using design patterns is that we are not constantly re-inventing the wheel when coming up with the general functionality of a site.
+              </li>
+              
+            </ul>
 
-                      <p>
-                        This page is a quick overview of the sites bones. Handy for a designer 
-                      </p>
-
-                      <h4>
-                        Helpers 
-                      </h4>
-
-                      <p>
-                        Here are some handy little classes that will come in useful when building modules for this site. Handy for  FED
-                      </p>
-
-                      <h4>
-                        Components
-                      </h4>
-
-                      <p>
-                        Individual Blocks
-                      </p>
-
-                      <h4>
-                        Patterns
-                      </h4>
-
-                      <p>
-                        This is made up of from many components
-                      </p>
-
-                      <h4>
-                        Pages
-                      </h4>
-
-                      <p>
-                        A place to quickly mock up design ideas quickly
-                      </p>
-
-                    </div>
-
-                </div>
-
-            </div>
+          </div>
 
         </div>
 
+      </div>
+
     </div>
 
+</div>
+
 {% endblock %}
 
-{% block footer_links %}
-{% endblock %}
 
 {% block anchor %}
 {% endblock %}
