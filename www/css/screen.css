@@ -1683,10 +1683,10 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
     background: #293f54; }
 
 .btn--tertiary {
-  background: none;
-  color: #236FA6; }
+  background: #ddd;
+  color: #5e5c5c; }
   .btn--tertiary:visited {
-    color: #236FA6; }
+    color: #5e5c5c; }
 
 .action__icon {
   display: inline-block;
@@ -4479,16 +4479,16 @@ pre, code {
   top: 0;
   right: 0; }
 
-.u-align-top > * {
+.u-align-top, .u-align-top > * {
   vertical-align: top; }
 
-.u-align-middle > * {
+.u-align-middle, .u-align-middle > * {
   vertical-align: middle; }
 
-.u-align-baseline > * {
+.u-align-baseline, .u-align-baseline > * {
   vertical-align: baseline; }
 
-.u-align-bottom > * {
+.u-align-bottom, .u-align-bottom > * {
   vertical-align: bottom; }
 
 .u-center {

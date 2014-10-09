@@ -203,9 +203,9 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
 
 
 .btn--tertiary {
-    background: none;
-    color: $base-link-color;
+    background: $light-grey;
+    color: $base-font-color;
     &:visited {
-        color: $base-link-color;
+        color: $base-font-color;
     }
 }
