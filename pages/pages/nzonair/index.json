@@ -96,83 +96,83 @@
 			"listing_blurb":"I am a blob of text that says something interesting about this featured article"
 		},
     {
-        "type":"layout/dynamic",
-        "container_padding":"layout section",
-        "external_theme":"theme--music",
-        "columns":[
-          {
-            "data":[
-              {
-                "type": "layout/internal-grid",
-                "columns": [
-                  {
-                    "column_size":"medium-third",
-                    "data":[
-                      {
-                        "type":"img",
-                        "src":"/images/placeholders/ph.jpg",
-                        "alt":"alt tag",
-                        "responsive":true
-                      },
-                      {
-                        "type":"type/text-small",
-                        "data":"May 2014"
-                      },
-                      {
-                        "type":"type/h4",
-                        "data":"10th Pacific Music Awards"
-                      },
-                      "The Pacific Music awards celebrate the diversity of Pacific music and honour Pasifika artists and achievements "
-                    ]
-            
-                  },
-                  {
-                    "column_size":"medium-third",
-                    "data":[
-                      {
-                        "type":"img",
-                        "src":"/images/placeholders/ph.jpg",
-                        "alt":"alt tag",
-                        "responsive":true
-                      },
-                      {
-                        "type":"type/text-small",
-                        "data":"May 2014"
-                      },
-                      {
-                        "type":"type/h4",
-                        "data":"Devilskin "
-                      },
-                      "A four-piece rock/metal band from Hamilton is storming the music scene"
-                    ]
-                  },
-                  {
-                    "column_size":"medium-third",
-                    "data":[
-                      {
-                        "type":"img",
-                        "src":"/images/placeholders/ph.jpg",
-                        "alt":"alt tag",
-                        "responsive":true
-                      },
-                      {
-                        "type":"type/text-small",
-                        "data":"May 2014"
-                      },
-                      {
-                        "type":"type/h4",
-                        "data":"Devilskin "
-                      },
-                      "A four-piece rock/metal band from Hamilton is storming the music scene"
-                    ]
-                  }
-                ]
-         
-              }
-            ]
-          }
-         ]
-      }
+      "type":"layout/dynamic",
+      "container_padding":"layout section",
+      "external_theme":"theme--music",
+      "columns":[
+        {
+          "data":[
+            {
+              "type": "layout/internal-grid",
+              "columns": [
+                {
+                  "column_size":"medium-third",
+                  "data":[
+                    {
+                      "type":"img",
+                      "src":"/images/placeholders/ph.jpg",
+                      "alt":"alt tag",
+                      "responsive":true
+                    },
+                    {
+                      "type":"type/text-small",
+                      "data":"May 2014"
+                    },
+                    {
+                      "type":"type/h4",
+                      "data":"10th Pacific Music Awards"
+                    },
+                    "The Pacific Music awards celebrate the diversity of Pacific music and honour Pasifika artists and achievements "
+                  ]
+          
+                },
+                {
+                  "column_size":"medium-third",
+                  "data":[
+                    {
+                      "type":"img",
+                      "src":"/images/placeholders/ph.jpg",
+                      "alt":"alt tag",
+                      "responsive":true
+                    },
+                    {
+                      "type":"type/text-small",
+                      "data":"May 2014"
+                    },
+                    {
+                      "type":"type/h4",
+                      "data":"Devilskin "
+                    },
+                    "A four-piece rock/metal band from Hamilton is storming the music scene"
+                  ]
+                },
+                {
+                  "column_size":"medium-third",
+                  "data":[
+                    {
+                      "type":"img",
+                      "src":"/images/placeholders/ph.jpg",
+                      "alt":"alt tag",
+                      "responsive":true
+                    },
+                    {
+                      "type":"type/text-small",
+                      "data":"May 2014"
+                    },
+                    {
+                      "type":"type/h4",
+                      "data":"Devilskin "
+                    },
+                    "A four-piece rock/metal band from Hamilton is storming the music scene"
+                  ]
+                }
+              ]
+       
+            }
+          ]
+        }
+      ]
+    }
 		
     ]
 }
