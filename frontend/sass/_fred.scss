@@ -95,7 +95,7 @@ code {
     @include rem('border-bottom-width', $space-xxxxl);
     border-style: solid;
     background-color:#efefef;
-    border-color:#555555;
+    border-color:darken(#293f54, 15%);
     box-sizing:border-box;
 
     .device__menu {

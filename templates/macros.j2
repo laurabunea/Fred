@@ -32,13 +32,7 @@
 {% endmacro %}
 
 
-{% macro subnav_tertiary(dir) %}
 
-    {% set item = { type:"subnav-tertiary", data: dir }  %}
-    
-    {{ item|component }}
-
-{% endmacro %}
 
 
 {% macro global_nav( theme, logo, icon_color) %}
@@ -66,34 +60,18 @@
 
 {% endmacro %}
 
-{% macro subnav(dir) %}
+{% macro component_header(title) %}
 
-    {% set item = { type:"subnav", data: dir }  %}
-    
-    {{ item|component }}
-
-{% endmacro %}
-
-{% macro message(message, theme, layout) %}
-
-    {% set item = { type:"message", message:message, theme:theme, layout:layout }  %}
-    
-    {{ item|component }}
-
-{% endmacro %}
-
-{% macro accesibility_container(data, title) %}
-
-    {% set item = { type:"accessibility", data:data, title:title }  %}
+    {% set item = { type:"pattern-library/header", title:title}  %}
     
     {{ item|component }}
 
 {% endmacro %}
 
 
-{% macro site_header(breadcrumb, headline, step_name, image, subnav, layout, title) %}
+{% macro site_header(breadcrumb, headline, step_name, image, subnav, layout, title, grid_modifier) %}
 
-    {% set item = { type:"global/header", breadcrumb:breadcrumb, "headline":headline,"step_name":step_name, "image":image, subnav:subnav, "layout":layout, title:title}  %}
+    {% set item = { type:"global/header", breadcrumb:breadcrumb, "headline":headline,"step_name":step_name, "image":image, subnav:subnav, "layout":layout, title:title, grid_modifier:grid_modifier}  %}
     
     {{ item|component }}
 

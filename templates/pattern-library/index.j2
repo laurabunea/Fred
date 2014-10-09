@@ -1,4 +1,5 @@
 {% extends "template.j2" %}
+{% import "macros.j2" as macros %}
 
 {% block stylesheets %}
 
@@ -8,13 +9,11 @@
 
 
 
-{% set page = title %}
+{% set title = title %}
 
 {% block header %}
-    {{ macros.site_header(breadcrumb, headline, false, false, true, "fullwidth", page) }}
+    {{ macros.component_header(title)}}
 {% endblock  %}
-
-
 
 
 {% block content %}

@@ -1,0 +1,43 @@
+<div class='[ wrapper ]'>
+
+    <div class='[ layout section ] theme--white'>
+
+        <div class='[ grid grid--center ]' >
+
+            <div class='[ col large-8 ]'>
+
+                <h1>
+                    Components
+                </h1>
+
+                {% if item.title == "home" %}
+                    <p class='intro'>
+                       Pages in this demo site are constructed using individual modules — little lego blocks that we glue together into pages. This lets you compose really expressive pages, where content can appear in flexible order and all the pieces fit nicely. 
+                    </p>
+                {% endif %}
+
+            </div>
+
+            <div class='[ col ]'>
+                
+                <div class=''>
+                 
+                    <a href="/pattern-library/type/" class="mt-xl btn btn--soft  {% if item.title == 'type' %} btn--primary {% else %} btn--tertiary {% endif%} " >
+                       Type 
+                    </a>
+                    <a href="/pattern-library/buttons/" class="mt-xl btn btn--soft  {% if item.title == 'buttons' %} btn--primary {% else %}btn--tertiary {% endif%} " >
+                       Buttons
+                    </a>
+                    <a href="/pattern-library/layout/" class="mt-xl btn btn--soft  {% if item.title == 'layout' %} btn--primary{% else %} btn--tertiary {% endif%} " >
+                       Layout
+                    </a>
+
+                </div>     
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

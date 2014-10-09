@@ -1,31 +1,10 @@
 {
-    "title": "flego",
-    "headline": "Flego ",
+    "title": "home",
+    "headline": " ",
     "order": 0,
     "show_in_menu": false,
-    "template":"pattern-library/index.j2",
-    
+    "template":"/pattern-library/index.j2",
     "data": [
-        {
-            "type":"layout/content-block",
-            "theme":"theme--white",
-            "padding":"section",
-            "data":[
-                {
-                    "type": "type/h2",
-                    "data": "Flego, the cool kids lego."
-
-                },
-                {
-                    "type": "type/intro",
-                    "data": "Flego is a great tool for bringing your wireframes to life fast. Thus giving you more time to revise the designs more often and refine them sooner."
-
-                },
-                "Pages in this demo site are constructed using individual modules — little lego blocks that we glue together into pages. This lets you compose really expressive pages, where content can appear in flexible order and all the pieces fit nicely."
-                
-             
-            ]
-        }
-           
+    
     ]
 }

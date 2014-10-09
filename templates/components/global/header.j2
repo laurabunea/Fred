@@ -1,5 +1,5 @@
 <div class='[ wrapper ]'>
-    <div class='header {% if item.theme %}{{ item.theme }}{% else %}theme--fred{% endif %}'>
+    <div class='header {{item.theme | default('theme--white')}}'>
 
         {% if item.image %}
             
@@ -11,7 +11,7 @@
         
         <div class="[ section layout ]">
 
-            <div class="[ grid ]">
+            <div class="[ grid ] {{ item.grid_modifier }}">
 
                 <div class="[ col medium-8 ]">
 
