@@ -4,23 +4,23 @@
     "headline": "Overview",
     "template":"/pages/device.j2",
     "data": [
-        {
-          "type": "global/global-nav",
-          "external_theme":"theme--black",
-          "logo":"-logo",
-          "container_padding":"layout pt-s pb-s",
-          "pages":[
-              {
-                  "title":"Checkout",
-                  "href":""
-              },
-              {
-                  "title":"Member logout",
-                  "href":""
-              }
-          ]
-        },
-        {
+      {
+        "type": "global/global-nav",
+        "external_theme":"theme--black",
+        "logo":"-logo",
+        "container_padding":"layout pt-s pb-s",
+        "pages":[
+            {
+                "title":"Checkout",
+                "href":""
+            },
+            {
+                "title":"Member logout",
+                "href":""
+            }
+        ]
+      },
+      {
         "type": "global/global-nav",
         "internal_theme":"theme--white",
         "logo":"-logo",
@@ -153,73 +153,83 @@
           ] 
         },
         {
-          "type":"gallery/dynamic",
-          "container_padding":"section layout",
-          "internal_theme":"theme--redcross",
-          "gallery":[
+          "type":"layout/dynamic", 
+          "internal_theme":"theme--white",
+          "container_padding":"pb-xxxl layout",
+          "grid_modifier":"grid--middle",
+          "columns":[
             {
-              "column_size":"medium-third",
-              "content":[
-                {
-                  "type":"img",
-                  "src":"/images/placeholders/ph.jpg",
-                  "alt":"alt tag",
-                  "responsive":true
-                },
-                {
-                  "type":"type/text-small",
-                  "data":"May 2014"
-                },
-                {
-                  "type":"type/h4",
-                  "data":"Kiwi nurses to help with Ebola crisis"
-                },
-                "New Zealand Red Cross nurses Donna Collins and Sharon Mackie are on their way to Sierra Leone to join an international Red Cross team responding to the Ebola crisis. "
-              ]
-            },
-            {
-              "column_size":"medium-third",
-              "content":[
-                {
-                  "type":"img",
-                  "src":"/images/placeholders/ph.jpg",
-                  "alt":"alt tag",
-                  "responsive":true
-                },
-                {
-                  "type":"type/text-small",
-                  "data":"May 2014"
-                },
-                {
-                  "type":"type/h4",
-                  "data":"Giving refugees a fresh start"
-                },
-                "New Zealand Red Cross is encouraging employers to give refugees a fresh start with the launch of Pathways to Employment, a nationwide work assistance service."
-              ]
-            },
-            {
-              "column_size":"medium-third",
-              "content":[
-                {
-                  "type":"img",
-                  "src":"/images/placeholders/ph.jpg",
-                  "alt":"alt tag",
-                  "responsive":true
-                },
-                {
-                  "type":"type/text-small",
-                  "data":"July 2014 "
-                },
-                {
-                  "type":"type/h4",
-                  "data":"Hello from Juba"
-                },
-                "Judy returns to South Sudan as a health delegate, supporting ICRC health programmes"
-              ]
+              "column_size":"",
+              "data":[
+                { 
+                  "type":"layout/internal-grid",
+                  "columns":[
+                    {
+                      "column_size":"medium-third",
+                      "data":[
+                        {
+                          "type":"img",
+                          "src":"/images/placeholders/ph.jpg",
+                          "alt":"alt tag",
+                          "responsive":true
+                        },
+                        {
+                          "type":"type/text-small",
+                          "data":"May 2014"
+                        },
+                        {
+                          "type":"type/h4",
+                          "data":"Kiwi nurses to help with Ebola crisis"
+                        },
+                        "New Zealand Red Cross nurses Donna Collins and Sharon Mackie are on their way to Sierra Leone to join an international Red Cross team responding to the Ebola crisis. "
+                      ]
+                    },
+                    {
+                      "column_size":"medium-third",
+                      "data":[
+                        {
+                          "type":"img",
+                          "src":"/images/placeholders/ph.jpg",
+                          "alt":"alt tag",
+                          "responsive":true
+                        },
+                        {
+                          "type":"type/text-small",
+                          "data":"May 2014"
+                        },
+                        {
+                          "type":"type/h4",
+                          "data":"Giving refugees a fresh start"
+                        },
+                        "New Zealand Red Cross is encouraging employers to give refugees a fresh start with the launch of Pathways to Employment, a nationwide work assistance service."
+                      ]
+                    },
+                    {
+                      "column_size":"medium-third",
+                      "data":[
+                        {
+                          "type":"img",
+                          "src":"/images/placeholders/ph.jpg",
+                          "alt":"alt tag",
+                          "responsive":true
+                        },
+                        {
+                          "type":"type/text-small",
+                          "data":"July 2014 "
+                        },
+                        {
+                          "type":"type/h4",
+                          "data":"Hello from Juba"
+                        },
+                        "Judy returns to South Sudan as a health delegate, supporting ICRC health programmes"
+                      ]
 
+                    }
+                  ]
+                }
+              ]
             }
-
-          ]
-        }      
+        ] 
+      }    
     ]
 }
