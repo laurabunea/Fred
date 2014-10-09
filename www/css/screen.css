@@ -1154,6 +1154,12 @@ sub {
 .text--dark-grey {
   color: #5e5c5c; }
 
+.text--light-grey {
+  color: #ddd; }
+
+.text--mid-grey {
+  color: #999; }
+
 .text--muted {
   color: #ddd; }
 
