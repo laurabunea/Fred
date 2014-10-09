@@ -32,89 +32,104 @@
         "container_padding":"section layout",
         "grid_modifier":"grid--middle",
         "columns":[
-            {
-                "column_size":"large-quarter medium-third",
-                "data":[
-                  { 
-                    "type":"img",
-                    "src":"/images/iphone.png", 
-                    "responsive":true
-                  }
-                ]
-            },
-            {
-                "column_size":"large-three-quarters medium-two-thirds",
-                "data":[
-                  { 
-                    "type":"type/h1",
-                    "data":"Hello."
-                  },
-                  "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "
-                ]
-            }
+          {
+            "column_size":"large-quarter medium-third",
+            "data":[
+              { 
+                "type":"img",
+                "src":"/images/iphone.png", 
+                "responsive":true
+              }
+            ]
+          },
+          {
+            "column_size":"large-three-quarters medium-two-thirds",
+            "data":[
+              { 
+                "type":"type/h1",
+                "data":"Hello."
+              },
+              "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "
+            ]
+          }
         ] 
       },
       {
-        "type":"gallery/dynamic",
+        "type":"layout/dynamic", 
         "internal_theme":"theme--white",
         "container_padding":"section layout",
-        "intro":[ 
-          { 
-            "type":"type/h2",
-            "data":"About us"
-          },
-          "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "   
-        ],
-        "gallery":[
+        "grid_modifier":"grid--middle",
+        "columns":[
           {
-            "column_size":"quarter",
-            "content":[
-              {
-                "type":"img",
-                "src":"/images/placeholders/ph1.jpg",
-                "alt":"alt tag", 
-                "responsive":true
+            "column_size":"",
+            "data":[
+              { 
+                "type":"layout/content-block",
+                "padding":"pb-xxl",
+                "data":[
+                  { 
+                    "type":"type/h2",
+                    "data":"About us"
+                  },
+                  "Technology has allowed cool blokes to participate in the global conversation of bung stubbies. The next Generation of heaps good sad guys have already skived off over at the tinny house. "    
+                ]
               },
-              "Mr Coolio"
-            ]
-          },
-          {
-            "column_size":"quarter",
-            "content":[
-              {
-                "type":"img",
-                "src":"/images/placeholders/ph2.jpg",
-                "alt":"alt tag",
-                "responsive":true
-              },
-              "Mr Doppy"
-            ]
-          },
-          {
-            "column_size":"quarter",
-            "content":[
-              {
-                "type":"img",
-                "src":"/images/placeholders/ph3.jpg",
-                "alt":"alt tag",
-                "responsive":true
-              },
-              "Mr Sleepy"
-            ]
-          },
-          {
-            "column_size":"quarter",
-            "content":[
-              {
-                "type":"img",
-                "src":"/images/placeholders/ph4.jpg",
-                "alt":"alt tag",
-                "responsive":true
-              },
-              "Mr Sleepy"
+              { 
+                "type":"layout/internal-grid",
+                "columns":[
+                  {
+                    "column_size":"large-quarter medium-half", 
+                    "data":[
+                      {
+                        "type":"img",
+                        "src":"/images/placeholders/ph1.jpg",
+                        "alt":"alt tag", 
+                        "responsive":true
+                      },
+                      "Mr Coolio"
+                    ]
+                  },
+                  { 
+                    "column_size":"large-quarter medium-half",
+                    "data":[
+                      {
+                        "type":"img",
+                        "src":"/images/placeholders/ph2.jpg",
+                        "alt":"alt tag", 
+                        "responsive":true
+                      },
+                      "Mr Coolio"
+                    ]
+                  },
+                  { 
+                    "column_size":"large-quarter medium-half",
+                    "data":[
+                      {
+                        "type":"img",
+                        "src":"/images/placeholders/ph3.jpg",
+                        "alt":"alt tag", 
+                        "responsive":true
+                      },
+                      "Mr Coolio"
+                    ]
+                  },
+                  { 
+                    "column_size":"large-quarter medium-half",
+                    "data":[
+                      {
+                        "type":"img",
+                        "src":"/images/placeholders/ph4.jpg",
+                        "alt":"alt tag", 
+                        "responsive":true
+                      },
+                      "Mr Coolio"
+                    ]
+                  }
+                ]
+              }
             ]
           }
-        ]
+        ] 
       }
     ]
 }

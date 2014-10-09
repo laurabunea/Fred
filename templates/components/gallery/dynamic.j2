@@ -12,29 +12,33 @@
 
         {% endif %}
 
-            
-            {% for intro in item.intro %}
+            <div class='[ grid {{item.grid_modifier}} {% if item.grid_gutters %}gutters{% endif %} ] '>
 
-                <div class='[ grid {{intro.grid_modifier}} ] mb-l'>
+                {% for introduction in item.intro %}
+                    
+                <div class="[ col {{introduction.column_size}} ] {{introduction.column_theme}} {{introduction.column_class}}">
+                    
+                    {% if introduction.content_theme or introduction.remove_content_gutters or introduction.content_padding or introduction.content_background_image %}
+                    
+                    <div class='content {% if introduction.remove_content_gutters %}{% else %}gutters {% endif %} {{introduction.content_theme}} {{introduction.content_padding}}' {% if introduction.content_background_image %} style="background-image:url('{{introduction.content_background_image}}'); background-size:cover; background-position: center center;" {% endif %}>
 
-                    <div class="[ col {{intro.column_size}} ] {{intro.column_theme}} {{intro.column_class}}">
-                        
-                        {{ intro|children }}
+                    {% endif %}
 
+                        {{ introduction|children }}
+
+                    {% if introduction.content_theme or introduction.remove_content_gutters or introduction.content_padding or introduction.content_background_image %}
+                    
                     </div>
                     
+                    {% endif %}
+
                 </div>
 
-            {% endfor %}
-
-
-
-
-            <div class='[ grid {{item.grid_modifier}} {% if item.grid_gutters %}gutters{% endif %} ] '>
+                {% endfor %}
 
                 {% for column in item.columns %}
                     
-                <div class="[ col{% if item.remove_column_gutters %}--no-gutters{% endif %} {{column.column_size}} ] {{column.column_theme}} {{column.column_class}}">
+                <div class="[ col{% if item.remove_column_gutters %}--no-gutters{% endif %} {{column_size }} {{column.column_size}} ] {{column.column_theme}} {{column.column_class}}">
                     
                     {% if column.content_theme or column.remove_content_gutters or column.content_padding or column.content_background_image %}
                     
