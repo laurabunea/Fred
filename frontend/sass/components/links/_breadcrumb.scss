@@ -32,7 +32,6 @@
             @include rem(padding-left,$space-xxs);;
             @include rem(padding-right,$space-xxs);
             content: ' › ';
-            color: #C7D900;
         }
 
         & .back:before,

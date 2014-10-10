@@ -1,0 +1,83 @@
+{
+  "title": "pages",
+  "slug":"forbar",
+  "headline": "Page one",
+  "template":"/pages/device.j2",
+  "data": [ 
+    {
+      "type": "global/global-nav",
+      "external_theme":"theme--dark-grey",
+      "logo":"-logo",
+      "uppercase":true,
+      "small_text":true,
+      "container_padding":" pt-xxs pb-xxs pl-m pr-m",
+      "pages":[
+        {
+          "title":"JEBEDIAH SPRINGFIELD"
+          
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "columns":[
+        {
+          "data":[
+            {
+              "type":"layout/content-block",
+              "theme":"theme--mid-grey",
+              "padding":"pl-m pr-m pt-xl pb-xl",
+              "data":[
+                {
+                  "type": "links/breadcrumb",
+                  "data": [
+                      {
+                          "url": "#",
+                          "title": "PORTFOLIO"
+                      }
+                      
+                  ]
+                },
+                {
+                  "type": "type/h1",
+                  "data": "New Zealand Dollar"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "container_padding":" ",
+      "external_theme":"theme--white",
+      "container_padding":"pt-m pb-m pl-m pr-m",
+      "columns":[
+        {
+          "column_class":"three-quarters",
+          "data":[
+            {
+                "type": "type/h3",
+                "data": "TM Herrick"
+            },
+            {
+                "type": "type/text-tiny",
+                "data": "1380016"
+            }
+          ]
+        },
+        {
+          "column_class":"quarter",
+          "data":[
+            {
+                "type": "links/btn",
+                "label": "DELETE",
+                "theme": "plain"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

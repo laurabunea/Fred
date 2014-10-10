@@ -130,10 +130,10 @@ img {
   display: table;
   /* 2 */ }
 
-.antialiased, .theme--dark, .theme--fred-dark {
+.antialiased, .theme--dark-grey, .theme--dark, .theme--fred-dark {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-  .isWindowsChrome .antialiased, .isWindowsChrome .theme--dark, .isWindowsChrome .theme--fred-dark {
+  .isWindowsChrome .antialiased, .isWindowsChrome .theme--dark-grey, .isWindowsChrome .theme--dark, .isWindowsChrome .theme--fred-dark {
     -webkit-font-smoothing: subpixel-antialiased; }
 
 .list--inline, .breadcrumb, .nav, .flego-navigation, .list--block, .list--unstyled, .anchor-links {
@@ -377,62 +377,52 @@ img {
   width: 1.5em;
   height: 1.5em; }
 
-.font-size-xxxxl {
-  font-size: 64px;
-  font-size: 4rem;
-  line-height: 1.1666666667; }
-  @media only screen and (max-width: 59em) {
-    .font-size-xxxxl {
-      font-size: 48px;
-      font-size: 3rem;
-      line-height: 1.1666666667; } }
-
-h1, .font-size-xxxl {
+h1 {
   font-size: 48px;
   font-size: 3rem;
   line-height: 1.1666666667; }
   @media only screen and (max-width: 59em) {
-    h1, .font-size-xxxl {
+    h1 {
       font-size: 32px;
       font-size: 2rem;
       line-height: 1.25; } }
 
-h2, .font-size-xxl {
+h2 {
   font-size: 32px;
   font-size: 2rem;
   line-height: 1.25; }
   @media only screen and (max-width: 59em) {
-    h2, .font-size-xxl {
+    h2 {
       font-size: 24px;
       font-size: 1.5rem;
       line-height: 1.5; } }
 
-h3, .intro, .font-size-xl {
+h3, .intro {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1.5; }
   @media only screen and (max-width: 59em) {
-    h3, .intro, .font-size-xl {
+    h3, .intro {
       font-size: 18px;
       font-size: 1.125rem;
       line-height: 1.5555555556; } }
 
-h4, .font-size-l {
+h4 {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.5555555556; }
 
-h5, h6, p, .text, code, dt, dd, td, th, li .font-size-m {
+h5, h6, p, .text, code, dt, dd, td, th, li {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
-.small, .font-size-s {
+.small {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.4285714286; }
 
-.tiny, .font-size-xs {
+.tiny {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1.3333333333; }
@@ -537,33 +527,24 @@ dd {
   margin-bottom: 12px;
   margin-bottom: 0.75rem; }
 
-.dl--stripey dt {
-  padding-top: 12px;
-  padding-top: 0.75rem;
-  padding-right: 12px;
-  padding-right: 0.75rem;
-  padding-bottom: 12px;
-  padding-bottom: 0.75rem;
+.dl--split dt {
   float: left; }
-.dl--stripey dd {
+.dl--split dd {
   margin-top: 0;
   margin-left: 0;
   margin-bottom: 0;
-  padding-top: 12px;
-  padding-top: 0.75rem;
-  padding-bottom: 12px;
-  padding-bottom: 0.75rem;
   border-top-style: solid;
   border-top-width: 1px;
   border-top-color: inherit;
   text-align: right; }
+
 @media only screen and (max-width: 59em) {
-  .dl--stripey dt {
+  .dl--block-small-down dt {
     border-top-style: solid;
     border-top-width: 1px;
     border-top-color: inherit;
     float: none !important; }
-  .dl--stripey dd {
+  .dl--block-small-down dd {
     text-align: left !important; } }
 
 .dl--inline dd, .dl--inline dt {
@@ -1059,6 +1040,18 @@ sub {
   .theme--music h1, .theme--music h2, .theme--music h3, .theme--music h4, .theme--music h5, .theme--music a {
     color: #37b67f; }
 
+.theme--mid-grey {
+  background-color: #999;
+  color: #fff; }
+  .theme--mid-grey a {
+    color: #fff; }
+
+.theme--dark-grey {
+  background-color: #5e5c5c;
+  color: #fff; }
+  .theme--dark-grey a {
+    color: #fff; }
+
 .theme--orange {
   color: #fff;
   background-color: #f5a422; }
@@ -1475,8 +1468,7 @@ sub {
       padding-left: 0.25rem;
       padding-right: 4px;
       padding-right: 0.25rem;
-      content: ' › ';
-      color: #C7D900; }
+      content: ' › '; }
     .breadcrumb > li .back:before, .breadcrumb > li .close:before {
       padding-left: 4px;
       padding-left: 0.25rem;
@@ -1685,6 +1677,29 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
     background: #182532;
     color: #fff; }
   .btn--secondary:active {
+    color: #fff;
+    background: #293f54; }
+
+.btn--plain {
+  background: transparent;
+  color: #5e5c5c;
+  border: 1px solid #5e5c5c; }
+  .btn--plain:visited {
+    color: #236FA6; }
+  .btn--plain:hover {
+    background: #5e5c5c;
+    color: #fff; }
+  .btn--plain:active {
+    color: #fff;
+    background: #293f54; }
+
+.btn--inverse {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff; }
+  .btn--inverse:visited {
+    color: #236FA6; }
+  .btn--inverse:active {
     color: #fff;
     background: #293f54; }
 
@@ -4558,7 +4573,9 @@ pre, code {
     text-align: left; }
   .u-append--small-down:after {
     content: attr(data-append-small);
-    display: inline-block; } }
+    display: inline-block; }
+  .u-clear-float--small-down {
+    float: none; } }
 
 @media only screen and (min-width: 37.5em) {
   .u-hide--medium {
@@ -4573,7 +4590,9 @@ pre, code {
     text-align: left; }
   .u-append--medium:after {
     content: attr(data-append-medium);
-    display: inline-block; } }
+    display: inline-block; }
+  .u-clear-float--medium {
+    float: none; } }
 
 @media only screen and (min-width: 60em) {
   .u-hide--large {
@@ -4588,7 +4607,53 @@ pre, code {
     text-align: left; }
   .u-append--large:after {
     content: attr(data-append-medium);
-    display: inline-block; } }
+    display: inline-block; }
+  .u-clear-float--large {
+    float: none; } }
+
+.font-size-xs {
+  font-size: 12px;
+  font-size: 0.75rem; }
+
+.font-size-s {
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+.font-size-m {
+  font-size: 16px;
+  font-size: 1rem; }
+
+.font-size-l {
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+.font-size-xl {
+  font-size: 24px;
+  font-size: 1.5rem; }
+
+.font-size-xxl {
+  font-size: 32px;
+  font-size: 2rem; }
+
+.font-size-xxxl {
+  font-size: 48px;
+  font-size: 3rem; }
+
+.font-size-xxxxl {
+  font-size: 64px;
+  font-size: 4rem; }
+
+.border-b {
+  border-bottom: 1px solid inherit; }
+
+.border-t {
+  border-top: 1px solid inherit; }
+
+.border-l {
+  border-left: 1px solid inherit; }
+
+.border-r {
+  border-right: 1px solid inherit; }
 
 .is-draggable {
   cursor: move; }

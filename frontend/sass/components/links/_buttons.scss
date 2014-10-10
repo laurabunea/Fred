@@ -201,6 +201,32 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
     }
 }
 
+.btn--plain {
+    background: transparent;
+    color: $base-font-color;
+    border:1px solid $base-font-color;
+    &:visited { color: $base-link-color;}
+
+    &:hover {
+        background: $base-font-color;
+        color:$white;
+    }
+    &:active {
+        color:$white;
+        background: #293f54;
+    }
+}
+
+.btn--inverse {
+    background: transparent;
+    color: $white;
+    border:1px solid $white;
+    &:visited { color: $base-link-color;}
+    &:active {
+        color:$white;
+        background: #293f54;
+    }
+}
 
 .btn--tertiary {
     background: $light-grey;

@@ -3,19 +3,8 @@
 // Type sizes
 // ----------------------------------------------------------------------------
 
-.font-size-xxxxl {
-    @include rem('font-size', $font-size-xxxxl);
-    line-height: $line-height-xxxl;
-    @include small-down {
-        & {
-            @include rem('font-size', $font-size-xxxl);
-            line-height: $line-height-xxxl;
-        }
-    }
-}
 
-h1, 
-.font-size-xxxl {
+h1 {
     //@include font-size($font-size-xxxl);
     @include rem('font-size', $font-size-xxxl);
     line-height: $line-height-xxxl;
@@ -27,8 +16,7 @@ h1,
     }
 }
 
-h2, 
-.font-size-xxl {
+h2 {
     @include rem('font-size', $font-size-xxl);
     line-height: $line-height-xxl;
     @include small-down {
@@ -40,8 +28,7 @@ h2,
 }
 
 h3,
-.intro,
-.font-size-xl {
+.intro {
     @include rem('font-size', $font-size-xl);
     line-height: $line-height-xl;
     @include small-down {
@@ -52,8 +39,7 @@ h3,
     }
 }
 
-h4,
-.font-size-l {
+h4 {
     @include rem('font-size', $font-size-l);
     line-height: $line-height-l;
 }
@@ -67,20 +53,17 @@ dt,
 dd, 
 td, 
 th, 
-li
-.font-size-m {
+li {
     @include rem('font-size', $font-size-m);
     line-height: $line-height-m;
 }
 
-.small,
-.font-size-s {
+.small {
     @include rem('font-size', $font-size-s);
     line-height: $line-height-s;
 }
 
-.tiny, 
-.font-size-xs {
+.tiny {
     @include rem('font-size', $font-size-xs);
     line-height: $line-height-xs;
 }
@@ -232,11 +215,11 @@ dl {
         @include rem(margin-bottom,$space-s);
     }
 
-.dl--stripey {
+.dl--split {
     dt {
-        @include rem(padding-top,$space-s);
-        @include rem(padding-right,$space-s);
-        @include rem(padding-bottom,$space-s);
+        //@include rem(padding-top,$space-s);
+        //@include rem(padding-right,$space-s);
+        //@include rem(padding-bottom,$space-s);
         float:left;
     }
 
@@ -244,27 +227,41 @@ dl {
         margin-top:0;
         margin-left:0;
         margin-bottom:0;
-        @include rem(padding-top,$space-s);
-        @include rem(padding-bottom,$space-s);
+        //@include rem(padding-top,$space-s);
+        //@include rem(padding-bottom,$space-s);
         border-top-style: solid;
         border-top-width: 1px;
         border-top-color: inherit;
         text-align:right; 
     }
-    @include small-down {
-        dt {
-            border-top-style: solid;
-            border-top-width: 1px;
-            border-top-color: inherit;
-            float:none!important;
-        }
-        dd {
-          text-align:left!important;
-        } 
-    }
+    // @include small-down {
+    //     dt {
+    //         border-top-style: solid;
+    //         border-top-width: 1px;
+    //         border-top-color: inherit;
+    //         float:none!important;
+    //     }
+    //     dd {
+    //       text-align:left!important;
+    //     } 
+    // }
 
 }
 
+.dl--block-small-down {
+    @include small-down {
+        dt {
+             border-top-style: solid;
+             border-top-width: 1px;
+             border-top-color: inherit;
+             float:none!important;
+        }
+
+        dd {
+           text-align:left!important;
+        } 
+    }
+}
 
 .dl--inline {
     dd, dt {

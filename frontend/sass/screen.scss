@@ -329,6 +329,9 @@ img { border: 0;}
         content: attr(data-append-small);
         display: inline-block;
     }
+    .u-clear-float--small-down {
+        float: none;
+    }
 
 }
 
@@ -347,6 +350,9 @@ img { border: 0;}
         content: attr(data-append-medium);
         display: inline-block;
     }
+    .u-clear-float--medium {
+        float: none;
+    }
 
 }
 
@@ -363,10 +369,52 @@ img { border: 0;}
         content: attr(data-append-medium);
         display: inline-block;
     }
+    .u-clear-float--large {
+        float: none;
+    }
 
 }
-    
 
+// -----------------------------------------------------------------------------
+// utilities -- font-sizes
+// -----------------------------------------------------------------------------
+
+.font-size-xs {
+    @include rem('font-size', $font-size-xs);   
+}
+.font-size-s {
+    @include rem('font-size', $font-size-s) ;   
+}
+.font-size-m {
+    @include rem('font-size', $font-size-m);   
+} 
+.font-size-l {
+    @include rem('font-size', $font-size-l);   
+} 
+.font-size-xl {
+    @include rem('font-size', $font-size-xl);   
+} 
+.font-size-xxl {
+    @include rem('font-size', $font-size-xxl);   
+} 
+.font-size-xxxl {
+    @include rem('font-size', $font-size-xxxl);   
+}
+.font-size-xxxxl {
+    @include rem('font-size', $font-size-xxxxl);   
+} 
+
+
+
+// -----------------------------------------------------------------------------
+// Borders
+// -----------------------------------------------------------------------------
+
+
+.border-b {border-bottom:1px solid inherit;}
+.border-t {border-top:1px solid inherit;}
+.border-l {border-left:1px solid inherit;}
+.border-r {border-right:1px solid inherit;}
 // -----------------------------------------------------------------------------
 // utilities -- States
 // -----------------------------------------------------------------------------

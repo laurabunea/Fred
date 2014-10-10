@@ -135,6 +135,17 @@ $link-color:
     color:#37b67f;
   } 
 }
+.theme--mid-grey {
+  background-color:$mid-grey;
+  color:$white;
+  a { color:$white; }
+}
+.theme--dark-grey {
+  @extend %font-smoothing;
+  background-color:$dark-grey;
+  color:$white;
+  a { color:$white; }
+}
 
 .theme--orange {
   color:#fff;

@@ -1,21 +1,23 @@
 <div class=''>
-    {% if item.heading %}
+    
+    {% if item.title %}
 
         <h3>
-            {{ item.heading|safe }}
+            {{ item.title|safe }}
         </h3>
 
     {% endif %}
-    <dl class='{{item.theme}} {% if item.class %}{{item.class}}{% endif %}'>
 
-    {% for item in item.data %}
+    <dl class='{{item.theme}} {{item.class}} '>
 
-        <dt>
-            {{ item.u-left|safe }}
+    {% for piece in item.data %}
+
+        <dt class='{{item.font_size}} {{item.left_gutter}} {{item.section_padding | default('pt-s pb-s')}}' >
+            {{ piece.left|safe }}
         </dt>
 
-        <dd>
-            {{ item.u-right|safe }}
+        <dd class='{{item.font_size}} {{item.section_padding | default('pt-s pb-s')}} {{item.left_gutter}} {{item.right_gutter}}' >
+            {{ piece.right|safe }}
         </dd>
 
     {% endfor %}

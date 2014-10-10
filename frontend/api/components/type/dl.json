@@ -9,7 +9,7 @@
             "notes":"Use this for a list of terms and their definitions. This is a useful alternative to tables for marking up simple lists of name/value pairs.",
             "example": {
                 "type": "type/dl",
-                "heading":"Full licence costs",
+                "title":"Full licence costs",
                 "data": [
                     {
                         "left": "Application fee",
@@ -47,7 +47,7 @@
             "notes":"",
             "example": {
                 "type": "type/dl",
-                "class":"dl--stripey",
+                "class":"dl--split",
                 "data": [
                     {
                         "left": "Application fee",
@@ -66,7 +66,7 @@
             "notes":"",
             "example": {
                 "type": "type/dl",
-                "class":"dl--stripey",
+                "class":"dl--split",
                 "theme":"border--light-grey text--link-color",
                 "data": [
                     {
@@ -79,6 +79,39 @@
                     }
                 ],
                 "total":"<strong>$111.70</strong>"
+            }
+        },
+        {
+            "title": "Stripey definition list with some theme modifiers applied",
+            "notes":"",
+            "example": {
+                "type": "type/dl",
+                "class":"dl--split dl--block-small-down border--light-grey",
+                "theme":"border--light-grey",
+                "left_gutter":"pl-m",
+                "right_gutter":"pr-m",
+                "data": [
+                    {
+                        "left": "Domestic Fixed Interest",
+                        "right": "<span class='text--mid-grey'> NZD</span> 315,472.50"
+                    },
+                    {
+                        "left": "Domestic Property",
+                        "right": "<span class='text--mid-grey'> NZD</span> 105,442.80"
+                    },
+                    {
+                        "left": "Domestic Equality",
+                        "right": "<span class='text--mid-grey'> NZD</span> 315,472.50"
+                    },
+                    {
+                        "left": "On Call to 90 days",
+                        "right": "<span class='text--mid-grey'> NZD</span> 15,472.50"
+                    },
+                    {
+                        "left": "Domestic Cash",
+                        "right": "<span class='text--mid-grey'> NZD</span> 15,472.50"
+                    }
+                ]
             }
         }
     ]
