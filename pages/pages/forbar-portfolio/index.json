@@ -66,7 +66,7 @@
                   "type": "links/btn",
                   "label": "transactions",
                   "block":true,
-                  "href":"/pages/forbar-transactions-child/",
+                  "href":"/pages/forbar-transactions/",
                   "class":"u-uppercase font-size-xs"
                 } 
               ]
@@ -75,6 +75,7 @@
         },
         {
           "column_size":"third",
+          "column_theme":"theme--dark-grey",
           "data":[
             {
               "type":"layout/content-block",
@@ -84,7 +85,7 @@
                   "label": "portfolio",
                   "block":true,
                   "href":"",
-                  "class":"u-uppercase font-size-xs"
+                  "class":"u-uppercase font-size-xs is-disabled"
                 } 
               ]
             }

@@ -49,10 +49,12 @@
     {
       "type":"layout/dynamic",
       "remove_column_gutters":true,
+      "container_padding":"layout ",
       "external_theme":"theme--mid-grey bt--primary border--light-grey",
       "columns":[
         {
           "column_size":"third",
+          "column_theme":"theme--dark-grey",
           "data":[
             {
               "type":"layout/content-block",
@@ -61,8 +63,8 @@
                   "type": "links/btn",
                   "label": "transactions",
                   "block":true,
-                  "href":"/pages/forbar-transactions-child/",
-                  "class":"u-uppercase font-size-xs"
+                  "href":"",
+                  "class":"u-uppercase font-size-xs is-disabled"
                 } 
               ]
             }
@@ -78,7 +80,7 @@
                   "type": "links/btn",
                   "label": "portfolio",
                   "block":true,
-                  "href":"",
+                  "href":"/pages/forbar-portfolio/",
                   "class":"u-uppercase font-size-xs"
                 } 
               ]
@@ -139,7 +141,7 @@
                 },
                 "table_body": {
                   "font":"font-size-s font-size-m--medium",
-                  "padding":"pt-xxs pb-xxs pt-s--medium-up pb-s--medium-up",
+                  "padding":"pt-xxs pb-xxs pt-s--medium pb-s--medium",
                   "theme":"bg--white bb--primary border--light-grey",
                   "data":[
                     [
