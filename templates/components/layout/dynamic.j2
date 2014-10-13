@@ -12,7 +12,7 @@
 
         {% endif %}
 
-            <div class='[ grid {{item.grid_modifier}} {% if item.grid_gutters %}gutters{% endif %} ] '>
+            <div class='[ grid {{item.grid_modifier}} {% if item.grid_gutters  %} gutters {% endif %} ] '>
 
                 {% for column in item.columns %}
                     
@@ -20,7 +20,7 @@
                     
                     {% if column.content_theme or column.remove_content_gutters or column.content_padding or column.content_background_image %}
                     
-                    <div class='content  {% if column.remove_content_gutters %}{% else %}gutters {% endif %} {{column.content_theme}} {{column.content_padding}}' {% if column.content_background_image %} style="background-image:url('{{column.content_background_image}}'); background-size:cover; background-position: center center;" {% endif %}>
+                    <div class='content-block  {% if column.remove_content_gutters %}{% else %}gutters {% endif %} {{column.content_theme}} {{column.content_padding}}' {% if column.content_background_image %} style="background-image:url('{{column.content_background_image}}'); background-size:cover; background-position: center center;" {% endif %}>
 
                     {% endif %}
 

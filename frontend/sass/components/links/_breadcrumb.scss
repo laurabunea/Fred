@@ -4,6 +4,7 @@
 
 
 .breadcrumb {
+
     @extend %list--inline;
     @include rem(margin-bottom,$space-s);
     font-weight: 100;

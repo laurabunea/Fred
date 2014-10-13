@@ -260,8 +260,8 @@ $link-color:
 .border--green       {  border-color:$blue; }
 .border--link-colour {  border-color:$base-link-color; }
 .border--light-grey {  border-color:$light-grey; }
-
-
+.border--dark-grey {  border-color:$dark-grey; }
+.border--mid-grey {  border-color:$mid-grey; }
 
 // .highlight-top { 
 //   @include rem(padding-top,$space-l);

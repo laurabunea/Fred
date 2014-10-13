@@ -1,0 +1,9 @@
+
+.table-div {
+ 
+    @include rem(margin-bottom,  $space-xl);
+}
+
+    .table-head {}
+    .table-subhead {}
+    .table-body {}

@@ -1,0 +1,61 @@
+<div class='table-div' >
+    
+    {% for col in item.data.table_head.data %}
+
+        {% if loop.first %}
+            <div class='[ grid ] table-head {{item.data.table_head.theme}}'>
+        {% endif %}
+        
+            <div class='[ col {{item.data.table_col_size}} ]'  >
+                <div class="{{item.data.table_head.padding}} {% if loop.index > 1 %} u-text-right {% endif %} {{item.data.table_head.font}}">{{ col.data | safe }}</div>
+            </div>
+
+        {% if loop.last %}
+            </div>
+        {% endif %}
+
+    {% endfor %}
+
+    {% for col in item.data.table_subhead.data %}
+
+        {% if loop.first %}
+            <div class='[ grid ] table_subhead {{item.data.table_subhead.theme}}'>
+        {% endif %}
+        
+            <div class='[ col {{item.data.table_col_size}} ]  '  >
+                <div class="{{item.data.table_subhead.padding}} {% if loop.index > 1 %} u-text-right {% endif %} {{item.data.table_subhead.font}}">{{ col.data | safe }}</div>
+            </div>
+
+        {% if loop.last %}
+            </div>
+        {% endif %}
+
+    {% endfor %}
+
+    {% for row in item.data.table_body.data %}
+
+        {% if loop.first %}
+            <div class='table--body'>
+        {% endif %}
+
+        <div class='[ grid ] {{item.data.table_body.theme}}'>
+
+        {% for col in row %}
+
+            <div class='[ col {% if loop.index > 1 %} u-text-right {% endif %}{% if loop.length < 2 %} {% else %} {{item.data.table_col_size}} {% endif %} ] '>
+                
+                <div class="{{item.data.table_body.padding}} {{item.data.table_body.font}}">{{ col.data | safe }}</div>
+
+            </div>
+
+        {% endfor %}
+
+        </div >
+
+        {% if loop.last %}
+            </div>
+        {% endif %}
+
+    {% endfor %}
+    
+</div>

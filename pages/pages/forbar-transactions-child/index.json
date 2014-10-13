@@ -1,0 +1,103 @@
+{
+  "title": "pages",
+  "slug":"forbar-transactions-child",
+  "headline": "Page one",
+  "template":"/pages/device.j2",
+  "data": [ 
+    {
+      "type": "global/global-nav",
+      "external_theme":"theme--dark-grey",
+      "logo":"-logo",
+      "uppercase":true,
+      "small_text":true,
+      "container_padding":"layout pt-xxs pb-xxs ",
+      "pages":[
+        {
+          "title":"JEBEDIAH SPRINGFIELD"
+          
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"theme--mid-grey",
+      "container_padding":"layout",
+      "columns":[
+        {
+          "data":[
+            {
+              "type":"layout/content-block",
+              "padding":"pt-xl pb-xl",
+              "data":[
+                {
+                  "type": "links/breadcrumb",
+                  "class":"mb-0",
+                  "data": [
+                    {
+                        "url": "/pages/forbar-transactions/",
+                        "title": "TRANSACTIONS"
+                    }
+                      
+                  ]
+                },
+                {
+                  "type": "type/h2",
+                  "data": "Forsyth Barr Cash Management"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "container_padding":"layout",
+      "external_theme":"bg--white",
+      "columns":[
+        {
+          "data":[
+            {
+              "type": "layout/table-divs",
+              "data": {
+                "table_col_size":"third",
+                "table_head": {
+                  "font":"font-size-xs u-uppercase",
+                  "padding":"pt-xxs pb-xxs",
+                  "theme":"bg--light-grey",
+                  "data":[
+                    { "data": "30 september 2014" },
+                    { "data": "debit/credit" },
+                    { "data": "balance" }
+                  ]
+                },
+                "table_body": {
+                  "font":"font-size-m",
+                  "padding":"pt-xxs pb-xxs",
+                  "theme":"bg--white bb--primary border--light-grey",
+                  "data":[
+                    [
+                      { "data": "Interest Recieved: Forsyth Barr Cash Management " },
+                      { "data": "6.17" },
+                      { "data": "1,3,21.86" }
+                    ],
+                    [
+                      { "data": "Interest Recieved: Forsyth Barr Cash Management " },
+                      { "data": "6.17" },
+                      { "data": "1,3,21.86" }
+                    ],
+                    [
+                    { "data": "Withdrawl: Transfer to account ledger " },
+                    { "data": "6.17" },
+                    { "data": "1,3,21.86" }
+                    ]
+                  ]
+                }
+              }
+            } 
+          ]
+        }
+      ]
+    }
+  ]
+}

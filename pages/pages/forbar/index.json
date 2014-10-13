@@ -10,7 +10,7 @@
       "logo":"-logo",
       "uppercase":true,
       "small_text":true,
-      "container_padding":" pt-xxs pb-xxs pl-m pr-m",
+      "container_padding":" pt-xxs pb-xxs layout",
       "pages":[
         {
           "title":"JEBEDIAH SPRINGFIELD"
@@ -20,12 +20,13 @@
     },
     {
       "type":"layout/dynamic",
+      "container_padding":"layout",
+      "external_theme":"theme--mid-grey",
       "columns":[
         {
           "data":[
             {
               "type":"layout/content-block",
-              "theme":"theme--mid-grey",
               "padding":"pl-m pr-m pt-xl pb-xl",
               "data":[
                 {
@@ -50,7 +51,7 @@
     },
     {
       "type":"layout/dynamic",
-      "container_padding":" ",
+      "container_padding":"layout",
       "external_theme":"theme--white",
       "columns":[
         {

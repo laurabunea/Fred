@@ -1201,6 +1201,12 @@ sub {
 .border--light-grey {
   border-color: #ddd; }
 
+.border--dark-grey {
+  border-color: #5e5c5c; }
+
+.border--mid-grey {
+  border-color: #999; }
+
 /*------------------------------------*\
     #PLAYPEN
     The place where we solve design 
@@ -1365,6 +1371,10 @@ sub {
       width: 95%;
       margin-left: -100%;
       color: #777; } }
+
+.table-div {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
 
 .swatch-container {
   margin-bottom: 20px;
@@ -4644,16 +4654,16 @@ pre, code {
   font-size: 4rem; }
 
 .border-b {
-  border-bottom: 1px solid inherit; }
+  border-bottom: 1px solid #ddd; }
 
 .border-t {
-  border-top: 1px solid inherit; }
+  border-top: 1px solid #ddd; }
 
 .border-l {
-  border-left: 1px solid inherit; }
+  border-left: 1px solid #ddd; }
 
 .border-r {
-  border-right: 1px solid inherit; }
+  border-right: 1px solid #ddd; }
 
 .is-draggable {
   cursor: move; }

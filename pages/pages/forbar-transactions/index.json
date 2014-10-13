@@ -1,0 +1,163 @@
+{
+  "title": "pages",
+  "slug":"forbar-transactions",
+  "headline": "Page one",
+  "template":"/pages/device.j2",
+  "data": [ 
+    {
+      "type": "global/global-nav",
+      "external_theme":"theme--dark-grey",
+      "logo":"-logo",
+      "uppercase":true,
+      "small_text":true,
+      "container_padding":" pt-xxs pb-xxs layout ",
+      "pages":[
+        {
+          "title":"JEBEDIAH SPRINGFIELD"
+          
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"theme--mid-grey",
+      "container_padding":"layout",
+      "columns":[
+        {
+          "data":[
+            {
+              "type":"layout/content-block",
+              "padding":"pt-xl pb-xl",
+              "data":[
+              
+                {
+                  "type": "type/h2",
+                  "data": "T M Herrick"
+                },
+                {
+                  "type": "type/text-small",
+                  "data": "1276351"
+                }
+                  
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "remove_column_gutters":true,
+      "external_theme":"theme--mid-grey bt--primary border--light-grey",
+      "columns":[
+        {
+          "column_size":"third",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "links/btn",
+                  "label": "transactions",
+                  "block":true,
+                  "href":"/pages/forbar-transactions-child/",
+                  "class":"u-uppercase font-size-xs"
+                } 
+              ]
+            }
+          ]
+        },
+        {
+          "column_size":"third",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "links/btn",
+                  "label": "portfolio",
+                  "block":true,
+                  "href":"",
+                  "class":"u-uppercase font-size-xs"
+                } 
+              ]
+            }
+          ]
+        },
+        {
+          "column_size":"third",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "links/btn",
+                  "label": "account details",
+                  "block":true,
+                  "href":"",
+                  "class":"u-uppercase font-size-xs"
+                }  
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"bg--white",
+      "container_padding":"layout",
+      "columns":[
+        {
+          "data":[
+            {
+              "type": "layout/table-divs",
+              "data": {
+                "table_col_size":"half",
+                "table_head": {
+                  "font":"font-size-xs u-uppercase",
+                  "padding":"pt-xxs pb-xxs",
+                  "theme":"bg--light-grey",
+                  "data":[
+                    { "data": "Action" },
+                    { "data": "Key" }
+                  ]
+                },
+                "table_subhead": {
+                  "font":"font-size-m u-bold",
+                  "padding":"pt-xxs pb-xxs",
+                  "theme":"bg--light-grey bt--primary border--mid-grey",
+                  "data":[
+                    {
+                        "data": "New Zeland dollars"
+                    },
+                    {
+                        "data": "<span class='text--mid-grey'>NZD</span> 315,472.50"
+                    }
+                  ]
+                },
+                "table_body": {
+                  "font":"font-size-m ",
+                  "padding":"pt-xxs pb-xxs",
+                  "theme":"bg--white bb--primary border--light-grey",
+                  "data":[
+                    [
+                      { "data": "<a href='/pages/forbar-transactions-child/' class='btn--block'>Forsyth Bar Cash management</a>" }
+                    ],
+                    [
+                      {  "data": "<a href='/pages/forbar-transactions-child/' class='btn--block'>Forsyth Bar Client (Account ledger)</a>" }
+                    ],
+                    [
+                      { "data": "<a href='/pages/forbar-transactions-child/' class='btn--block'>Navigate to the homepage</a>" }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+      
+  ]
+}

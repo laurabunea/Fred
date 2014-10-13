@@ -42,10 +42,10 @@
         vertical-align: top;
     }
     
-    // & > .grid {
-    //     display:inline-block;
-    //     font-size: 0;
-    // }
+     // & .grid {
+     //     margin-left:0;
+     //     margin-right:0;
+     // }
 }
 
     // .grid > *,
@@ -201,6 +201,7 @@ $section-desktop:64;
 // ----------------------------------------------------------------------------
 
 %layout-left {
+    //same as the column gutters on mobile
     @include rem(padding-left,$space-m);
     @include medium {
         @include rem(padding-left,$space-xxxxl);
@@ -213,6 +214,7 @@ $section-desktop:64;
 }
 
 %layout-right {
+    //same as the column gutters on mobile
     @include rem(padding-right,$space-m);
     @include medium {
         @include rem(padding-right,$space-xxxxl);

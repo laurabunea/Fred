@@ -1,8 +1,8 @@
-<ol class="breadcrumb">
+<ol class="breadcrumb {{item.class}}">
 
     {% for crumb in item.data %}
 
-        <li>
+        <li class='{{crumb.class}}'>
 
             <a href="{{ crumb.url }}">{{ crumb.title }}</a>
 

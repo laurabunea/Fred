@@ -153,6 +153,7 @@ img { border: 0;}
 
 //layout
 @import "components/layout/table";
+@import "components/layout/table-divs";
 @import "components/layout/swatch";
 @import "components/layout/media";
 @import "components/layout/cards";
@@ -411,10 +412,11 @@ img { border: 0;}
 // -----------------------------------------------------------------------------
 
 
-.border-b {border-bottom:1px solid inherit;}
-.border-t {border-top:1px solid inherit;}
-.border-l {border-left:1px solid inherit;}
-.border-r {border-right:1px solid inherit;}
+.border-b {border-bottom:1px solid $light-grey;}
+.border-t {border-top:1px solid $light-grey;}
+.border-l {border-left:1px solid $light-grey;}
+.border-r {border-right:1px solid $light-grey;}
+
 // -----------------------------------------------------------------------------
 // utilities -- States
 // -----------------------------------------------------------------------------
