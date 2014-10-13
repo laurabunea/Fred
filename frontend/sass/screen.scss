@@ -404,7 +404,87 @@ img { border: 0;}
 .font-size-xxxxl {
     @include rem('font-size', $font-size-xxxxl);   
 } 
+//todo do we need this as mobile shoudl be default anyway :)
+@include small-down {
+    .font-size-xs--small-down {
+        @include rem('font-size', $font-size-xs);   
+    }
+    .font-size-s--small-down {
+        @include rem('font-size', $font-size-s) ;   
+    }
+    .font-size-m--small-down {
+        @include rem('font-size', $font-size-m);   
+    } 
+    .font-size-l--small-down {
+        @include rem('font-size', $font-size-l);   
+    } 
+    .font-size-xl--small-down {
+        @include rem('font-size', $font-size-xl);   
+    } 
+    .font-size-xxl--small-down {
+        @include rem('font-size', $font-size-xxl);   
+    } 
+    .font-size-xxxl--small-down {
+        @include rem('font-size', $font-size-xxxl);   
+    }
+    .font-size-xxxxl--small-down {
+        @include rem('font-size', $font-size-xxxxl);   
+    } 
+}
 
+@include medium {
+    .font-size-xs--medium {
+        @include rem('font-size', $font-size-xs);   
+    }
+    .font-size-s--medium {
+        @include rem('font-size', $font-size-s) ;   
+    }
+    .font-size-m--medium {
+        @include rem('font-size', $font-size-m);   
+    } 
+    .font-size-l--medium {
+        @include rem('font-size', $font-size-l);   
+    } 
+    .font-size-xl--medium {
+        @include rem('font-size', $font-size-xl);   
+    } 
+    .font-size-xxl--medium {
+        @include rem('font-size', $font-size-xxl);   
+    } 
+    .font-size-xxxl--medium {
+        @include rem('font-size', $font-size-xxxl);   
+    }
+    .font-size-xxxxl--medium {
+        @include rem('font-size', $font-size-xxxxl);   
+    } 
+}
+
+@include large {
+    .font-size-xs--large {
+        @include rem('font-size', $font-size-xs);   
+    }
+    .font-size-s--large {
+        @include rem('font-size', $font-size-s) ;   
+    }
+    .font-size-m--large {
+        @include rem('font-size', $font-size-m);   
+    } 
+    .font-size-l--large {
+        @include rem('font-size', $font-size-l);   
+    } 
+    .font-size-xl--large {
+        @include rem('font-size', $font-size-xl);   
+    } 
+    .font-size-xxl--large {
+        @include rem('font-size', $font-size-xxl);   
+    } 
+    .font-size-xxxl--large {
+        @include rem('font-size', $font-size-xxxl);   
+    }
+    .font-size-xxxxl--large {
+        @include rem('font-size', $font-size-xxxxl);   
+    } 
+}
 
 
 // -----------------------------------------------------------------------------

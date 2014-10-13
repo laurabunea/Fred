@@ -1,0 +1,106 @@
+{% extends "template.j2" %}
+{% import "macros.j2" as macros %}
+
+{% block navigation %}
+<div class='theme--black'>
+    <div class='[ wrapper ]'>
+        <div class='[ layout ]'>
+            <div class='[ grid ]'>
+                <div class='[ col third ]'>
+                    <div class='pt-m pb-m content-block'>
+                        <h3>
+                            {{client}} Prototype
+                        </h3>
+                    </div>
+                </div>
+                <div class='[ col two-thirds ]'>
+                    <div class='pt-m pb-m content-block u-clearfix'>
+                        <ul class='nav  u-right'>
+                            
+                            <!--<li>
+                                <a href="/pages/forbar/" class=" font-size-s {% if slug == 'forbar' %} u-bold text--green {% endif %}">
+                                Forbar</a> 
+                            </li>-->
+                   
+                            <li>
+                                <a href="/pages/forbar-portfolio/" class=" font-size-s {% if slug == 'forbar-portfolio' %} text--green u-bold {% endif %}">
+                                Portfolio
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/pages/forbar-transactions/" class=" font-size-s {% if slug == 'forbar-transactions' %} text--green u-bold {% endif %}">
+                                    Transactions
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/pages/forbar-accounts/" class=" font-size-s {% if slug == 'forbar-accounts' %} text--green u-bold {% endif %}">
+                                    Accounts
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/pages/forbar-transactions-child/" class=" font-size-s {% if slug == 'forbar-transactions-child' %} u-bold text--green {% endif %}">
+                                    Transactions landing
+                                </a>
+                            </li>
+                        </ul>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock  %}
+{% block sub_navigation %}
+{% endblock  %}
+
+{% block content %}
+
+        {% block page_site_wrapper %}
+
+            {% block page_navigation %}
+            {% endblock %}
+
+            {% block page_sub_navigation %}
+            {% endblock %}
+
+            {% block page_content %}
+                 
+                 {% for item in data %}
+                    {{ item|component }}
+                {% endfor %}
+
+            {% endblock %}
+
+            {% block page_footer %}
+            {% endblock %}
+
+        {% endblock %}
+        
+    </div>
+   
+{% endblock %}
+
+{% block anchor %}
+{% endblock %}
+
+{% block footer %}
+    <div class='theme--black'>
+        <div class='[ wrapper ]'>
+            <div class='[ layout ]'>
+                <div class='[ grid ]'>
+                    <div class='[ col ]'>
+                        <div class='pt-m pb-m content-block'>
+                            <p class='font-size-xs'>
+                                <strong>DISCLAIMER:</strong> blah blah blah
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock  %}

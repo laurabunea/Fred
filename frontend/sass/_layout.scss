@@ -279,8 +279,8 @@ $section-desktop:64;
 .three-quarters { width: 75%; }
 .fifth { width: 20%; }
 
-
-@include small() {
+//todo naming conventions everything is small down
+@include small-down() {
     .small-full-width { width: 100%; }
     .small-half { width: 50%; }
     .small-third { width: 33.3333333%; }

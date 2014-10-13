@@ -2,7 +2,8 @@
   "title": "pages",
   "slug":"forbar-accounts",
   "headline": "Page one",
-  "template":"pages/device.j2",
+  "template":"client.j2",
+  "client":"Forbar",
   "data": [ 
     {
       "type": "global/global-nav",
@@ -14,7 +15,6 @@
       "pages":[
         {
           "title":"JEBEDIAH SPRINGFIELD"
-          
         }
       ]
     },

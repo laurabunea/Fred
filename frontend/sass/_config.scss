@@ -56,14 +56,14 @@ $breakpoint-large-max:      $breakpoint-xlarge - 1;
     }
 }
 
-@mixin small() {
-    @media only screen and (min-width:#{$breakpoint-small}) {
-        @content;
-    }
-}
+// @mixin small-up() {
+//     @media only screen and (min-width:#{$breakpoint-small}) {
+//         @content;
+//     }
+// }
 
 @mixin small-down() {
-    @media only screen and (max-width: #{$breakpoint-medium-max} ) {
+    @media only screen and (max-width: #{$breakpoint-small-max} ) {
         @content;
     }
 }

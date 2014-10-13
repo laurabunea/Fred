@@ -2,7 +2,8 @@
   "title": "pages",
   "slug":"forbar-transactions",
   "headline": "Page one",
-  "template":"/pages/device.j2",
+  "template":"client.j2",
+  "client":"Forbar",
   "data": [ 
     {
       "type": "global/global-nav",
@@ -124,7 +125,7 @@
                   ]
                 },
                 "table_subhead": {
-                  "font":"font-size-m u-bold",
+                  "font":"font-size-s u-bold",
                   "padding":"pt-xxs pb-xxs",
                   "theme":"bg--light-grey bt--primary border--mid-grey",
                   "data":[
@@ -137,8 +138,8 @@
                   ]
                 },
                 "table_body": {
-                  "font":"font-size-m ",
-                  "padding":"pt-xxs pb-xxs",
+                  "font":"font-size-s font-size-m--medium",
+                  "padding":"pt-xxs pb-xxs pt-s--medium-up pb-s--medium-up",
                   "theme":"bg--white bb--primary border--light-grey",
                   "data":[
                     [

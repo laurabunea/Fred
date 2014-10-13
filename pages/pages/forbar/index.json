@@ -2,7 +2,8 @@
   "title": "pages",
   "slug":"forbar",
   "headline": "Page one",
-  "template":"/pages/device.j2",
+  "template":"client.j2",
+  "client":"Forbar",
   "data": [ 
     {
       "type": "global/global-nav",
@@ -51,59 +52,64 @@
     },
     {
       "type":"layout/dynamic",
+      "external_theme":"bg--white",
       "container_padding":"layout",
-      "external_theme":"theme--white",
       "columns":[
         {
           "data":[
             {
-              
-                  "type": "type/dl",
-                  "class":"dl--split mb-0",
-                  "left_gutter":"pl-m",
-                  "right_gutter":"pr-m",
-                  "theme":"bg--light-grey border--light-grey",
-                  "section_padding":"pt-xs pb-xs",
-                  "font_size":"font-size-xs",
-                  "data": [
+              "type": "layout/table-divs",
+              "data": {
+                "table_col_size":"half",
+                "table_head": {
+                  "font":"font-size-xs u-uppercase",
+                  "padding":"pt-xxs pb-xxs",
+                  "theme":"bg--light-grey",
+                  "data":[
+                    { "data": "Action" },
+                    { "data": "Key" }
+                  ]
+                },
+                "table_subhead": {
+                  "font":"font-size-m u-bold",
+                  "padding":"pt-xxs pb-xxs",
+                  "theme":"bg--light-grey bt--primary border--mid-grey",
+                  "data":[
                     {
-                        "left": "CATEGORY",
-                        "right": "MARKET VALUE"
-                        
+                        "data": "Category"
+                    },
+                    {
+                        "data": "market value"
                     }
-                 ]
-            },
-            {
-              "type": "type/dl",
-              "class":"dl--split border--light-grey",
-              "left_gutter":"pl-m",
-              "right_gutter":"pr-m",
-              "theme":"border--light-grey",
-              "data": [
-                {
-                    "left": "Domestic Fixed Interest",
-                    "right": "<span class='text--mid-grey'> NZD</span> 315,472.50"
+                  ]
                 },
-                {
-                    "left": "Domestic Property",
-                    "right": "<span class='text--mid-grey'> NZD</span> 105,442.80"
-                },
-                {
-                    "left": "Domestic Equality",
-                    "right": "<span class='text--mid-grey'> NZD</span> 315,472.50"
-                },
-                {
-                    "left": "On Call to 90 days",
-                    "right": "<span class='text--mid-grey'> NZD</span> 15,472.50"
-                },
-                {
-                    "left": "Domestic Cash",
-                    "right": "<span class='text--mid-grey'> NZD</span> 15,472.50"
+                "table_body": {
+                  "font":"font-size-m font-size-m",
+                  "padding":"pt-xxs pb-xxs pt-s--medium pb-s--medium",
+                  "theme":"bg--white bb--primary border--light-grey",
+                  "data":[
+                    [
+                      { "data": "Domestic Fixed Interest" },
+                      { "data": "<span class='text--mid-grey'>NZD</span> 315,472.50" }
+                    ],
+                    [
+                      {  "data": "Domestic Property" },
+                      { "data": "<span class='text--mid-grey'>NZD</span> 315,472.50" }
+                    ],
+                    [
+                      { "data": "Domestic Equity" },
+                      { "data": "<span class='text--mid-grey'>NZD</span> 315,472.50" }
+                    ],
+                    [
+                      { "data": "On call to 90 days" },
+                      { "data": "<span class='text--mid-grey'>NZD</span> 315,472.50" }
+                    ]
+                  ]
                 }
-              ]
+              }
             }
           ]
-        } 
+        }
       ]
     }
   ]

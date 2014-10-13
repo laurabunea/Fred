@@ -224,44 +224,44 @@ $link-color:
 // ----------------------------------------------------------------------------
 // Colours
 // ----------------------------------------------------------------------------
-
+//some importants to make sure these overide themes and component styles
 //bg colours
-.bg--black {  background:$black;  }
-.bg--white {  background:$white;  }
-.bg--light-blue {background-color:$light-blue;}
-.bg--light-grey {background-color:$light-grey;}
-.bg--dark-grey {background-color:$dark-grey;}
-.bg--orange {background-color:$orange;}
-.bg--green {background-color:$green;}
-.bg--red {background-color:$red;}
-.bg--blue {background-color:$blue;}
-.bg--link-color {background-color:$base-link-color;}
-.bg--soft-pink { background-color:$soft-pink;}
+.bg--black {  background:$black!important;  }
+.bg--white {  background:$white!important;  }
+.bg--light-blue {background-color:$light-blue!important;}
+.bg--light-grey {background-color:$light-grey!important;}
+.bg--dark-grey {background-color:$dark-grey!important;}
+.bg--orange {background-color:$orange!important;}
+.bg--green {background-color:$green!important;}
+.bg--red {background-color:$red!important;}
+.bg--blue {background-color:$blue!important;}
+.bg--link-color {background-color:$base-link-color!important;}
+.bg--soft-pink { background-color:$soft-pink!important;}
 
 //text colours
-.text--black {  color:$black; }
-.text--dark-grey {color:$dark-grey;}
-.text--light-grey {color:$light-grey;}
-.text--mid-grey {color:$mid-grey;}
-.text--muted {  color:$light-grey; }
-.text--white {color:$white}
-.text--orange {color:$orange}
-.text--red {color:$red}
-.text--blue {color:$blue}
-.text--green {color:$green}
-.text--link-color {color:$base-link-color;}
-.text--soft-pink {color:$soft-pink;}
+.text--black {  color:$black!important; }
+.text--dark-grey {color:$dark-grey!important;}
+.text--light-grey {color:$light-grey!important;}
+.text--mid-grey {color:$mid-grey!important;}
+.text--muted {  color:$light-grey!important; }
+.text--white {color:$white!important;}
+.text--orange {color:$orange!important;}
+.text--red {color:$red!important;}
+.text--blue {color:$blue!important;}
+.text--green {color:$green!important;}
+.text--link-color {color:$base-link-color!important;}
+.text--soft-pink {color:$soft-pink!important;}
 
-.border--transparent {  border-color:transparent; }
-.border--red         {  border-color:$red; }
-.border--soft-pink   {  border-color:$soft-pink; }
-.border--orange      {  border-color:$soft-pink; }
-.border--blue        {  border-color:$blue; }
-.border--green       {  border-color:$blue; }
-.border--link-colour {  border-color:$base-link-color; }
-.border--light-grey {  border-color:$light-grey; }
-.border--dark-grey {  border-color:$dark-grey; }
-.border--mid-grey {  border-color:$mid-grey; }
+.border--transparent {  border-color:transparent!important; }
+.border--red         {  border-color:$red!important; }
+.border--soft-pink   {  border-color:$soft-pink!important; }
+.border--orange      {  border-color:$soft-pink!important; }
+.border--blue        {  border-color:$blue!important; }
+.border--green       {  border-color:$blue!important; }
+.border--link-colour {  border-color:$base-link-color!important; }
+.border--light-grey {  border-color:$light-grey!important; }
+.border--dark-grey {  border-color:$dark-grey!important; }
+.border--mid-grey {  border-color:$mid-grey!important; }
 
 // .highlight-top { 
 //   @include rem(padding-top,$space-l);

@@ -8,12 +8,12 @@
         bottom: 0;
         width: 175%;
         margin-left: -37.5%;
-        @include medium() {
+        @include medium {
             width: 150%;
             margin-left: -25%;
             margin-top: -25%;
         }
-        @include large() {
+        @include large {
             width: 100%;
             margin-left: 0;
             margin-top: -12.5%;
@@ -27,10 +27,10 @@
         color: $white;
         text-shadow: 0 1px 2px rgba(0,0,0,.375);
         padding-top: 12.5%;
-        @include small() {
+        @include small-down {
             padding-top: 18.75%;
         }
-        @include medium() {
+        @include medium {
             padding-top: 6.25%;
         }
     }

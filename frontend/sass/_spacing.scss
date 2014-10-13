@@ -272,96 +272,97 @@
     .ml-xxxxl--small-down   { @include rem(margin-left,$space-xxxxl);}
 
 }
-@include small() {
-    .pt-0--small       { padding-top:0;}
-    .pt-xxs--small     { @include rem(padding-top,$space-xxs);}
-    .pt-xs--small      { @include rem(padding-top,$space-xs);}
-    .pt-s--small       { @include rem(padding-top,$space-s);}
-    .pt-m--small       { @include rem(padding-top,$space-m);}
-    .pt-l--small       { @include rem(padding-top,$space-l);}
-    .pt-xl--small      { @include rem(padding-top,$space-xl);}
-    .pt-xxl--small     { @include rem(padding-top,$space-xxl);}
-    .pt-xxxl--small    { @include rem(padding-top,$space-xxxl);}
-    .pt-xxxxl--small   { @include rem(padding-top,$space-xxxxl);}
+//todo small up do we need this 
+// @include small() {
+//     .pt-0--small       { padding-top:0;}
+//     .pt-xxs--small     { @include rem(padding-top,$space-xxs);}
+//     .pt-xs--small      { @include rem(padding-top,$space-xs);}
+//     .pt-s--small       { @include rem(padding-top,$space-s);}
+//     .pt-m--small       { @include rem(padding-top,$space-m);}
+//     .pt-l--small       { @include rem(padding-top,$space-l);}
+//     .pt-xl--small      { @include rem(padding-top,$space-xl);}
+//     .pt-xxl--small     { @include rem(padding-top,$space-xxl);}
+//     .pt-xxxl--small    { @include rem(padding-top,$space-xxxl);}
+//     .pt-xxxxl--small   { @include rem(padding-top,$space-xxxxl);}
     
-    .pb-0--small       { padding-bottom:0;}
-    .pb-xxs--small     { @include rem(padding-bottom,$space-xxs);}
-    .pb-xs--small      { @include rem(padding-bottom,$space-xs);}
-    .pb-s--small       { @include rem(padding-bottom,$space-s);}
-    .pb-m--small       { @include rem(padding-bottom,$space-m);}
-    .pb-l--small       { @include rem(padding-bottom,$space-l);}
-    .pb-xl--small      { @include rem(padding-bottom,$space-xl);}
-    .pb-xxl--small     { @include rem(padding-bottom,$space-xxl);}
-    .pb-xxxl--small    { @include rem(padding-bottom,$space-xxxl);}
-    .pb-xxxxl--small   { @include rem(padding-bottom,$space-xxxxl);}
+//     .pb-0--small       { padding-bottom:0;}
+//     .pb-xxs--small     { @include rem(padding-bottom,$space-xxs);}
+//     .pb-xs--small      { @include rem(padding-bottom,$space-xs);}
+//     .pb-s--small       { @include rem(padding-bottom,$space-s);}
+//     .pb-m--small       { @include rem(padding-bottom,$space-m);}
+//     .pb-l--small       { @include rem(padding-bottom,$space-l);}
+//     .pb-xl--small      { @include rem(padding-bottom,$space-xl);}
+//     .pb-xxl--small     { @include rem(padding-bottom,$space-xxl);}
+//     .pb-xxxl--small    { @include rem(padding-bottom,$space-xxxl);}
+//     .pb-xxxxl--small   { @include rem(padding-bottom,$space-xxxxl);}
     
-    .pr-0--small       { padding-right:0;}
-    .pr-xxs--small     { @include rem(padding-right,$space-xxs);}
-    .pr-xs--small      { @include rem(padding-right,$space-xs);}
-    .pr-s--small       { @include rem(padding-right,$space-s);}
-    .pr-m--small       { @include rem(padding-right,$space-m);}
-    .pr-l--small       { @include rem(padding-right,$space-l);}
-    .pr-xl--small      { @include rem(padding-right,$space-xl);}
-    .pr-xxl--small     { @include rem(padding-right,$space-xxl);}
-    .pr-xxxl--small    { @include rem(padding-right,$space-xxxl);}
-    .pr-xxxxl--small   { @include rem(padding-right,$space-xxxxl);}
+//     .pr-0--small       { padding-right:0;}
+//     .pr-xxs--small     { @include rem(padding-right,$space-xxs);}
+//     .pr-xs--small      { @include rem(padding-right,$space-xs);}
+//     .pr-s--small       { @include rem(padding-right,$space-s);}
+//     .pr-m--small       { @include rem(padding-right,$space-m);}
+//     .pr-l--small       { @include rem(padding-right,$space-l);}
+//     .pr-xl--small      { @include rem(padding-right,$space-xl);}
+//     .pr-xxl--small     { @include rem(padding-right,$space-xxl);}
+//     .pr-xxxl--small    { @include rem(padding-right,$space-xxxl);}
+//     .pr-xxxxl--small   { @include rem(padding-right,$space-xxxxl);}
     
-    .pl-0--small       { padding-left:0;}
-    .pl-xxs--small     { @include rem(padding-left,$space-xxs);}
-    .pl-xs--small      { @include rem(padding-left,$space-xs);}
-    .pl-s--small       { @include rem(padding-left,$space-s);}
-    .pl-m--small       { @include rem(padding-left,$space-m);}
-    .pl-l--small       { @include rem(padding-left,$space-l);}
-    .pl-xl--small      { @include rem(padding-left,$space-xl);}
-    .pl-xxl--small     { @include rem(padding-left,$space-xxl);}
-    .pl-xxxl--small    { @include rem(padding-left,$space-xxxl);}
-    .pl-xxxxl--small   { @include rem(padding-left,$space-xxxxl);}
+//     .pl-0--small       { padding-left:0;}
+//     .pl-xxs--small     { @include rem(padding-left,$space-xxs);}
+//     .pl-xs--small      { @include rem(padding-left,$space-xs);}
+//     .pl-s--small       { @include rem(padding-left,$space-s);}
+//     .pl-m--small       { @include rem(padding-left,$space-m);}
+//     .pl-l--small       { @include rem(padding-left,$space-l);}
+//     .pl-xl--small      { @include rem(padding-left,$space-xl);}
+//     .pl-xxl--small     { @include rem(padding-left,$space-xxl);}
+//     .pl-xxxl--small    { @include rem(padding-left,$space-xxxl);}
+//     .pl-xxxxl--small   { @include rem(padding-left,$space-xxxxl);}
 
-    .mt-0--small       { margin-top:0;}
-    .mt-xxs--small     { @include rem(margin-top,$space-xxs);}
-    .mt-xs--small      { @include rem(margin-top,$space-xs);}
-    .mt-s--small       { @include rem(margin-top,$space-s);}
-    .mt-m--small       { @include rem(margin-top,$space-m);}
-    .mt-l--small       { @include rem(margin-top,$space-l);}
-    .mt-xl--small      { @include rem(margin-top,$space-xl);}
-    .mt-xxl--small     { @include rem(margin-top,$space-xxl);}
-    .mt-xxxl--small    { @include rem(margin-top,$space-xxxl);}
-    .mt-xxxxl--small   { @include rem(margin-top,$space-xxxxl);}
+//     .mt-0--small       { margin-top:0;}
+//     .mt-xxs--small     { @include rem(margin-top,$space-xxs);}
+//     .mt-xs--small      { @include rem(margin-top,$space-xs);}
+//     .mt-s--small       { @include rem(margin-top,$space-s);}
+//     .mt-m--small       { @include rem(margin-top,$space-m);}
+//     .mt-l--small       { @include rem(margin-top,$space-l);}
+//     .mt-xl--small      { @include rem(margin-top,$space-xl);}
+//     .mt-xxl--small     { @include rem(margin-top,$space-xxl);}
+//     .mt-xxxl--small    { @include rem(margin-top,$space-xxxl);}
+//     .mt-xxxxl--small   { @include rem(margin-top,$space-xxxxl);}
     
-    .mb-0--small       { margin-bottom:0;}
-    .mb-xxs--small     { @include rem(margin-bottom,$space-xxs);}
-    .mb-xs--small      { @include rem(margin-bottom,$space-xs);}
-    .mb-s--small       { @include rem(margin-bottom,$space-s);}
-    .mb-m--small       { @include rem(margin-bottom,$space-m);}
-    .mb-l--small       { @include rem(margin-bottom,$space-l);}
-    .mb-xl--small      { @include rem(margin-bottom,$space-xl);}
-    .mb-xxl--small     { @include rem(margin-bottom,$space-xxl);}
-    .mb-xxxl--small    { @include rem(margin-bottom,$space-xxxl);}
-    .mb-xxxxl--small   { @include rem(margin-bottom,$space-xxxxl);}
+//     .mb-0--small       { margin-bottom:0;}
+//     .mb-xxs--small     { @include rem(margin-bottom,$space-xxs);}
+//     .mb-xs--small      { @include rem(margin-bottom,$space-xs);}
+//     .mb-s--small       { @include rem(margin-bottom,$space-s);}
+//     .mb-m--small       { @include rem(margin-bottom,$space-m);}
+//     .mb-l--small       { @include rem(margin-bottom,$space-l);}
+//     .mb-xl--small      { @include rem(margin-bottom,$space-xl);}
+//     .mb-xxl--small     { @include rem(margin-bottom,$space-xxl);}
+//     .mb-xxxl--small    { @include rem(margin-bottom,$space-xxxl);}
+//     .mb-xxxxl--small   { @include rem(margin-bottom,$space-xxxxl);}
     
-    .mr-0--small       { margin-right:0;}
-    .mr-xxs--small     { @include rem(margin-right,$space-xxs);}
-    .mr-xs--small      { @include rem(margin-right,$space-xs);}
-    .mr-s--small       { @include rem(margin-right,$space-s);}
-    .mr-m--small       { @include rem(margin-right,$space-m);}
-    .mr-l--small       { @include rem(margin-right,$space-l);}
-    .mr-xl--small      { @include rem(margin-right,$space-xl);}
-    .mr-xxl--small     { @include rem(margin-right,$space-xxl);}
-    .mr-xxxl--small    { @include rem(margin-right,$space-xxxl);}
-    .mr-xxxxl--small   { @include rem(margin-right,$space-xxxxl);}
+//     .mr-0--small       { margin-right:0;}
+//     .mr-xxs--small     { @include rem(margin-right,$space-xxs);}
+//     .mr-xs--small      { @include rem(margin-right,$space-xs);}
+//     .mr-s--small       { @include rem(margin-right,$space-s);}
+//     .mr-m--small       { @include rem(margin-right,$space-m);}
+//     .mr-l--small       { @include rem(margin-right,$space-l);}
+//     .mr-xl--small      { @include rem(margin-right,$space-xl);}
+//     .mr-xxl--small     { @include rem(margin-right,$space-xxl);}
+//     .mr-xxxl--small    { @include rem(margin-right,$space-xxxl);}
+//     .mr-xxxxl--small   { @include rem(margin-right,$space-xxxxl);}
     
-    .ml-0--small       { margin-left:0;}
-    .ml-xxs--small     { @include rem(margin-left,$space-xxs);}
-    .ml-xs--small      { @include rem(margin-left,$space-xs);}
-    .ml-s--small       { @include rem(margin-left,$space-s);}
-    .ml-m--small       { @include rem(margin-left,$space-m);}
-    .ml-l--small       { @include rem(margin-left,$space-l);}
-    .ml-xl--small      { @include rem(margin-left,$space-xl);}
-    .ml-xxl--small     { @include rem(margin-left,$space-xxl);}
-    .ml-xxxl--small    { @include rem(margin-left,$space-xxxl);}
-    .ml-xxxxl--small   { @include rem(margin-left,$space-xxxxl);}
+//     .ml-0--small       { margin-left:0;}
+//     .ml-xxs--small     { @include rem(margin-left,$space-xxs);}
+//     .ml-xs--small      { @include rem(margin-left,$space-xs);}
+//     .ml-s--small       { @include rem(margin-left,$space-s);}
+//     .ml-m--small       { @include rem(margin-left,$space-m);}
+//     .ml-l--small       { @include rem(margin-left,$space-l);}
+//     .ml-xl--small      { @include rem(margin-left,$space-xl);}
+//     .ml-xxl--small     { @include rem(margin-left,$space-xxl);}
+//     .ml-xxxl--small    { @include rem(margin-left,$space-xxxl);}
+//     .ml-xxxxl--small   { @include rem(margin-left,$space-xxxxl);}
 
-}
+// }
 
 
 @include medium() {
