@@ -53,48 +53,104 @@
     },
     {
       "type":"layout/dynamic",
-      "external_theme":"bg--white",
-      "container_padding":"layout",
+      "external_theme":"bg--light-grey",
+      "container_padding":"layout pt-xs pb-xs",
       "columns":[
         {
+          "column_class":"half content-block",
           "data":[
             {
-              "type": "layout/table-divs",
-              "data": {
-                "table_col_size":"half",
-                "table_head": {
-                  "font":"font-size-xs u-uppercase",
-                  "padding":"pt-xxs pb-xxs",
-                  "theme":"bg--light-grey",
-                  "data":[
-                    { "data": "Category" },
-                    { "data": "Market value" }
-                  ]
-                },
-                "table_body": {
-                  "font":"font-size-s font-size-m--medium",
-                  "padding":"pt-xxs pb-xxs pt-s--medium pb-s--medium",
-                  "theme":"bg--white bb--primary border--light-grey",
-                  "data":[
-                    [
-                      { "data": "Domestic Fixed Interest" },
-                      { "data": "<span class='text--mid-grey'>NZD</span> 315,472.50" }
-                    ],
-                    [
-                      {  "data": "Domestic Property" },
-                      { "data": "<span class='text--mid-grey'>NZD</span> 315,472.50" }
-                    ],
-                    [
-                      { "data": "Domestic Equity" },
-                      { "data": "<span class='text--mid-grey'>NZD</span> 315,472.50" }
-                    ],
-                    [
-                      { "data": "On call to 90 days" },
-                      { "data": "<span class='text--mid-grey'>NZD</span> 315,472.50" }
-                    ]
-                  ]
-                }
-              }
+              "type": "type/text-tiny",
+              "data": "category",
+              "class":"u-uppercase"
+            }
+          ]
+        },
+        {
+          "column_class":"half content-block",
+          "data":[
+            {
+              "type": "type/text-tiny",
+              "data": "market value",
+              "class":"u-text-right u-uppercase"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"bg--white border-b border--light-grey",
+      "container_padding":"layout pt-s pb-s",
+      "columns":[
+        {
+          "column_class":"half content-block",
+          "data":[
+            {
+              "type": "type/p",
+              "data": "Domestic Fixed Interest"
+            }
+          ]
+        },
+        {
+          "column_class":"half content-block",
+          "data":[
+            {
+              "type": "type/p",
+              "data": "<span class='text--light-grey'>NZD</span> 315,472.50",
+              "class":"u-text-right"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"bg--white border-b border--light-grey",
+      "container_padding":"layout pt-s pb-s",
+      "columns":[
+        {
+          "column_class":"half content-block",
+          "data":[
+            {
+              "type": "type/p",
+              "data": "Domestic Property"
+            }
+          ]
+        },
+        {
+          "column_class":"half content-block",
+          "data":[
+            {
+              "type": "type/p",
+              "data": "<span class='text--light-grey'>NZD</span> 315,472.50",
+              "class":"u-text-right"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"bg--white border-b border--light-grey",
+      "container_padding":"layout pt-s pb-s",
+      "columns":[
+        {
+          "column_class":"half content-block",
+          "data":[
+            {
+              "type": "type/p",
+              "data": "Domestic Equity"
+            }
+          ]
+        },
+        {
+          "column_class":"half content-block",
+          "data":[
+            {
+              "type": "type/p",
+              "data": "<span class='text--light-grey'>NZD</span> 315,472.50",
+              "class":"u-text-right"
             }
           ]
         }

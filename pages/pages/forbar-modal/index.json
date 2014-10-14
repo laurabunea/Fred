@@ -70,10 +70,10 @@
           "type":"layout/dynamic",
           "grid_modifier":"grid--middle",
           "external_theme":"theme--white border-b ",
+          "bigLink":true,
           "container_padding":" layout",
           "columns":[
             {
-              "column_class":"content-block",
               "data":[
                 {
                   "type": "layout/content-block",
@@ -99,9 +99,9 @@
           "grid_modifier":"grid--middle",
           "external_theme":"theme--white border-b ",
           "container_padding":" layout",
+          "bigLink":true,
           "columns":[
             {
-              "column_class":"content-block",
               "data":[
                 {
                   "type": "layout/content-block",

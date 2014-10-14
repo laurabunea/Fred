@@ -53,81 +53,238 @@
     },
     {
       "type":"layout/dynamic",
-      "container_padding":"layout",
-      "external_theme":"bg--white",
+      "external_theme":"bg--light-grey",
+      "container_padding":"layout pt-xs pb-xs",
       "columns":[
         {
+          "column_size":"half",
+          "column_class":"content-block",
           "data":[
             {
-              "type": "layout/table-divs",
-              "data": {
-                "table_col_size":"third",
-                "table_head": {
-                  "font":"font-size-xs u-uppercase",
-                  "padding":"pt-xxs pb-xxs",
-                  "theme":"bg--light-grey",
-                  "data":[
-                    { "data": "30 september 2014" },
-                    { "data": "debit/credit" },
-                    { "data": "balance" }
-                  ]
-                },
-                "table_body": {
-                  "font":"font-size-s font-size-m--medium",
-                  "padding":"pt-xxs pb-xxs pt-s--medium pb-s--medium",
-                  "theme":"bg--white bb--primary border--light-grey",
-                  "data":[
-                    [
-                      { "data": "Interest Recieved: Forsyth Barr Cash Management " },
-                      { "data": "6.17" },
-                      { "data": "1,3,21.86" }
-                    ]
-                  ]
-                }
-              }
-            } 
+              "type": "type/text-tiny",
+              "data": "30 September 2014",
+              "class":"u-uppercase"
+            }  
+          ]
+        },
+        {
+          "column_size":"quarter",
+          "column_class":"content-block u-text-right",
+          "data":[
+            {
+              "type": "type/text-tiny",
+              "data": "Direct/Credit",
+              "class":"u-uppercase"
+            }  
+          ]
+        },
+        {
+          "column_size":"quarter",
+          "column_class":"content-block u-text-right",
+          "data":[
+            {
+              "type": "type/text-tiny",
+              "data": "balance",
+              "class":"u-uppercase"
+            }  
           ]
         }
       ]
     },
     {
       "type":"layout/dynamic",
-      "container_padding":"layout",
-      "external_theme":"bg--white",
+      "external_theme":"theme--white",
+      "container_padding":"layout pt-s pb-s",
       "columns":[
         {
+          "column_size":"half",
+          "column_class":"content-block",
           "data":[
             {
-              "type": "layout/table-divs",
-              "data": {
-                "table_col_size":"third",
-                "table_head": {
-                  "font":"font-size-xs u-uppercase",
-                  "padding":"pt-xxs pb-xxs",
-                  "theme":"bg--light-grey",
-                  "data":[
-                    { "data": "29 september 2014" },
-                    { "data": "debit/credit" },
-                    { "data": "balance" }
-                  ]
-                },
-                "table_body": {
-                  "font":"font-size-s font-size-m--medium",
-                  "padding":"pt-xxs pb-xxs pt-s--medium pb-s--medium",
-                  "theme":"bg--white bb--primary border--light-grey",
-                  "data":[
-                    [
-                      { "data": "Interest Recieved: Forsyth Barr Cash Management " },
-                      { "data": "2,500.00" },
-                      { "data": "1,321.86" }
-                    ]
-                  ]
-                }
-              }
-            } 
+              "type": "type/p",
+              "data": "Interest Recieved: Forsyth Barr Cash Management "
+      
+            }  
+          ]
+        },
+        {
+          "column_size":"quarter",
+          "column_class":"content-block u-text-right",
+          "data":[
+            {
+              "type": "type/p",
+              "data": "6.17"
+            }  
+          ]
+        },
+        {
+          "column_size":"quarter",
+          "column_class":"content-block u-text-right",
+          "data":[
+            {
+              "type": "type/p",
+              "data": "1,300.21"
+            }  
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"bg--light-grey",
+      "container_padding":"layout pt-xs pb-xs",
+      "columns":[
+        {
+          "column_size":"half",
+          "column_class":"content-block",
+          "data":[
+            {
+              "type": "type/text-tiny",
+              "data": "29 September 2014",
+              "class":"u-uppercase"
+            }  
+          ]
+        },
+        {
+          "column_size":"quarter",
+          "column_class":"content-block u-text-right",
+          "data":[
+            {
+              "type": "type/text-tiny",
+              "data": "Direct/Credit",
+              "class":"u-uppercase"
+            }  
+          ]
+        },
+        {
+          "column_size":"quarter",
+          "column_class":"content-block u-text-right",
+          "data":[
+            {
+              "type": "type/text-tiny",
+              "data": "balance",
+              "class":"u-uppercase"
+            }  
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"theme--white",
+      "container_padding":"layout pt-s pb-s",
+      "columns":[
+        {
+          "column_size":"half",
+          "column_class":"content-block",
+          "data":[
+            {
+              "type": "type/p",
+              "data": "Interest Recieved: Forsyth Barr Cash Management "
+      
+            }  
+          ]
+        },
+        {
+          "column_size":"quarter",
+          "column_class":"content-block u-text-right",
+          "data":[
+            {
+              "type": "type/p",
+              "data": "6.17"
+            }  
+          ]
+        },
+        {
+          "column_size":"quarter",
+          "column_class":"content-block u-text-right",
+          "data":[
+            {
+              "type": "type/p",
+              "data": "1,300.21"
+            }  
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"bg--light-grey",
+      "container_padding":"layout pt-xs pb-xs",
+      "columns":[
+        {
+          "column_size":"half",
+          "column_class":"content-block",
+          "data":[
+            {
+              "type": "type/text-tiny",
+              "data": "28 September 2014",
+              "class":"u-uppercase"
+            }  
+          ]
+        },
+        {
+          "column_size":"quarter",
+          "column_class":"content-block u-text-right",
+          "data":[
+            {
+              "type": "type/text-tiny",
+              "data": "Direct/Credit",
+              "class":"u-uppercase"
+            }  
+          ]
+        },
+        {
+          "column_size":"quarter",
+          "column_class":"content-block u-text-right",
+          "data":[
+            {
+              "type": "type/text-tiny",
+              "data": "balance",
+              "class":"u-uppercase"
+            }  
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"theme--white",
+      "container_padding":"layout pt-s pb-s",
+      "columns":[
+        {
+          "column_size":"half",
+          "column_class":"content-block",
+          "data":[
+            {
+              "type": "type/p",
+              "data": "Interest Recieved: Forsyth Barr Cash Management "
+      
+            }  
+          ]
+        },
+        {
+          "column_size":"quarter",
+          "column_class":"content-block u-text-right",
+          "data":[
+            {
+              "type": "type/p",
+              "data": "6.17"
+            }  
+          ]
+        },
+        {
+          "column_size":"quarter",
+          "column_class":"content-block u-text-right",
+          "data":[
+            {
+              "type": "type/p",
+              "data": "1,300.21"
+            }  
           ]
         }
       ]
     }
+    
   ]
 }
