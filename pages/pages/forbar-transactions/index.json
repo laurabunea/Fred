@@ -108,54 +108,56 @@
     },
     {
       "type":"layout/dynamic",
-      "external_theme":"bg--white",
-      "container_padding":"layout",
+      "external_theme":"bg--light-grey border-b border--dark-grey",
+      "container_padding":"layout pt-xs pb-xs",
       "columns":[
         {
+          "column_size":"half",
+          "column_class":"content-block",
           "data":[
             {
-              "type": "layout/table-divs",
-              "data": {
-                "table_col_size":"half",
-                "table_head": {
-                  "font":"font-size-xs u-uppercase",
-                  "padding":"pt-xxs pb-xxs",
-                  "theme":"bg--light-grey",
-                  "data":[
-                    { "data": "ASSET" },
-                    { "data": "CLOSING BALANCE" }
-                  ]
-                },
-                "table_subhead": {
-                  "font":"font-size-s u-bold",
-                  "padding":"pt-xxs pb-xxs pt-s--medium pb-s--medium",
-                  "theme":"bg--light-grey bt--primary border--mid-grey",
-                  "data":[
-                    {
-                        "data": "New Zeland dollars Assets"
-                    },
-                    {
-                        "data": "<span class='text--mid-grey'>NZD</span> 315,472.50"
-                    }
-                  ]
-                },
-                "table_body": {
-                  "font":"font-size-s font-size-m--medium",
-                  "padding":"pt-xxs pb-xxs pt-s--medium pb-s--medium",
-                  "theme":"bg--white bb--primary border--light-grey",
-                  "data":[
-                    [
-                      { "data": "<a href='/pages/forbar-transactions-child/' class='btn--block'>Forsyth Bar Cash management</a>" }
-                    ],
-                    [
-                      {  "data": "<a href='/pages/forbar-transactions-child/' class='btn--block'>Forsyth Bar Client (Account ledger)</a>" }
-                    ],
-                    [
-                      { "data": "<a href='/pages/forbar-transactions-child/' class='btn--block'>Navigate to the homepage</a>" }
-                    ]
-                  ]
-                }
-              }
+              "type": "type/text-tiny",
+              "class":"u-uppercase",
+              "data": "asset"
+            } 
+          ]
+        },
+        {
+          "column_size":"half",
+          "column_class":"content-block",
+          "data":[
+            {
+              "type": "type/text-tiny",
+              "class":"u-uppercase u-text-right",
+              "data": "closing balance"
+            } 
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"bg--light-grey",
+      "container_padding":"layout pt-xs pb-xs",
+      "columns":[
+        {
+          "column_size":"half",
+          "column_class":"content-block",
+          "data":[
+            {
+              "type": "type/h5",
+              "data": "New Zealand Dollar Assets"
+            } 
+          ]
+        },
+        {
+          "column_size":"half",
+          "column_class":"content-block",
+          "data":[
+            {
+              "type": "type/h4",
+              "class":"u-text-right",
+              "data": "<span class='text--light-grey'>NZD</span> 315,472.50"
             }
           ]
         }
@@ -163,51 +165,39 @@
     },
     {
       "type":"layout/dynamic",
-      "external_theme":"bg--white",
-      "container_padding":"layout",
+      "external_theme":"bg--white border-b border--light-grey",
+      "container_padding":"layout pt-xs pb-xs",
+      "bigLink":true,
       "columns":[
         {
+          "column_class":"content-block",
           "data":[
             {
-              "type": "layout/table-divs",
-              "data": {
-                "table_col_size":"half",
-
-                "table_subhead": {
-                  "font":"font-size-s u-bold",
-                  "padding":"pt-xxs pb-xxs pt-s--medium pb-s--medium",
-                  "theme":"bg--light-grey",
-                  "data":[
-                    {
-                        "data": "Australian Dollar Assets"
-                    },
-                    {
-                        "data": "<span class='text--mid-grey'>AUD</span> 315,472.50"
-                    }
-                  ]
-                },
-                "table_body": {
-                  "font":"font-size-s font-size-m--medium",
-                  "padding":"pt-xxs pb-xxs pt-s--medium pb-s--medium",
-                  "theme":"bg--white bb--primary border--light-grey",
-                  "data":[
-                    [
-                      { "data": "<a href='/pages/forbar-transactions-child/' class='btn--block'>Forsyth Bar Cash management</a>" }
-                    ],
-                    [
-                      {  "data": "<a href='/pages/forbar-transactions-child/' class='btn--block'>Forsyth Bar Client (Account ledger)</a>" }
-                    ],
-                    [
-                      { "data": "<a href='/pages/forbar-transactions-child/' class='btn--block'>Navigate to the homepage</a>" }
-                    ]
-                  ]
-                }
-              }
-            }
+              "type": "raw",
+              "data": "<p><a href='/pages/forbar-transactions-child/'>Forsyth Bar Cash management</a></p>"
+            } 
           ]
         }
+        
       ]
-    }
-      
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"bg--white border-b border--light-grey",
+      "container_padding":"layout pt-xs pb-xs",
+      "bigLink":true,
+      "columns":[
+        {
+          "column_class":"content-block",
+          "data":[
+            {
+              "type": "raw",
+              "data": "<p><a href='/pages/forbar-transactions-child/'>Forsyth Bar Client</a></p>"
+            } 
+          ]
+        }
+        
+      ]
+    } 
   ]
 }

@@ -142,7 +142,7 @@
       "bigLink":true,
       "columns":[
         {
-          "column_class":"half",
+          "column_class":"two-thirds",
           "data":[
             {
               "type":"layout/content-block",
@@ -160,7 +160,7 @@
           ]
         },
         {
-          "column_class":"half",
+          "column_class":"third",
           "data":[
             {
               "type":"layout/content-block",
@@ -183,7 +183,7 @@
       "bigLink":true,
       "columns":[
         {
-          "column_class":"half",
+          "column_class":"two-thirds",
           "data":[
             {
               "type":"layout/content-block",
@@ -201,7 +201,7 @@
           ]
         },
         {
-          "column_class":"half",
+          "column_class":"third",
           "data":[
             {
               "type":"layout/content-block",
@@ -225,7 +225,7 @@
       "bigLink":true,
       "columns":[
         {
-          "column_class":"half",
+          "column_class":"two-thirds",
           "data":[
             {
               "type":"layout/content-block",
@@ -243,7 +243,7 @@
           ]
         },
         {
-          "column_class":"half",
+          "column_class":"third",
           "data":[
             {
               "type":"layout/content-block",
