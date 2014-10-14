@@ -2,4 +2,5 @@
 
 <h4 {% if item.class or item.theme %}class='{{item.class}} {{item.theme}}'{% endif %}>
     {{ item|children }}
+    {% if item.span %}<span class='{{item.span.class}}'>{{item.span.data}}</span>{% endif %}
 </h4>

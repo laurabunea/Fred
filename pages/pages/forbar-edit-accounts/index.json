@@ -15,7 +15,7 @@
       "text":"<a href='/pages/forbar/'>Home</a>",
       "pages":[
         {
-          "title":"JEBEDIAH SPRINGFIELD"
+          "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
         }
       ]
     },
@@ -32,7 +32,7 @@
           "data":[
             {
               "type": "type/h2",
-              "data": "Investment accounts"
+              "data": "Edit accounts"
             }
           ]
         },

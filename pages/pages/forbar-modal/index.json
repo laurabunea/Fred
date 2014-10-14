@@ -1,0 +1,164 @@
+{
+  "title": "pages",
+  "slug":"forbar",
+  "headline": "Page one",
+  "template":"client.j2",
+  "client":"Forbar",
+  "data": [ 
+    {
+      "type": "global/global-nav",
+      "external_theme":"theme--dark-grey",
+      "logo":"-logo",
+      "uppercase":true,
+      "small_text":true,
+      "container_padding":" pt-xxs pb-xxs layout",
+      "text":"<a href='/pages/forbar/'>Home</a>",
+      "pages":[
+        {
+          "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
+        }
+      ]
+    },
+    {
+      "type":"layout/modal",
+      "margin":"ml-l mr-l mb-xxxxl",
+      "data":[
+        {
+          "type":"layout/dynamic",
+          "grid_modifier":"grid--middle",
+          "external_theme":"bg--white ",
+          "container_padding":"layout",
+          "columns":[
+            {
+              "column_class":"content-block",
+              "content_padding":"pt-xl pb-xl",
+              "remove_content_gutters":true,
+              "data":[
+                {
+                  "type": "type/h3",
+                  "data": "Hello, Jebediah Springfield",
+                  "span":{
+                    "data":"Last signed in 1:42 1st October 2014",
+                    "class":"u-uppercase font-size-xs u-block"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type":"layout/dynamic",
+          "grid_modifier":"grid--middle",
+          "external_theme":" bb--primary theme--light",
+          "container_padding":"layout",
+          "columns":[
+            {
+              "column_class":"content-block",
+              "content_padding":"pt-xs pb-xs",
+              "remove_content_gutters":true,
+              "data":[
+                {
+                  "type": "type/text-small",
+                  "data": "Investments accounts"
+                  
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type":"layout/dynamic",
+          "grid_modifier":"grid--middle",
+          "external_theme":"theme--white border-b ",
+          "container_padding":" layout",
+          "columns":[
+            {
+              "column_class":"content-block",
+              "data":[
+                {
+                  "type": "layout/content-block",
+                  "padding":"pt-s pb-s",
+                  "data": [
+                    {
+                      "type": "type/h4",
+                      "data": "<a href='/pages/forbar/' class='test'>TM Herrick</a>",
+                      "span":{
+                        "data":"1380016",
+                        "class":"u-block u-light font-size-xs"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+            
+          ]
+        },
+        {
+          "type":"layout/dynamic",
+          "grid_modifier":"grid--middle",
+          "external_theme":"theme--white border-b ",
+          "container_padding":" layout",
+          "columns":[
+            {
+              "column_class":"content-block",
+              "data":[
+                {
+                  "type": "layout/content-block",
+                  "padding":"pt-s pb-s",
+                  "data": [
+                    {
+                      "type": "type/h4",
+                      "data": "<a href='/pages/forbar/' class='test'>M A Broad</a>",
+                      "span":{
+                        "data":"1380016",
+                        "class":"u-block u-light font-size-xs"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+            
+          ]
+        },
+        {
+          "type":"layout/dynamic",
+          "grid_modifier":"grid--middle",
+          "external_theme":"theme--white border-b",
+          "container_padding":"pt-m pb-m layout",
+          "columns":[
+            {
+              "column_class":"half content-block",
+              "data":[
+                {
+                    "type": "links/btn",
+                    "label": "profile ",
+                    "theme": "plain",
+                    "size":"x-small",
+                    "block":true,
+                    "soft":"true",
+                    "class":"u-uppercase"
+                }
+              ]
+            },
+            {
+              "column_class":"half content-block",
+              "data":[
+                {
+                    "type": "links/btn",
+                    "label": "sign out",
+                    "theme": "plain",
+                    "size":"x-small",
+                    "block":true,
+                    "soft":"true",
+                    "class":"u-uppercase"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
