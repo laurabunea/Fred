@@ -12,7 +12,7 @@
 
         {% endif %}
 
-            <div class='[ grid {{item.grid_modifier}} {% if item.grid_gutters  %} gutters {% endif %} ] '>
+            <div class='[ grid {{item.grid_modifier}} {% if item.grid_gutters  %} gutters {% endif %} ] {% if item.bigLink %} bigLink {% endif %}'>
 
                 {% for column in item.columns %}
                     

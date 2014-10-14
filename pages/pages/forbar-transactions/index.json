@@ -122,20 +122,67 @@
                   "padding":"pt-xxs pb-xxs",
                   "theme":"bg--light-grey",
                   "data":[
-                    { "data": "Action" },
-                    { "data": "Key" }
+                    { "data": "ASSET" },
+                    { "data": "CLOSING BALANCE" }
                   ]
                 },
                 "table_subhead": {
                   "font":"font-size-s u-bold",
-                  "padding":"pt-xxs pb-xxs",
+                  "padding":"pt-xxs pb-xxs pt-s--medium pb-s--medium",
                   "theme":"bg--light-grey bt--primary border--mid-grey",
                   "data":[
                     {
-                        "data": "New Zeland dollars"
+                        "data": "New Zeland dollars Assets"
                     },
                     {
                         "data": "<span class='text--mid-grey'>NZD</span> 315,472.50"
+                    }
+                  ]
+                },
+                "table_body": {
+                  "font":"font-size-s font-size-m--medium",
+                  "padding":"pt-xxs pb-xxs pt-s--medium pb-s--medium",
+                  "theme":"bg--white bb--primary border--light-grey",
+                  "data":[
+                    [
+                      { "data": "<a href='/pages/forbar-transactions-child/' class='btn--block'>Forsyth Bar Cash management</a>" }
+                    ],
+                    [
+                      {  "data": "<a href='/pages/forbar-transactions-child/' class='btn--block'>Forsyth Bar Client (Account ledger)</a>" }
+                    ],
+                    [
+                      { "data": "<a href='/pages/forbar-transactions-child/' class='btn--block'>Navigate to the homepage</a>" }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"bg--white",
+      "container_padding":"layout",
+      "columns":[
+        {
+          "data":[
+            {
+              "type": "layout/table-divs",
+              "data": {
+                "table_col_size":"half",
+
+                "table_subhead": {
+                  "font":"font-size-s u-bold",
+                  "padding":"pt-xxs pb-xxs pt-s--medium pb-s--medium",
+                  "theme":"bg--light-grey",
+                  "data":[
+                    {
+                        "data": "Australian Dollar Assets"
+                    },
+                    {
+                        "data": "<span class='text--mid-grey'>AUD</span> 315,472.50"
                     }
                   ]
                 },

@@ -1,8 +1,8 @@
 {
   "title": "pages",
-  "slug":"forbar-portfolio-landing",
+  "slug":"forbar-portfolio",
   "headline": "Page one",
-  "template":"template.j2",
+  "template":"client.j2",
   "client":"Forbar",
   "data": [ 
     {
@@ -11,11 +11,43 @@
       "logo":"-logo",
       "uppercase":true,
       "small_text":true,
-      "container_padding":" pt-xxs pb-xxs pl-m pr-m",
+      "container_padding":" pt-xxs pb-xxs layout",
       "text":"<a href='/pages/forbar/'>Home</a>",
       "pages":[
         {
           "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"theme--mid-grey",
+      "container_padding":"layout",
+      "columns":[
+        {
+          "data":[
+            {
+              "type":"layout/content-block",
+              "padding":" pt-xl pb-xl",
+              "data":[
+                {
+                  "type": "links/breadcrumb",
+                  "class":"mb-0",
+                  "data": [
+                    {
+                        "url": "/pages/forbar-portfolio/",
+                        "title": "PORTFOLIO"
+                    }
+                      
+                  ]
+                },
+                {
+                  "type": "type/h2",
+                  "data": "New Zealand Dollar"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -35,21 +67,8 @@
                   "padding":"pt-xxs pb-xxs",
                   "theme":"bg--light-grey",
                   "data":[
-                    { "data": "Action" },
-                    { "data": "Key" }
-                  ]
-                },
-                "table_subhead": {
-                  "font":"font-size-m u-bold",
-                  "padding":"pt-xxs pb-xxs",
-                  "theme":"bg--light-grey bt--primary border--mid-grey",
-                  "data":[
-                    {
-                        "data": "Category"
-                    },
-                    {
-                        "data": "market value"
-                    }
+                    { "data": "Category" },
+                    { "data": "Market value" }
                   ]
                 },
                 "table_body": {

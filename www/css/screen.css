@@ -213,6 +213,16 @@ img {
   margin-left: 8px;
   margin-left: 0.5rem; }
 
+.i-box {
+  width: 12px;
+  width: 0.75rem;
+  height: 12px;
+  height: 0.75rem;
+  border-radius: 2px;
+  border-radius: 0.125rem;
+  margin-bottom: 1px;
+  margin-bottom: 0.0625rem; }
+
 /* colourised icons */
 .i--blue {
   background-position: 0 25%; }
@@ -1123,6 +1133,9 @@ sub {
 .bg--light-grey {
   background-color: #ddd !important; }
 
+.bg--mid-grey {
+  background-color: #999 !important; }
+
 .bg--dark-grey {
   background-color: #5e5c5c !important; }
 
@@ -1375,10 +1388,6 @@ sub {
       margin-left: -100%;
       color: #777; } }
 
-.table-div {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
-
 .swatch-container {
   margin-bottom: 20px;
   margin-bottom: 1.25rem; }
@@ -1454,6 +1463,16 @@ sub {
     .card {
       padding-right: 12px;
       padding-right: 0.75rem; } }
+
+.split {
+  text-align: left;
+  list-style: none;
+  margin-left: 0; }
+
+.split__right {
+  text-align: right;
+  float: right;
+  clear: left; }
 
 /*------------------------------------*\
     #BREADCRUMBS

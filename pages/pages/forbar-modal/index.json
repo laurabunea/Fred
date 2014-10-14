@@ -136,6 +136,7 @@
                     "label": "profile ",
                     "theme": "plain",
                     "size":"x-small",
+                    "href":"/pages/forbar/",
                     "block":true,
                     "soft":"true",
                     "class":"u-uppercase"
@@ -149,6 +150,7 @@
                     "type": "links/btn",
                     "label": "sign out",
                     "theme": "plain",
+                    "href":"/pages/forbar-signin/",
                     "size":"x-small",
                     "block":true,
                     "soft":"true",

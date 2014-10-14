@@ -1,0 +1,10 @@
+<p class='icon-text'>
+    {% if item.href %}
+    <a href='{{item.href}}'>
+    {% endif %}
+    <i class='i i-{{item.svg}} {% if item.color %}i--{{item.color}}{% endif %} {{item.class}}'></i>
+    {{item.text}}
+    {% if item.href %}
+    </a>
+    {% endif %}
+</p>

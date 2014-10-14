@@ -81,16 +81,45 @@
                       { "data": "Interest Recieved: Forsyth Barr Cash Management " },
                       { "data": "6.17" },
                       { "data": "1,3,21.86" }
-                    ],
+                    ]
+                  ]
+                }
+              }
+            } 
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "container_padding":"layout",
+      "external_theme":"bg--white",
+      "columns":[
+        {
+          "data":[
+            {
+              "type": "layout/table-divs",
+              "data": {
+                "table_col_size":"third",
+                "table_head": {
+                  "font":"font-size-xs u-uppercase",
+                  "padding":"pt-xxs pb-xxs",
+                  "theme":"bg--light-grey",
+                  "data":[
+                    { "data": "29 september 2014" },
+                    { "data": "debit/credit" },
+                    { "data": "balance" }
+                  ]
+                },
+                "table_body": {
+                  "font":"font-size-s font-size-m--medium",
+                  "padding":"pt-xxs pb-xxs pt-s--medium pb-s--medium",
+                  "theme":"bg--white bb--primary border--light-grey",
+                  "data":[
                     [
                       { "data": "Interest Recieved: Forsyth Barr Cash Management " },
-                      { "data": "6.17" },
-                      { "data": "1,3,21.86" }
-                    ],
-                    [
-                      { "data": "Withdrawl: Transfer to account ledger " },
-                      { "data": "6.17" },
-                      { "data": "1,3,21.86" }
+                      { "data": "2,500.00" },
+                      { "data": "1,321.86" }
                     ]
                   ]
                 }

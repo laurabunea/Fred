@@ -19,6 +19,7 @@
         }
       ]
     },
+    
     {
       "type":"layout/dynamic",
       "external_theme":"theme--mid-grey",
@@ -51,6 +52,7 @@
         }
       ]
     },
+
     {
       "type":"layout/dynamic",
       "external_theme":"theme--mid-grey bt--primary border--light-grey",
@@ -112,66 +114,150 @@
     },
     {
       "type":"layout/dynamic",
-      "external_theme":"bg--white",
+      "external_theme":"theme--white",
       "container_padding":"layout",
+      "grid_modifier":"grid--center",
       "columns":[
         {
           "data":[
             {
-              "type": "layout/table-divs",
-              "data": {
-                "table_col_size":"half",
-                "table_head": {
-                  "font":"font-size-xs u-uppercase",
-                  "padding":"pt-xxs pb-xxs",
-                  "theme":"bg--light-grey",
-                  "data":[
-                    { "data": "Action" },
-                    { "data": "Key" }
-                  ]
-                },
-                "table_subhead": {
-                  "font":"font-size-m u-bold",
-                  "padding":"pt-xxs pb-xxs",
-                  "theme":"bg--light-grey bt--primary border--mid-grey",
-                  "data":[
-                    {
-                        "data": "Category"
-                    },
-                    {
-                        "data": "market value"
-                    }
-                  ]
-                },
-                "table_body": {
-                  "font":"font-size-s font-size-m--medium",
-                  "padding":"pt-xxs pb-xxs pt-s--medium pb-s--medium",
-                  "theme":"bg--white bb--primary border--light-grey",
-                  "data":[
-                    [
-                      { "data": "Domestic Fixed Interest" },
-                      { "data": "<span class='text--mid-grey'>NZD</span> 315,472.50" }
-                    ],
-                    [
-                      {  "data": "Domestic Property" },
-                      { "data": "<span class='text--mid-grey'>NZD</span> 315,472.50" }
-                    ],
-                    [
-                      { "data": "Domestic Equity" },
-                      { "data": "<span class='text--mid-grey'>NZD</span> 315,472.50" }
-                    ],
-                    [
-                      { "data": "On call to 90 days" },
-                      { "data": "<span class='text--mid-grey'>NZD</span> 315,472.50" }
-                    ]
-                  ]
+              "type":"layout/content-block",
+              "padding":" pt-xl pb-xl",
+              "data":[
+                "NZD 712, 134.53",
+                {
+                  "type": "type/text-tiny",
+                  "data": "AS AT FRIDAY 12 SEPTEMBER"
                 }
-              }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"theme--white bt--primary border--light-grey",
+      "container_padding":"layout",
+      "bigLink":true,
+      "columns":[
+        {
+          "column_class":"half",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "padding":" pt-s pb-s",
+              "data":[
+                 {
+                  "type": "type/text-with-icon",
+                  "text": "New Zealand Dollar",
+                  "svg":"box",
+                  "class":"bg--light-grey",
+                  "href":"/pages/forbar-portfolio-landing/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "column_class":"half",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "padding":"pt-s pb-s",
+              "data":[
+                {
+                  "type": "raw",
+                  "data": "<p class='u-text-right'><span class='text--light-grey'>NZD</span> 315,568.00</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"theme--white bt--primary border--light-grey",
+      "container_padding":"layout",
+      "bigLink":true,
+      "columns":[
+        {
+          "column_class":"half",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "padding":" pt-s pb-s",
+              "data":[
+                {
+                  "type": "type/text-with-icon",
+                  "text": "Australian Dollar",
+                  "svg":"box",
+                  "class":"bg--mid-grey",
+                  "href":"/pages/forbar-portfolio-landing/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "column_class":"half",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "padding":"pt-s pb-s",
+              "data":[
+                {
+                  "type": "raw",
+                  "data": "<p class='u-text-right'><span class='text--light-grey'>AUD</span> 315,472.50<br /><span class='u-text-right text--light-grey'> NZD 315,472.50</span></p>"
+                }
+                
+              ]
+            }
+          ]
+        }
+      ]
+    },
+        {
+      "type":"layout/dynamic",
+      "external_theme":"theme--white bt--primary border--light-grey",
+      "container_padding":"layout",
+      "bigLink":true,
+      "columns":[
+        {
+          "column_class":"half",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "padding":"pt-s pb-s",
+              "data":[
+                {
+                  "type": "type/text-with-icon",
+                  "text": "US Dollar",
+                  "svg":"box",
+                  "href":"/pages/forbar-portfolio-landing/",
+                  "class":"bg--dark-grey"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "column_class":"half",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "padding":"pt-s pb-s",
+              "data":[
+                {
+                  "type": "raw",
+                  "data": "<p class='u-text-right'><span class='text--light-grey'>USD</span> 315,472.50<br /><span class='u-text-right text--light-grey'> NZD 315,472.50</span></p>"
+                }
+              ]
             }
           ]
         }
       ]
     }
-      
   ]
 }

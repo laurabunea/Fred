@@ -136,14 +136,6 @@ img { border: 0;}
         display: table; /* 2 */
     }
 
-// .bigLink {
-//     position: absolute;
-//     top: 20%;
-//     left: 20%;
-//     bottom: 20%;
-//     right: 20%;
-// }
-
 .bigLink:hover {
     cursor: pointer;
 }
@@ -168,6 +160,7 @@ img { border: 0;}
 @import "components/layout/swatch";
 @import "components/layout/media";
 @import "components/layout/cards";
+@import "components/layout/split-list";
 //links
 @import "components/links/breadcrumb";
 @import "components/links/anchor-link";
