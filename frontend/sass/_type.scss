@@ -100,7 +100,6 @@ h4 {
     @include small-down {
         @include rem('margin-bottom', $space-s);
     }
-
 }
 
 h5 {

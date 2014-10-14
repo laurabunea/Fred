@@ -12,6 +12,7 @@
       "uppercase":true,
       "small_text":true,
       "container_padding":" pt-xxs pb-xxs layout",
+      "text":"<a href='/pages/forbar/'>Home</a>",
       "pages":[
         {
           "title":"JEBEDIAH SPRINGFIELD"

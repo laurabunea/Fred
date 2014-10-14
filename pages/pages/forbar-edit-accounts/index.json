@@ -41,10 +41,10 @@
           "data":[
             {
                 "type": "links/btn",
-                "label": "edit accounts",
+                "label": "cancel",
                 "theme": "inverse",
+                "href":"/pages/forbar/",
                 "size":"x-small",
-                "href":"/pages/forbar-edit-accounts/",
                 "soft":"true",
                 "class": "u-right u-uppercase "
             }
@@ -76,6 +76,19 @@
               ]
             }
           ]
+        },
+        {
+          "column_class":"third content-block ",
+          "data":[
+            {
+                "type": "links/btn",
+                "label": "delete",
+                "theme": "plain",
+                "size":"x-small",
+                "soft":"true",
+                "class": "u-right u-uppercase "
+            }
+          ]
         }
       ]
     },
@@ -86,7 +99,7 @@
       "container_padding":" layout",
       "columns":[
         {
-          "column_class":" content-block",
+          "column_class":"two-thirds content-block",
           "data":[
             {
               "type": "layout/content-block",
@@ -103,9 +116,42 @@
               ]
             }
           ]
+        },
+        {
+          "column_class":"third content-block ",
+          "data":[
+            {
+                "type": "links/btn",
+                "label": "delete",
+                "theme": "plain",
+                "size":"x-small",
+                "soft":"true",
+                "class": "u-right u-uppercase "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--middle",
+      "external_theme":"theme--white border-b",
+      "container_padding":"pt-m pb-m layout",
+      "columns":[
+        {
+          "column_class":"",
+          "data":[
+            {
+                "type": "links/btn",
+                "label": "ADD AN INVESTMENT ACCOUNT",
+                "theme": "plain",
+                "size":"small",
+                "block":true,
+                "soft":"true"
+            }
+          ]
         }
       ]
     }
   ]
-
 }

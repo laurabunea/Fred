@@ -1,8 +1,8 @@
 {
   "title": "pages",
-  "slug":"forbar-portfolio",
+  "slug":"forbar-portfolio-landing",
   "headline": "Page one",
-  "template":"client.j2",
+  "template":"template.j2",
   "client":"Forbar",
   "data": [ 
     {
@@ -16,98 +16,6 @@
       "pages":[
         {
           "title":"JEBEDIAH SPRINGFIELD"
-          
-        }
-      ]
-    },
-    {
-      "type":"layout/dynamic",
-      "external_theme":"theme--mid-grey",
-      "container_padding":"layout",
-      "columns":[
-        {
-          "data":[
-            {
-              "type":"layout/content-block",
-              "padding":" pt-xl pb-xl",
-              "data":[
-                {
-                  "type": "links/breadcrumb",
-                  "class":"mb-0",
-                  "data": [
-                    {
-                        "url": "/pages/forbar-portfolio/",
-                        "title": "PORTFOLIO"
-                    }
-                      
-                  ]
-                },
-                {
-                  "type": "type/h2",
-                  "data": "New Zealand Dollar"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type":"layout/dynamic",
-      "external_theme":"theme--mid-grey bt--primary border--light-grey",
-      "container_padding":"layout",
-      "columns":[
-        {
-          "column_size":"third",
-          "data":[
-            {
-              "type":"layout/content-block",
-              "data":[
-                {
-                  "type": "links/btn",
-                  "label": "transactions",
-                  "block":true,
-                  "href":"/pages/forbar-transactions/",
-                  "class":"u-uppercase font-size-xs"
-                } 
-              ]
-            }
-          ]
-        },
-        {
-          "column_size":"third",
-          "column_theme":"theme--dark-grey",
-          "data":[
-            {
-              "type":"layout/content-block",
-              "data":[
-                {
-                  "type": "links/btn",
-                  "label": "portfolio",
-                  "block":true,
-                  "href":"",
-                  "class":"u-uppercase font-size-xs is-disabled"
-                } 
-              ]
-            }
-          ]
-        },
-        {
-          "column_size":"third",
-          "data":[
-            {
-              "type":"layout/content-block",
-              "data":[
-                {
-                  "type": "links/btn",
-                  "label": "account details",
-                  "block":true,
-                  "href":"",
-                  "class":"u-uppercase font-size-xs"
-                }  
-              ]
-            }
-          ]
         }
       ]
     },

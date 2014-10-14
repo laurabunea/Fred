@@ -130,6 +130,9 @@ img {
   display: table;
   /* 2 */ }
 
+.bigLink:hover {
+  cursor: pointer; }
+
 .antialiased, .theme--dark-grey, .theme--dark, .theme--fred-dark {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -1624,8 +1627,8 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
   padding-left: 0.5rem;
   padding-right: 8px;
   padding-right: 0.5rem;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.75rem; }
 
 .btn.btn--small {
@@ -1704,11 +1707,14 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
     background: #293f54; }
 
 .btn--inverse {
-  background: transparent;
+  background-color: transparent;
   color: #fff;
   border: 1px solid #fff; }
+  .btn--inverse:hover {
+    background-color: #fff;
+    color: #293f54; }
   .btn--inverse:visited {
-    color: #236FA6; }
+    color: #293f54; }
   .btn--inverse:active {
     color: #fff;
     background: #293f54; }

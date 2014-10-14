@@ -123,7 +123,7 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
 .btn.btn--x-small {
     @include rem(padding-left,$space-xs);;
     @include rem(padding-right,$space-xs);
-    @include rem(font-size, $font-size-s);
+    @include rem(font-size, $font-size-xs);
     line-height:$btn--x-small;
 }
 
@@ -218,10 +218,14 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
 }
 
 .btn--inverse {
-    background: transparent;
+    background-color: transparent;
     color: $white;
     border:1px solid $white;
-    &:visited { color: $base-link-color;}
+    &:hover {
+      background-color:$white;
+      color: #293f54;
+    }
+    &:visited { color: #293f54;}
     &:active {
         color:$white;
         background: #293f54;

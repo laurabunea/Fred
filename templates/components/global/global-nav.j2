@@ -13,7 +13,7 @@
                 <div class='[ col small-2 ] {{item.u-left_column_padding}} '>
                     
                     <a href='/' class='i i-{{ item.logo }}' accesskey="h">
-                        <span class="u-sr-only">{{item.text}}</span>
+                        <span class="u-sr-only">{{item.text | safe }}</span>
                     </a>
 
                 </div>
@@ -30,7 +30,7 @@
 
                             {% endif %}
 
-                            {{page.title}} 
+                            {{page.title | safe }} 
                 
                         </a>
 
