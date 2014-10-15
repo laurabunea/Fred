@@ -1,0 +1,33 @@
+// Horizontal forms
+//
+// Horizontal forms are built on grid classes and allow you to create forms with
+// labels on the left and inputs on the right.
+
+.form--horizontal {
+
+  // Labels also get some reset styles, but that is scoped to a media query below.
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline {
+    margin-top: 0;
+    margin-bottom: 0;
+    @include rem(padding-top, 7); // Default padding plus a border
+  }
+  // Account for padding we're adding to ensure the alignment and of help text
+  // and other content below items
+  .radio,
+  .checkbox {
+    //min-height: ($line-height-computed + ($padding-base-vertical + 1));
+  }
+
+  // Reset spacing and right align labels, but scope to media queries so that
+  // labels on narrow viewports stack the same as a default form example.
+  @include medium {
+    .control-label {
+      @include rem(padding-right,$space-m);
+      text-align: right;
+      vertical-align: middle;
+    }
+  }
+}

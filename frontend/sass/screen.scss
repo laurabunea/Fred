@@ -162,7 +162,12 @@ img { border: 0;}
 @import "components/layout/cards";
 @import "components/layout/split-list";
 
-@import "components/forms/forms";
+//forms
+@import "components/forms/base";
+@import "components/forms/form--horizontal";
+@import "components/forms/form--inline";
+@import "components/forms/input--group";
+
 //links
 @import "components/links/breadcrumb";
 @import "components/links/anchor-link";

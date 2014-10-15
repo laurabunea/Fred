@@ -1,0 +1,17 @@
+.input--group {
+  .form-control {
+    border-top:none;  
+    border-radius:0;
+  } 
+  
+  .form-control:first-of-type {
+    @include rem(border-top-left-radius,$input-border-radius);
+    @include rem(border-top-right-radius,$input-border-radius);
+    border-top: 1px solid $input-border;
+  }
+  .form-control:last-child {
+    @include rem(border-bottom-left-radius,$input-border-radius);
+    @include rem(border-bottom-right-radius,$input-border-radius);
+    border-bottom: 1px solid $input-border;
+  }
+}
