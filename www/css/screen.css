@@ -1805,6 +1805,8 @@ input[type="radio"][disabled], input[type="radio"].disabled, fieldset[disabled] 
   padding-left: 1rem;
   padding-right: 16px;
   padding-right: 1rem;
+  line-height: 40px;
+  line-height: 2.5rem;
   height: 40px;
   height: 2.5rem;
   padding-bottom: 0;
@@ -1888,6 +1890,8 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
   padding-right: 0.5rem;
   font-size: 12px;
   font-size: 0.75rem;
+  line-height: 28px;
+  line-height: 1.75rem;
   height: 28px;
   height: 1.75rem; }
 
@@ -1898,6 +1902,8 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
   padding-right: 0.75rem;
   font-size: 14px;
   font-size: 0.875rem;
+  line-height: 32px;
+  line-height: 2rem;
   height: 32px;
   height: 2rem; }
 
@@ -1906,6 +1912,8 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
   padding-left: 1.25rem;
   padding-right: 20px;
   padding-right: 1.25rem;
+  line-height: 44px;
+  line-height: 2.75rem;
   height: 44px;
   height: 2.75rem; }
 
@@ -1916,6 +1924,8 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
   padding-left: 1.5rem;
   padding-right: 24px;
   padding-right: 1.5rem;
+  line-height: 48px;
+  line-height: 3rem;
   height: 48px;
   height: 3rem; }
 

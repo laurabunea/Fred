@@ -15,7 +15,7 @@ $btn--x-large:48;
     margin-top:0;
     @include rem(padding-left,$space-m);
     @include rem(padding-right,$space-m);
-    //@include rem(line-height,$btn--medium);
+    @include rem(line-height,$btn--medium);
     @include rem(height,$btn--medium);
     padding-bottom:0;
     padding-top:0;
@@ -128,7 +128,7 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
     @include rem(padding-left,$space-xs);;
     @include rem(padding-right,$space-xs);
     @include rem(font-size, $font-size-xs);
-    //@include rem(line-height,$btn--x-small);
+    @include rem(line-height,$btn--x-small);
     @include rem(height,$btn--x-small);
 }
 
@@ -136,14 +136,14 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
     @include rem(padding-left,$space-s);;
     @include rem(padding-right,$space-s);
     @include rem(font-size, $font-size-s);
-    //@include rem(line-height,$btn--small);
+    @include rem(line-height,$btn--small);
     @include rem(height,$btn--small);
 }
 
 .btn.btn--large {
     @include rem(padding-left,$space-l);
     @include rem(padding-right,$space-l);
-    //@include rem(line-height,$btn--large);
+    @include rem(line-height,$btn--large);
     @include rem(height,$btn--large);
 }
 
@@ -151,7 +151,7 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
     @include rem(font-size, $font-size-l);
     @include rem(padding-left,$space-xl);
     @include rem(padding-right,$space-xl);
-    //@include rem(line-height,$btn--x-large);
+    @include rem(line-height,$btn--x-large);
     @include rem(height,$btn--x-large);
 }
 
