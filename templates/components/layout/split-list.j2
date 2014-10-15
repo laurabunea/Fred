@@ -1,0 +1,23 @@
+<ul class='mb-0'>
+    
+    {% for item in item.data %}
+        
+        <li class='split'>
+
+            {% if item.icon %}
+                 <i class='i {{item.icon.name}}'></i>
+            {% endif %}
+
+            {{ item.data|safe }}
+            
+            {% if item.span %}
+                <span class='{{item.span.class}} split__right'>
+                    {{item.span.data | safe }}
+                </span>
+            {% endif %}
+
+        </li>
+
+    {% endfor %}
+
+</ul>

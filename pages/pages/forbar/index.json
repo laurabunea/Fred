@@ -32,6 +32,11 @@
       "container_padding":"pt-m pb-m layout",
       "columns":[
         {
+          "data":[
+            "<a href='/pages/forbar-transactions/'>Sign in</a>"
+          ]
+        },
+        {
           "column_class":"half content-block",
           "data":[
             {
