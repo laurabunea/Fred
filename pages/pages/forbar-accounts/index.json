@@ -1,6 +1,6 @@
 {
   "title": "pages",
-  "slug":"forbar-accounts",
+  "slug":"forbar",
   "headline": "Page one",
   "template":"client.j2",
   "client":"Forbar",
@@ -32,9 +32,8 @@
           "data":[
             {
               "type": "type/h2",
-              "data": "Edit accounts"
+              "data": "Investment accounts"
             }
-              
           ]
         },
         {
@@ -42,45 +41,12 @@
           "data":[
             {
                 "type": "links/btn",
-                "label": "CANCEL",
+                "label": "edit accounts",
                 "theme": "inverse",
-                "size":"small",
+                "size":"x-small",
+                "href":"/pages/forbar-edit-accounts/",
                 "soft":"true",
-                "class": "u-right"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type":"layout/dynamic",
-      "grid_modifier":"grid--middle",
-      "external_theme":"theme--white border-b",
-      "container_padding":"pt-m pb-m layout",
-      "columns":[
-        {
-          "column_class":"two-thirds content-block",
-          "data":[
-            {
-                "type": "type/h3",
-                "data": "TM Herrick"
-            },
-            {
-                "type": "type/text-tiny",
-                "data": "1380016"
-            }
-          ]
-        },
-        {
-          "column_class":"third content-block",
-          "data":[
-            {
-                "type": "links/btn",
-                "label": "DELETE",
-                "theme": "plain",
-                "soft":"true",
-                "size":"small",
-                "class": "u-right"
+                "class": "u-right u-uppercase "
             }
           ]
         }
@@ -90,57 +56,58 @@
       "type":"layout/dynamic",
       "grid_modifier":"grid--middle",
       "external_theme":"theme--white border-b ",
-      "container_padding":"pt-m pb-m layout",
+      "container_padding":" layout",
+      "bigLink":true,
       "columns":[
         {
           "column_class":"two-thirds content-block",
           "data":[
             {
-                "type": "type/h3",
-                "data": "M A Broad"
-            },
-            {
-                "type": "type/text-tiny",
-                "data": "1380016"
-            }
-          ]
-        },
-        {
-          "column_class":"third content-block ",
-          "data":[
-            {
-                "type": "links/btn",
-                "label": "DELETE",
-                "theme": "plain",
-                "size":"small",
-                "soft":"true",
-                "class": "u-right"
+              "type": "layout/content-block",
+              "padding":"pt-s pb-s",
+              "data": [
+                {
+                  "type": "type/h3",
+                  "data": "<a href='/pages/forbar-transactions/' class='test'>TM Herrick</a>",
+                  "span":{
+                    "data":"1380016",
+                    "class":"u-block u-light font-size-xs"
+                  }
+                }
+              ]
             }
           ]
         }
-        
       ]
     },
     {
       "type":"layout/dynamic",
       "grid_modifier":"grid--middle",
-      "external_theme":"theme--white border-b",
-      "container_padding":"pt-m pb-m layout",
+      "external_theme":"theme--white border-b ",
+      "container_padding":" layout",
+      "bigLink":true,
       "columns":[
         {
-          "column_class":"",
+          "column_class":" content-block",
           "data":[
             {
-                "type": "links/btn",
-                "label": "ADD AN INVESTMENT ACCOUNT",
-                "theme": "plain",
-                "size":"small",
-                "block":true,
-                "soft":"true"
+              "type": "layout/content-block",
+              "padding":"pt-s pb-s",
+              "data": [
+                {
+                  "type": "type/h3",
+                  "data": "<a href='/pages/forbar-transactions/' class='test'>M A Broad</a>",
+                  "span":{
+                    "data":"1380016",
+                    "class":"u-block u-light font-size-xs"
+                  }
+                }
+              ]
             }
           ]
         }
       ]
     }
   ]
+
 }

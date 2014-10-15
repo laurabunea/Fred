@@ -35,15 +35,15 @@
                   "class":"mb-0",
                   "data": [
                     {
-                        "url": "/pages/forbar-portfolio/",
-                        "title": "PORTFOLIO"
+                        "url": "/pages/forbar-portfolio-landing/",
+                        "title": "NEW ZEALAND DOLLAR"
                     }
                       
                   ]
                 },
                 {
                   "type": "type/h2",
-                  "data": "New Zealand Dollar"
+                  "data": "Domestic Fixed Interest"
                 }
               ]
             }
@@ -61,7 +61,7 @@
           "data":[
             {
               "type": "type/text-tiny",
-              "data": "category",
+              "data": "holding",
               "class":"u-uppercase"
             }
           ]
@@ -82,7 +82,7 @@
       "type":"layout/dynamic",
       "external_theme":"bg--white border-b border--light-grey",
       "container_padding":"layout",
-      "bigLink":true,
+    
       "columns":[
         {
           "column_class":"half",
@@ -93,7 +93,7 @@
               "data": [
                 {
                   "type": "type/p",
-                  "data": "<a href='/pages/forbar-portfolio-child/'>Domestic Fixed Interest</a>"
+                  "data": "Auckland International Airport Limited"
                 }
               ]
             }
@@ -108,7 +108,7 @@
               "data":[
                 {
                   "type": "type/p",
-                  "data": "<span class='text--light-grey'>NZD</span> 315,472.50",
+                  "data": "315,472.50",
                   "class":"u-text-right"
                 }
               ]
@@ -121,7 +121,6 @@
       "type":"layout/dynamic",
       "external_theme":"bg--white border-b border--light-grey",
       "container_padding":"layout",
-      "bigLink":true,
       "columns":[
         {
           "column_class":"half",
@@ -132,7 +131,7 @@
               "data": [
                 {
                   "type": "type/p",
-                  "data": "<a href='/pages/forbar-portfolio-child/'>Domestic Property</a>"
+                  "data": "Ebos Group Limited"
                 }
               ]
             }
@@ -147,7 +146,7 @@
               "data":[
                 {
                   "type": "type/p",
-                  "data": "<span class='text--light-grey'>NZD</span> 315,472.50",
+                  "data": "25,422.20",
                   "class":"u-text-right"
                 }
               ]
@@ -160,7 +159,6 @@
       "type":"layout/dynamic",
       "external_theme":"bg--white border-b border--light-grey",
       "container_padding":"layout",
-      "bigLink":true,
       "columns":[
         {
           "column_class":"half",
@@ -171,7 +169,7 @@
               "data": [
                 {
                   "type": "type/p",
-                  "data": "<a href='/pages/forbar-portfolio-child/'>Domestic Equity</a>"
+                  "data": "Fletcher Building Limited"
                 }
               ]
             }
@@ -186,7 +184,7 @@
               "data":[
                 {
                   "type": "type/p",
-                  "data": "<span class='text--light-grey'>NZD</span> 315,472.50",
+                  "data": " 13,472.50",
                   "class":"u-text-right"
                 }
               ]

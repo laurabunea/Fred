@@ -57,6 +57,7 @@
       "grid_modifier":"grid--middle",
       "external_theme":"theme--white border-b ",
       "container_padding":" layout",
+      "bigLink":true,
       "columns":[
         {
           "column_class":"two-thirds content-block",
@@ -97,6 +98,7 @@
       "grid_modifier":"grid--middle",
       "external_theme":"theme--white border-b ",
       "container_padding":" layout",
+      "bigLink":true,
       "columns":[
         {
           "column_class":"two-thirds content-block",

@@ -3,11 +3,11 @@
 \*------------------------------------*/
 
 
-$btn--x-small:1.75rem;
-$btn--small: 2rem;
-$btn--medium:2.5rem;
-$btn--large:2.75rem;
-$btn--x-large:3rem;
+$btn--x-small:28;
+$btn--small: 32;
+$btn--medium:40;
+$btn--large:44;
+$btn--x-large:48;
 
 
 %btn {
@@ -15,12 +15,14 @@ $btn--x-large:3rem;
     margin-top:0;
     @include rem(padding-left,$space-m);
     @include rem(padding-right,$space-m);
+    //@include rem(line-height,$btn--medium);
+    @include rem(height,$btn--medium);
     padding-bottom:0;
     padding-top:0;
     display:inline-block;
     box-sizing:border-box;
     text-align:center;
-    line-height:$btn--medium;
+    
     white-space: nowrap;
     border: none;
     cursor:pointer;
@@ -41,7 +43,9 @@ $btn--x-large:3rem;
 .btn, 
 button {
     @extend %btn;
-    @include rem(margin-bottom,$space-m);
+
+    //class we add to make it a block element or something
+    //@include rem(margin-bottom,$space-m);
 }
 
 
@@ -124,27 +128,31 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
     @include rem(padding-left,$space-xs);;
     @include rem(padding-right,$space-xs);
     @include rem(font-size, $font-size-xs);
-    line-height:$btn--x-small;
+    //@include rem(line-height,$btn--x-small);
+    @include rem(height,$btn--x-small);
 }
 
 .btn.btn--small {
     @include rem(padding-left,$space-s);;
     @include rem(padding-right,$space-s);
     @include rem(font-size, $font-size-s);
-    line-height:$btn--small;
+    //@include rem(line-height,$btn--small);
+    @include rem(height,$btn--small);
 }
 
 .btn.btn--large {
     @include rem(padding-left,$space-l);
     @include rem(padding-right,$space-l);
-    line-height:$btn--large;
+    //@include rem(line-height,$btn--large);
+    @include rem(height,$btn--large);
 }
 
 .btn.btn--x-large {
     @include rem(font-size, $font-size-l);
     @include rem(padding-left,$space-xl);
     @include rem(padding-right,$space-xl);
-    line-height:$btn--x-large;
+    //@include rem(line-height,$btn--x-large);
+    @include rem(height,$btn--x-large);
 }
 
 

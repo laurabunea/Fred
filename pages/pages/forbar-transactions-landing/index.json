@@ -1,6 +1,6 @@
 {
   "title": "pages",
-  "slug":"forbar-transactions-child",
+  "slug":"forbar-transactions-landing",
   "headline": "Page one",
   "template":"client.j2",
   "client":"Forbar",

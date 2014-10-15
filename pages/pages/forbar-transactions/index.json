@@ -30,7 +30,6 @@
               "type":"layout/content-block",
               "padding":"pt-xl pb-xl",
               "data":[
-              
                 {
                   "type": "type/h2",
                   "data": "T M Herrick"
@@ -38,8 +37,7 @@
                 {
                   "type": "type/text-small",
                   "data": "1276351"
-                }
-                  
+                } 
               ]
             }
           ]
@@ -174,11 +172,10 @@
           "data":[
             {
               "type": "raw",
-              "data": "<p><a href='/pages/forbar-transactions-child/'>Forsyth Bar Cash management</a></p>"
+              "data": "<p><a href='/pages/forbar-transactions-landing/'>Forsyth Bar Cash management</a></p>"
             } 
           ]
         }
-        
       ]
     },
     {
@@ -192,7 +189,7 @@
           "data":[
             {
               "type": "raw",
-              "data": "<p><a href='/pages/forbar-transactions-child/'>Forsyth Bar Client</a></p>"
+              "data": "<p><a href='/pages/forbar-transactions-landing/'>Forsyth Bar Client</a></p>"
             } 
           ]
         }

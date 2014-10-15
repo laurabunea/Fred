@@ -130,6 +130,288 @@
             </div>
 
         </div>
+        <div class='wrapper'>
+            <div class="layout">
+            <hr />
+            <h1 class='mt-xxl'>Basic form</h1>
+
+           
+            <form class='grid' role="form">
+      
+                <div class="form-group col">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+                <div class="form-group col">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <p class="help-block">Example block-level help text here.</p>
+                </div>
+                <div class="form-group col">
+                  <label for="exampleInputFile">File input</label>
+                  <input type="file" id="exampleInputFile">
+                </div>
+                <div class="form-group col">
+                  <div class="checkbox ">
+                    <label>
+                      <input type="checkbox"> Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group col">
+                  <button type="submit" class="btn btn--primary btn--soft">Submit</button>
+                </div>
+            </form>
+            <hr />
+            <h1 class='mt-xxl'>Basic form with columns</h1>
+            <form class='grid' role="form">
+      
+                <div class="form-group col medium-half">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                  <p class="help-block">Example block-level help text here.</p>
+                </div>
+                <div class="form-group col medium-half">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <p class="help-block">Example block-level help text here.</p>
+                </div>
+                <div class="form-group col ">
+                  <label for="exampleInputFile">File input</label>
+                  <input type="file" id="exampleInputFile">
+                </div>
+                <div class="form-group col">
+                  <div class="checkbox ">
+                    <label>
+                      <input type="checkbox"> Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group col">
+                  <button type="submit" class="btn btn--primary btn--soft">Submit</button>
+                </div>
+            </form>
+            <hr />
+            <h1 class='mt-xxl'>Inline form</h1>
+
+            <form class="form-inline" role="form">
+              
+              <div class="form-group">
+                <label class="u-sr-only" for="exampleInputEmail2">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+              </div>
+
+              <div class="form-group">
+                <label class="u-sr-only" for="exampleInputPassword2">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+              </div>
+
+              <div class="form-group">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--soft">Sign in</button>
+
+            </form>
+            <hr />
+            <h1 class='mt-xxl'>Horizontal form</h1>
+
+            <form class="form-horizontal" role="form">
+              
+              <div class="form-group medium-grid--table">
+                
+                <label for="inputEmail3" class="medium-quarter control-label">Email</label>
+                
+                <div class="medium-three-quarters">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+
+              </div>
+              
+              <div class="form-group medium-grid--table">
+                
+                <label for="inputPassword3" class="medium-quarter control-label">Password</label>
+                
+                <div class="medium-three-quarters">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+
+              </div>
+
+              <div class="form-group medium-grid--table">
+
+                <div class='medium-quarter'>
+                </div>
+                <div class="medium-three-quarters">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group medium-grid--table">
+                <div class='medium-quarter'>
+                </div>
+                <div class="medium-three-quarters">
+                    <label>
+                      <button type="submit" class="btn btn--primary btn--soft">Sign in</button>
+                    </label>
+                </div>
+              </div>
+            </form>
+
+            <hr />
+            <h1 class='mt-xxl'>Simple coponents
+            </h1>
+            
+            <input type="text" class="form-control" placeholder="Text input">
+            
+            <textarea class="form-control" rows="3"></textarea>
+           
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                Option one is this and that&mdash;be sure to include why it's great
+              </label>
+            </div>
+
+            <div class="checkbox disabled">
+              <label>
+                <input type="checkbox" value="" disabled>
+                Option two is disabled
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                Option one is this and that&mdash;be sure to include why it's great
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Option two can be something else and selecting it will deselect option one
+              </label>
+            </div>
+
+            <div class="radio disabled">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                Option three is disabled
+              </label>
+            </div>
+
+          
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+            </label>
+
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+            </label>
+<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+<p>selects</p>
+<select class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+
+<select multiple class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+<h2>error messages </h2>
+<div class="form-group has-success">
+  <label class="control-label" for="inputSuccess1">Input with success</label>
+  <input type="text" class="form-control" id="inputSuccess1">
+</div>
+<div class="form-group has-warning">
+  <label class="control-label" for="inputWarning1">Input with warning</label>
+  <input type="text" class="form-control" id="inputWarning1">
+</div>
+<div class="form-group has-error">
+  <label class="control-label" for="inputError1">Input with error</label>
+  <input type="text" class="form-control" id="inputError1">
+</div>
+<div class="has-error">
+  <div class="radio">
+    <label class="checkbox">
+      <input type="checkbox" id="checkboxError" value="option1">
+      Option one is this and that&mdash;be sure to include why it's great
+    </label>
+  </div>
+</div>
+<div class="has-success">
+  <div class="radio">
+    <label>
+      <input type="radio" name="optionsRadios" id="radiosSuccess1" value="option1" checked>
+      Option one is this and that&mdash;be sure to include why it's great
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="optionsRadios" id="radiosSuccess2" value="option2">
+      Option two can be something else and selecting it will deselect option one
+    </label>
+  </div>
+  <h2>With optional icons</h2>
+  <div class="form-group has-success has-icon">
+      <label class="control-label" for="inputSuccess2">Input with success</label>
+      <input type="text" class="form-control" id="inputSuccess2">
+      <span class="form-control-icon">&#10003;</span>
+    </div>
+    <div class="form-group has-warning has-icon">
+      <label class="control-label" for="inputWarning2">Input with warning</label>
+      <input type="text" class="form-control" id="inputWarning2">
+      <span class="form-control-icon u-bold">!</span>
+    </div>
+    <div class="form-group has-error has-icon">
+      <label class="control-label" for="inputError2">Input with error</label>
+      <input type="text" class="form-control" id="inputError2">
+      <span class="form-control-icon u-bold">x</span>
+    </div>
+</div>
+<h1>stacked inputs</h1>
+<form class="" role="form">
+              
+  <div class="form-group stacked--inputs">
+    <label class="u-sr-only" for="exampleInputEmail2">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+    <label class="u-sr-only" for="exampleInputEmail2">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email 2">
+    <label class="u-sr-only" for="exampleInputEmail2">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email  3">
+  </div>
+
+</form>
+</div>
+
+        </div>
 
     {% endblock %}
 
