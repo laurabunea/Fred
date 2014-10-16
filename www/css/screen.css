@@ -81,6 +81,13 @@ https://github.com/nDmitry/grunt-autoprefixer
 *
 *
 */
+@font-face {
+  font-family: 'franklin_gothic_fscondensed';
+  src: url('/fonts/FranklinGothic-Cd-webfont.eot');
+  src: url('/fonts/FranklinGothic-Cd-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/FranklinGothic-Cd-webfont.woff2') format('woff2'), url('/fonts/FranklinGothic-Cd-webfont.woff') format('woff'), url('/fonts/FranklinGothic-Cd-webfont.ttf') format('truetype'), url('/fonts/FranklinGothic-Cd-webfont.svg#franklin_gothic_fscondensed') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
 /* global colours */
 /* base colours */
 /* colour focus */
@@ -102,7 +109,7 @@ body {
   margin: 0;
   background-color: #f0f0f0;
   color: #5e5c5c;
-  font-family: "Source Sans Pro", "Helvetica Neue", sans-serif;
+  font-family: 'franklin_gothic_fscondensed', sans-serif;
   line-height: 1.5;
   position: relative;
   min-height: 100%; }
