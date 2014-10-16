@@ -27,11 +27,34 @@
     {
       "type":"layout/dynamic",
       "grid_modifier":"grid--middle",
-      "external_theme":"theme--white ",
-      "container_padding":"pt-m pb-m layout",
+      "external_theme":"theme--white",
+      "container_padding":"pt-m layout",
       "columns":[
         {
-          "column_class":"",
+          "data":[
+            {
+              "type": "form/input--group",
+              "inputs":[
+                {
+                  "type":"email",
+                  "label":"Email address",
+                  "name":"emailinput",
+                  "placeholder":"Email address"
+                },
+                {
+                  "type":"password",
+                  "label":"Password",
+                  "name":"emailinput",
+                  "placeholder":"Password"
+                }
+                  
+                  
+              ]
+              
+            }
+          ]
+        },
+        {
           "data":[
             {
               "type": "links/btn",
@@ -44,15 +67,9 @@
               "class":"u-uppercase"
             }
           ]
-        }
-      ]
-    },
-    {
-      "type":"layout/dynamic",
-      "grid_modifier":"grid--middle",
-      "external_theme":"theme--white",
-      "container_padding":"pt-m pb-xxxl layout",
-      "columns":[
+        },
+    
+       
         {
           "column_class":"half content-block",
           "data":[

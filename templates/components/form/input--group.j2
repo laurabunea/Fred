@@ -1,9 +1,9 @@
-<form class="" role="form">
+<form class="{{item.form_class}}" role="form">
               
   <div class="form-group input--group">
 
-    {% for input in item.group %}
-
+    {% for input in item.inputs %}
+        {% set item = input %}
         {% include "components/form/label.j2" %}
         {% include "components/form/input.j2" %}
 

@@ -1,1 +1,1 @@
-<input type="{% if inputtype %}{{inputtype}}{% else %}text{% endif %}" class="form-control" name="{{ item.name }}" id="{{ item.name }}" placeholder="{{ item.placeholder }}">
+<input type="{% if item.type %}{{item.type}}{% else %}text{% endif %}" class="form-control" name="{{ item.name }}" id="{{ item.name }}" placeholder="{{ item.placeholder }}">
