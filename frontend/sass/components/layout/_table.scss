@@ -11,11 +11,22 @@ $hr-colour: #eee;
     width: 100%;
 
     @include rem(margin-bottom,$space-xxl);
-    text-align: left;
-
 
     > thead {
-        background-color: #fafafa;
+        background-color: #F7F8F5;
+    }
+    tr {
+        border-bottom: 1px solid #F7F8F5;
+    }
+    td, th {
+        text-align: right;
+        &:first-child {
+            text-align: left;
+            font-weight:bold;
+        }
+    }
+    th {
+        font-weight: bold;
     }
 }
 
@@ -55,59 +66,84 @@ $hr-colour: #eee;
 }
 
 .table--responsive {
-    @include small-down() {
+    @include small-down {
         display: block;
-        border: none;
 
+        thead {
+            display: none;
+        }
 
         td, tr, tbody, th {
             display: block;
             width: 100%;
-            text-align: left;
             border-right: none;
             margin-top: 0;
         }
-        thead {
-            display: none;
-        }
-        td:first-child, th {
-            @include rem(margin-top,$space-xl);
-            padding: 0;
-            font-weight: bold; // ideally this would extend the h5
 
-        }
-        th {
-            font-weight: bold;
-        }
-
-        // Forgive me for this.
-        tbody tr:nth-child(odd) td,
-        tbody tr:nth-child(odd) th {
-            background: transparent;
-        }
-
-        tbody tr:nth-child(odd) td + td,
-        tbody tr:nth-child(odd) th + td,
-        td + td,
-        th + td {
-            background: #F7F7F7;
-        }
-
-        td + td {
-            border-top: solid 1px #e6e6e6;
-        }
         td[data-header] {
             overflow: hidden;
             display: block;
             position: relative;
-            padding-left: 50%;
         }
+
         td[data-header]:before {
             content: attr(data-header);
             float: left;
-            width: 95%;
-            margin-left: -100%;
-            color: #777;
+            font-weight: bold;
         }
+
     }
+    // @include small-down() {
+    //     display: block;
+    //     border: none;
+
+
+    //     td, tr, tbody, th {
+    //         display: block;
+    //         width: 100%;
+    //         border-right: none;
+    //         margin-top: 0;
+    //     }
+    //     thead {
+    //         display: none;
+    //     }
+    //     td:first-child, th {
+    //         @include rem(margin-top,$space-xl);
+    //         padding: 0;
+    //         font-weight: bold; // ideally this would extend the h5
+    //     }
+    //     th {
+    //         font-weight: bold;
+    //     }
+
+    //     // Forgive me for this.
+    //     tbody tr:nth-child(odd) td,
+    //     tbody tr:nth-child(odd) th {
+    //         background: transparent;
+    //     }
+
+    //     tbody tr:nth-child(odd) td + td,
+    //     tbody tr:nth-child(odd) th + td,
+    //     td + td,
+    //     th + td {
+    //         background: #F7F7F7;
+    //     }
+
+    //     td + td {
+    //         border-top: solid 1px #e6e6e6;
+    //     }
+    //     td[data-header] {
+    //         overflow: hidden;
+    //         display: block;
+    //         position: relative;
+    //         padding-left: 50%;
+    //     }
+    //     td[data-header]:before {
+    //         content: attr(data-header);
+    //         float: left;
+    //         width: 95%;
+    //         margin-left: -100%;
+    //         color: #777;
+    //     }
+    // }
 }

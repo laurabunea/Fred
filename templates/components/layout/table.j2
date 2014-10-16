@@ -1,4 +1,4 @@
-<table class='table table--responsive' data-table-responsive>
+<table class='table{% if item.responsive %} table--responsive {% endif %}'>
     
     {% for th in item.data.thead %}
 
@@ -27,7 +27,6 @@
             {% for td in tr.data %}
 
                 <td {% if td.colspan %} colspan='{{td.colspan}}'{% endif %}>
-                    {{ td.data }}
                 </td>
 
             {% endfor %}
@@ -50,11 +49,15 @@
 
         {% for td in tr %}
 
-            <td {% if td.colspan %} colspan='{{td.colspan}}'{% endif %}>
-                
-                {{ td.data }}
-
-            </td>
+            {% if td.th %}
+                <th{% if td.colspan %} colspan='{{td.colspan}}'{% endif %} data-header='{{ item.data.thead[loop.index-1].data }}'>
+                    {{ td.data }}
+                </th>
+            {% else %}
+                <td{% if td.colspan %} colspan='{{td.colspan}}'{% endif %} data-header='{{ item.data.thead[loop.index-1].data }}'>
+                    {{ td.data }}
+                </td>
+            {% endif %}
 
         {% endfor %}
 
