@@ -2269,17 +2269,18 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
   float: right; }
 
 .nav_item {
-  margin-top: 0;
-  margin-bottom: 0;
   padding-left: 16px;
   padding-left: 1rem;
+  line-height: 40px;
+  line-height: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-right: 0;
   padding-bottom: 0;
   padding-top: 0;
   display: inline-block;
   box-sizing: border-box;
   text-align: center;
-  line-height: 40;
   white-space: nowrap;
   border: none;
   cursor: pointer;
