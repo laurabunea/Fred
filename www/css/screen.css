@@ -1182,8 +1182,11 @@ sub {
 .bg--green {
   background-color: #37b67f !important; }
 
+.bg--bright-green {
+  background-color: #48C570 !important; }
+
 .bg--red {
-  background-color: #e2534a !important; }
+  background-color: #E34D5A !important; }
 
 .bg--blue {
   background-color: #1392b2 !important; }
@@ -1193,6 +1196,9 @@ sub {
 
 .bg--soft-pink {
   background-color: #F49AC2 !important; }
+
+.bg--yellow {
+  background-color: #FFCC00; }
 
 .text--black {
   color: #000 !important; }
@@ -1216,7 +1222,7 @@ sub {
   color: #e78547 !important; }
 
 .text--red {
-  color: #e2534a !important; }
+  color: #E34D5A !important; }
 
 .text--blue {
   color: #1392b2 !important; }
@@ -1230,11 +1236,14 @@ sub {
 .text--soft-pink {
   color: #F49AC2 !important; }
 
+.text--yellow {
+  color: #FFCC00 !important; }
+
 .border--transparent {
   border-color: transparent !important; }
 
 .border--red {
-  border-color: #e2534a !important; }
+  border-color: #E34D5A !important; }
 
 .border--soft-pink {
   border-color: #F49AC2 !important; }
@@ -1262,6 +1271,12 @@ sub {
 
 .border--dark-blue {
   border-color: #0D334E !important; }
+
+.border--yellow {
+  border-color: #FFCC00 !important; }
+
+.border--bright-green {
+  border-color: #FFCC00 !important; }
 
 /*------------------------------------*\
     #PLAYPEN

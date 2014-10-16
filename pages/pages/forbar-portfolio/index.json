@@ -107,7 +107,7 @@
     },
     {
       "type":"layout/dynamic",
-      "external_theme":"bg--white ",
+      "external_theme":"theme--light",
       "container_padding":"layout pt-l pb-l",
       "columns":[
         {
@@ -118,6 +118,10 @@
               "columns":[
                 {
                   "data":[
+                    {
+                      "type":"img",
+                      "src":"/images/forbar-chart.png"
+                    },
                     "NZD 712, 134.53",
                     {
                       "type": "type/text-tiny",
@@ -158,7 +162,7 @@
                               "type": "type/text-with-icon",
                               "text": "New Zealand Dollar",
                               "svg":"box",
-                              "class":"bg--light-grey",
+                              "class":"bg--red",
                               "href":"/pages/forbar-portfolio-landing/"
                             }
                           ]
@@ -208,7 +212,7 @@
                               "type": "type/text-with-icon",
                               "text": "Australian Dollar",
                               "svg":"box",
-                              "class":"bg--mid-grey",
+                              "class":"bg--yellow",
                               "href":"/pages/forbar-portfolio-landing/"
                             }
                           ]
@@ -264,7 +268,7 @@
                               "text": "US Dollar",
                               "svg":"box",
                               "href":"/pages/forbar-portfolio-landing/",
-                              "class":"bg--dark-grey"
+                              "class":"bg--green"
                             }
                           ]
                         }

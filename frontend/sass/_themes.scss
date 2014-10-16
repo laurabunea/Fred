@@ -256,11 +256,12 @@ $link-color:
 .bg--dark-grey {background-color:$dark-grey!important;}
 .bg--orange {background-color:$orange!important;}
 .bg--green {background-color:$green!important;}
+.bg--bright-green {background-color:$bright-green!important;}
 .bg--red {background-color:$red!important;}
 .bg--blue {background-color:$blue!important;}
 .bg--link-color {background-color:$base-link-color!important;}
 .bg--soft-pink { background-color:$soft-pink!important;}
-
+.bg--yellow { background-color:$yellow}
 //text colours
 .text--black {  color:$black!important; }
 .text--dark-grey {color:$dark-grey!important;}
@@ -274,6 +275,7 @@ $link-color:
 .text--green {color:$green!important;}
 .text--link-color {color:$base-link-color!important;}
 .text--soft-pink {color:$soft-pink!important;}
+.text--yellow {color:$yellow!important}
 
 .border--transparent {  border-color:transparent!important; }
 .border--red         {  border-color:$red!important; }
@@ -286,6 +288,8 @@ $link-color:
 .border--dark-grey {  border-color:$dark-grey!important; }
 .border--mid-grey {  border-color:$mid-grey!important; }
 .border--dark-blue {  border-color:$dark-blue!important; }
+.border--yellow {  border-color:$yellow!important; }
+.border--bright-green {  border-color:$yellow!important; }
 // .highlight-top { 
 //   @include rem(padding-top,$space-l);
 //   border-top-width: 4px;
