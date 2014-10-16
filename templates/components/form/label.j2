@@ -1,1 +1,12 @@
-<label class="u-sr-only" for="{{ item.name }}">{{ item.label }}</label>
+{% if item.label %}
+    <label class="{ item.label_class }}" for="{{ item.name }}">
+        {{ item.label }}
+        {#{% if item.label_note %}
+
+            <span>
+                {{ item.label_note|safe }}
+            </span>
+
+        {% endif %}#}
+    </label>
+{% endif %}

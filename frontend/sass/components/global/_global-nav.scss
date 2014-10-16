@@ -28,19 +28,14 @@
     text-decoration: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-
-    &:hover {
-        text-decoration: none;
-    }
+    &:hover { text-decoration: none; }
 }
 
 .nav_item {
     
     @extend %nav_item;
 
-    &.small {
-        @include rem(padding-left,$space-s);;
-    }
+    &.small { @include rem(padding-left,$space-s);}
 
     &.theme {
         @include rem(padding-right,$space-m);

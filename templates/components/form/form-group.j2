@@ -1,0 +1,16 @@
+{% if item.errors %}
+
+    {% set errors = "error" %}
+    
+{% endif %}
+
+<div class="form-group {% if errors %} field--error{% endif %}">
+
+    {% for item in item.data %}
+
+        {% include "components/form/label.j2" %}
+        {% include "components/form/input.j2" %}
+        {% include "components/form/note.j2" %}
+
+    {% endfor %}
+</div>
