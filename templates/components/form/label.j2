@@ -1,5 +1,5 @@
 {% if item.label %}
-    <label class="{ item.label_class }}" for="{{ item.name }}">
+    <label class="{{ item.label_class }} {{label_class}}" for="{{ item.name }}">
         {{ item.label }}
         {#{% if item.label_note %}
 

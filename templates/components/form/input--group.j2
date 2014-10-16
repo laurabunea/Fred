@@ -4,7 +4,7 @@
 
     {% for input in item.inputs %}
         {% set item = input %}
-        {% set item.label_class  = 'u-sr-only' %}
+        {% set label_class  = 'u-sr-only' %}
         {% include "components/form/label.j2" %}
         {% include "components/form/input.j2" %}
 
