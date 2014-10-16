@@ -11,7 +11,7 @@
       "logo":"forsyth-barr-logo",
       "uppercase":true,
       "small_text":true,
-      "container_padding":"pt-s pb-s  ",
+      "container_padding":"pt-s pb-s  layout",
       "pages":[
         {
           "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"

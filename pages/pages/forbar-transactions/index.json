@@ -11,7 +11,7 @@
       "logo":"forsyth-barr-logo",
       "uppercase":true,
       "small_text":true,
-      "container_padding":"pt-s pb-s  ",
+      "container_padding":"pt-s pb-s layout ",
       "pages":[
         {
           "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
@@ -105,41 +105,48 @@
         }
       ]
     },
-    {
-      "type":"layout/dynamic",
-      "external_theme":"theme--light",
-      "container_padding":"layout pt-s pb-s",
-      "columns":[
-        {
-          "column_size":"half",
-          "column_class":"content-block",
-          "data":[
-            {
-              "type": "type/text-tiny",
-              "class":"u-uppercase",
-              "data": "asset"
-            } 
-          ]
-        },
-        {
-          "column_size":"half",
-          "column_class":"content-block",
-          "data":[
-            {
-              "type": "type/text-tiny",
-              "class":"u-uppercase u-text-right",
-              "data": "closing balance"
-            } 
-          ]
-        }
-      ]
-    },
+
     {
       "type":"layout/dynamic",
       "external_theme":"bg--white ",
-      "container_padding":"layout pt-l pb-l",
+      "container_padding":"layout",
       "columns":[
+        {   
+          "column_size":"large-8",
+          "column_theme":"theme--light",
+          "data":[
+            {
+              "type":"layout/internal-grid",
+              "container_padding":"pt-s pb-s",
+              "columns":[
+                {
+                  "column_size":"half",
+                  "column_class":"content-block",
+                  "data":[
+                    {
+                      "type": "type/text-tiny",
+                      "class":"u-uppercase",
+                      "data": "asset"
+                    }
+                  ]
+                },
+                {
+                  "column_size":"half",
+                  "column_class":"content-block",
+                  "data":[
+                    {
+                      "type": "type/text-tiny",
+                      "class":"u-uppercase u-text-right",
+                      "data": "closing balance"
+                    } 
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
+          "column_class":"large-8",
           "data":[
             {
               "type": "layout/internal-grid",
@@ -180,7 +187,7 @@
                       "data":[
                         {
                           "type": "raw",
-                          "data": "<p class='split'><a href='/pages/forbar-transactions-landing/'>Forsyth Bar Cash management</a><span class='split__right'><i class='i i-map-caret-down'></i></span></p>"
+                          "data": "<p class='split'><a href='/pages/forbar-transactions-landing/'>Forsyth Bar Cash management</a><span class='split__right'><i class='i i-caret-right'></i></span></p>"
                         } 
                       ]
                     }
@@ -200,7 +207,7 @@
                       "data":[
                         {
                           "type": "raw",
-                          "data": "<p class='split'><a href='/pages/forbar-transactions-landing/'>Forsyth Bar Client</a><span class='split__right'><i class='i i-map-caret-down'></i></span></p>"
+                          "data": "<p class='split'><a href='/pages/forbar-transactions-landing/'>Forsyth Bar Client</a><span class='split__right'><i class='i i-caret-right'></i></span></p>"
                         } 
                       ]
                     }
@@ -247,7 +254,7 @@
                       "data":[
                         {
                           "type": "raw",
-                          "data": "<p class='split'><a href='/pages/forbar-transactions-landing/'>Forsyth Bar Cash management</a><span class='split__right'><i class='i i-map-caret-down'></i></span></p>"
+                          "data": "<p class='split'><a href='/pages/forbar-transactions-landing/'>Forsyth Bar Cash management</a><span class='split__right'><i class='i i-caret-right'></i></span></p>"
                         } 
                       ]
                     }
@@ -267,7 +274,7 @@
                       "data":[
                         {
                           "type": "raw",
-                          "data": "<p class='split'><a href='/pages/forbar-transactions-landing/'>Forsyth Bar Client</a><span class='split__right'><i class='i i-map-caret-down'></i></span></p>"
+                          "data": "<p class='split'><a href='/pages/forbar-transactions-landing/'>Forsyth Bar Client</a><span class='split__right'><i class='i i-caret-right'></i></span></p>"
                         } 
                       ]
                     }

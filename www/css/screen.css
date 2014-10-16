@@ -275,6 +275,14 @@ img {
 /***************************
     Icon sizes
 ****************************/
+.i-caret-down, .i-caret-up {
+  width: 0.5em;
+  height: 0.25em; }
+
+.i-caret-left, .i-caret-right {
+  width: 0.25em;
+  height: 0.5em; }
+
 .i-forsyth-barr-logo {
   width: 11em;
   height: 2.5em; }

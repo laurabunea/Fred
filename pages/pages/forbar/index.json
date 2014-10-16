@@ -5,7 +5,6 @@
   "template":"client.j2",
   "client":"Forbar",
   "data": [ 
-
     {
       "type":"layout/dynamic",
       "grid_modifier":"grid--middle",
@@ -28,14 +27,32 @@
     {
       "type":"layout/dynamic",
       "grid_modifier":"grid--middle",
-      "external_theme":"theme--white border-b",
+      "external_theme":"theme--white ",
       "container_padding":"pt-m pb-m layout",
       "columns":[
         {
+          "column_class":"",
           "data":[
-            "<a href='/pages/forbar-transactions/'>Sign in</a>"
+            {
+              "type": "links/btn",
+              "label": "Sign in",
+              "theme": "plain",
+              "size":"medium",
+              "href":"/pages/forbar-transactions/",
+              "block":true,
+              "soft":"true",
+              "class":"u-uppercase"
+            }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--middle",
+      "external_theme":"theme--white",
+      "container_padding":"pt-m pb-xxxl layout",
+      "columns":[
         {
           "column_class":"half content-block",
           "data":[
