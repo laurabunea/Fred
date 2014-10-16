@@ -212,16 +212,16 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
 .btn--plain {
     background: transparent;
     color: $base-font-color;
-    border:1px solid $base-font-color;
-    &:visited { color: $base-link-color;}
+    border:1px solid $light-grey;
+
+    &:visited { color: $base-font-color;}
 
     &:hover {
-        background: $base-font-color;
-        color:$white;
+        
+        color:$dark-grey;
     }
     &:active {
-        color:$white;
-        background: #293f54;
+        color:$light-grey;
     }
 }
 

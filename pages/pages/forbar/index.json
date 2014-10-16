@@ -28,7 +28,7 @@
       "type":"layout/dynamic",
       "grid_modifier":"grid--middle",
       "external_theme":"theme--white",
-      "container_padding":"pt-m layout",
+      "container_padding":"pt-xxxl pb-xxxl layout",
       "columns":[
         {
           "data":[
@@ -46,11 +46,12 @@
                   "label":"Password",
                   "name":"emailinput",
                   "placeholder":"Password"
-                }
-                  
-                  
+                }  
               ]
-              
+            },
+            {
+              "type": "form/checkbox",
+              "label":"Remember me" 
             }
           ]
         },
@@ -64,36 +65,34 @@
               "href":"/pages/forbar-transactions/",
               "block":true,
               "soft":"true",
-              "class":"u-uppercase"
+              "class":"u-uppercase mb-l"
             }
           ]
         },
-    
-       
         {
-          "column_class":"half content-block",
+          "column_class":"medium-half",
           "data":[
             {
               "type": "links/btn",
               "label": "forgot password",
               "theme": "plain",
-              "size":"x-small",
+              "size":"small",
               "href":"/pages/forbar/",
               "block":true,
               "soft":"true",
-              "class":"u-uppercase"
+              "class":"u-uppercase mb-l--small-down"
             }
           ]
         },
         {
-          "column_class":"half content-block",
+          "column_class":"medium-half content-block",
           "data":[
             {
               "type": "links/btn",
               "label": "register",
               "theme": "plain",
               "href":"/pages/forbar/",
-              "size":"x-small",
+              "size":"small",
               "block":true,
               "soft":"true",
               "class":"u-uppercase"

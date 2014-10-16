@@ -12,12 +12,11 @@
 //input colours
 $input-bg:                       #fff;
 $input-bg-disabled:              $light-grey;
-$input-color:                    $mid-grey;
+$input-color:                    $base-font-color;
 $input-border:                   $light-grey;
 $input-border-radius:            4;
 $input-border-focus:             #66afe9;
-$input-color-placeholder:        $dark-grey;
-$input-placeholder: $mid-grey;
+$input-placeholder:              $base-font-color;
 
 
 //validation states
