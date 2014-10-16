@@ -62,7 +62,7 @@
               "label": "Sign in",
               "theme": "plain",
               "size":"medium",
-              "href":"/pages/forbar-transactions/",
+              "href":"/pages/forbar-accounts/",
               "block":true,
               "soft":"true",
               "class":"u-uppercase mb-l"
