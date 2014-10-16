@@ -171,11 +171,12 @@
                         {
                           "type": "layout/content-block",
                           "padding":"pt-s pb-s",
+                          "class":"u-relative",
                           "data":[
                             {
                               "type": "type/p",
-                              "data": "<span class='text--light-grey'>NZD</span> 315,472.50",
-                              "class":"u-text-right"
+                              "data": "<span class='text--light-grey'>NZD</span> 315,472.50<i class='u-absolute u-absolute-middle-right i i-caret-right'></i>",
+                              "class":"u-text-right mb-0 mr-m"
                             }
                           ]
                         }
@@ -220,11 +221,17 @@
                         {
                           "type": "layout/content-block",
                           "padding":"pt-s pb-s",
+                          "class":"u-relative",
                           "data":[
                             {
                               "type": "type/p",
-                              "data": "<span class='text--light-grey'>AUD</span> 315,472.50<br /><span class='u-text-right text--light-grey'> NZD 315,472.50</span>",
-                              "class":"u-text-right"
+                              "data": "<span class='text--light-grey'>AUD</span> 315,472.50<i class='u-absolute u-absolute-middle-right i i-caret-right'></i>",
+                              "class":"u-text-right mb-0 mr-m"
+                            },
+                            {
+                              "type": "type/p",
+                              "data": "<span class='u-text-right text--light-grey'> NZD 315,472.50</span>",
+                              "class":"u-text-right mr-m"
                             }
                           ]
                         }
@@ -264,16 +271,22 @@
                       ]
                     },
                     {
-                      "column_class":"half content-block",
+                      "column_class":"half",
                       "data":[
                         {
                           "type": "layout/content-block",
                           "padding":"pt-s pb-s",
+                          "class":"u-relative",
                           "data":[
                             {
                               "type": "type/p",
-                              "data": "<span class='text--light-grey'>USD</span> 315,472.50<br /><span class='u-text-right text--light-grey'> NZD 315,472.50</span>",
-                              "class":"u-text-right"
+                              "data": "<span class='text--light-grey'>USD</span> 315,472.50<i class='u-absolute u-absolute-middle-right i i-caret-right'></i>",
+                              "class":"u-text-right mb-0 mr-m"
+                            },
+                            {
+                              "type": "type/p",
+                              "data": "<span class='u-text-right text--light-grey'> NZD 315,472.50</span>",
+                              "class":"u-text-right mr-m"
                             }
                           ]
                         }

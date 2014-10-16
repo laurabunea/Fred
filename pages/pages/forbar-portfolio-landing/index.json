@@ -116,7 +116,7 @@
                           "data":[
                             {
                               "type": "type/p",
-                              "data": "<span class='text--light-grey'>NZD</span> 315,472.50",
+                              "data": "<span class='text--light-grey'>NZD</span> 315,472.50 <span class='ml-xs'><i class='i i-caret-right'></i></span>",
                               "class":"u-text-right"
                             }
                           ]
@@ -147,7 +147,7 @@
                           "data": [
                             {
                               "type": "type/p",
-                              "data": "<a href='/pages/forbar-portfolio-child/'>Domestic Property</a>"
+                              "data": "<a href='/pages/forbar-portfolio-child/'>Domestic Property</a> "
                             }
                           ]
                         }
@@ -162,7 +162,7 @@
                           "data":[
                             {
                               "type": "type/p",
-                              "data": "<span class='text--light-grey'>NZD</span> 315,472.50",
+                              "data": "<span class='text--light-grey'>NZD</span> 315,472.50 <span class='ml-xs'><i class='i i-caret-right'></i></span>",
                               "class":"u-text-right"
                             }
                           ]
@@ -208,7 +208,7 @@
                           "data":[
                             {
                               "type": "type/p",
-                              "data": "<span class='text--light-grey'>NZD</span> 315,472.50",
+                              "data": "<span class='text--light-grey'>NZD</span> 315,472.50 <span class='ml-xs'><i class='i i-caret-right'></i></span>",
                               "class":"u-text-right"
                             }
                           ]
