@@ -1574,7 +1574,7 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   color: #999;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #5e5c5c;
+  border: 1px solid #ddd;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
   .form-control:focus {
@@ -1749,13 +1749,13 @@ input[type="radio"][disabled], input[type="radio"].disabled, fieldset[disabled] 
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 4px;
   border-top-right-radius: 0.25rem;
-  border-top: 1px solid #5e5c5c; }
+  border-top: 1px solid #ddd; }
 .input--group .form-control:last-child {
   border-bottom-left-radius: 4px;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 4px;
   border-bottom-right-radius: 0.25rem;
-  border-bottom: 1px solid #5e5c5c; }
+  border-bottom: 1px solid #ddd; }
 
 /*------------------------------------*\
     #BREADCRUMBS
