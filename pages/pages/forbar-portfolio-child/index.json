@@ -52,6 +52,49 @@
     },
     {
       "type":"layout/dynamic",
+      "container_padding":"layout",
+      "external_theme":"bg--white",
+      "columns": [
+        {
+          "data":[
+            {
+              "type": "layout/table",
+              "responsive": true,
+              "data": {
+                  "thead": [
+                      { "data": "Asset" },
+                      { "data": "Quantity" },
+                      { "data": "Market price" },
+                      { "data": "Market value" },
+                      { "data": "Total value" },
+                      { "data": "% Portfolio" }
+                  ],
+                  "tbody": [
+                      [
+                          { "data": "ANZ Bank New Zealand Limited Perpetual 5.28%", "th": true },
+                          { "data": "40,000"    },
+                          { "data": "0.996"     },
+                          { "data": "40,711.20" },
+                          { "data": "42,840.00" },
+                          { "data": "5.61"      }
+                      ],
+                      [
+                          { "data": "ASB Capital No.2 Limited Perpetual Preference Shares 4.62%", "th": true },
+                          { "data": "15,000"    },
+                          { "data": "0.896"     },
+                          { "data": "13,440.00" },
+                          { "data": "12,982.50" },
+                          { "data": "1.89%"     }
+                      ]
+                  ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
       "external_theme":"bg--light-grey",
       "container_padding":"layout pt-xs pb-xs",
       "columns":[
