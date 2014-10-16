@@ -7,12 +7,11 @@
   "data": [ 
     {
       "type": "global/global-nav",
-      "external_theme":"theme--dark-grey",
-      "logo":"-logo",
+      "external_theme":"theme--dark-blue",
+      "logo":"forsyth-barr-logo",
       "uppercase":true,
       "small_text":true,
-      "container_padding":"layout pt-xxs pb-xxs ",
-      "text":"<a href='/pages/forbar/'>Home</a>",
+      "container_padding":"pt-s pb-s  ",
       "pages":[
         {
           "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
@@ -21,7 +20,7 @@
     },
     {
       "type":"layout/dynamic",
-      "external_theme":"theme--mid-grey",
+      "external_theme":"theme--dark-blue",
       "container_padding":"layout",
       "columns":[
         {
@@ -53,44 +52,55 @@
     },
     {
       "type":"layout/dynamic",
-      "external_theme":"bg--light-grey",
-      "container_padding":"layout pt-xs pb-xs",
+      "external_theme":"bg--white",
+      "container_padding":"layout",
       "columns":[
         {
-          "column_size":"half",
-          "column_class":"content-block",
           "data":[
             {
-              "type": "type/text-tiny",
-              "data": "30 September 2014",
-              "class":"u-uppercase"
-            }  
-          ]
-        },
-        {
-          "column_size":"quarter",
-          "column_class":"content-block u-text-right",
-          "data":[
-            {
-              "type": "type/text-tiny",
-              "data": "Direct/Credit",
-              "class":"u-uppercase"
-            }  
-          ]
-        },
-        {
-          "column_size":"quarter",
-          "column_class":"content-block u-text-right",
-          "data":[
-            {
-              "type": "type/text-tiny",
-              "data": "balance",
-              "class":"u-uppercase"
-            }  
+              "type":"layout/internal-grid",
+              "container_padding":"pt-xs pb-xs",
+              "columns":[
+                {
+                  "column_size":"half",
+                  "column_class":"content-block",
+                  "data":[
+                    {
+                      "type": "type/text-tiny",
+                      "data": "30 September 2014",
+                      "class":"u-uppercase"
+                    }  
+                  ]
+                },
+                {
+                  "column_size":"quarter",
+                  "column_class":"content-block u-text-right",
+                  "data":[
+                    {
+                      "type": "type/text-tiny",
+                      "data": "Direct/Credit",
+                      "class":"u-uppercase"
+                    }  
+                  ]
+                },
+                {
+                  "column_size":"quarter",
+                  "column_class":"content-block u-text-right",
+                  "data":[
+                    {
+                      "type": "type/text-tiny",
+                      "data": "balance",
+                      "class":"u-uppercase"
+                    }  
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]
     },
+    
     {
       "type":"layout/dynamic",
       "external_theme":"theme--white",

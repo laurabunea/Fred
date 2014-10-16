@@ -119,6 +119,9 @@ $link-color:
 .theme--light {
   background-color:#f0f0f0;
   color:#3d4c54;
+  a {
+    color:$base-font-color;
+  }
 }
 
 %theme--grey {
@@ -221,11 +224,30 @@ $link-color:
 .bt--fred-dark {
   border-top:1px solid darken(#37b67f, 5%);
 }
+
+.theme--dark-blue {
+  background-color:$dark-blue;
+  color:$white;
+  a {
+    color:$white;
+  }
+}
+.theme--mid-blue {
+  background-color:lighten($dark-blue, 10%);
+  color:$white;
+  a {
+    color:$white;
+  }
+}
+
 // ----------------------------------------------------------------------------
 // Colours
 // ----------------------------------------------------------------------------
 //some importants to make sure these overide themes and component styles
 //bg colours
+
+.bg--dark-blue { background-color:#0D334E!important;}
+.bg--mid-blue { background-color:lighten(#0D334E, 5%);}
 .bg--black {  background:$black!important;  }
 .bg--white {  background:$white!important;  }
 .bg--light-blue {background-color:$light-blue!important;}
@@ -263,7 +285,7 @@ $link-color:
 .border--light-grey {  border-color:$light-grey!important; }
 .border--dark-grey {  border-color:$dark-grey!important; }
 .border--mid-grey {  border-color:$mid-grey!important; }
-
+.border--dark-blue {  border-color:$dark-blue!important; }
 // .highlight-top { 
 //   @include rem(padding-top,$space-l);
 //   border-top-width: 4px;

@@ -1,18 +1,17 @@
 {
   "title": "pages",
-  "slug":"forbar-portfolio",
+  "slug":"forbar-portfolio-child",
   "headline": "Page one",
   "template":"client.j2",
   "client":"Forbar",
   "data": [ 
     {
       "type": "global/global-nav",
-      "external_theme":"theme--dark-grey",
-      "logo":"-logo",
+      "external_theme":"theme--dark-blue",
+      "logo":"forsyth-barr-logo",
       "uppercase":true,
       "small_text":true,
-      "container_padding":" pt-xxs pb-xxs layout",
-      "text":"<a href='/pages/forbar/'>Home</a>",
+      "container_padding":"pt-s pb-s  ",
       "pages":[
         {
           "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
@@ -21,7 +20,7 @@
     },
     {
       "type":"layout/dynamic",
-      "external_theme":"theme--mid-grey",
+      "external_theme":"theme--dark-blue",
       "container_padding":"layout",
       "columns":[
         {
@@ -82,117 +81,137 @@
       "type":"layout/dynamic",
       "external_theme":"bg--white border-b border--light-grey",
       "container_padding":"layout",
-    
       "columns":[
         {
-          "column_class":"half",
           "data":[
             {
-              "type": "layout/content-block",
-              "padding":"pt-s pb-s",
-              "data": [
+              "type":"layout/content-block",
+              "theme":"border-b border--light-grey",
+              "data":[
                 {
-                  "type": "type/p",
-                  "data": "Auckland International Airport Limited"
+                  "type":"layout/internal-grid",
+                  "columns":[
+                    {
+                      "column_class":"half",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data": [
+                            "Auckland International Airport" 
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "column_class":"half content-block",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data":[
+                            {
+                              "type": "type/p",
+                              "data": "<span class='text--light-grey'>NZD</span> 315,472.50",
+                              "class":"u-text-right"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
           ]
         },
         {
-          "column_class":"half content-block",
           "data":[
             {
-              "type": "layout/content-block",
-              "padding":"pt-s pb-s",
+              "type":"layout/content-block",
+              "theme":"border-b border--light-grey",
               "data":[
                 {
-                  "type": "type/p",
-                  "data": "315,472.50",
-                  "class":"u-text-right"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type":"layout/dynamic",
-      "external_theme":"bg--white border-b border--light-grey",
-      "container_padding":"layout",
-      "columns":[
-        {
-          "column_class":"half",
-          "data":[
-            {
-              "type": "layout/content-block",
-              "padding":"pt-s pb-s",
-              "data": [
-                {
-                  "type": "type/p",
-                  "data": "Ebos Group Limited"
+                  "type":"layout/internal-grid",
+                  "columns":[
+                    {
+                      "column_class":"half",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data": [
+                            "Ebos Group Limited" 
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "column_class":"half content-block",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data":[
+                            {
+                              "type": "type/p",
+                              "data": "<span class='text--light-grey'>NZD</span> 315,472.50",
+                              "class":"u-text-right"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
           ]
         },
         {
-          "column_class":"half content-block",
           "data":[
             {
-              "type": "layout/content-block",
-              "padding":"pt-s pb-s",
+              "type":"layout/content-block",
+              "theme":"border-b border--light-grey",
               "data":[
                 {
-                  "type": "type/p",
-                  "data": "25,422.20",
-                  "class":"u-text-right"
+                  "type":"layout/internal-grid",
+                  "columns":[
+                    {
+                      "column_class":"half",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data": [
+                            "Fletcher building Limited" 
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "column_class":"half content-block",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data":[
+                            {
+                              "type": "type/p",
+                              "data": "<span class='text--light-grey'>NZD</span> 315,472.50",
+                              "class":"u-text-right"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
           ]
         }
       ]
-    },
-    {
-      "type":"layout/dynamic",
-      "external_theme":"bg--white border-b border--light-grey",
-      "container_padding":"layout",
-      "columns":[
-        {
-          "column_class":"half",
-          "data":[
-            {
-              "type": "layout/content-block",
-              "padding":"pt-s pb-s",
-              "data": [
-                {
-                  "type": "type/p",
-                  "data": "Fletcher Building Limited"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "column_class":"half content-block",
-          "data":[
-            {
-              "type": "layout/content-block",
-              "padding":"pt-s pb-s",
-              "data":[
-                {
-                  "type": "type/p",
-                  "data": " 13,472.50",
-                  "class":"u-text-right"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-      
+    }  
   ]
 }

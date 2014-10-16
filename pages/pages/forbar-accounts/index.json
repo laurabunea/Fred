@@ -7,12 +7,11 @@
   "data": [ 
     {
       "type": "global/global-nav",
-      "external_theme":"theme--dark-grey",
-      "logo":"-logo",
+      "external_theme":"theme--dark-blue",
+      "logo":"forsyth-barr-logo",
       "uppercase":true,
       "small_text":true,
-      "container_padding":" pt-xxs pb-xxs layout",
-      "text":"<a href='/pages/forbar/'>Home</a>",
+      "container_padding":"pt-s pb-s  ",
       "pages":[
         {
           "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
@@ -22,7 +21,7 @@
     {
       "type":"layout/dynamic",
       "grid_modifier":"grid--middle",
-      "external_theme":"theme--mid-grey",
+      "external_theme":"theme--dark-blue",
       "container_padding":"layout",
       "columns":[
         {
@@ -55,12 +54,11 @@
     {
       "type":"layout/dynamic",
       "grid_modifier":"grid--middle",
-      "external_theme":"theme--white border-b ",
+      "external_theme":"theme--white ",
       "container_padding":" layout",
       "bigLink":true,
       "columns":[
         {
-          "column_class":"two-thirds content-block",
           "data":[
             {
               "type": "layout/content-block",
@@ -77,22 +75,13 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "type":"layout/dynamic",
-      "grid_modifier":"grid--middle",
-      "external_theme":"theme--white border-b ",
-      "container_padding":" layout",
-      "bigLink":true,
-      "columns":[
+        },
         {
-          "column_class":" content-block",
           "data":[
             {
               "type": "layout/content-block",
               "padding":"pt-s pb-s",
+              "theme":"border--light-grey border-t",
               "data": [
                 {
                   "type": "type/h3",
@@ -108,6 +97,7 @@
         }
       ]
     }
+    
   ]
 
 }

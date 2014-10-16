@@ -5,14 +5,13 @@
   "template":"client.j2",
   "client":"Forbar",
   "data": [ 
-    {
+   {
       "type": "global/global-nav",
-      "external_theme":"theme--dark-grey",
-      "logo":"-logo",
+      "external_theme":"theme--dark-blue",
+      "logo":"forsyth-barr-logo",
       "uppercase":true,
       "small_text":true,
-      "container_padding":" pt-xxs pb-xxs layout",
-      "text":"<a href='/pages/forbar/'>Home</a>",
+      "container_padding":"pt-s pb-s  ",
       "pages":[
         {
           "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
@@ -22,7 +21,7 @@
     {
       "type":"layout/dynamic",
       "grid_modifier":"grid--middle",
-      "external_theme":"theme--mid-grey",
+      "external_theme":"theme--dark-blue",
       "container_padding":"layout",
       "columns":[
         {
@@ -55,101 +54,121 @@
     {
       "type":"layout/dynamic",
       "grid_modifier":"grid--middle",
-      "external_theme":"theme--white border-b ",
+      "external_theme":"theme--white",
       "container_padding":" layout",
-      "bigLink":true,
       "columns":[
         {
-          "column_class":"two-thirds content-block",
-          "data":[
+          "data": [
             {
-              "type": "layout/content-block",
-              "padding":"pt-s pb-s",
-              "data": [
+              "type":"layout/content-block",
+              "theme":"border-b border--light-grey",
+              "data":[
                 {
-                  "type": "type/h3",
-                  "data": "<a href='/pages/forbar/' class='test'>TM Herrick</a>",
-                  "span":{
-                    "data":"1380016",
-                    "class":"u-block u-light font-size-xs"
-                  }
+                  "type":"layout/internal-grid",
+                  "grid_modifier":"grid--middle",
+                  "bigLink":true,
+                  "columns":[
+                    {
+                      "column_class":"two-thirds",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data": [
+                            {
+                              "type": "type/h3",
+                              "data": "<a href='/pages/forbar/' class='test'>TM Herrick</a>",
+                              "span":{
+                                "data":"1380016",
+                                "class":"u-block u-light font-size-xs"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "column_class":"third",
+                      "data":[
+                        {
+                            "type": "links/btn",
+                            "label": "delete",
+                            "theme": "plain",
+                            "size":"x-small",
+                            "soft":"true",
+                            "class": "u-right u-uppercase "
+                        }
+                      ]
+                    }
+                  ]
+                }
+           
+              ]
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "type":"layout/internal-grid",
+              "grid_modifier":"grid--middle",
+              "bigLink":true,
+              "columns":[
+                {
+                  "column_class":"two-thirds ",
+                  "data":[
+                    {
+                      "type": "layout/content-block",
+                      "padding":"pt-s pb-s",
+                      "data": [
+                        {
+                          "type": "type/h3",
+                          "data": "<a href='/pages/forbar/' class='test'>M A Broad</a>",
+                          "span":{
+                            "data":"1380016",
+                            "class":"u-block u-light font-size-xs"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "column_class":"third",
+                  "data":[
+                    {
+                        "type": "links/btn",
+                        "label": "delete",
+                        "theme": "plain",
+                        "size":"x-small",
+                        "soft":"true",
+                        "class": "u-right u-uppercase "
+                    }
+                  ]
                 }
               ]
             }
           ]
         },
         {
-          "column_class":"third content-block ",
           "data":[
             {
-                "type": "links/btn",
-                "label": "delete",
-                "theme": "plain",
-                "size":"x-small",
-                "soft":"true",
-                "class": "u-right u-uppercase "
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type":"layout/dynamic",
-      "grid_modifier":"grid--middle",
-      "external_theme":"theme--white border-b ",
-      "container_padding":" layout",
-      "bigLink":true,
-      "columns":[
-        {
-          "column_class":"two-thirds content-block",
-          "data":[
-            {
-              "type": "layout/content-block",
-              "padding":"pt-s pb-s",
-              "data": [
+              "type":"layout/internal-grid",
+              "container_padding":"pt-m pb-m",
+              "columns":[
                 {
-                  "type": "type/h3",
-                  "data": "<a href='/pages/forbar/' class='test'>M A Broad</a>",
-                  "span":{
-                    "data":"1380016",
-                    "class":"u-block u-light font-size-xs"
-                  }
+                  "data":[
+                    {
+                        "type": "links/btn",
+                        "label": "ADD AN INVESTMENT ACCOUNT",
+                        "theme": "plain",
+                        "size":"small",
+                        "block":true,
+                        "soft":"true"
+                    }
+                  ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          "column_class":"third content-block ",
-          "data":[
-            {
-                "type": "links/btn",
-                "label": "delete",
-                "theme": "plain",
-                "size":"x-small",
-                "soft":"true",
-                "class": "u-right u-uppercase "
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type":"layout/dynamic",
-      "grid_modifier":"grid--middle",
-      "external_theme":"theme--white border-b",
-      "container_padding":"pt-m pb-m layout",
-      "columns":[
-        {
-          "column_class":"",
-          "data":[
-            {
-                "type": "links/btn",
-                "label": "ADD AN INVESTMENT ACCOUNT",
-                "theme": "plain",
-                "size":"small",
-                "block":true,
-                "soft":"true"
             }
           ]
         }

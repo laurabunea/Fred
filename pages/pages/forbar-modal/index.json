@@ -7,12 +7,11 @@
   "data": [ 
     {
       "type": "global/global-nav",
-      "external_theme":"theme--dark-grey",
-      "logo":"-logo",
+      "external_theme":"theme--dark-blue",
+      "logo":"forsyth-barr-logo",
       "uppercase":true,
       "small_text":true,
-      "container_padding":" pt-xxs pb-xxs layout",
-      "text":"<a href='/pages/forbar/'>Home</a>",
+      "container_padding":"pt-s pb-s  ",
       "pages":[
         {
           "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"

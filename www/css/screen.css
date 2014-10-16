@@ -275,6 +275,10 @@ img {
 /***************************
     Icon sizes
 ****************************/
+.i-forsyth-barr-logo {
+  width: 11em;
+  height: 2.5em; }
+
 .i-search {
   width: 1em;
   height: 1em; }
@@ -793,6 +797,11 @@ sub {
 .layout {
   box-sizing: border-box; }
 
+.layout--quarter {
+  box-sizing: border-box;
+  padding-left: 12.5%;
+  padding-right: 12.5%; }
+
 @media only screen and (min-width: 60em) {
   .layout--half {
     padding-left: 25%;
@@ -1042,6 +1051,8 @@ sub {
 .theme--light {
   background-color: #f0f0f0;
   color: #3d4c54; }
+  .theme--light a {
+    color: #5e5c5c; }
 
 .theme--grey {
   background-color: #D7D7D7;
@@ -1120,6 +1131,24 @@ sub {
 
 .bt--fred-dark {
   border-top: 1px solid #31a271; }
+
+.theme--dark-blue {
+  background-color: #0D334E;
+  color: #fff; }
+  .theme--dark-blue a {
+    color: #fff; }
+
+.theme--mid-blue {
+  background-color: #14517a;
+  color: #fff; }
+  .theme--mid-blue a {
+    color: #fff; }
+
+.bg--dark-blue {
+  background-color: #0D334E !important; }
+
+.bg--mid-blue {
+  background-color: #114364; }
 
 .bg--black {
   background: #000 !important; }
@@ -1222,6 +1251,9 @@ sub {
 
 .border--mid-grey {
   border-color: #999 !important; }
+
+.border--dark-blue {
+  border-color: #0D334E !important; }
 
 /*------------------------------------*\
     #PLAYPEN
@@ -4796,8 +4828,7 @@ pre, code {
  */
 .is-disabled {
   pointer-events: none;
-  cursor: default;
-  opacity: 0.5; }
+  cursor: default; }
 
 .is-visible {
   visibility: visible; }

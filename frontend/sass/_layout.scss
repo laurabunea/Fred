@@ -232,6 +232,12 @@ $section-desktop:64;
     @extend %layout-right;
 }
 
+.layout--quarter {
+    box-sizing:border-box;
+    padding-left:12.5%;
+    padding-right:12.5%;
+}
+
 //todo test to see if i need col - usedon kb prototype
 .layout--left, 
 .col.layout--left { @extend %layout-left; }

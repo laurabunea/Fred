@@ -7,59 +7,51 @@
   "data": [ 
     {
       "type": "global/global-nav",
-      "external_theme":"theme--dark-grey",
-      "logo":"-logo",
+      "external_theme":"theme--dark-blue",
+      "logo":"forsyth-barr-logo",
       "uppercase":true,
       "small_text":true,
-      "container_padding":" pt-xxs pb-xxs layout",
-      "text":"<a href='/pages/forbar/'>Home</a>",
+      "container_padding":"pt-s pb-s  ",
       "pages":[
         {
           "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
         }
       ]
     },
-    
     {
       "type":"layout/dynamic",
-      "external_theme":"theme--mid-grey",
+      "external_theme":"theme--dark-blue",
       "container_padding":"layout",
       "columns":[
         {
           "data":[
             {
               "type":"layout/content-block",
-              "padding":" pt-xl pb-xl",
+              "padding":"pt-xl pb-xl",
               "data":[
                 {
-                  "type": "links/breadcrumb",
-                  "class":"mb-0",
-                  "data": [
-                    {
-                        "url": "/pages/forbar-portfolio/",
-                        "title": "PORTFOLIO"
-                    }
-                      
-                  ]
+                  "type": "type/h2",
+                  "data": "T M Herrick"
                 },
                 {
-                  "type": "type/h2",
-                  "data": "New Zealand Dollar"
-                }
+                  "type": "type/text-small",
+                  "data": "1276351"
+                } 
               ]
             }
           ]
         }
       ]
     },
-
     {
       "type":"layout/dynamic",
-      "external_theme":"theme--mid-grey bt--primary border--light-grey",
-      "container_padding":"layout",
+      "remove_column_gutters":true,
+      "container_padding":"layout ",
+      "external_theme":"bg--dark-blue ",
       "columns":[
         {
           "column_size":"third",
+          "column_theme":"theme--mid-blue",
           "data":[
             {
               "type":"layout/content-block",
@@ -69,7 +61,7 @@
                   "label": "transactions",
                   "block":true,
                   "href":"/pages/forbar-transactions/",
-                  "class":"u-uppercase font-size-xs"
+                  "class":"u-uppercase font-size-xs "
                 } 
               ]
             }
@@ -77,7 +69,7 @@
         },
         {
           "column_size":"third",
-          "column_theme":"theme--dark-grey",
+          "column_theme":"theme--light ",
           "data":[
             {
               "type":"layout/content-block",
@@ -86,7 +78,7 @@
                   "type": "links/btn",
                   "label": "portfolio",
                   "block":true,
-                  "href":"",
+                  "href":"/pages/forbar-portfolio/",
                   "class":"u-uppercase font-size-xs is-disabled"
                 } 
               ]
@@ -95,6 +87,7 @@
         },
         {
           "column_size":"third",
+          "column_theme":"theme--mid-blue ",
           "data":[
             {
               "type":"layout/content-block",
@@ -104,7 +97,7 @@
                   "label": "account details",
                   "block":true,
                   "href":"",
-                  "class":"u-uppercase font-size-xs"
+                  "class":"u-uppercase font-size-xs "
                 }  
               ]
             }
@@ -114,21 +107,25 @@
     },
     {
       "type":"layout/dynamic",
-      "external_theme":"theme--white",
-      "container_padding":"layout",
-      "grid_modifier":"grid--center",
+      "external_theme":"bg--white ",
+      "container_padding":"layout pt-l pb-l",
       "columns":[
         {
           "data":[
             {
-              "type":"layout/content-block",
-              "padding":" pt-xl pb-xl",
-              "data":[
-                "NZD 712, 134.53",
+              "type":"layout/internal-grid",
+              "grid_modifier":"grid--center",
+              "columns":[
                 {
-                  "type": "type/text-tiny",
-                  "data": "AS AT FRIDAY 12 SEPTEMBER"
+                  "data":[
+                    "NZD 712, 134.53",
+                    {
+                      "type": "type/text-tiny",
+                      "data": "AS AT FRIDAY 12 SEPTEMBER"
+                    } 
+                  ]
                 }
+
               ]
             }
           ]
@@ -137,127 +134,158 @@
     },
     {
       "type":"layout/dynamic",
-      "external_theme":"theme--white bt--primary border--light-grey",
+      "external_theme":"bg--white border-b border--light-grey",
       "container_padding":"layout",
       "bigLink":true,
       "columns":[
         {
-          "column_class":"two-thirds",
           "data":[
             {
               "type":"layout/content-block",
-              "padding":" pt-s pb-s",
+              "theme":"border-b border--light-grey",
               "data":[
-                 {
-                  "type": "type/text-with-icon",
-                  "text": "New Zealand Dollar",
-                  "svg":"box",
-                  "class":"bg--light-grey",
-                  "href":"/pages/forbar-portfolio-landing/"
+                {
+                  "type":"layout/internal-grid",
+                  "columns":[
+                    {
+                      "column_class":"half",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data": [
+                            { 
+                              "type": "type/text-with-icon",
+                              "text": "New Zealand Dollar",
+                              "svg":"box",
+                              "class":"bg--light-grey",
+                              "href":"/pages/forbar-portfolio-landing/"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "column_class":"half content-block",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data":[
+                            {
+                              "type": "type/p",
+                              "data": "<span class='text--light-grey'>NZD</span> 315,472.50",
+                              "class":"u-text-right"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
           ]
         },
         {
-          "column_class":"third",
           "data":[
             {
               "type":"layout/content-block",
-              "padding":"pt-s pb-s",
+              "theme":"border-b border--light-grey",
               "data":[
                 {
-                  "type": "raw",
-                  "data": "<p class='u-text-right'><span class='text--light-grey'>NZD</span> 315,568.00</p>"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type":"layout/dynamic",
-      "external_theme":"theme--white bt--primary border--light-grey",
-      "container_padding":"layout",
-      "bigLink":true,
-      "columns":[
-        {
-          "column_class":"two-thirds",
-          "data":[
-            {
-              "type":"layout/content-block",
-              "padding":" pt-s pb-s",
-              "data":[
-                {
-                  "type": "type/text-with-icon",
-                  "text": "Australian Dollar",
-                  "svg":"box",
-                  "class":"bg--mid-grey",
-                  "href":"/pages/forbar-portfolio-landing/"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "column_class":"third",
-          "data":[
-            {
-              "type":"layout/content-block",
-              "padding":"pt-s pb-s",
-              "data":[
-                {
-                  "type": "raw",
-                  "data": "<p class='u-text-right'><span class='text--light-grey'>AUD</span> 315,472.50<br /><span class='u-text-right text--light-grey'> NZD 315,472.50</span></p>"
-                }
-                
-              ]
-            }
-          ]
-        }
-      ]
-    },
-        {
-      "type":"layout/dynamic",
-      "external_theme":"theme--white bt--primary border--light-grey",
-      "container_padding":"layout",
-      "bigLink":true,
-      "columns":[
-        {
-          "column_class":"two-thirds",
-          "data":[
-            {
-              "type":"layout/content-block",
-              "padding":"pt-s pb-s",
-              "data":[
-                {
-                  "type": "type/text-with-icon",
-                  "text": "US Dollar",
-                  "svg":"box",
-                  "href":"/pages/forbar-portfolio-landing/",
-                  "class":"bg--dark-grey"
+                  "type":"layout/internal-grid",
+                  "columns":[
+                    {
+                      "column_class":"half",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data": [
+                            {
+                              "type": "type/text-with-icon",
+                              "text": "Australian Dollar",
+                              "svg":"box",
+                              "class":"bg--mid-grey",
+                              "href":"/pages/forbar-portfolio-landing/"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "column_class":"half content-block",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data":[
+                            {
+                              "type": "type/p",
+                              "data": "<span class='text--light-grey'>AUD</span> 315,472.50<br /><span class='u-text-right text--light-grey'> NZD 315,472.50</span>",
+                              "class":"u-text-right"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
           ]
         },
         {
-          "column_class":"third",
           "data":[
             {
               "type":"layout/content-block",
-              "padding":"pt-s pb-s",
+              "theme":"border-b border--light-grey",
               "data":[
                 {
-                  "type": "raw",
-                  "data": "<p class='u-text-right'><span class='text--light-grey'>USD</span> 315,472.50<br /><span class='u-text-right text--light-grey'> NZD 315,472.50</span></p>"
+                  "type":"layout/internal-grid",
+                  "columns":[
+                    {
+                      "column_class":"half",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data": [
+                            {
+                              "type": "type/text-with-icon",
+                              "text": "US Dollar",
+                              "svg":"box",
+                              "href":"/pages/forbar-portfolio-landing/",
+                              "class":"bg--dark-grey"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "column_class":"half content-block",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data":[
+                            {
+                              "type": "type/p",
+                              "data": "<span class='text--light-grey'>USD</span> 315,472.50<br /><span class='u-text-right text--light-grey'> NZD 315,472.50</span>",
+                              "class":"u-text-right"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
           ]
         }
       ]
-    }
+    } 
   ]
 }

@@ -5,11 +5,11 @@
   "template":"client.j2",
   "client":"Forbar",
   "data": [ 
-   
+
     {
       "type":"layout/dynamic",
       "grid_modifier":"grid--middle",
-      "external_theme":"theme--mid-grey",
+      "external_theme":"theme--dark-blue",
       "container_padding":"layout",
       "columns":[
         {
@@ -58,7 +58,7 @@
               "type": "links/btn",
               "label": "register",
               "theme": "plain",
-              "href":"/pages/forbar-signin/",
+              "href":"/pages/forbar/",
               "size":"x-small",
               "block":true,
               "soft":"true",
