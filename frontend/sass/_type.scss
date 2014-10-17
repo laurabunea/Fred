@@ -145,8 +145,9 @@ p,
 code, 
 dt, 
 dd, 
-td { //todofont-weight:$font-normal;
-    font-family:$sans-serif-stack ;
+td { 
+    font-weight:$font-normal;
+   
 }
 
 h3, 
@@ -155,8 +156,8 @@ h5,
 strong, 
 b, 
 th { 
-    //todo change after forbarfont-weight:$font-bold;
-    font-family:$sans-serif-stack-medium;
+    font-weight:$font-bold;
+    
 }
 
 
@@ -168,8 +169,7 @@ em,
 i, 
 cite, 
 dfn,.font-italic { 
-    //font-style:italic; 
-    font-family:$sans-serif-stack-italic ;
+    font-style:italic; 
 }
 
 
