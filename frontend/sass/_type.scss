@@ -156,6 +156,8 @@ strong,
 b, 
 th { 
     //todo change after forbarfont-weight:$font-bold;
+    // todo - see if we can map font-weight:bold to a particular font
+    font-weight: normal;
     font-family:$sans-serif-stack-medium;
 }
 

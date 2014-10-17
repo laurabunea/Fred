@@ -19,7 +19,7 @@ $hr-colour: #F7F8F5;
         border-bottom: 1px solid $hr-colour;
     }
     th {
-        font-weight: bold;
+        // font-weight: bold;
     }
     td, th {
         @include rem(padding-top, $space);
