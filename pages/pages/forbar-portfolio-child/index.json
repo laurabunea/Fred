@@ -54,6 +54,7 @@
       "type":"layout/dynamic",
       "container_padding":"layout",
       "external_theme":"bg--white",
+      "remove_column_gutters": true,
       "columns": [
         {
           "data":[

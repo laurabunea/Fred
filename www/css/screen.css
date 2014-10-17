@@ -1427,7 +1427,7 @@ sub {
 .table {
   border-collapse: collapse;
   border-spacing: 0;
-  border: 1px solid #eee;
+  display: table;
   width: 100%;
   margin-bottom: 28px;
   margin-bottom: 1.75rem; }
@@ -1435,23 +1435,31 @@ sub {
     background-color: #F7F8F5; }
   .table tr {
     border-bottom: 1px solid #F7F8F5; }
-  .table td, .table th {
-    text-align: right; }
-    .table td:first-child, .table th:first-child {
-      text-align: left;
-      font-weight: bold; }
   .table th {
     font-weight: bold; }
-
-.table td, .table th {
-  padding: 0.75em;
-  border-right: solid 1px #eee;
-  vertical-align: top; }
+  .table td, .table th {
+    padding-top: 16px;
+    padding-top: 1rem;
+    padding-bottom: 16px;
+    padding-bottom: 1rem;
+    padding-left: 0px;
+    padding-left: 0rem;
+    padding-right: 12px;
+    padding-right: 0.75rem;
+    text-align: right;
+    vertical-align: top; }
+    .table td:first-child, .table th:first-child {
+      padding-left: 16px;
+      padding-left: 1rem;
+      text-align: left; }
+    .table td:last-child, .table th:last-child {
+      padding-right: 16px;
+      padding-right: 1rem; }
 
 .table--zebra > thead {
-  border-bottom: solid 1px #eee; }
+  border-bottom: solid 1px #F7F8F5; }
 .table--zebra > tfoot {
-  border-top: solid 1px #eee; }
+  border-top: solid 1px #F7F8F5; }
 .table--zebra > tbody > tr:nth-child(odd) td, .table--zebra > tbody > tr:nth-child(odd) th {
   background-color: #fafafa; }
 
@@ -1470,17 +1478,19 @@ sub {
       display: none; }
     .table--responsive td, .table--responsive tr, .table--responsive tbody, .table--responsive th {
       display: block;
-      width: 100%;
-      border-right: none;
-      margin-top: 0; }
-    .table--responsive td[data-header] {
-      overflow: hidden;
-      display: block;
-      position: relative; }
+      margin: 0; }
+    .table--responsive tr {
+      border-bottom: none; }
+    .table--responsive td {
+      border-bottom: 1px solid #F7F8F5; }
+    .table--responsive th {
+      background-color: #F7F8F5; }
     .table--responsive td[data-header]:before {
       content: attr(data-header);
       float: left;
-      font-weight: bold; } }
+      font-weight: bold;
+      padding-left: 16px;
+      padding-left: 1rem; } }
 
 .swatch-container {
   margin-bottom: 20px;

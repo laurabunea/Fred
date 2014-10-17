@@ -1,4 +1,4 @@
-$hr-colour: #eee;
+$hr-colour: #F7F8F5;
 
 /*------------------------------------*\
     #TABLES
@@ -7,36 +7,37 @@ $hr-colour: #eee;
 .table {
     border-collapse: collapse;//// Remove most spacing between table cells.
     border-spacing: 0;// Remove most spacing between table cells.
-    border: 1px solid $hr-colour;
+    display: table;
     width: 100%;
 
     @include rem(margin-bottom,$space-xxl);
 
     > thead {
-        background-color: #F7F8F5;
+        background-color: $hr-colour;
     }
     tr {
-        border-bottom: 1px solid #F7F8F5;
-    }
-    td, th {
-        text-align: right;
-        &:first-child {
-            text-align: left;
-            font-weight:bold;
-        }
+        border-bottom: 1px solid $hr-colour;
     }
     th {
         font-weight: bold;
     }
+    td, th {
+        @include rem(padding-top, $space);
+        @include rem(padding-bottom, $space);
+        @include rem(padding-left, 0);
+        @include rem(padding-right, $space-s);
+        text-align: right;
+        vertical-align: top;
+        &:first-child {
+            @include rem(padding-left, $space);
+            text-align: left;
+        }
+        &:last-child {
+            @include rem(padding-right, $space);
+        }
+    }
 }
 
-
-.table td,
-.table th {
-    padding: .75em;
-    border-right: solid 1px $hr-colour;
-    vertical-align: top;
-}
 
 .table--zebra {
     & > thead {
@@ -75,75 +76,26 @@ $hr-colour: #eee;
 
         td, tr, tbody, th {
             display: block;
-            width: 100%;
-            border-right: none;
-            margin-top: 0;
+            margin: 0;
         }
 
-        td[data-header] {
-            overflow: hidden;
-            display: block;
-            position: relative;
+        tr {
+            border-bottom: none;
+        }
+
+        td {
+            border-bottom: 1px solid $hr-colour;
+        }
+
+        th {
+            background-color: $hr-colour;
         }
 
         td[data-header]:before {
             content: attr(data-header);
             float: left;
             font-weight: bold;
+            @include rem(padding-left, $space);
         }
-
     }
-    // @include small-down() {
-    //     display: block;
-    //     border: none;
-
-
-    //     td, tr, tbody, th {
-    //         display: block;
-    //         width: 100%;
-    //         border-right: none;
-    //         margin-top: 0;
-    //     }
-    //     thead {
-    //         display: none;
-    //     }
-    //     td:first-child, th {
-    //         @include rem(margin-top,$space-xl);
-    //         padding: 0;
-    //         font-weight: bold; // ideally this would extend the h5
-    //     }
-    //     th {
-    //         font-weight: bold;
-    //     }
-
-    //     // Forgive me for this.
-    //     tbody tr:nth-child(odd) td,
-    //     tbody tr:nth-child(odd) th {
-    //         background: transparent;
-    //     }
-
-    //     tbody tr:nth-child(odd) td + td,
-    //     tbody tr:nth-child(odd) th + td,
-    //     td + td,
-    //     th + td {
-    //         background: #F7F7F7;
-    //     }
-
-    //     td + td {
-    //         border-top: solid 1px #e6e6e6;
-    //     }
-    //     td[data-header] {
-    //         overflow: hidden;
-    //         display: block;
-    //         position: relative;
-    //         padding-left: 50%;
-    //     }
-    //     td[data-header]:before {
-    //         content: attr(data-header);
-    //         float: left;
-    //         width: 95%;
-    //         margin-left: -100%;
-    //         color: #777;
-    //     }
-    // }
 }
