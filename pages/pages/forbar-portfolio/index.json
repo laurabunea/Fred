@@ -138,7 +138,7 @@
     },
     {
       "type":"layout/dynamic",
-      "external_theme":"bg--white border-b border--light-grey",
+      "external_theme":"bg--white border-b border--ultra-light-grey",
       "container_padding":"layout",
       "bigLink":true,
       "columns":[
@@ -146,7 +146,7 @@
           "data":[
             {
               "type":"layout/content-block",
-              "theme":"border-b border--light-grey",
+              "theme":"border-b border--ultra-light-grey",
               "data":[
                 {
                   "type":"layout/internal-grid",
@@ -196,7 +196,7 @@
           "data":[
             {
               "type":"layout/content-block",
-              "theme":"border-b border--light-grey",
+              "theme":"border-b border--ultra-light-grey",
               "data":[
                 {
                   "type":"layout/internal-grid",
@@ -251,7 +251,7 @@
           "data":[
             {
               "type":"layout/content-block",
-              "theme":"border-b border--light-grey",
+              "theme":"border-b border--ultra-light-grey",
               "data":[
                 {
                   "type":"layout/internal-grid",

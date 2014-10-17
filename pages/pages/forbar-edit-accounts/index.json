@@ -61,7 +61,7 @@
           "data": [
             {
               "type":"layout/content-block",
-              "theme":"border-b border--light-grey",
+              "theme":"border-b border--ultra-light-grey",
               "data":[
                 {
                   "type":"layout/internal-grid",

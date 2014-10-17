@@ -81,7 +81,7 @@
             {
               "type": "layout/content-block",
               "padding":"pt-s pb-s",
-              "theme":"border--light-grey border-t",
+              "theme":"border--ultra-light-grey border-t",
               "data": [
                 {
                   "type": "type/h3",
