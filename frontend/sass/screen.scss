@@ -94,7 +94,7 @@ https://github.com/nDmitry/grunt-autoprefixer
          url('/fonts/FranklinGothic-Cd-webfont.woff') format('woff'),
          url('/fonts/FranklinGothic-Cd-webfont.ttf') format('truetype'),
          url('/fonts/FranklinGothic-Cd-webfont.svg#franklin_gothic_fscondensed') format('svg');
-    font-weight: normal;
+    font-weight: $font-normal;
     font-style: normal;
 }
 
@@ -107,7 +107,7 @@ https://github.com/nDmitry/grunt-autoprefixer
          url('/fonts/FranklinGothic-CdIt-webfont.woff') format('woff'),
          url('/fonts/FranklinGothic-CdIt-webfont.ttf') format('truetype'),
          url('/fonts/FranklinGothic-CdIt-webfont.svg#franklin_gothic_fsCnIt') format('svg');
-    font-weight: normal;
+    font-weight: $font-normal;
     font-style: italic;
 
 }
@@ -120,7 +120,7 @@ https://github.com/nDmitry/grunt-autoprefixer
          url('/fonts/FranklinGothic-MedCd-webfont.woff') format('woff'),
          url('/fonts/FranklinGothic-MedCd-webfont.ttf') format('truetype'),
          url('/fonts/FranklinGothic-MedCd-webfont.svg#franklin_gothic_fsMdCn') format('svg');
-    font-weight: bold;
+    font-weight: $font-bold;
     font-style: normal;
 }
 //medium condensed italic
@@ -132,7 +132,7 @@ https://github.com/nDmitry/grunt-autoprefixer
          url('/fonts/FranklinGothic-MedCdIt-webfont.woff') format('woff'),
          url('/fonts/FranklinGothic-MedCdIt-webfont.ttf') format('truetype'),
          url('/fonts/FranklinGothic-MedCdIt-webfont.svg#franklin_gothic_fsMdCnIt') format('svg');
-    font-weight: bold;
+    font-weight: $font-bold;
     font-style: italic;
 
 }
