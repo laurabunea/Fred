@@ -96,7 +96,7 @@
                   "type": "links/btn",
                   "label": "account details",
                   "block":true,
-                  "href":"",
+                  "href":"/pages/forbar-account-details/",
                   "class":"u-uppercase font-size-xs "
                 }  
               ]

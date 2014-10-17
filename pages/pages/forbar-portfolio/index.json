@@ -69,7 +69,7 @@
         },
         {
           "column_size":"third",
-          "column_theme":"bg--ultra-light-grey",
+          "column_theme":"bg--ultra-light-grey ",
           "data":[
             {
               "type":"layout/content-block",
@@ -79,7 +79,7 @@
                   "label": "portfolio",
                   "block":true,
                   "href":"/pages/forbar-portfolio/",
-                  "class":"u-uppercase font-size-xs is-disabled"
+                  "class":"u-uppercase font-size-xs is-disabled "
                 } 
               ]
             }
@@ -96,7 +96,7 @@
                   "type": "links/btn",
                   "label": "account details",
                   "block":true,
-                  "href":"",
+                  "href":"/pages/forbar-account-details/",
                   "class":"u-uppercase font-size-xs "
                 }  
               ]

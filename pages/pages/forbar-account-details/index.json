@@ -1,0 +1,336 @@
+{
+  "title": "forbar account details",
+  "slug":"forbaraccount",
+  "headline": "Page one",
+  "template":"client.j2",
+  "client":"Forbar",
+  "data": [ 
+    {
+      "type": "global/global-nav",
+      "external_theme":"theme--dark-blue",
+      "logo":"forsyth-barr-logo",
+      "uppercase":true,
+      "small_text":true,
+      "container_padding":"pt-s pb-s layout ",
+      "pages":[
+        {
+          "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"theme--dark-blue",
+      "container_padding":"layout",
+      "columns":[
+        {
+          "data":[
+            {
+              "type":"layout/content-block",
+              "padding":"pt-xl pb-xl",
+              "data":[
+                {
+                  "type": "type/h2",
+                  "data": "T M Herrick"
+                },
+                {
+                  "type": "type/text-small",
+                  "data": "1276351"
+                } 
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "remove_column_gutters":true,
+      "container_padding":"layout ",
+      "external_theme":"bg--dark-blue ",
+      "columns":[
+        {
+          "column_size":"third",
+          "column_theme":"theme--mid-blue",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "links/btn",
+                  "label": "transactions",
+                  "block":true,
+                  "href":"/pages/forbar-transactions/",
+                  "class":"u-uppercase font-size-xs "
+                } 
+              ]
+            }
+          ]
+        },
+        {
+          "column_size":"third",
+          "column_theme":"theme--mid-blue border-l border--dark-blue ",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "links/btn",
+                  "label": "portfolio",
+                  "block":true,
+                  "href":"/pages/forbar-portfolio/",
+                  "class":"u-uppercase font-size-xs "
+                } 
+              ]
+            }
+          ]
+        },
+        {
+          "column_size":"third",
+          "column_theme":"bg--ultra-light-grey",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "links/btn",
+                  "label": "account details",
+                  "block":true,
+                  "href":"",
+                  "class":"u-uppercase is-disabled font-size-xs "
+                }  
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--middle",
+      "external_theme":"theme--white ",
+      "container_padding":"layout",
+      "bigLink":true,
+      "columns":[
+        {
+          "column_theme":"bg--ultra-light-grey",
+          "data":[
+            {
+              "type": "layout/content-block",
+              "padding":"pt-m pb-m",
+              "data": [
+                "Name and address changes  require proof of identity - <a href=''>please download the full account update form (PDF)</a> to change any of the details." 
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--middle",
+      "external_theme":"theme--white ",
+      "container_padding":"pt-xxl pb-xxl layout",
+      "bigLink":true,
+      "columns":[
+        {
+          "data":[
+            {
+              "type": "form/form",
+              "data": [
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Account Investment Adviser(s)",
+                      "name":"test"
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Account type",
+                      "name":"emailinput"
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Withholding tax rate",
+                      "name":"emailinput" 
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Prescribed investor rate (PIR)",
+                      "name":"emailinput" 
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"IRD number",
+                      "name":"emailinput" 
+                    }
+                  ]
+                },
+                {
+                  "type":"type/h3",
+                  "data":"Primary contact"
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Salutation",
+                      "name":"test"
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Postal address",
+                      "name":"emailinput"
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Residential address",
+                      "name":"emailinput" 
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Email address",
+                      "name":"emailinput",
+                      "placeholder":"tng@actrix.co.nz"
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Business phone",
+                      "name":"emailinput" 
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Private phone",
+                      "name":"emailinput",
+                      "placeholder":"04 443 4915"
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Mobile phone",
+                      "name":"emailinput",
+                      "placeholder":"04 443 4915"
+                    }
+                  ]
+                },
+                 {
+                  "type":"type/h3",
+                  "data":"Account holders"
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Mobile phone",
+                      "name":"emailinput"
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"IRD number",
+                      "name":"emailinput",
+                      "placeholder":"23-687-038"
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Mobile phone",
+                      "name":"emailinput",
+                      "placeholder":"0211084147"
+                    }
+                  ]
+                },
+                {
+                  "type": "form/submit",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "label":"Save",
+                      "theme":"btn--secondary btn--soft"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
