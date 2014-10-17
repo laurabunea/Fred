@@ -52,7 +52,7 @@
     },
     {
       "type":"layout/dynamic",
-      "external_theme":"bg--light-grey",
+      "external_theme":"bg--ultra-light-grey",
       "container_padding":"layout pt-xs pb-xs",
       "columns":[
         {

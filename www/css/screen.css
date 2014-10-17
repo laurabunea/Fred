@@ -145,7 +145,7 @@ html {
   /* 2 */
   height: 100%;
   min-height: 100%;
-  background-color: #F2F4F7; }
+  background-color: #f7f8f5; }
 
 body {
   margin: 0;
@@ -565,11 +565,11 @@ li {
     margin-bottom: 32px;
     margin-bottom: 2rem; }
 
-h1, h2, h6, p, .text, code, dt, dd, td, th {
+h1, h2, h6, p, .text, code, dt, dd, td {
   font-family: 'franklin_gothic_fscondensed', sans-serif; }
 
-h3, h4, h5, strong, b {
-  font-family: 'franklin_gothic_fsdemiCn', sans-serif; }
+h3, h4, h5, strong, b, th {
+  font-family: 'franklin_gothic_fsMdCn', sans-serif; }
 
 .intro {
   font-weight: 300; }
@@ -804,11 +804,15 @@ sub {
       display: table-cell; } }
 
 .col, .gutters {
+  padding-left: 8px;
   padding-left: 0.5rem;
+  padding-right: 8px;
   padding-right: 0.5rem; }
   @media only screen and (min-width: 40em) {
     .col, .gutters {
+      padding-left: 16px;
       padding-left: 1rem;
+      padding-right: 16px;
       padding-right: 1rem; } }
 
 .col {
@@ -853,6 +857,13 @@ sub {
 
 .layout {
   box-sizing: border-box; }
+
+.layout--bleed-mobile {
+  box-sizing: border-box; }
+  @media only screen and (min-width: 60em) {
+    .layout--bleed-mobile {
+      padding-left: 6em;
+      padding-right: 6em; } }
 
 .layout--quarter {
   box-sizing: border-box;
@@ -1216,6 +1227,9 @@ sub {
 .bg--light-blue {
   background-color: #f6fcfb !important; }
 
+.bg--ultra-light-grey {
+  background-color: #f7f8f5 !important; }
+
 .bg--light-grey {
   background-color: #ddd !important; }
 
@@ -1474,6 +1488,11 @@ sub {
 @media only screen and (max-width: 39em) {
   .table--responsive {
     display: block; }
+    .layout--bleed-mobile .table--responsive th, .layout--bleed-mobile .table--responsive td {
+      padding-left: 16px;
+      padding-left: 1rem;
+      padding-right: 16px;
+      padding-right: 1rem; }
     .table--responsive thead {
       display: none; }
     .table--responsive td, .table--responsive tr, .table--responsive tbody, .table--responsive th {
@@ -1487,10 +1506,7 @@ sub {
       background-color: #F7F8F5; }
     .table--responsive td[data-header]:before {
       content: attr(data-header);
-      float: left;
-      font-weight: bold;
-      padding-left: 16px;
-      padding-left: 1rem; } }
+      float: left; } }
 
 .swatch-container {
   margin-bottom: 20px;
@@ -1891,7 +1907,7 @@ input[type="radio"][disabled], input[type="radio"].disabled, fieldset[disabled] 
       content: '';
       left: 2px;
       border: 2px solid transparent;
-      border-top: 2px solid #F2F4F7; }
+      border-top: 2px solid #f7f8f5; }
     @media only screen and (max-width: 39em) {
       .anchor-links li a {
         padding-left: 10px;

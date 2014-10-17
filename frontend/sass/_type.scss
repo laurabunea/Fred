@@ -145,8 +145,7 @@ p,
 code, 
 dt, 
 dd, 
-td, 
-th { //todofont-weight:$font-normal;
+td { //todofont-weight:$font-normal;
     font-family:$sans-serif-stack ;
 }
 
@@ -154,9 +153,10 @@ h3,
 h4, 
 h5,
 strong, 
-b { 
+b, 
+th { 
     //todo change after forbarfont-weight:$font-bold;
-    font-family:$sans-serif-stack-bold;
+    font-family:$sans-serif-stack-medium;
 }
 
 

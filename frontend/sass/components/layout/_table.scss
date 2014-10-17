@@ -69,6 +69,14 @@ $hr-colour: #F7F8F5;
 .table--responsive {
     @include small-down {
         display: block;
+        
+        .layout--bleed-mobile & th,
+        .layout--bleed-mobile & td  {
+            $table-padding:($column-padding);
+            @include rem(padding-left,$table-padding);
+            @include rem(padding-right,$table-padding);
+            
+        }
 
         thead {
             display: none;
@@ -94,8 +102,8 @@ $hr-colour: #F7F8F5;
         td[data-header]:before {
             content: attr(data-header);
             float: left;
-            font-weight: bold;
-            @include rem(padding-left, $space);
+            
+            //@include rem(padding-left, $space);
         }
     }
 }

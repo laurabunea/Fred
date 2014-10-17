@@ -155,16 +155,18 @@
 // column info
 // ----------------------------------------------------------------------------
 
+$column-padding:16;
+$column-padding-mobile:8;
 
 %column-padding {
 
-    padding-left: .5rem;
-    padding-right: .5rem;
+    @include rem(padding-left, $column-padding-mobile);
+    @include rem(padding-right, $column-padding-mobile);
 
     @include medium {
         & {
-            padding-left: 1rem;
-            padding-right: 1rem;
+            @include rem(padding-left, $column-padding);
+            @include rem(padding-right, $column-padding);
         }
     }
 }
@@ -230,6 +232,22 @@ $section-desktop:64;
     box-sizing:border-box;
     @extend %layout-left;
     @extend %layout-right;
+}
+
+.layout--bleed-mobile {
+    box-sizing:border-box;
+    
+    // @include medium {
+    //     @include rem(padding-left,$space-xxxxl);
+    //     @include rem(padding-right,$space-xxxxl);
+    // }
+    @include large {
+        & {
+            padding-left: 6em;
+            padding-right: 6em;
+        }
+    }
+
 }
 
 .layout--quarter {

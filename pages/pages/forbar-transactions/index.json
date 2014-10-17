@@ -51,7 +51,7 @@
       "columns":[
         {
           "column_size":"third",
-          "column_theme":"theme--light",
+          "column_theme":"bg--ultra-light-grey",
           "data":[
             {
               "type":"layout/content-block",
@@ -113,7 +113,7 @@
       "columns":[
         {   
           "column_size":"large-8",
-          "column_theme":"theme--light",
+          "column_theme":"bg--ultra-light-grey",
           "data":[
             {
               "type":"layout/internal-grid",
@@ -167,8 +167,8 @@
                   "column_class":"content-block",
                   "data":[
                     {
-                      "type": "type/h4",
-                      "class":"u-text-right",
+                      "type": "type/p",
+                      "class":"u-text-right u-bold",
                       "data": "<span class='text--light-grey'>NZD</span> 315,472.50"
                     }
                   ]
@@ -234,8 +234,8 @@
                   "column_class":"content-block",
                   "data":[
                     {
-                      "type": "type/h4",
-                      "class":"u-text-right",
+                      "type": "type/p",
+                      "class":"u-text-right u-bold",
                       "data": "<span class='text--light-grey'>NZD</span> 315,472.50"
                     }
                   ]

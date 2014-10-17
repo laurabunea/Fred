@@ -69,7 +69,7 @@
         },
         {
           "column_size":"third",
-          "column_theme":"theme--light ",
+          "column_theme":"bg--ultra-light-grey",
           "data":[
             {
               "type":"layout/content-block",
@@ -107,7 +107,7 @@
     },
     {
       "type":"layout/dynamic",
-      "external_theme":"theme--light",
+      "external_theme":"bg--ultra-light-grey",
       "container_padding":"layout pt-l pb-l",
       "columns":[
         {
