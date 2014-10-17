@@ -179,6 +179,11 @@ $column-padding-mobile:8;
 .gutters { @extend %column-padding;}
 
 .col--no-gutters { width:100%; }
+.col--no-gutters-large { 
+    @include large {
+        @width:100%;     
+    }
+}
 
 
 
