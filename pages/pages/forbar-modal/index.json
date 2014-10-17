@@ -135,7 +135,7 @@
                     "label": "profile ",
                     "theme": "plain",
                     "size":"x-small",
-                    "href":"/pages/forbar/",
+                    "href":"/pages/forbar-profile/",
                     "block":true,
                     "soft":"true",
                     "class":"u-uppercase"
@@ -149,7 +149,7 @@
                     "type": "links/btn",
                     "label": "sign out",
                     "theme": "plain",
-                    "href":"/pages/forbar-signin/",
+                    "href":"/pages/forbar/",
                     "size":"x-small",
                     "block":true,
                     "soft":"true",

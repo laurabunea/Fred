@@ -30,6 +30,17 @@
           "remove_content_gutters":true,
           "data":[
             {
+              "type": "links/breadcrumb",
+              "class":"mb-0",
+              "data": [
+                {
+                    "url": "/pages/forbar-profile/",
+                    "title": "Profile"
+                }
+                  
+              ]
+            },
+            {
               "type": "type/h2",
               "data": "Change password"
             }

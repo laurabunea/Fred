@@ -77,7 +77,7 @@
               "label": "forgot password",
               "theme": "plain",
               "size":"small",
-              "href":"/pages/forbar/",
+              "href":"/pages/forbar-change-password/",
               "block":true,
               "soft":"true",
               "class":"u-uppercase mb-l--small-down"

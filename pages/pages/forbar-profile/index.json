@@ -103,6 +103,15 @@
                       "theme":"btn--secondary btn--soft"
                     }
                   ]
+                },
+                {
+                  "type": "links/btn",
+                  "label": "Change your password",
+                  "theme": "plain",
+                  "href":"/pages/forbar-change-password/",
+                  "size":"small",
+                  "block":true,
+                  "soft":"true"
                 }
               ]
             }
