@@ -1,0 +1,114 @@
+{
+  "title": "pages",
+  "slug":"forbar",
+  "headline": "Page one",
+  "template":"client.j2",
+  "client":"Forbar",
+  "data": [ 
+    {
+      "type": "global/global-nav",
+      "external_theme":"theme--dark-blue",
+      "logo":"forsyth-barr-logo",
+      "uppercase":true,
+      "small_text":true,
+      "container_padding":"pt-s pb-s layout ",
+      "pages":[
+        {
+          "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--middle",
+      "external_theme":"theme--dark-blue",
+      "container_padding":"layout",
+      "columns":[
+        {
+          "column_class":"two-thirds content-block",
+          "content_padding":"pt-xl pb-xl",
+          "remove_content_gutters":true,
+          "data":[
+            {
+              "type": "type/h2",
+              "data": "Edit your details"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--middle",
+      "external_theme":"theme--white ",
+      "container_padding":"pt-xxl pb-xxl layout",
+      "bigLink":true,
+      "columns":[
+        {
+          "data":[
+            {
+              "type": "form/form",
+              "data": [
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Salutation*",
+                      "name":"emailinput",
+                      "placeholder":"A N Other",
+                      "help_text":"We'll use this to greet you around the site"
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"First name *",
+                      "name":"emailinput",
+                      "placeholder":"IAS and PAS"
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Last name *",
+                      "name":"emailinput",
+                      "placeholder":"IAS and PAS"
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "note":"* = required fields"
+                    }
+                  ]
+                },
+                {
+                  "type": "form/submit",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "label":"Save",
+                      "theme":"btn--secondary btn--soft"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

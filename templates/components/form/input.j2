@@ -1,6 +1,6 @@
-
+{% if item.name %}
 <input type="{% if item.type %}{{item.type}}{% else %}text{% endif %}" class="form-control" name="{{ item.name }}" id="{{ item.name }}" placeholder="{{ item.placeholder }}">
-
+{% endif %}
 {#<span class="field__input">
 
     <input name="{{ item.name }}" id="{{ item.name }}" type="{% if inputtype %}{{inputtype}}{% else %}text{% endif %}" class="{{ item.class }}" {% if item.maxlength %}maxlength="{{item.maxlength}}"{% endif %} value="{% if item.default %}{{ item.default }}{% else %}{{ item.value }}{% endif %}" placeholder="{{ item.placeholder }}" />

@@ -1,5 +1,7 @@
-<div class="form-group ">
+<div class="form-group {{item.col_size}}">
 
-    <input class='btn--submit' type="submit" value='{{ item.label }}'/>
+    {% for item in item.data %}
+    <input class='btn {{item.theme}} btn--block' type="submit" value='{{ item.label }}'/>
+    {% endfor %}
     
 </div>

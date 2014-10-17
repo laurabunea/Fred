@@ -1,0 +1,111 @@
+{
+  "title": "pages",
+  "slug":"forbar",
+  "headline": "Page one",
+  "template":"client.j2",
+  "client":"Forbar",
+  "data": [ 
+    {
+      "type": "global/global-nav",
+      "external_theme":"theme--dark-blue",
+      "logo":"forsyth-barr-logo",
+      "uppercase":true,
+      "small_text":true,
+      "container_padding":"pt-s pb-s layout ",
+      "pages":[
+        {
+          "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--middle",
+      "external_theme":"theme--dark-blue",
+      "container_padding":"layout",
+      "columns":[
+        {
+          "column_class":"two-thirds content-block",
+          "content_padding":"pt-xl pb-xl",
+          "remove_content_gutters":true,
+          "data":[
+            {
+              "type": "type/h2",
+              "data": "Change password"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--middle",
+      "external_theme":"theme--white ",
+      "container_padding":"pt-xxl pb-xxl layout",
+      "bigLink":true,
+      "columns":[
+        {
+          "data":[
+            {
+              "type": "form/form",
+              "data": [
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Current password *",
+                      "name":"emailinput"
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"New password *",
+                      "name":"emailinput",
+                      "help_text":"Minimumn password length 8 characters"
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Password check *",
+                      "name":"emailinput" 
+                    }
+                  ]
+                },
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "note":"* = required fields"
+                    }
+                  ]
+                },
+                {
+                  "type": "form/submit",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "label":"Save",
+                      "theme":"btn--secondary btn--soft"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
