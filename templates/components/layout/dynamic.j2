@@ -16,7 +16,7 @@
 
                 {% for column in item.columns %}
                     
-                <div class="[ col{% if item.remove_column_gutters %}--no-gutters{% endif %} {{column_size }} {{column.column_size}} ] {{column.column_theme}} {{column.column_class}}">
+                <div class="[ col {% if item.remove_column_gutters %}col--no-gutters{% endif %} {{column_size }} {{column.column_size}} ] {{column.column_theme}} {{column.column_class}}">
                     
                     {% if column.content_theme or column.remove_content_gutters or column.content_padding or column.content_background_image %}
                     
