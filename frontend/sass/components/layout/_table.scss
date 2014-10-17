@@ -72,10 +72,8 @@ $hr-colour: #F7F8F5;
         
         .layout--bleed-mobile & th,
         .layout--bleed-mobile & td  {
-            $table-padding:($column-padding);
-            @include rem(padding-left,$table-padding);
-            @include rem(padding-right,$table-padding);
-            
+            @include rem(padding-left,$column-padding);
+            @include rem(padding-right,$column-padding);
         }
 
         thead {
