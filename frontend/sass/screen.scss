@@ -85,6 +85,7 @@ https://github.com/nDmitry/grunt-autoprefixer
 *
 *
 */
+@import "config";
 //condensed
 @font-face {
     font-family: 'franklin_gothic';
@@ -137,7 +138,7 @@ https://github.com/nDmitry/grunt-autoprefixer
 
 }
 
-@import "config";
+
 @import "mixins";
 
 html {

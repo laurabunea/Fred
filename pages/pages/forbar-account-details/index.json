@@ -137,56 +137,43 @@
           "data":[
             {
               "type": "form/form",
+              "form_class":"grid",
               "data": [
                 {
                   "type": "form/form-group",
                   "data":[
                     {
-                      "col_size":"",
+                      "col_size":"medium-half",
                       "type":"email",
                       "label":"Account Investment Adviser(s)",
                       "name":"test"
-                    }
-                  ]
-                },
-                {
-                  "type": "form/form-group",
-                  "data":[
+                    },
                     {
-                      "col_size":"",
+                      "col_size":"medium-half",
                       "type":"email",
                       "label":"Account type",
                       "name":"emailinput"
-                    }
-                  ]
-                },
-                {
-                  "type": "form/form-group",
-                  "data":[
+                    },
                     {
-                      "col_size":"",
-                      "type":"email",
+                      "col_size":"medium-half",
+                      "type":"select",
                       "label":"Withholding tax rate",
-                      "name":"emailinput" 
-                    }
-                  ]
-                },
-                {
-                  "type": "form/form-group",
-                  "data":[
+                      "options":[
+                        {"name":"NZ Resident 33%"},
+                        {"name":"test"}
+                      ] 
+                    },
                     {
-                      "col_size":"",
-                      "type":"email",
+                      "col_size":"medium-half",
+                      "type":"select",
                       "label":"Prescribed investor rate (PIR)",
-                      "name":"emailinput" 
-                    }
-                  ]
-                },
-                {
-                  "type": "form/form-group",
-                  "data":[
+                      "options":[
+                        {"name":"x.xx%"},
+                        {"name":"x.x"}
+                      ] 
+                    },
                     {
-                      "col_size":"",
+                      "col_size":"medium-half",
                       "type":"email",
                       "label":"IRD number",
                       "name":"emailinput" 
@@ -201,75 +188,45 @@
                   "type": "form/form-group",
                   "data":[
                     {
-                      "col_size":"",
+                      "col_size":"medium-half",
                       "type":"email",
                       "label":"Salutation",
                       "name":"test"
-                    }
-                  ]
-                },
-                {
-                  "type": "form/form-group",
-                  "data":[
+                    },
                     {
-                      "col_size":"",
+                      "col_size":"medium-half",
                       "type":"email",
                       "label":"Postal address",
                       "name":"emailinput"
-                    }
-                  ]
-                },
-                {
-                  "type": "form/form-group",
-                  "data":[
+                    },
                     {
-                      "col_size":"",
+                      "col_size":"medium-half",
                       "type":"email",
                       "label":"Residential address",
                       "name":"emailinput" 
-                    }
-                  ]
-                },
-                {
-                  "type": "form/form-group",
-                  "data":[
+                    },
                     {
-                      "col_size":"",
+                      "col_size":"medium-half",
                       "type":"email",
                       "label":"Email address",
                       "name":"emailinput",
                       "placeholder":"tng@actrix.co.nz"
-                    }
-                  ]
-                },
-                {
-                  "type": "form/form-group",
-                  "data":[
+                    },
                     {
-                      "col_size":"",
+                      "col_size":"medium-half",
                       "type":"email",
                       "label":"Business phone",
                       "name":"emailinput" 
-                    }
-                  ]
-                },
-                {
-                  "type": "form/form-group",
-                  "data":[
+                    },
                     {
-                      "col_size":"",
+                      "col_size":"medium-half",
                       "type":"email",
                       "label":"Private phone",
                       "name":"emailinput",
                       "placeholder":"04 443 4915"
-                    }
-                  ]
-                },
-                {
-                  "type": "form/form-group",
-                  "data":[
+                    },
                     {
-                      "col_size":"",
+                      "col_size":"medium-half",
                       "type":"email",
                       "label":"Mobile phone",
                       "name":"emailinput",
@@ -277,7 +234,7 @@
                     }
                   ]
                 },
-                 {
+                {
                   "type":"type/h3",
                   "data":"Account holders"
                 },
@@ -285,41 +242,29 @@
                   "type": "form/form-group",
                   "data":[
                     {
-                      "col_size":"",
+                      "col_size":"medium-half",
                       "type":"email",
                       "label":"Mobile phone",
                       "name":"emailinput"
-                    }
-                  ]
-                },
-                {
-                  "type": "form/form-group",
-                  "data":[
+                    },
                     {
-                      "col_size":"",
+                      "col_size":"medium-half",
                       "type":"email",
                       "label":"IRD number",
                       "name":"emailinput",
                       "placeholder":"23-687-038"
-                    }
-                  ]
-                },
-                {
-                  "type": "form/form-group",
-                  "data":[
+                    },
                     {
                       "col_size":"",
-                      "type":"email",
-                      "label":"Mobile phone",
-                      "name":"emailinput",
-                      "placeholder":"0211084147"
-                    }
-                  ]
-                },
-                {
-                  "type": "form/submit",
-                  "data":[
+                      "type":"select",
+                      "label":"Prescribed investor rate (PIR)",
+                      "options":[
+                        {"name":"x.xx%"},
+                        {"name":"x.x"}
+                      ] 
+                    },
                     {
+                      "type":"submit",
                       "col_size":"",
                       "label":"Save",
                       "theme":"btn--secondary btn--soft"

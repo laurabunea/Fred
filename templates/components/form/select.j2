@@ -1,0 +1,11 @@
+<select class="form-control {% if item.multiple %} multiple {% endif%} {{item.select_class}}" id="{{item.name}}" name="{{item.name}}">
+    
+    {% for option in item.options %}
+
+        <option value="{{option.name}}">
+            {{option.name}}
+        </option>
+
+    {% endfor %}
+    
+</select>

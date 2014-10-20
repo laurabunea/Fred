@@ -4,13 +4,29 @@
     
 {% endif %}
 
-<div class="form-group {% if errors %} field--error{% endif %}">
+{% for item in item.data %}
 
-    {% for item in item.data %}
+    <div class="form-group col {% if errors %} field--error{% endif %} {{item.col_size}}">
+        
+         {% if item.type == "submit" %}
 
-        {% include "components/form/label.j2" %}
-        {% include "components/form/input.j2" %}
-        {% include "components/form/note.j2" %}
+            {% include "components/form/submit.j2" %}
 
-    {% endfor %}
-</div>
+        {% else %}
+
+            {% include "components/form/label.j2" %}
+            
+            {% if item.type == "select" %}
+                {% include "components/form/select.j2" %}
+           
+            {% else %} 
+                {% include "components/form/input.j2" %}
+            {% endif %}
+            
+            {% include "components/form/note.j2" %}
+
+        {% endif %}
+        
+    </div>
+
+{% endfor %}
