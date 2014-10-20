@@ -98,33 +98,6 @@
                           "size":"x-small",
                           "soft":"true",
                           "class": "u-right u-uppercase "
-                        },
-                        {
-                          "type": "links/btn",
-                          "label": "portfolio",
-                          "theme": "link",
-                          "size":"x-small",
-                          "soft":"true",
-                          "class": "u-right u-uppercase",
-                          "href":"/pages/forbar-portfolio/"
-                        },
-                        {
-                          "type": "links/btn",
-                          "label": "account details",
-                          "theme": "link",
-                          "size":"x-small",
-                          "soft":"true",
-                          "class":"u-right u-uppercase",
-                          "href":"/pages/forbar-account-details/"
-                        },
-                        {
-                          "type": "links/btn",
-                          "label": "transactions",
-                          "theme": "link",
-                          "size":"x-small",
-                          "soft":"true",
-                          "class": "u-right u-uppercase",
-                          "href":"/pages/forbar-transactions/"
                         }
                       ]
                     }
@@ -172,33 +145,6 @@
                       "size":"x-small",
                       "soft":"true",
                       "class": "u-right u-uppercase "
-                    },
-                    {
-                      "type": "links/btn",
-                      "label": "portfolio",
-                      "theme": "link",
-                      "size":"x-small",
-                      "soft":"true",
-                      "class": "u-right u-uppercase",
-                      "href":"/pages/forbar-portfolio/"
-                    },
-                    {
-                      "type": "links/btn",
-                      "label": "account details",
-                      "theme": "link",
-                      "size":"x-small",
-                      "soft":"true",
-                      "class":"u-right u-uppercase",
-                      "href":"/pages/forbar-account-details/"
-                    },
-                    {
-                      "type": "links/btn",
-                      "label": "transactions",
-                      "theme": "link",
-                      "size":"x-small",
-                      "soft":"true",
-                      "class": "u-right u-uppercase",
-                      "href":"/pages/forbar-transactions/"
                     }
                   ]
                 }
@@ -215,7 +161,7 @@
               "internal_theme":"border-t border--ultra-light-grey",
               "columns":[
                 {
-                  "column_class":"large-8",
+                  "column_class":"",
                   "data":[
                     {
                       "type": "links/btn",
