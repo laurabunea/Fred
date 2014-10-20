@@ -78,7 +78,7 @@
                   "data":[
                     {
                       "type": "type/text-tiny",
-                      "data": "Direct/Credit",
+                      "data": "Debit/Credit",
                       "class":"u-uppercase"
                     }  
                   ]
@@ -161,7 +161,7 @@
           "data":[
             {
               "type": "type/text-tiny",
-              "data": "Direct/Credit",
+              "data": "Debit/Credit",
               "class":"u-uppercase"
             }  
           ]
@@ -239,7 +239,7 @@
           "data":[
             {
               "type": "type/text-tiny",
-              "data": "Direct/Credit",
+              "data": "Debit/Credit",
               "class":"u-uppercase"
             }  
           ]
