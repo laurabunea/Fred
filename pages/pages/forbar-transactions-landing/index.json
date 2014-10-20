@@ -52,249 +52,71 @@
     },
     {
       "type":"layout/dynamic",
+      "container_padding":"layout--bleed-mobile",
       "external_theme":"bg--white",
-      "container_padding":"layout",
-      "columns":[
+      "columns": [
         {
+          "column_class":"col--no-gutters-large",
           "data":[
             {
-              "type":"layout/internal-grid",
-              "container_padding":"pt-xs pb-xs",
-              "columns":[
-                {
-                  "column_size":"half",
-                  "column_class":"content-block",
-                  "data":[
-                    {
-                      "type": "type/text-tiny",
-                      "data": "30 September 2014",
-                      "class":"u-uppercase"
-                    }  
+              "type": "layout/table",
+              "data": {
+                  "thead": [
+                      { "data": "30 September 2014" },
+                      { "data": "Debit/credit" },
+                      { "data": "Balance" }
+                  ],
+                  "tbody": [
+                      [
+                          { "data": "Interest Recieved: Forsyth Barr Cash Management" },
+                          { "data": "6.17"    },
+                          { "data": "1,300.21" }
+                      ]
                   ]
-                },
-                {
-                  "column_size":"quarter",
-                  "column_class":"content-block u-text-right",
-                  "data":[
-                    {
-                      "type": "type/text-tiny",
-                      "data": "Debit/Credit",
-                      "class":"u-uppercase"
-                    }  
+              }
+            },
+            {
+              "type": "layout/table",
+              "data": {
+                  "thead": [
+                      { "data": "29 September 2014" },
+                      { "data": "Debit/credit" },
+                      { "data": "Balance" }
+                  ],
+                  "tbody": [
+                      [
+                          { "data": "Interest Recieved: Forsyth Barr Cash Management"},
+                          { "data": "6.17"    },
+                          { "data": "1,300.21" }
+                      ],
+                      [
+                          { "data": "Interest Recieved: Forsyth Barr Cash Management" },
+                          { "data": "6.17"    },
+                          { "data": "1,300.21" }
+                      ]
                   ]
-                },
-                {
-                  "column_size":"quarter",
-                  "column_class":"content-block u-text-right",
-                  "data":[
-                    {
-                      "type": "type/text-tiny",
-                      "data": "balance",
-                      "class":"u-uppercase"
-                    }  
+              }
+            },
+            {
+              "type": "layout/table",
+              "data": {
+                  "thead": [
+                      { "data": "28 September 2014" },
+                      { "data": "Debit/credit" },
+                      { "data": "Balance" }
+                  ],
+                  "tbody": [
+                      [
+                          { "data": "Interest Recieved: Forsyth Barr Cash Management"},
+                          { "data": "6.17"    },
+                          { "data": "1,300.21" }
+                      ]
                   ]
-                }
-              ]
+              }
             }
           ]
         }
       ]
-    },
-    
-    {
-      "type":"layout/dynamic",
-      "external_theme":"theme--white",
-      "container_padding":"layout pt-s pb-s",
-      "columns":[
-        {
-          "column_size":"half",
-          "column_class":"content-block",
-          "data":[
-            {
-              "type": "type/p",
-              "data": "Interest Recieved: Forsyth Barr Cash Management "
-      
-            }  
-          ]
-        },
-        {
-          "column_size":"quarter",
-          "column_class":"content-block u-text-right",
-          "data":[
-            {
-              "type": "type/p",
-              "data": "6.17"
-            }  
-          ]
-        },
-        {
-          "column_size":"quarter",
-          "column_class":"content-block u-text-right",
-          "data":[
-            {
-              "type": "type/p",
-              "data": "1,300.21"
-            }  
-          ]
-        }
-      ]
-    },
-    {
-      "type":"layout/dynamic",
-      "external_theme":"bg--ultra-light-grey",
-      "container_padding":"layout pt-xs pb-xs",
-      "columns":[
-        {
-          "column_size":"half",
-          "column_class":"content-block",
-          "data":[
-            {
-              "type": "type/text-tiny",
-              "data": "29 September 2014",
-              "class":"u-uppercase"
-            }  
-          ]
-        },
-        {
-          "column_size":"quarter",
-          "column_class":"content-block u-text-right",
-          "data":[
-            {
-              "type": "type/text-tiny",
-              "data": "Debit/Credit",
-              "class":"u-uppercase"
-            }  
-          ]
-        },
-        {
-          "column_size":"quarter",
-          "column_class":"content-block u-text-right",
-          "data":[
-            {
-              "type": "type/text-tiny",
-              "data": "balance",
-              "class":"u-uppercase"
-            }  
-          ]
-        }
-      ]
-    },
-    {
-      "type":"layout/dynamic",
-      "external_theme":"theme--white",
-      "container_padding":"layout pt-s pb-s",
-      "columns":[
-        {
-          "column_size":"half",
-          "column_class":"content-block",
-          "data":[
-            {
-              "type": "type/p",
-              "data": "Interest Recieved: Forsyth Barr Cash Management "
-      
-            }  
-          ]
-        },
-        {
-          "column_size":"quarter",
-          "column_class":"content-block u-text-right",
-          "data":[
-            {
-              "type": "type/p",
-              "data": "6.17"
-            }  
-          ]
-        },
-        {
-          "column_size":"quarter",
-          "column_class":"content-block u-text-right",
-          "data":[
-            {
-              "type": "type/p",
-              "data": "1,300.21"
-            }  
-          ]
-        }
-      ]
-    },
-    {
-      "type":"layout/dynamic",
-      "external_theme":"bg--ultra-light-grey",
-      "container_padding":"layout pt-xs pb-xs",
-      "columns":[
-        {
-          "column_size":"half",
-          "column_class":"content-block",
-          "data":[
-            {
-              "type": "type/text-tiny",
-              "data": "28 September 2014",
-              "class":"u-uppercase"
-            }  
-          ]
-        },
-        {
-          "column_size":"quarter",
-          "column_class":"content-block u-text-right",
-          "data":[
-            {
-              "type": "type/text-tiny",
-              "data": "Debit/Credit",
-              "class":"u-uppercase"
-            }  
-          ]
-        },
-        {
-          "column_size":"quarter",
-          "column_class":"content-block u-text-right",
-          "data":[
-            {
-              "type": "type/text-tiny",
-              "data": "balance",
-              "class":"u-uppercase"
-            }  
-          ]
-        }
-      ]
-    },
-    {
-      "type":"layout/dynamic",
-      "external_theme":"theme--white",
-      "container_padding":"layout pt-s pb-s",
-      "columns":[
-        {
-          "column_size":"half",
-          "column_class":"content-block",
-          "data":[
-            {
-              "type": "type/p",
-              "data": "Interest Recieved: Forsyth Barr Cash Management "
-      
-            }  
-          ]
-        },
-        {
-          "column_size":"quarter",
-          "column_class":"content-block u-text-right",
-          "data":[
-            {
-              "type": "type/p",
-              "data": "6.17"
-            }  
-          ]
-        },
-        {
-          "column_size":"quarter",
-          "column_class":"content-block u-text-right",
-          "data":[
-            {
-              "type": "type/p",
-              "data": "1,300.21"
-            }  
-          ]
-        }
-      ]
     }
-    
   ]
 }

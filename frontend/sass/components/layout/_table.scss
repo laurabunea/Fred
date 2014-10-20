@@ -10,7 +10,7 @@ $hr-colour: #F7F8F5;
     display: table;
     width: 100%;
 
-    @include rem(margin-bottom,$space-xxl);
+    //@include rem(margin-bottom,$space-xxl);
 
     > thead {
         background-color: $hr-colour;

@@ -42,7 +42,7 @@
                 "type": "links/btn",
                 "label": "cancel",
                 "theme": "inverse",
-                "href":"/pages/forbar/",
+                "href":"/pages/forbar-accounts/",
                 "size":"x-small",
                 "soft":"true",
                 "class": "u-right u-uppercase "
