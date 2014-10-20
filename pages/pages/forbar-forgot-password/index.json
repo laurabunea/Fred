@@ -1,0 +1,99 @@
+{
+  "title": "pages",
+  "slug":"forbar",
+  "headline": "Page one",
+  "template":"client.j2",
+  "client":"Forbar",
+  "data": [ 
+    {
+      "type": "global/global-nav",
+      "external_theme":"theme--dark-blue",
+      "logo":"forsyth-barr-logo",
+      "uppercase":true,
+      "small_text":true,
+      "container_padding":"pt-s pb-s layout ",
+      "pages":[
+        {
+          "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--middle",
+      "external_theme":"theme--dark-blue",
+      "container_padding":"layout",
+      "columns":[
+        {
+          "column_class":"two-thirds content-block",
+          "content_padding":"pt-xl pb-xl",
+          "remove_content_gutters":true,
+          "data":[
+            
+            {
+              "type": "type/h2",
+              "data": "Password reset"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--middle",
+      "external_theme":"bg--white",
+      "internal_theme":"bg--ultra-light-grey",
+      "container_padding":"layout",
+      "columns":[
+        {
+          "column_class":"two-thirds content-block",
+          "content_padding":"pt-xl pb-xl",
+          "remove_content_gutters":true,
+          "data":[
+            "Please enter your email address and instructions on how to change your password will be emailed to you."
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--middle",
+      "external_theme":"theme--white ",
+      "container_padding":"pt-xxl pb-xxl layout--forbar",
+      "bigLink":true,
+      "columns":[
+        {
+          "column_size":"",
+          "data":[
+            {
+              "type": "form/form",
+              "data": [
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Email address *",
+                      "name":"emailinput"
+                    }
+                  ]
+                }
+                
+              ]
+            }
+          ]
+        },{
+          "data":[
+            {
+              "type": "links/btn",
+              "label": "Reset Password",
+              "href":"/pages/forbar-reset-password/",
+              "theme":"soft btn--secondary btn--block"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -42,7 +42,6 @@
       "grid_modifier":"grid--middle",
       "external_theme":"theme--white ",
       "container_padding":"pt-xxl pb-xxl layout--forbar",
-      "bigLink":true,
       "columns":[
         {
           "data":[

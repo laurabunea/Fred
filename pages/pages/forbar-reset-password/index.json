@@ -1,0 +1,66 @@
+{
+  "title": "pages",
+  "slug":"forbar",
+  "headline": "Page one",
+  "template":"client.j2",
+  "client":"Forbar",
+  "data": [ 
+    {
+      "type": "global/global-nav",
+      "external_theme":"theme--dark-blue",
+      "logo":"forsyth-barr-logo",
+      "uppercase":true,
+      "small_text":true,
+      "container_padding":"pt-s pb-s layout ",
+      "pages":[
+        {
+          "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--middle",
+      "external_theme":"theme--dark-blue",
+      "container_padding":"layout",
+      "columns":[
+        {
+          "column_class":"two-thirds content-block",
+          "content_padding":"pt-xl pb-xl",
+          "remove_content_gutters":true,
+          "data":[
+            
+            {
+              "type": "type/h2",
+              "data": "Password reset"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--middle",
+      "external_theme":"bg--white",
+      "internal_theme":"bg--ultra-light-grey",
+      "container_padding":"layout",
+      "columns":[
+        {
+          "column_class":"two-thirds content-block",
+          "content_padding":"pt-xl pb-xl",
+          "remove_content_gutters":true,
+          "data":[
+            "Thanks, instructions on how to change your password have been sent to your email.",
+            {
+              "type": "links/btn",
+              "label": "Sign in",
+              "href":"pages/forbar/",
+              "theme":"soft btn--secondary"
+            }
+          ]
+        }
+      ]
+    }
+    
+  ]
+}

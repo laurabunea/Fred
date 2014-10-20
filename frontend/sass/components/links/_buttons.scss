@@ -197,11 +197,11 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
 
     background: $dark-blue;
     color: #fff;
-    &:visited { color: $base-link-color;}
+    &:visited { color: $white;}
 
     &:hover {
         background: darken($dark-blue, 10%);
-        color:#fff;
+        color:$white;
     }
     &:active {
         color:$white;
