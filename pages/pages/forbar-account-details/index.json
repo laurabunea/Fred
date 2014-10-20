@@ -130,7 +130,7 @@
       "type":"layout/dynamic",
       "grid_modifier":"grid--middle",
       "external_theme":"theme--white ",
-      "container_padding":"pt-xxl pb-xxl layout",
+      "container_padding":"pt-xxl pb-xxl layout--forbar",
       "bigLink":true,
       "columns":[
         {
@@ -143,19 +143,19 @@
                   "type": "form/form-group",
                   "data":[
                     {
-                      "col_size":"medium-half",
+                      "col_size":"",
                       "type":"email",
                       "label":"Account Investment Adviser(s)",
                       "name":"test"
                     },
                     {
-                      "col_size":"medium-half",
+                      "col_size":"",
                       "type":"email",
                       "label":"Account type",
                       "name":"emailinput"
                     },
                     {
-                      "col_size":"medium-half",
+                      "col_size":"",
                       "type":"select",
                       "label":"Withholding tax rate",
                       "options":[
@@ -164,7 +164,7 @@
                       ] 
                     },
                     {
-                      "col_size":"medium-half",
+                      "col_size":"",
                       "type":"select",
                       "label":"Prescribed investor rate (PIR)",
                       "options":[
@@ -173,7 +173,7 @@
                       ] 
                     },
                     {
-                      "col_size":"medium-half",
+                      "col_size":"",
                       "type":"email",
                       "label":"IRD number",
                       "name":"emailinput" 
@@ -181,52 +181,61 @@
                   ]
                 },
                 {
-                  "type":"type/h3",
-                  "data":"Primary contact"
+                  "type": "form/form-group-wrapper",
+                  "data":[
+                    {
+                      "type":"layout/hr"
+                    },
+                    {
+                      "type":"type/h3",
+                      "data":"Primary contact",
+                      "class":"mb-0"
+                    }
+                  ]
                 },
                 {
                   "type": "form/form-group",
                   "data":[
                     {
-                      "col_size":"medium-half",
+                      "col_size":"",
                       "type":"email",
                       "label":"Salutation",
                       "name":"test"
                     },
                     {
-                      "col_size":"medium-half",
+                      "col_size":"",
                       "type":"email",
                       "label":"Postal address",
                       "name":"emailinput"
                     },
                     {
-                      "col_size":"medium-half",
+                      "col_size":"",
                       "type":"email",
                       "label":"Residential address",
                       "name":"emailinput" 
                     },
                     {
-                      "col_size":"medium-half",
+                      "col_size":"",
                       "type":"email",
                       "label":"Email address",
                       "name":"emailinput",
                       "placeholder":"tng@actrix.co.nz"
                     },
                     {
-                      "col_size":"medium-half",
+                      "col_size":"m",
                       "type":"email",
                       "label":"Business phone",
                       "name":"emailinput" 
                     },
                     {
-                      "col_size":"medium-half",
+                      "col_size":"",
                       "type":"email",
                       "label":"Private phone",
                       "name":"emailinput",
                       "placeholder":"04 443 4915"
                     },
                     {
-                      "col_size":"medium-half",
+                      "col_size":"",
                       "type":"email",
                       "label":"Mobile phone",
                       "name":"emailinput",
@@ -235,20 +244,29 @@
                   ]
                 },
                 {
-                  "type":"type/h3",
-                  "data":"Account holders"
+                  "type": "form/form-group-wrapper",
+                  "data":[
+                    {
+                      "type":"layout/hr"
+                    },
+                    {
+                      "type":"type/h3",
+                      "data":"Account holders",
+                      "class":"mb-0"
+                    }
+                  ]
                 },
                 {
                   "type": "form/form-group",
                   "data":[
                     {
-                      "col_size":"medium-half",
+                      "col_size":"",
                       "type":"email",
                       "label":"Mobile phone",
                       "name":"emailinput"
                     },
                     {
-                      "col_size":"medium-half",
+                      "col_size":"",
                       "type":"email",
                       "label":"IRD number",
                       "name":"emailinput",

@@ -6,7 +6,7 @@
 
 {% for item in item.data %}
 
-    <div class="form-group col {% if errors %} field--error{% endif %} {{item.col_size}}">
+    <div class="form-group {% if item.inline %} gutters {% else %} col {% endif %}{% if errors %} field--error{% endif %} {{item.col_size}}">
         
          {% if item.type == "submit" %}
 

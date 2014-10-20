@@ -6,7 +6,20 @@
 \*------------------------------------*/
 
 
-
+.layout--forbar {
+    @include rem(padding-right,$space-m);
+    @include rem(padding-left,$space-m);
+    @include medium {
+        @include rem(padding-right,$space-xxxxl);
+        @include rem(padding-left,$space-xxxxl);
+    }
+    @include large {
+        & {
+            padding-left: 6em;
+            padding-right:25%;
+        }
+    }
+}
 
 /**
 * ---------------------------------------------------------------------------

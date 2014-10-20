@@ -5,13 +5,13 @@
   "template":"client.j2",
   "client":"Forbar",
   "data": [ 
-    {
+   {
       "type": "global/global-nav",
       "external_theme":"theme--dark-blue",
       "logo":"forsyth-barr-logo",
       "uppercase":true,
       "small_text":true,
-      "container_padding":"pt-s pb-s layout ",
+      "container_padding":"pt-s pb-s layout",
       "pages":[
         {
           "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
@@ -40,10 +40,10 @@
           "data":[
             {
                 "type": "links/btn",
-                "label": "edit accounts",
+                "label": "edit",
                 "theme": "inverse",
-                "size":"x-small",
                 "href":"/pages/forbar-edit-accounts/",
+                "size":"x-small",
                 "soft":"true",
                 "class": "u-right u-uppercase "
             }
@@ -54,42 +54,161 @@
     {
       "type":"layout/dynamic",
       "grid_modifier":"grid--middle",
-      "external_theme":"theme--white ",
-      "container_padding":" layout",
-      "bigLink":true,
+      "external_theme":"theme--white",
+      "container_padding":" layout--forbar",
       "columns":[
         {
-          "data":[
+          "column_size":"",
+          "data": [
             {
-              "type": "layout/content-block",
-              "padding":"pt-s pb-s",
-              "data": [
+              "type":"layout/content-block",
+              "theme":"border-b border--ultra-light-grey",
+              "data":[
                 {
-                  "type": "type/h3",
-                  "data": "<a href='/pages/forbar-transactions/' class='test'>TM Herrick</a>",
-                  "span":{
-                    "data":"1380016",
-                    "class":"u-block u-light font-size-xs"
-                  }
+                  "type":"layout/internal-grid",
+                  "grid_modifier":"grid--middle",
+                  "bigLink":true,
+                  "columns":[
+                    {
+                      "column_class":"medium-third",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data": [
+                            {
+                              "type": "type/h3",
+                              "data": "<a href='/pages/forbar/' class='test'>TM Herrick</a>",
+                              "span":{
+                                "data":"1380016",
+                                "class":"u-block u-light font-size-xs"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "column_class":"medium-two-thirds u-hide--small-down",
+                      "data":[
+                        {
+                          "type": "links/btn",
+                          "label": "portfolio",
+                          "theme": "link",
+                          "size":"x-small",
+                          "soft":"true",
+                          "class": "u-right u-uppercase",
+                          "href":"/pages/forbar-portfolio/"
+                        },
+                        {
+                          "type": "links/btn",
+                          "label": "account details",
+                          "theme": "link",
+                          "size":"x-small",
+                          "soft":"true",
+                          "class":"u-right u-uppercase",
+                          "href":"/pages/forbar-account-details/"
+                        },
+                        {
+                          "type": "links/btn",
+                          "label": "transactions",
+                          "theme": "link",
+                          "size":"x-small",
+                          "soft":"true",
+                          "class": "u-right u-uppercase",
+                          "href":"/pages/forbar-transactions/"
+                        }
+                      ]
+                    }
+                  ]
+                }
+           
+              ]
+            }
+          ]
+        },
+        {
+          "column_size":"",
+          "data": [
+            {
+              "type":"layout/internal-grid",
+              "grid_modifier":"grid--middle",
+              "bigLink":true,
+              "columns":[
+                {
+                  "column_class":"medium-third ",
+                  "data":[
+                    {
+                      "type": "layout/content-block",
+                      "padding":"pt-s pb-s",
+                      "data": [
+                        {
+                          "type": "type/h3",
+                          "data": "<a href='/pages/forbar/' class='test'>M A Broad</a>",
+                          "span":{
+                            "data":"1380016",
+                            "class":"u-block u-light font-size-xs"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "column_class":"medium-two-thirds u-hide--small-down",
+                  "data":[
+                    {
+                      "type": "links/btn",
+                      "label": "portfolio",
+                      "theme": "link",
+                      "size":"x-small",
+                      "soft":"true",
+                      "class": "u-right u-uppercase",
+                      "href":"/pages/forbar-portfolio/"
+                    },
+                    {
+                      "type": "links/btn",
+                      "label": "account details",
+                      "theme": "link",
+                      "size":"x-small",
+                      "soft":"true",
+                      "class":"u-right u-uppercase",
+                      "href":"/pages/forbar-account-details/"
+                    },
+                    {
+                      "type": "links/btn",
+                      "label": "transactions",
+                      "theme": "link",
+                      "size":"x-small",
+                      "soft":"true",
+                      "class": "u-right u-uppercase",
+                      "href":"/pages/forbar-transactions/"
+                    }
+                  ]
                 }
               ]
             }
           ]
         },
         {
+          "column_size":"",
           "data":[
             {
-              "type": "layout/content-block",
-              "padding":"pt-s pb-s",
-              "theme":"border--ultra-light-grey border-t",
-              "data": [
+              "type":"layout/internal-grid",
+              "container_padding":"pt-m pb-m",
+              "internal_theme":"border-t border--ultra-light-grey",
+              "columns":[
                 {
-                  "type": "type/h3",
-                  "data": "<a href='/pages/forbar-transactions/' class='test'>M A Broad</a>",
-                  "span":{
-                    "data":"1380016",
-                    "class":"u-block u-light font-size-xs"
-                  }
+                  "data":[
+                    {
+                        "type": "links/btn",
+                        "label": "ADD AN INVESTMENT ACCOUNT",
+                        "theme": "plain",
+                        "size":"small",
+                        "block":true,
+                        "soft":"true"
+                    }
+                  ]
                 }
               ]
             }
@@ -97,7 +216,5 @@
         }
       ]
     }
-    
   ]
-
 }

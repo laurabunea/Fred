@@ -55,9 +55,10 @@
       "type":"layout/dynamic",
       "grid_modifier":"grid--middle",
       "external_theme":"theme--white",
-      "container_padding":" layout",
+      "container_padding":" layout--forbar",
       "columns":[
         {
+          "column_size":"",
           "data": [
             {
               "type":"layout/content-block",
@@ -69,7 +70,7 @@
                   "bigLink":true,
                   "columns":[
                     {
-                      "column_class":"two-thirds",
+                      "column_class":"medium-third",
                       "data":[
                         {
                           "type": "layout/content-block",
@@ -88,15 +89,42 @@
                       ]
                     },
                     {
-                      "column_class":"third",
+                      "column_class":"medium-two-thirds u-hide--small-down",
                       "data":[
                         {
-                            "type": "links/btn",
-                            "label": "delete",
-                            "theme": "plain",
-                            "size":"x-small",
-                            "soft":"true",
-                            "class": "u-right u-uppercase "
+                          "type": "links/btn",
+                          "label": "delete",
+                          "theme": "plain",
+                          "size":"x-small",
+                          "soft":"true",
+                          "class": "u-right u-uppercase "
+                        },
+                        {
+                          "type": "links/btn",
+                          "label": "portfolio",
+                          "theme": "link",
+                          "size":"x-small",
+                          "soft":"true",
+                          "class": "u-right u-uppercase",
+                          "href":"/pages/forbar-portfolio/"
+                        },
+                        {
+                          "type": "links/btn",
+                          "label": "account details",
+                          "theme": "link",
+                          "size":"x-small",
+                          "soft":"true",
+                          "class":"u-right u-uppercase",
+                          "href":"/pages/forbar-account-details/"
+                        },
+                        {
+                          "type": "links/btn",
+                          "label": "transactions",
+                          "theme": "link",
+                          "size":"x-small",
+                          "soft":"true",
+                          "class": "u-right u-uppercase",
+                          "href":"/pages/forbar-transactions/"
                         }
                       ]
                     }
@@ -108,6 +136,7 @@
           ]
         },
         {
+          "column_size":"",
           "data": [
             {
               "type":"layout/internal-grid",
@@ -115,7 +144,7 @@
               "bigLink":true,
               "columns":[
                 {
-                  "column_class":"two-thirds ",
+                  "column_class":"medium-third",
                   "data":[
                     {
                       "type": "layout/content-block",
@@ -134,18 +163,46 @@
                   ]
                 },
                 {
-                  "column_class":"third",
+                  "column_class":"medium-two-thirds u-hide--small-down",
                   "data":[
                     {
-                        "type": "links/btn",
-                        "label": "delete",
-                        "theme": "plain",
-                        "size":"x-small",
-                        "soft":"true",
-                        "class": "u-right u-uppercase "
+                      "type": "links/btn",
+                      "label": "delete",
+                      "theme": "plain",
+                      "size":"x-small",
+                      "soft":"true",
+                      "class": "u-right u-uppercase "
+                    },
+                    {
+                      "type": "links/btn",
+                      "label": "portfolio",
+                      "theme": "link",
+                      "size":"x-small",
+                      "soft":"true",
+                      "class": "u-right u-uppercase",
+                      "href":"/pages/forbar-portfolio/"
+                    },
+                    {
+                      "type": "links/btn",
+                      "label": "account details",
+                      "theme": "link",
+                      "size":"x-small",
+                      "soft":"true",
+                      "class":"u-right u-uppercase",
+                      "href":"/pages/forbar-account-details/"
+                    },
+                    {
+                      "type": "links/btn",
+                      "label": "transactions",
+                      "theme": "link",
+                      "size":"x-small",
+                      "soft":"true",
+                      "class": "u-right u-uppercase",
+                      "href":"/pages/forbar-transactions/"
                     }
                   ]
                 }
+                
               ]
             }
           ]
@@ -155,16 +212,18 @@
             {
               "type":"layout/internal-grid",
               "container_padding":"pt-m pb-m",
+              "internal_theme":"border-t border--ultra-light-grey",
               "columns":[
                 {
+                  "column_class":"large-8",
                   "data":[
                     {
-                        "type": "links/btn",
-                        "label": "ADD AN INVESTMENT ACCOUNT",
-                        "theme": "plain",
-                        "size":"small",
-                        "block":true,
-                        "soft":"true"
+                      "type": "links/btn",
+                      "label": "ADD AN INVESTMENT ACCOUNT",
+                      "theme": "plain",
+                      "size":"small",
+                      "block":true,
+                      "soft":"true"
                     }
                   ]
                 }

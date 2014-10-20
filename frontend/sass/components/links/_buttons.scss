@@ -54,7 +54,7 @@ button {
     background-color: transparent;
 }
 
-.btn + .btn {  @include rem(margin-left,$space-m); }
+.btn + .btn {  @include rem(margin-right,$space-m); }
 
 
 .btn--block + .btn--block { margin-left:0; }
@@ -195,17 +195,17 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
 
 .btn--secondary {
 
-    background: #293f54;
+    background: $dark-blue;
     color: #fff;
     &:visited { color: $base-link-color;}
 
     &:hover {
-        background: darken(#293f54, 10%);
+        background: darken($dark-blue, 10%);
         color:#fff;
     }
     &:active {
         color:$white;
-        background: #293f54;
+        background: $dark-blue;
     }
 }
 
@@ -224,19 +224,27 @@ Try and avoid using `<input type='submit' value='Go'>` in favour of
         color:$light-grey;
     }
 }
+.btn--link {
+    background: transparent;
+    color: $base-link-color;
+    border:1px solid transparent;
+    &:visited { color: $base-link-color; }
+    &:hover { color: darken($base-link-color, 10%); }
+    &:active { color:$base-link-color; }
+}
 
 .btn--inverse {
-    background-color: transparent;
-    color: $white;
+    background-color: $white;
+    color: $dark-grey;
     border:1px solid $white;
     &:hover {
       background-color:$white;
-      color: #293f54;
+      color: $dark-grey;
     }
-    &:visited { color: #293f54;}
+    &:visited { color: $dark-grey;}
     &:active {
         color:$white;
-        background: #293f54;
+        background: $dark-grey;
     }
 }
 

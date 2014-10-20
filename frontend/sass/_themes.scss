@@ -246,7 +246,7 @@ $link-color:
 //some importants to make sure these overide themes and component styles
 //bg colours
 
-.bg--dark-blue { background-color:#0D334E!important;}
+.bg--dark-blue { background-color:$dark-blue!important;}
 .bg--mid-blue { background-color:lighten(#0D334E, 5%);}
 .bg--black {  background:$black!important;  }
 .bg--white {  background:$white!important;  }

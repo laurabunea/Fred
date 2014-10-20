@@ -28,7 +28,7 @@
       "type":"layout/dynamic",
       "grid_modifier":"grid--middle",
       "external_theme":"theme--white",
-      "container_padding":"pt-xxxl pb-xxxl layout",
+      "container_padding":"pt-xxxl pb-xxxl layout--forbar",
       "columns":[
         {
           "data":[
