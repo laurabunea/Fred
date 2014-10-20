@@ -91,7 +91,7 @@
               "type": "links/btn",
               "label": "register",
               "theme": "plain",
-              "href":"/pages/forbar-forgot-password/",
+              "href":"/pages/forbar-register/",
               "size":"small",
               "block":true,
               "soft":"true",
