@@ -54,7 +54,7 @@
             {
               "type": "links/btn",
               "label": "Sign in",
-              "href":"pages/forbar/",
+              "href":"/pages/forbar/",
               "theme":"soft btn--secondary"
             }
           ]
