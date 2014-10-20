@@ -1,0 +1,144 @@
+{
+  "title": "pages",
+  "slug":"forbar",
+  "headline": "Page one",
+  "template":"client.j2",
+  "client":"Forbar",
+  "data": [ 
+    {
+      "type": "global/global-nav",
+      "external_theme":"theme--dark-blue",
+      "logo":"forsyth-barr-logo",
+      "uppercase":true,
+      "small_text":true,
+      "container_padding":"pt-s pb-s layout ",
+      "pages":[
+        {
+          "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--middle",
+      "external_theme":"theme--dark-blue",
+      "container_padding":"layout",
+      "columns":[
+        {
+          "column_class":"two-thirds content-block",
+          "content_padding":"pt-xl pb-xl",
+          "remove_content_gutters":true,
+          "data":[
+           
+            {
+              "type": "type/h2",
+              "data": "Website User Registration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "grid_modifier":"grid--middle",
+      "external_theme":"theme--white ",
+      "container_padding":"pt-xxl pb-xxl layout--forbar",
+      "bigLink":true,
+      "columns":[
+        {
+          "column_size":"",
+          "data":[
+            {
+              "type": "form/form",
+              "data": [
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Your name *",
+                      "name":"emailinput",
+                      "help_text":"Please enter your first and last name"
+                    },
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Your email address *",
+                      "name":"emailinput"
+                      
+                    },
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Password check *",
+                      "name":"emailinput" 
+                    },
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Password *",
+                      "name":"emailinput",
+                      "help_text":"Minimum password length 8 characters."
+                    },
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Confirm your Password *",
+                      "name":"emailinput",
+                      "help_text":"The name of your Forsyth Barr account"
+                    },
+                    {
+                      "col_size":"",
+                      "type":"checkbox",
+                      "label":"I agree to the terms and conditions *",
+                      "name":"emailinput",
+                      "help_text":"Please read and confirm that you agree to the terms and conditions and the Access Terms."
+                    }
+                  ]
+                },
+                {
+                  "type":"form/form-group-wrapper",
+                  "data":[
+                    {
+                      "type":"layout/hr"
+                    },
+                    {
+                      "type":"type/h3",
+                      "data":"Account details"
+                    }
+                  ]
+                },
+                {
+                  "type":"form/form-group",
+                  "data":[
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Account name",
+                      "name":"emailinput",
+                      "help_text":"Your Forsyth Barr account number"
+                    },
+                    {
+                      "col_size":"",
+                      "type":"email",
+                      "label":"Account number",
+                      "name":"emailinput",
+                      "help_text":"Reenter yor password"
+                    },
+                    {
+                      "col_size":"",
+                      "type":"submit",
+                      "label":"Register",
+                      "theme":"btn--secondary btn--soft"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

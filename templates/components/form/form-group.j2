@@ -11,6 +11,10 @@
          {% if item.type == "submit" %}
 
             {% include "components/form/submit.j2" %}
+            
+        {% elif item.type == "checkbox" %}
+
+            {% include "components/form/checkbox.j2" %}
 
         {% else %}
 
@@ -18,7 +22,7 @@
             
             {% if item.type == "select" %}
                 {% include "components/form/select.j2" %}
-           
+
             {% else %} 
                 {% include "components/form/input.j2" %}
             {% endif %}
