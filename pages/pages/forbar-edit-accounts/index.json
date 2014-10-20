@@ -78,7 +78,7 @@
                           "data": [
                             {
                               "type": "type/h3",
-                              "data": "<a href='/pages/forbar/' class='test'>TM Herrick</a>",
+                              "data": "<a href='/pages/forbar-transactions/' class='test'>TM Herrick</a>",
                               "span":{
                                 "data":"1380016",
                                 "class":"u-block u-light font-size-xs"
@@ -125,7 +125,7 @@
                       "data": [
                         {
                           "type": "type/h3",
-                          "data": "<a href='/pages/forbar/' class='test'>M A Broad</a>",
+                          "data": "<a href='/pages/forbar-transactions/' class='test'>M A Broad</a>",
                           "span":{
                             "data":"1380016",
                             "class":"u-block u-light font-size-xs"

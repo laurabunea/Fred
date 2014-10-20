@@ -78,7 +78,7 @@
                           "data": [
                             {
                               "type": "type/h3",
-                              "data": "<a href='/pages/forbar/' class='test'>TM Herrick</a>",
+                              "data": "<a href='/pages/forbar-transactions/' class='test'>TM Herrick</a>",
                               "span":{
                                 "data":"1380016",
                                 "class":"u-block u-light font-size-xs"
@@ -91,15 +91,7 @@
                     {
                       "column_class":"medium-two-thirds u-hide--small-down",
                       "data":[
-                        {
-                          "type": "links/btn",
-                          "label": "portfolio",
-                          "theme": "link",
-                          "size":"x-small",
-                          "soft":"true",
-                          "class": "u-right u-uppercase",
-                          "href":"/pages/forbar-portfolio/"
-                        },
+                        
                         {
                           "type": "links/btn",
                           "label": "account details",
@@ -108,6 +100,15 @@
                           "soft":"true",
                           "class":"u-right u-uppercase",
                           "href":"/pages/forbar-account-details/"
+                        },
+                        {
+                          "type": "links/btn",
+                          "label": "portfolio",
+                          "theme": "link",
+                          "size":"x-small",
+                          "soft":"true",
+                          "class": "u-right u-uppercase",
+                          "href":"/pages/forbar-portfolio/"
                         },
                         {
                           "type": "links/btn",
@@ -144,7 +145,7 @@
                       "data": [
                         {
                           "type": "type/h3",
-                          "data": "<a href='/pages/forbar/' class='test'>M A Broad</a>",
+                          "data": "<a href='/pages/forbar-transactions/' class='test'>M A Broad</a>",
                           "span":{
                             "data":"1380016",
                             "class":"u-block u-light font-size-xs"
@@ -159,6 +160,14 @@
                   "data":[
                     {
                       "type": "links/btn",
+                      "label": "account details",
+                      "theme": "link",
+                      "size":"x-small",
+                      "soft":"true",
+                      "class":"u-right u-uppercase",
+                      "href":"/pages/forbar-account-details/"
+                    },{
+                      "type": "links/btn",
                       "label": "portfolio",
                       "theme": "link",
                       "size":"x-small",
@@ -166,15 +175,7 @@
                       "class": "u-right u-uppercase",
                       "href":"/pages/forbar-portfolio/"
                     },
-                    {
-                      "type": "links/btn",
-                      "label": "account details",
-                      "theme": "link",
-                      "size":"x-small",
-                      "soft":"true",
-                      "class":"u-right u-uppercase",
-                      "href":"/pages/forbar-account-details/"
-                    },
+                    
                     {
                       "type": "links/btn",
                       "label": "transactions",
@@ -189,31 +190,8 @@
               ]
             }
           ]
-        },
-        {
-          "column_size":"",
-          "data":[
-            {
-              "type":"layout/internal-grid",
-              "container_padding":"pt-m pb-m",
-              "internal_theme":"border-t border--ultra-light-grey",
-              "columns":[
-                {
-                  "data":[
-                    {
-                        "type": "links/btn",
-                        "label": "ADD AN INVESTMENT ACCOUNT",
-                        "theme": "plain",
-                        "size":"small",
-                        "block":true,
-                        "soft":"true"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         }
+        
       ]
     }
   ]
