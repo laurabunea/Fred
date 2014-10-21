@@ -54,20 +54,17 @@
                   "data":[
                     {
                       "col_size":"",
-                      "type":"email",
                       "label":"Current password *",
                       "name":"emailinput"
                     },
                     {
                       "col_size":"",
-                      "type":"email",
                       "label":"New password *",
                       "name":"emailinput",
                       "help_text":"Minimum password length 8 characters"
                     },
                     {
                       "col_size":"",
-                      "type":"email",
                       "label":"Password check *",
                       "name":"emailinput" 
                     },

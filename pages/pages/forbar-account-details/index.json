@@ -143,13 +143,11 @@
                   "data":[
                     {
                       "col_size":"",
-                      "type":"email",
                       "label":"Account Investment Adviser(s)",
                       "help_text":"Andrew Wylie"
                     },
                     {
                       "col_size":"",
-                      "type":"email",
                       "label":"Account type",
                       "help_text":"Investment Advisory Service"
                     }
@@ -189,7 +187,6 @@
                     },
                     {
                       "col_size":"",
-                      "type":"email",
                       "label":"IRD number",
                       "name":"emailinput" 
                     }
@@ -225,19 +222,16 @@
                   "data":[
                     {
                       "col_size":"",
-                      "type":"email",
                       "label":"Salutation",
                       "help_text":"Tim"
                     },
                     {
                       "col_size":"",
-                      "type":"email",
                       "label":"Postal address",
                       "help_text":"76 Aubrey Road, Wanaka, 9305"
                     },
                     {
                       "col_size":"",
-                      "type":"email",
                       "label":"Residential address",
                       "help_text":"same as above"
                     }
@@ -270,20 +264,17 @@
                     },
                     {
                       "col_size":"m",
-                      "type":"email",
                       "label":"Business phone",
                       "name":"emailinput" 
                     },
                     {
                       "col_size":"",
-                      "type":"email",
                       "label":"Private phone",
                       "name":"emailinput",
                       "placeholder":"04 443 4915"
                     },
                     {
                       "col_size":"",
-                      "type":"email",
                       "label":"Mobile phone",
                       "name":"emailinput",
                       "placeholder":"04 443 4915"
@@ -319,14 +310,12 @@
                   "data":[
                     {
                       "col_size":"medium-third",
-                      "type":"email",
                       "label":"Name",
                   
                       "help_text":"Timothy Michael Herrick"
                     },
                     {
                       "col_size":"medium-third",
-                      "type":"email",
                       "label":"IRD number",
                       "name":"emailinput",
                       "placeholder":"23-687-038"
