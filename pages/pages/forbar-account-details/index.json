@@ -14,10 +14,11 @@
       "container_padding":"pt-s pb-s layout ",
       "pages":[
         {
-          "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD</a>"
+          "title":"<a id='modal' href='/pages/forbar-modal/'>JEBEDIAH SPRINGFIELD<i class='i i-dropdown '></i></a>"
         }
       ]
     },
+
     {
       "type":"layout/dynamic",
       "external_theme":"theme--dark-blue",
@@ -128,16 +129,17 @@
     },
     {
       "type":"layout/dynamic",
-      "grid_modifier":"grid--middle",
+      "grid_modifier":"",
       "external_theme":"theme--white ",
       "container_padding":"pt-xxl pb-xxl layout--forbar",
       "bigLink":true,
       "columns":[
         {
+          "column_size":"medium-half",
           "data":[
             {
               "type": "form/form",
-              "form_class":"grid",
+              "form_class":"form-inline",
               "data": [
                 {
                   "type": "form/form-group",
@@ -146,14 +148,30 @@
                       "col_size":"",
                       "type":"email",
                       "label":"Account Investment Adviser(s)",
-                      "name":"test"
+                      "help_text":"Andrew Wylie"
                     },
                     {
                       "col_size":"",
                       "type":"email",
                       "label":"Account type",
-                      "name":"emailinput"
-                    },
+                      "help_text":"Investment Advisory Service"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "column_size":"medium-half",
+          "data":[
+            {
+              "type": "form/form",
+              "form_class":"grid",
+              "data": [
+                {
+                  "type": "form/form-group",
+                  "data":[
                     {
                       "col_size":"",
                       "type":"select",
@@ -179,20 +197,32 @@
                       "name":"emailinput" 
                     }
                   ]
-                },
-                {
-                  "type": "form/form-group-wrapper",
-                  "data":[
-                    {
-                      "type":"layout/hr"
-                    },
-                    {
-                      "type":"type/h3",
-                      "data":"Primary contact",
-                      "class":"mb-0"
-                    }
-                  ]
-                },
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "column_size":"",
+          "data":[
+          
+            {
+              "type":"layout/hr"
+            },
+            {
+              "type":"type/h3",
+              "data":"Primary contact"
+            }
+             
+          ]
+        },
+        {
+          "column_size":"medium-half",
+          "data":[
+            {
+              "type": "form/form",
+              "form_class":"form-inline",
+              "data": [
                 {
                   "type": "form/form-group",
                   "data":[
@@ -200,20 +230,40 @@
                       "col_size":"",
                       "type":"email",
                       "label":"Salutation",
-                      "name":"test"
+                      "help_text":"Tim"
                     },
                     {
                       "col_size":"",
                       "type":"email",
                       "label":"Postal address",
-                      "name":"emailinput"
+                      "help_text":"76 Aubrey Road, Wanaka, 9305"
                     },
                     {
                       "col_size":"",
                       "type":"email",
                       "label":"Residential address",
-                      "name":"emailinput" 
-                    },
+                      "help_text":"same as above"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        
+        {
+
+          "column_size":"medium-half",
+          "data":[
+            {
+              "type": "form/form",
+              "form_class":"grid",
+              "data": [
+                
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    
                     {
                       "col_size":"",
                       "type":"email",
@@ -242,44 +292,76 @@
                       "placeholder":"04 443 4915"
                     }
                   ]
-                },
-                {
-                  "type": "form/form-group-wrapper",
-                  "data":[
-                    {
-                      "type":"layout/hr"
-                    },
-                    {
-                      "type":"type/h3",
-                      "data":"Account holders",
-                      "class":"mb-0"
-                    }
-                  ]
-                },
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "column_size":"",
+          "data":[
+          
+            {
+              "type":"layout/hr"
+            },
+            {
+              "type":"type/h3",
+              "data":"Account holders"
+            } 
+          ]
+        },
+        {
+          "column_size":"",
+          "data":[
+            {
+              "type": "form/form",
+              "form_class":"grid",
+              "data": [
                 {
                   "type": "form/form-group",
                   "data":[
                     {
-                      "col_size":"",
+                      "col_size":"medium-third",
                       "type":"email",
-                      "label":"Mobile phone",
-                      "name":"emailinput"
+                      "label":"Name",
+                  
+                      "help_text":"Timothy Michael Herrick"
                     },
                     {
-                      "col_size":"",
+                      "col_size":"medium-third",
                       "type":"email",
                       "label":"IRD number",
                       "name":"emailinput",
                       "placeholder":"23-687-038"
                     },
                     {
-                      "col_size":"",
+                      "col_size":"medium-third",
                       "type":"select",
                       "label":"Prescribed investor rate (PIR)",
                       "options":[
                         {"name":"x.xx%"},
                         {"name":"x.x"}
                       ] 
+                    }
+                   
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "column_size":"",
+          "data":[
+            {
+              "type": "form/form",
+              "form_class":"grid",
+              "data": [
+                {
+                  "type": "form/form-group",
+                  "data":[
+                    {
+                      "type":"layout/hr"
                     },
                     {
                       "type":"submit",

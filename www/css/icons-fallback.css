@@ -41,6 +41,20 @@
 
 
 
+.i-dropdown-circle {
+    background-image: url('png/dropdown-circle.png');
+    background-repeat: no-repeat;
+}
+
+
+
+.i-dropdown {
+    background-image: url('png/dropdown.png');
+    background-repeat: no-repeat;
+}
+
+
+
 .i-forsyth-barr-logo {
     background-image: url('png/forsyth-barr-logo.png');
     background-repeat: no-repeat;

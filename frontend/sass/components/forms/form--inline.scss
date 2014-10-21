@@ -19,7 +19,7 @@
     //wrapper
     .form-group {
       display: inline-block;
-      margin-bottom: 0;
+      //margin-bottom: 0;
       vertical-align: middle;
     }
 
@@ -30,11 +30,12 @@
       vertical-align: middle;
     }
     //label elements
-    .control-label {
+    .control-label,label {
       margin-bottom: 0;
       vertical-align: middle;
     }
-
+    label { @include rem(padding-right, $space-m);}
+   .help-block {display:inline-block;margin-top:0;}
     // Remove default margin on radios/checkboxes that were used for stacking, and
     // then undo the floating of radios and checkboxes to match (which also avoids
     // a bug in WebKit: https://github.com/twbs/bootstrap/issues/1969).
