@@ -44,7 +44,6 @@
                   "data":[
                     {
                       "col_size":"",
-                      "type":"email",
                       "label":"Your name *",
                       "name":"emailinput",
                       "help_text":"Please enter your first and last name"
@@ -58,20 +57,18 @@
                     },
                     {
                       "col_size":"",
-                      "type":"email",
                       "label":"Password check *",
                       "name":"emailinput" 
                     },
                     {
                       "col_size":"",
-                      "type":"email",
                       "label":"Password *",
                       "name":"emailinput",
                       "help_text":"Minimum password length 8 characters."
                     },
                     {
                       "col_size":"",
-                      "type":"email",
+                
                       "label":"Confirm your Password *",
                       "name":"emailinput",
                       "help_text":"The name of your Forsyth Barr account"
@@ -102,14 +99,12 @@
                   "data":[
                     {
                       "col_size":"",
-                      "type":"email",
                       "label":"Account name",
                       "name":"emailinput",
                       "help_text":"Your Forsyth Barr account number"
                     },
                     {
                       "col_size":"",
-                      "type":"email",
                       "label":"Account number",
                       "name":"emailinput",
                       "help_text":"Reenter yor password"
