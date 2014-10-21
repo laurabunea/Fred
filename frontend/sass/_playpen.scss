@@ -6,6 +6,71 @@
 \*------------------------------------*/
 
 
+
+// Mixin for transition/transform
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+      -ms-transform: translate($x, $y); // IE9+
+          transform: translate($x, $y);
+}
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+          transition: $transition;
+}
+@mixin transition-transform($transition) {
+  -webkit-transition: -webkit-transform $transition;
+     -moz-transition: -moz-transform $transition;
+       -o-transition: -o-transform $transition;
+          transition: transform $transition;
+}
+.modal { 
+  // This is modal bg
+  &:before{
+    content: ""; 
+    display: none;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0; 
+    z-index: 10;
+  }
+  
+  &:target{
+    // Active animate in modal
+    &:before{
+      display: block;
+    }  
+    .modal-dialog{
+      @include translate(0, 0); 
+      top: 10%;  
+    }
+  }
+  /*ADDED TO STOP SCROLLING TO TOP*/
+    #close {
+      display: none; 
+    }
+
+}
+.modal-close {
+    position:absolute;
+    right:1rem;
+    top:0.5em;
+    font-weight:bold;
+}
+.modal-dialog {
+  background: #fefefe;
+  border: #ccc solid 1px;
+  border-radius: 5px;
+  //margin-left: -200px;
+  position: fixed; 
+  left: 25%; 
+  top: -100%;  
+  z-index: 11; 
+  width: 50%;
+  @include translate(0, -500%);
+  @include transition-transform("0.3s ease-out");
+
+}
+
 .layout--forbar {
     @include rem(padding-right,$space-m);
     @include rem(padding-left,$space-m);
