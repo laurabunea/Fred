@@ -10,7 +10,7 @@
       "type":"layout/dynamic",
       "grid_modifier":"grid--middle",
       "external_theme":"theme--dark-blue",
-      "container_padding":"layout",
+      "container_padding":"layout--forbar",
       "columns":[
         {
           "column_class":"two-thirds content-block",
@@ -55,7 +55,7 @@
                 {
                   "type":"layout/internal-grid",
                   "grid_modifier":"grid--middle",
-                  "bigLink":true,
+               
                   "columns":[
                     {
                       "column_class":"medium-third",
@@ -66,7 +66,7 @@
                           "data": [
                             {
                               "type": "type/h3",
-                              "data": "<a href='/pages/forbar-transactions/' class='test'>TM Herrick</a>",
+                              "data": "TM Herrick",
                               "span":{
                                 "data":"1380016",
                                 "class":"u-block u-light font-size-xs"
@@ -77,7 +77,7 @@
                       ]
                     },
                     {
-                      "column_class":"medium-two-thirds u-hide--small-down",
+                      "column_class":"medium-two-thirds",
                       "data":[
                         {
                           "type": "links/btn",
@@ -102,7 +102,6 @@
             {
               "type":"layout/internal-grid",
               "grid_modifier":"grid--middle",
-              "bigLink":true,
               "columns":[
                 {
                   "column_class":"medium-third",
@@ -113,7 +112,7 @@
                       "data": [
                         {
                           "type": "type/h3",
-                          "data": "<a href='/pages/forbar-transactions/' class='test'>M A Broad</a>",
+                          "data": "M A Broad",
                           "span":{
                             "data":"1380016",
                             "class":"u-block u-light font-size-xs"
@@ -124,7 +123,7 @@
                   ]
                 },
                 {
-                  "column_class":"medium-two-thirds u-hide--small-down",
+                  "column_class":"medium-two-thirds ",
                   "data":[
                     {
                       "type": "links/btn",
