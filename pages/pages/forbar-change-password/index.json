@@ -63,7 +63,7 @@
                       "type":"email",
                       "label":"New password *",
                       "name":"emailinput",
-                      "help_text":"Minimumn password length 8 characters"
+                      "help_text":"Minimum password length 8 characters"
                     },
                     {
                       "col_size":"",
