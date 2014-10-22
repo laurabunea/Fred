@@ -54,7 +54,7 @@
                     {{ td.data }}
                 </th>
             {% else %}
-                <td{% if td.colspan %} colspan='{{td.colspan}}'{% endif %} data-header='{{ item.data.thead[loop.index-1].data }}'>
+                <td class='' {% if td.colspan %} colspan='{{td.colspan}}'{% endif %} data-header=' {{ item.data.thead[loop.index-1].data }}'>
                     {{ td.data }}
                 </td>
             {% endif %}

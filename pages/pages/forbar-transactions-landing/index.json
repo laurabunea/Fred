@@ -5,7 +5,6 @@
   "template":"client.j2",
   "client":"Forbar",
   "data": [ 
-   
     {
       "type":"layout/dynamic",
       "external_theme":"theme--dark-blue",
@@ -22,16 +21,116 @@
                   "class":"mb-0",
                   "data": [
                     {
-                        "url": "/pages/forbar-transactions/",
-                        "title": "TRANSACTIONS"
+                        "url": "/pages/forbar-accounts/",
+                        "title": "INVESTMENT ACCOUNTS"
                     }
-                      
                   ]
                 },
                 {
                   "type": "type/h2",
-                  "data": "Forsyth Barr Cash Management"
+                  "data": "T M Herrick"
+                },
+                {
+                  "type": "type/text-small",
+                  "data": "1276351"
+                } 
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "remove_column_gutters":true,
+      "container_padding":"layout ",
+      "external_theme":"bg--dark-blue ",
+      "columns":[
+        {
+          "column_size":"third",
+          "column_theme":"bg--ultra-light-grey",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "links/btn",
+                  "label": "transactions",
+                  "block":true,
+                  "href":"/pages/forbar-transactions/",
+                  "class":"u-uppercase font-size-xs "
+                } 
+              ]
+            }
+          ]
+        },
+        {
+          "column_size":"third",
+          "column_theme":"theme--mid-blue border-r border--dark-blue ",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "links/btn",
+                  "label": "portfolio",
+                  "block":true,
+                  "href":"/pages/forbar-portfolio/",
+                  "class":"u-uppercase font-size-xs"
+                } 
+              ]
+            }
+          ]
+        },
+        {
+          "column_size":"third",
+          "column_theme":"theme--mid-blue ",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "links/btn",
+                  "label": "account details",
+                  "block":true,
+                  "href":"/pages/forbar-account-details/",
+                  "class":"u-uppercase font-size-xs "
+                }  
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "external_theme":"bg--white",
+      "container_padding":"layout",
+      "columns":[
+        {
+          "data":[
+            {
+              "type":"layout/content-block",
+              "padding":"pt-xl pb-xl",
+              "data":[
+                {
+                  "type": "links/breadcrumb",
+                  "class":"mb-0",
+                  "data": [
+                    {
+                        "url": "/pages/forbar-transactions/",
+                        "title": "TRANSACTIONS",
+                        "class":"u-uppercase"
+                    },
+                    {
+                        "url": "/pages/forbar-transactions/",
+                        "title": "Forsyth Barr Cash Management",
+                        "class":"u-uppercase"
+                    }
+                      
+                  ]
                 }
+               
               ]
             }
           ]

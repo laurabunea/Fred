@@ -388,7 +388,7 @@ img { border: 0;}
 
 @include small-down {
 
-    .u-hide--small-down {  display:none; }
+    .u-hide--small-down {  display:none!important; }
     .u-show--small-down {  display:block; }
 
     .u-text-center--small-down {  text-align: center; }
