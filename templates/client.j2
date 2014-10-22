@@ -19,7 +19,7 @@
 
                 </div>
 
-                <div class='[ col small-8 ] u-relative '>
+                <div class='[ col small-8 ] u-relative {% if homepage %} u-hide {% endif %}'>
 
                     <a href="#modal" class="text--white u-text-right u-block font-size-xs">JEBEDIAH SPRINGFIELD &#65516;</a>
 
@@ -51,7 +51,7 @@
                         <div class="[ col    ]  content-block">
                             <div class='content-block pt-xs pb-xs' >
                                 <p class='small  '>
-                                    Investments accounts
+                                    Investment accounts
                                 </p>
                             </div>
                         </div>   
@@ -146,7 +146,7 @@
 
                         <div class="[ col  ]  content-block">
                             <p>
-                                <a href='https://www.forsythbarr.co.nz/'>Forsyth Barr</a>
+                                <a href='https://www.forsythbarr.co.nz/'>Forsyth Barr</a> &middot;  <a href='https://www.forsythbarr.co.nz/contact-us/'>Contact us</a>
                             </p>
                         </div>
 
@@ -227,13 +227,13 @@
 {% block footer %}
 <div class=''>
     <div class='[ wrapper ]'>
-        <div class='[ layout pt-l pb-s ]'>
+        <div class='[ layout--forbar pt-l pb-s ]'>
             <div class='[ grid grid--middle ]'>
                 <div class='[ col medium-half ]'>
-                    <p class=' '><a href='https://www.forsythbarr.co.nz/'>Forsythbarr.co.nz</a></p>
+                    <p class=' '><a href='https://www.forsythbarr.co.nz/'>Forsyth Barr</a> &middot;   <a href='https://www.forsythbarr.co.nz/contact-us/'>Contact us</a></p>
                 </div>
-                <div class='[ col medium-half ]'>
-                    <p class='u-uppercase tiny'><a href='/pages/forbar-accounts/'>Jebediah Springfield</a> &middot; <a href='/pages/forbar-accounts/'>Accounts</a> &middot; <a href='/pages/forbar-profile/'>Profile</a> &middot; <a href='/pages/forbar/'>Sign out</a></p>
+                <div class='[ col medium-half  ]'>
+                    <p class='u-uppercase tiny u-right'>{% if homepage %}  {% else %}Jebediah Springfield &middot; {% endif %}  <a href='/pages/forbar-accounts/'>Accounts</a> &middot; <a href='/pages/forbar-profile/'>Profile</a> &middot; <a href='/pages/forbar/'>Sign out</a></p>
                 </div>
             </div>
         </div>
