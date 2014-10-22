@@ -127,7 +127,7 @@
                           "type": "form/form-group",
                           "data":[    
                             {
-                              "col_size":"medium-third",
+                              "col_size":"large-4",
                               "type":"select",
                               "options":[
                                 {"name":"April 2013 "},
@@ -159,7 +159,7 @@
                   
                             },
                             {
-                              "col_size":"medium-third",
+                              "col_size":"small-4",
                               "type":"select",
                               "options":[
                                 {"name":"Present "},

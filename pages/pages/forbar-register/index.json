@@ -52,8 +52,7 @@
                       "col_size":"",
                       "type":"email",
                       "label":"Your email address *",
-                      "name":"emailinput"
-                      
+                      "name":"emailinput"  
                     },
                     {
                       "col_size":"",
