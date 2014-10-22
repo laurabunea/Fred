@@ -4,6 +4,7 @@
   "headline": "Page one",
   "template":"client.j2",
   "client":"Forbar",
+  "homepage":true,
   "data": [ 
     {
       "type":"layout/dynamic",
