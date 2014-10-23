@@ -104,7 +104,7 @@
                           "data":[
                             {
                               "type": "type/p",
-                              "data": "<span class='text--light-grey'>NZD</span> 315,472.50 <span class='ml-xs'><i class='i i-caret-right'></i></span>",
+                              "data": "<span class='text--light-grey'>NZD</span> 316,146.81 <span class='ml-xs'><i class='i i-caret-right'></i></span>",
                               "class":"u-text-right"
                             }
                           ]
@@ -150,7 +150,7 @@
                           "data":[
                             {
                               "type": "type/p",
-                              "data": "<span class='text--light-grey'>NZD</span> 315,472.50 <span class='ml-xs'><i class='i i-caret-right'></i></span>",
+                              "data": "<span class='text--light-grey'>NZD</span> 107,631.82 <span class='ml-xs'><i class='i i-caret-right'></i></span>",
                               "class":"u-text-right"
                             }
                           ]
@@ -196,7 +196,99 @@
                           "data":[
                             {
                               "type": "type/p",
-                              "data": "<span class='text--light-grey'>NZD</span> 315,472.50 <span class='ml-xs'><i class='i i-caret-right'></i></span>",
+                              "data": "<span class='text--light-grey'>NZD</span> 136,541.36 <span class='ml-xs'><i class='i i-caret-right'></i></span>",
+                              "class":"u-text-right"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "data":[
+            {
+              "type":"layout/content-block",
+              "theme":"border-b border--ultra-light-grey",
+              "data":[
+                {
+                  "type":"layout/internal-grid",
+                  "columns":[
+                    {
+                      "column_class":"half",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data": [
+                            {
+                              "type": "type/p",
+                              "data": "<a href='/pages/forbar-portfolio-child/'>On Call to 90 days</a>"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "column_class":"half content-block",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data":[
+                            {
+                              "type": "type/p",
+                              "data": "<span class='text--light-grey'>NZD</span> 15,507.87 <span class='ml-xs'><i class='i i-caret-right'></i></span>",
+                              "class":"u-text-right"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "data":[
+            {
+              "type":"layout/content-block",
+              "theme":"border-b border--ultra-light-grey",
+              "data":[
+                {
+                  "type":"layout/internal-grid",
+                  "columns":[
+                    {
+                      "column_class":"half",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data": [
+                            {
+                              "type": "type/p",
+                              "data": "<a href='/pages/forbar-portfolio-child/'>Domestic Cash</a>"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "column_class":"half content-block",
+                      "data":[
+                        {
+                          "type": "layout/content-block",
+                          "padding":"pt-s pb-s",
+                          "data":[
+                            {
+                              "type": "type/p",
+                              "data": "<span class='text--light-grey'>NZD</span> 5,529.32 <span class='ml-xs'><i class='i i-caret-right'></i></span>",
                               "class":"u-text-right"
                             }
                           ]

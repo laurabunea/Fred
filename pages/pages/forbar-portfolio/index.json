@@ -120,10 +120,10 @@
                       "type":"img",
                       "src":"/images/forbar-chart.png"
                     },
-                    "NZD 712, 134.53",
+                    "NZD 718,276.04",
                     {
                       "type": "type/text-tiny",
-                      "data": "AS AT FRIDAY 12 SEPTEMBER"
+                      "data": "AS AT FRIDAY 24 OCTOBER"
                     } 
                   ]
                 }
@@ -177,7 +177,7 @@
                           "data":[
                             {
                               "type": "type/p",
-                              "data": "<span class='text--light-grey'>NZD</span> 315,472.50<i class='u-absolute u-absolute-middle-right i i-caret-right'></i>",
+                              "data": "<span class='text--light-grey'>NZD</span>  581,357.18<i class='u-absolute u-absolute-middle-right i i-caret-right'></i>",
                               "class":"u-text-right mb-0 mr-m"
                             }
                           ]
@@ -227,12 +227,12 @@
                           "data":[
                             {
                               "type": "type/p",
-                              "data": "<span class='text--light-grey'>AUD</span> 315,472.50<i class='u-absolute u-absolute-middle-right i i-caret-right'></i>",
+                              "data": "<span class='text--light-grey'>AUD</span> 114,340.51<i class='u-absolute u-absolute-middle-right i i-caret-right'></i>",
                               "class":"u-text-right mb-0 mr-m"
                             },
                             {
                               "type": "type/p",
-                              "data": "<span class='u-text-right text--light-grey'> NZD 315,472.50</span>",
+                              "data": "<span class='u-text-right text--light-grey'> NZD 126,542.34</span>",
                               "class":"u-text-right mr-m"
                             }
                           ]
@@ -282,12 +282,12 @@
                           "data":[
                             {
                               "type": "type/p",
-                              "data": "<span class='text--light-grey'>USD</span> 315,472.50<i class='u-absolute u-absolute-middle-right i i-caret-right'></i>",
+                              "data": "<span class='text--light-grey'>USD</span> 8,227.18<i class='u-absolute u-absolute-middle-right i i-caret-right'></i>",
                               "class":"u-text-right mb-0 mr-m"
                             },
                             {
                               "type": "type/p",
-                              "data": "<span class='u-text-right text--light-grey'> NZD 315,472.50</span>",
+                              "data": "<span class='u-text-right text--light-grey'> NZD 10,376.52</span>",
                               "class":"u-text-right mr-m"
                             }
                           ]
