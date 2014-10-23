@@ -6,7 +6,7 @@
             <thead>
         {% endif %}
         
-            <th {% if th.colspan %} colspan='{{th.colspan}}'{% endif %} class='tiny u-uppercase'>
+            <th {% if th.colspan %} colspan='{{th.colspan}}'{% endif %} class='tiny u-uppercase {% if loop.first %} two-thirds {% endif %}'>
                 {{ th.data }}
             </th>
 
@@ -50,7 +50,7 @@
         {% for td in tr %}
 
             {% if td.th %}
-                <th{% if td.colspan %} colspan='{{td.colspan}}'{% endif %} data-header='{{ item.data.thead[loop.index-1].data }}'>
+                <th{% if td.colspan %} colspan='{{td.colspan}}'{% endif %} data-header='{{ item.data.thead[loop.index-1].data }}' class='{% if loop.first %} two-thirds {% endif %}'>
                     {{ td.data }}
                 </th>
             {% else %}
