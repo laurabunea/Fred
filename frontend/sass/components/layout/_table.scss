@@ -20,8 +20,8 @@ $hr-colour: #F7F8F5;
     }
 
     td, th {
-        @include rem(padding-top, $space);
-        @include rem(padding-bottom, $space);
+        @include rem(padding-top, $space-s);
+        @include rem(padding-bottom, $space-s);
         @include rem(padding-left, 0);
         @include rem(padding-right, $space-s);
         text-align: right;
@@ -34,6 +34,7 @@ $hr-colour: #F7F8F5;
             @include rem(padding-right, $space);
         }
     }
+
 }
 
 
