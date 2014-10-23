@@ -6,7 +6,7 @@
             <thead>
         {% endif %}
         
-            <th {% if th.colspan %} colspan='{{th.colspan}}'{% endif %} class='tiny u-uppercase {% if loop.first %} two-thirds {% endif %}'>
+            <th {% if th.colspan %} colspan='{{th.colspan}}'{% endif %} class='tiny u-uppercase {% if loop.first %} small-6 {% endif %}{% if loop.last %} small-2 {% endif %}'>
                 {{ th.data }}
             </th>
 
@@ -50,11 +50,11 @@
         {% for td in tr %}
 
             {% if td.th %}
-                <th{% if td.colspan %} colspan='{{td.colspan}}'{% endif %} data-header='{{ item.data.thead[loop.index-1].data }}' class='{% if loop.first %} two-thirds {% endif %}'>
+                <th{% if td.colspan %} colspan='{{td.colspan}}'{% endif %} data-header='{{ item.data.thead[loop.index-1].data }}' class='{% if loop.first %} small-6 {% endif %} {% if loop.last %} small-2 {% endif %}'>
                     {{ td.data }}
                 </th>
             {% else %}
-                <td{% if td.colspan %} colspan='{{td.colspan}}'{% endif %} data-header='{{ item.data.thead[loop.index-1].data }}'>
+                <td{% if td.colspan %} colspan='{{td.colspan}}'{% endif %} data-header='{{ item.data.thead[loop.index-1].data }}' class='{% if loop.first %} small-6 {% endif %} {% if loop.last %} small-2 {% endif %}'>
                     {{ td.data }}
                 </td>
             {% endif %}
