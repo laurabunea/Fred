@@ -127,7 +127,7 @@
               "data": {
                 "thead": [ { "data": "29 September 2014" }, { "data": "Debit/credit" }, { "data": "Balance" } ],
                 "tbody": [
-                   [ { "data":"Withdrawal: Transfer to Account Ledger"                     }, {"data":"-2,500.00 "}, {"data":"1,315.69"} ],
+                   [ { "data":"Withdrawal: Transfer to Account Ledger"                     }, {"data":"-2,500.00 "}, {"data":"1,315.69"} ]
                 ]
               }
             },
