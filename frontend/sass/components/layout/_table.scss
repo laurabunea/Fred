@@ -5,6 +5,7 @@ $hr-colour: #F7F8F5;
 \*------------------------------------*/
 
 .table {
+    border-top:1px solid darken($hr-colour, 5%);
     border-collapse: collapse;//// Remove most spacing between table cells.
     border-spacing: 0;// Remove most spacing between table cells.
     display: table;
@@ -16,7 +17,8 @@ $hr-colour: #F7F8F5;
         background-color: $hr-colour;
     }
     tr {
-        border-bottom: 1px solid $hr-colour;
+        //border-top:1px solid darken($hr-colour, 5%);
+        border-bottom:1px solid darken($hr-colour, 5%);
     }
 
     td, th {

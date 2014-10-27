@@ -6,6 +6,7 @@
   "client":"Forbar",
   "data": [ 
    
+    
     {
       "type":"layout/dynamic",
       "external_theme":"theme--dark-blue",
@@ -15,23 +16,102 @@
           "data":[
             {
               "type":"layout/content-block",
-              "padding":" pt-xl pb-xl",
+              "padding":"pt-xl pb-xl",
               "data":[
-                {
-                  "type": "links/breadcrumb",
-                  "class":"mb-0",
-                  "data": [
-                    {
-                        "url": "/pages/forbar-portfolio-landing/",
-                        "title": "NEW ZEALAND DOLLAR"
-                    }
-                      
-                  ]
-                },
+                
                 {
                   "type": "type/h2",
-                  "data": "Domestic Fixed Interest"
+                  "data": "T M Herrick"
+                },
+                {
+                  "type": "type/text-small",
+                  "data": "1276351"
+                } 
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "remove_column_gutters":true,
+      "container_padding":"layout ",
+      "external_theme":"bg--dark-blue ",
+      "columns":[
+        {
+          "column_size":"third",
+          "column_theme":"theme--mid-blue",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "links/btn",
+                  "label": "transactions",
+                  "block":true,
+                  "href":"/pages/forbar-transactions/",
+                  "class":"u-uppercase font-size-xs "
+                } 
+              ]
+            }
+          ]
+        },
+        {
+          "column_size":"third",
+          "column_theme":"bg--ultra-light-grey ",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "links/btn",
+                  "label": "portfolio",
+                  "block":true,
+                  "href":"/pages/forbar-portfolio/",
+                  "class":"u-uppercase font-size-xs is-disabled "
+                } 
+              ]
+            }
+          ]
+        },
+        {
+          "column_size":"third",
+          "column_theme":"theme--mid-blue ",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "links/btn",
+                  "label": "account details",
+                  "block":true,
+                  "href":"/pages/forbar-account-details/",
+                  "class":"u-uppercase font-size-xs "
+                }  
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "container_padding":"layout pt-m pb-m",
+      "external_theme":"bg--ultra-light-grey ",
+      "columns":[
+        {
+          "column_size":"",
+          "column_theme":"",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "type/p",
+                  "data": "<a href='/pages/forbar-portfolio-landing/'><strong>New Zealand Dollar:</strong></a><br /><strong>Domestic Fixed Interest</strong>"
                 }
+               
               ]
             }
           ]

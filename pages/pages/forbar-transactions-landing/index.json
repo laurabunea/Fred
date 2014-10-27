@@ -5,7 +5,6 @@
   "template":"client.j2",
   "client":"Forbar",
   "data": [ 
-   
     {
       "type":"layout/dynamic",
       "external_theme":"theme--dark-blue",
@@ -18,20 +17,98 @@
               "padding":"pt-xl pb-xl",
               "data":[
                 {
-                  "type": "links/breadcrumb",
-                  "class":"mb-0",
-                  "data": [
-                    {
-                        "url": "/pages/forbar-transactions/",
-                        "title": "TRANSACTIONS"
-                    }
-                      
-                  ]
+                  "type": "type/h2",
+                  "data": "T M Herrick"
                 },
                 {
-                  "type": "type/h2",
-                  "data": "Forsyth Barr Cash Management"
+                  "type": "type/text-small",
+                  "data": "1276351"
+                } 
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "remove_column_gutters":true,
+      "container_padding":"layout ",
+      "external_theme":"bg--dark-blue ",
+      "columns":[
+        {
+          "column_size":"third",
+          "column_theme":"bg--ultra-light-grey",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "links/btn",
+                  "label": "transactions",
+                  "block":true,
+                  "href":"/pages/forbar-transactions/",
+                  "class":"u-uppercase font-size-xs "
+                } 
+              ]
+            }
+          ]
+        },
+        {
+          "column_size":"third",
+          "column_theme":"theme--mid-blue border-r border--dark-blue ",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "links/btn",
+                  "label": "portfolio",
+                  "block":true,
+                  "href":"/pages/forbar-portfolio/",
+                  "class":"u-uppercase font-size-xs"
+                } 
+              ]
+            }
+          ]
+        },
+        {
+          "column_size":"third",
+          "column_theme":"theme--mid-blue ",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "links/btn",
+                  "label": "account details",
+                  "block":true,
+                  "href":"/pages/forbar-account-details/",
+                  "class":"u-uppercase font-size-xs "
+                }  
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"layout/dynamic",
+      "container_padding":"layout pt-m pb-m",
+      "external_theme":"bg--ultra-light-grey ",
+      "columns":[
+        {
+          "column_size":"",
+          "column_theme":"",
+          "data":[
+            {
+              "type":"layout/content-block",
+              "data":[
+                {
+                  "type": "type/p",
+                  "data": "<a href='/pages/forbar-transactions/'><strong>Transactions:</strong></a><br /><strong>New Zealand Dollar: Forsyth Barr Cash Management</strong>"
                 }
+               
               ]
             }
           ]

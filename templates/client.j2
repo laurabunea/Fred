@@ -1,4 +1,4 @@
-{% extends "template.j2" %}
+c{% extends "template.j2" %}
 {% import "macros.j2" as macros %}
 
 {% block navigation %}
@@ -146,7 +146,7 @@
 
                         <div class="[ col  ]  content-block">
                             <p>
-                                <a href='https://www.forsythbarr.co.nz/'>Forsyth Barr</a> &middot;  <a href='https://www.forsythbarr.co.nz/contact-us/'>Contact us</a>
+                                <a href='https://www.forsythbarr.co.nz/'>Forsyth Barr</a> &middot;  <a href='https://www.forsythbarr.co.nz/contact-us/'>Contact us</a> &middot; <a href='/markets-and-research/research-highlights/'>Research &amp; Markets</a>
                             </p>
                         </div>
 
@@ -234,7 +234,7 @@
 
                 <div class='[ col medium-half ]'>
 
-                    <p class=' '><a href='https://www.forsythbarr.co.nz/'>Forsyth Barr</a> &middot;   <a href='https://www.forsythbarr.co.nz/contact-us/'>Contact us</a></p>
+                    <p class=''><a href='https://www.forsythbarr.co.nz/'>Forsyth Barr</a> &middot;   <a href='https://www.forsythbarr.co.nz/contact-us/'>Contact us</a> {% if homepage %} <span class='u-hide'>&middot;</span> {% else %} &middot; {% endif %}<a class='{% if homepage %} u-hide {% endif %}' href='/markets-and-research/research-highlights/'>Research &amp; Markets</a></p>
 
                 </div>
                 
