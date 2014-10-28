@@ -245,6 +245,22 @@ $section-desktop:64;
     @extend %layout-right;
 }
 
+.layout--push-2 {
+    //@include rem(padding-left,$space-m);
+    //@include rem(padding-right,$space-m);
+    $two-col: 231.2 + $space-xxxxl;
+    @include medium {
+        @include rem(padding-left,$two-col);
+        @include rem(padding-right,$space-xxxxl);
+    }
+    @include large {
+    //    & {
+    //        padding-left: 6em;
+    //        padding-right: 6em;
+    //    }
+    }
+}
+
 .layout--bleed-mobile {
     box-sizing:border-box;
     

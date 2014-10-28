@@ -98,29 +98,25 @@
       "type":"layout/dynamic",
       "external_theme":"bg--ultra-light-grey",
       "container_padding":"layout pt-l pb-l",
+      "grid_modifier":"grid--middle",
       "columns":[
         {
+          "column_size":"medium-2",
           "data":[
             {
-              "type":"layout/internal-grid",
-              "grid_modifier":"grid--center",
-              "columns":[
-                {
-                  "data":[
-                    {
-                      "type":"img",
-                      "src":"/images/forbar-chart.png"
-                    },
-                    "NZD 718,276.04",
-                    {
-                      "type": "type/text-tiny",
-                      "data": "AS AT FRIDAY 24 OCTOBER"
-                    } 
-                  ]
-                }
-
-              ]
+              "type":"img",
+              "src":"/images/forbar-chart.png"
             }
+          ]
+        },
+        {
+          "column_size":"medium-8",
+          "data":[
+            "NZD 718,276.04",
+            {
+              "type": "type/text-tiny",
+              "data": "AS AT FRIDAY 24 OCTOBER"
+            } 
           ]
         }
       ]
@@ -132,6 +128,13 @@
       "bigLink":true,
       "columns":[
         {
+          "column_size":"medium-2",
+          "data":[
+            
+          ]
+        },
+        {
+          "column_size":"medium-8",
           "data":[
             {
               "type":"layout/content-block",
@@ -182,6 +185,13 @@
           ]
         },
         {
+          "column_size":"medium-2",
+          "data":[
+            
+          ]
+        },
+        {
+          "column_size":"medium-8",
           "data":[
             {
               "type":"layout/content-block",
@@ -237,6 +247,13 @@
           ]
         },
         {
+          "column_size":"medium-2",
+          "data":[
+            
+          ]
+        },
+        {
+          "column_size":"medium-8",
           "data":[
             {
               "type":"layout/content-block",

@@ -107,7 +107,7 @@
                 {
                   "type": "type/p",
                   "class": "font-size-xl--medium",
-                  "data": "<a class='u-block--small-down' href='/pages/forbar-portfolio-landing/'><strong>Transactions:</strong></a><strong> New Zealand Dollar: Forsyth Barr Cash Management</strong>"
+                  "data": "<a class='u-block--small-down' href='/pages/forbar-transactions/'><strong>Transactions:</strong></a><strong> New Zealand Dollar: Forsyth Barr Cash Management</strong>"
                 }
               ]
             }
