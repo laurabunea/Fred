@@ -17,16 +17,7 @@
               "type":"layout/content-block",
               "padding":"pt-xl pb-xl",
               "data":[
-                {
-                  "type": "links/breadcrumb",
-                  "class":"mb-0",
-                  "data": [
-                    {
-                        "url": "/pages/forbar-accounts/",
-                        "title": "INVESTMENT ACCOUNTS"
-                    }
-                  ]
-                },
+                
                 {
                   "type": "type/h2",
                   "data": "T M Herrick"
