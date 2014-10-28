@@ -146,7 +146,8 @@ code,
 dt, 
 dd, 
 td { 
-    @extend %franklinitcprocondlight;
+    //@extend %franklinitcprocondlight;
+    @extend %bentonsanscondensedbook;
     //font-weight:$font-normal;
     
 }
@@ -157,13 +158,15 @@ h5,
 strong, 
 b, 
 th { 
-    @extend %franklinitcprocondmed;
+    @extend %bentonsanscondensedmedium;
+    //@extend %franklinitcprocondmed;
     //font-weight:$font-bold;
 }
 
 
 .intro { //font-weight:$font-light; 
-    @extend %franklinitcprocondlight;
+    //@extend %franklinitcprocondlight;
+    @extend %bentonsanscondensedbook;
 }
 
 
@@ -172,8 +175,9 @@ em,
 i, 
 cite, 
 dfn,.font-italic { 
+    @extend %bentonsanscondensedbookitalic;
     //font-style:italic; 
-    @extend %franklinitcprocondlightitalic;
+    //@extend %franklinitcprocondlightitalic;
 }
 
 

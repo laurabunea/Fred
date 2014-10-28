@@ -161,6 +161,30 @@ https://github.com/nDmitry/grunt-autoprefixer
   font-weight: normal;
 }
 
+
+%bentonsanscondensedbook {
+  font-family: "Benton Sans Cond Book";
+  font-style: normal;
+  font-weight: normal;
+}
+
+%bentonsanscondensedbookitalic {
+  font-family: "Benton Sans Cond Book";
+  font-style: italic;
+  font-weight: normal;
+}
+
+%bentonsanscondensedmedium {
+  font-family: "Benton Sans Cond Medium";
+  font-style: normal;
+  font-weight: normal;
+}
+
+%bentonsanscondensedmediumitalic {
+  font-family: "Benton Sans Cond Medium";
+  font-style: italic;
+  font-weight: normal;
+}
 @import "mixins";
 
 html {
@@ -172,7 +196,8 @@ html {
 }
 
 body {
-    @extend %franklinitcprocondlight;
+   // @extend %franklinitcprocondlight;
+   @extend %bentonsanscondensedbook;
     margin: 0;
     background-color: #f0f0f0;
     color: $base-font-color;
@@ -290,15 +315,18 @@ img { border: 0;}
 //todofont-weight:$font-bold;
 .u-bold { 
     //font-weight:$font-bold;
-    @extend %franklinitcprocondmed;
+    //@extend %franklinitcprocondmed;
+    @extend %bentonsanscondensedmedium;
 }
 
 .u-light { 
     font-weight:$font-light;
-    @extend %franklinitcprocondlight; 
+    //@extend %franklinitcprocondlight; 
+    @extend %bentonsanscondensedbook;
 }
 .u-normal {
-    @extend %franklinitcprocondlight;
+   @extend %bentonsanscondensedbook;
+    //@extend %franklinitcprocondlight;
 }
 .u-italic {font-style: italic;}
 
