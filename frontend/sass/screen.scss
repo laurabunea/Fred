@@ -87,57 +87,79 @@ https://github.com/nDmitry/grunt-autoprefixer
 */
 @import "config";
 //condensed
-@font-face {
-    font-family: 'franklin_gothic';
-    src: url('/fonts/FranklinGothic-Cd-webfont.eot');
-    src: url('/fonts/FranklinGothic-Cd-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/FranklinGothic-Cd-webfont.woff2') format('woff2'),
-         url('/fonts/FranklinGothic-Cd-webfont.woff') format('woff'),
-         url('/fonts/FranklinGothic-Cd-webfont.ttf') format('truetype'),
-         url('/fonts/FranklinGothic-Cd-webfont.svg#franklin_gothic_fscondensed') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'franklin_gothic';
+//     src: url('/fonts/FranklinGothic-Cd-webfont.eot');
+//     src: url('/fonts/FranklinGothic-Cd-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('/fonts/FranklinGothic-Cd-webfont.woff2') format('woff2'),
+//          url('/fonts/FranklinGothic-Cd-webfont.woff') format('woff'),
+//          url('/fonts/FranklinGothic-Cd-webfont.ttf') format('truetype'),
+//          url('/fonts/FranklinGothic-Cd-webfont.svg#franklin_gothic_fscondensed') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
 //condensed italic
-@font-face {
-    font-family: 'franklin_gothic';
-    src: url('/fonts/FranklinGothic-CdIt-webfont.eot');
-    src: url('/fonts/FranklinGothic-CdIt-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/FranklinGothic-CdIt-webfont.woff2') format('woff2'),
-         url('/fonts/FranklinGothic-CdIt-webfont.woff') format('woff'),
-         url('/fonts/FranklinGothic-CdIt-webfont.ttf') format('truetype'),
-         url('/fonts/FranklinGothic-CdIt-webfont.svg#franklin_gothic_fsCnIt') format('svg');
-    font-weight: normal;
-    font-style: italic;
+// @font-face {
+//     font-family: 'franklin_gothic';
+//     src: url('/fonts/FranklinGothic-CdIt-webfont.eot');
+//     src: url('/fonts/FranklinGothic-CdIt-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('/fonts/FranklinGothic-CdIt-webfont.woff2') format('woff2'),
+//          url('/fonts/FranklinGothic-CdIt-webfont.woff') format('woff'),
+//          url('/fonts/FranklinGothic-CdIt-webfont.ttf') format('truetype'),
+//          url('/fonts/FranklinGothic-CdIt-webfont.svg#franklin_gothic_fsCnIt') format('svg');
+//     font-weight: normal;
+//     font-style: italic;
 
-}
+// }
 //medium condensed
-@font-face {
-    font-family: 'franklin_gothic';
-    src: url('/fonts/FranklinGothic-MedCd-webfont.eot');
-    src: url('/fonts/FranklinGothic-MedCd-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/FranklinGothic-MedCd-webfont.woff2') format('woff2'),
-         url('/fonts/FranklinGothic-MedCd-webfont.woff') format('woff'),
-         url('/fonts/FranklinGothic-MedCd-webfont.ttf') format('truetype'),
-         url('/fonts/FranklinGothic-MedCd-webfont.svg#franklin_gothic_fsMdCn') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'franklin_gothic';
+//     src: url('/fonts/FranklinGothic-MedCd-webfont.eot');
+//     src: url('/fonts/FranklinGothic-MedCd-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('/fonts/FranklinGothic-MedCd-webfont.woff2') format('woff2'),
+//          url('/fonts/FranklinGothic-MedCd-webfont.woff') format('woff'),
+//          url('/fonts/FranklinGothic-MedCd-webfont.ttf') format('truetype'),
+//          url('/fonts/FranklinGothic-MedCd-webfont.svg#franklin_gothic_fsMdCn') format('svg');
+//     font-weight: bold;
+//     font-style: normal;
+// }
 //medium condensed italic
-@font-face {
-    font-family: 'franklin_gothic';
-    src: url('/fonts/FranklinGothic-MedCdIt-webfont.eot');
-    src: url('/fonts/FranklinGothic-MedCdIt-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/FranklinGothic-MedCdIt-webfont.woff2') format('woff2'),
-         url('/fonts/FranklinGothic-MedCdIt-webfont.woff') format('woff'),
-         url('/fonts/FranklinGothic-MedCdIt-webfont.ttf') format('truetype'),
-         url('/fonts/FranklinGothic-MedCdIt-webfont.svg#franklin_gothic_fsMdCnIt') format('svg');
-    font-weight: bold;
-    font-style: italic;
+// @font-face {
+//     font-family: 'franklin_gothic';
+//     src: url('/fonts/FranklinGothic-MedCdIt-webfont.eot');
+//     src: url('/fonts/FranklinGothic-MedCdIt-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('/fonts/FranklinGothic-MedCdIt-webfont.woff2') format('woff2'),
+//          url('/fonts/FranklinGothic-MedCdIt-webfont.woff') format('woff'),
+//          url('/fonts/FranklinGothic-MedCdIt-webfont.ttf') format('truetype'),
+//          url('/fonts/FranklinGothic-MedCdIt-webfont.svg#franklin_gothic_fsMdCnIt') format('svg');
+//     font-weight: bold;
+//     font-style: italic;
 
+// }
+%franklinitcprocondlight {
+  font-family: "Franklin ITC Cond Light";
+  font-style: normal;
+  font-weight: normal;
 }
 
+%franklinitcprocondlightitalic {
+  font-family: "Franklin ITC Cond Light";
+  font-style: italic;
+  font-weight: normal;
+}
+
+%franklinitcprocondmed {
+  font-family: "Franklin ITC Cond Med";
+  font-style: normal;
+  font-weight: normal;
+}
+
+%franklinitcprocondmeditalic {
+  font-family: "Franklin ITC Cond Med";
+  font-style: italic;
+  font-weight: normal;
+}
 
 @import "mixins";
 
@@ -150,10 +172,11 @@ html {
 }
 
 body {
+    @extend %franklinitcprocondlight;
     margin: 0;
     background-color: #f0f0f0;
     color: $base-font-color;
-    font-family: $sans-serif-stack;
+    //font-family: $sans-serif-stack;
     line-height: $base-line-height;
     position: relative;
     min-height: 100%;
@@ -266,10 +289,17 @@ img { border: 0;}
 // -----------------------------------------------------------------------------
 //todofont-weight:$font-bold;
 .u-bold { 
-    font-weight:$font-bold;
+    //font-weight:$font-bold;
+    @extend %franklinitcprocondmed;
 }
-.u-light { font-weight:$font-light; }
-.u-normal {font-weight:$font-normal;}
+
+.u-light { 
+    font-weight:$font-light;
+    @extend %franklinitcprocondlight; 
+}
+.u-normal {
+    @extend %franklinitcprocondlight;
+}
 .u-italic {font-style: italic;}
 
 .u-uppercase { text-transform:uppercase; }
@@ -387,9 +417,9 @@ img { border: 0;}
 
 
 @include small-down {
-
     .u-hide--small-down {  display:none; }
-    .u-show--small-down {  display:block; }
+    .u-show--small-down,
+    .u-block--small-down {  display:block; }
 
     .u-text-center--small-down {  text-align: center; }
     .u-text-right--small-down { text-align: right; }

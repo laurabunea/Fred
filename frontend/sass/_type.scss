@@ -146,8 +146,9 @@ code,
 dt, 
 dd, 
 td { 
-    font-weight:$font-normal;
-   
+    @extend %franklinitcprocondlight;
+    //font-weight:$font-normal;
+    
 }
 
 h3, 
@@ -156,11 +157,14 @@ h5,
 strong, 
 b, 
 th { 
-    font-weight:$font-bold;
+    @extend %franklinitcprocondmed;
+    //font-weight:$font-bold;
 }
 
 
-.intro { font-weight:$font-light; }
+.intro { //font-weight:$font-light; 
+    @extend %franklinitcprocondlight;
+}
 
 
 
@@ -168,7 +172,8 @@ em,
 i, 
 cite, 
 dfn,.font-italic { 
-    font-style:italic; 
+    //font-style:italic; 
+    @extend %franklinitcprocondlightitalic;
 }
 
 

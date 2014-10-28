@@ -96,6 +96,7 @@ $hr-colour: #F7F8F5;
 
         th {
             background-color: $hr-colour;
+            
         }
 
         td[data-header]:before {
@@ -106,3 +107,36 @@ $hr-colour: #F7F8F5;
         }
     }
 }
+//th .i-caret-down {
+//     display: none;
+// }
+// @include small-down {
+//     td:nth-child(2),
+//     td:nth-child(5),
+//     td:nth-child(6) {
+//         display:none;
+         
+//     }
+
+        
+//          td:nth-child(2),
+//         td:nth-child(5),
+//         td:nth-child(6) {
+//             &.show {
+//                 display:block;
+//             }  
+//         }
+
+//     th {
+//         cursor: pointer;
+//         position: relative;
+       
+//         .i-caret-down {
+//             display: block;
+//             position:absolute; 
+//             right:1rem;
+//             top:50%;
+
+//         }
+//     }
+// }

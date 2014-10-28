@@ -5,7 +5,7 @@
     <title>{% block title %}{{ title }}{% endblock %}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href="//cloud.webtype.com/css/f0ce1a38-c7de-49f6-a057-bb4743f5fec5.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/css/screen.css"/>
     {% block stylesheets %}{% endblock %}
     <script>
@@ -426,7 +426,11 @@
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="/js/biglink.js"></script>
     {% block scripts %}{% endblock %}
-    <script>$(".bigLink").bigLink();</script>
+    <script>
+      $(".bigLink").bigLink();
+      
+
+    </script>
     <script src="//localhost:35729/livereload.js"></script>
 </body>
 </html>

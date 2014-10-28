@@ -95,7 +95,7 @@
     },
     {
       "type":"layout/dynamic",
-      "container_padding":"layout pt-m pb-m",
+      "container_padding":"layout pt-m pb-m pt-l--medium pb-l--medium",
       "external_theme":"bg--ultra-light-grey ",
       "columns":[
         {
@@ -107,9 +107,9 @@
               "data":[
                 {
                   "type": "type/p",
-                  "data": "<a href='/pages/forbar-portfolio/'><strong>Portfolio:</strong></a><br /><strong>New Zealand Dollar</strong>"
+                  "class": "font-size-xl--medium",
+                  "data": "<a class='u-block--small-down' href='/pages/forbar-portfolio/'><strong>Portfolio:</strong></a><strong> New Zealand Dollar</strong>"
                 }
-               
               ]
             }
           ]

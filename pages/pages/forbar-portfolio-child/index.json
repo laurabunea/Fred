@@ -97,7 +97,7 @@
     },
     {
       "type":"layout/dynamic",
-      "container_padding":"layout pt-m pb-m",
+      "container_padding":"layout pt-m pb-m pt-l--medium pb-l--medium",
       "external_theme":"bg--ultra-light-grey ",
       "columns":[
         {
@@ -109,7 +109,8 @@
               "data":[
                 {
                   "type": "type/p",
-                  "data": "<a href='/pages/forbar-portfolio-landing/'><strong>New Zealand Dollar:</strong></a><br /><strong>Domestic Fixed Interest</strong>"
+                  "class": "font-size-xl--medium",
+                  "data": "<a class='u-block--small-down' href='/pages/forbar-portfolio-landing/'><strong>New Zealand Dollar:</strong></a><strong> Domestic Fixed Interest</strong>"
                 }
                
               ]
@@ -141,11 +142,11 @@
                   "tbody": [
                       [
                           { "data": "ANZ Bank New Zealand Limited Perpetual 5.28%", "th": true },
-                          { "data": "40,000"    },
+                          { "data": "40,000", "class":"u-hide--small-down "},
                           { "data": "0.996"     },
                           { "data": "40,711.20" },
-                          { "data": "42,840.00" },
-                          { "data": "5.61"      }
+                          { "data": "42,840.00", "class":"u-hide--small-down"},
+                          { "data": "5.61", "class":"u-hide--small-down"}
                       ],
                       [
                           { "data": "ASB Capital No.2 Limited Perpetual Preference Shares 4.62%", "th": true },
