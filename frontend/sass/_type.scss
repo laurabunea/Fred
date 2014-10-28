@@ -157,7 +157,8 @@ h4,
 h5,
 strong, 
 b, 
-th { 
+th,
+label { 
     @extend %bentonsanscondensedmedium;
     //@extend %franklinitcprocondmed;
     //font-weight:$font-bold;
