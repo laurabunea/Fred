@@ -119,7 +119,7 @@
         }
       ]
     },
-    {
+   {
       "type":"layout/dynamic",
       "container_padding":"layout--bleed-mobile",
       "external_theme":"bg--white",
@@ -128,7 +128,7 @@
           "column_class":"col--no-gutters-large",
           "data":[
             {
-              "type": "layout/table",
+              "type": "layout/table-test",
               "responsive": true,
               "data": {
                   "thead": [
@@ -243,5 +243,6 @@
         }
       ]
     }
+           
   ]
 }

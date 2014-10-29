@@ -1,74 +1,84 @@
-<table class=' table {% if item.responsive %} table--responsive {% endif %}'>
+
+        <table class='table {% if item.responsive %} table--responsive {% endif %}'>
     
-    {% for th in item.data.thead %}
+            {% for th in item.data.thead %}
 
-        {% if loop.first %}
-            <thead>
-        {% endif %}
-        
-            <th {% if th.colspan %} colspan='{{th.colspan}}'{% endif %} class='tiny u-uppercase {% if item.responsive %}{% elif loop.first %} small-6 {% endif %}{% if item.responsive %}{% elif loop.last %} small-2 {% endif %}'>
-                {{ th.data }}
-            </th>
+                {% if loop.first %}
+                    <thead>
+                {% endif %}
+                
+                    <th {% if th.colspan %} colspan='{{th.colspan}}'{% endif %} class='tiny u-uppercase {% if item.responsive %}{% elif loop.first %} small-6 {% endif %}{% if item.responsive %}{% elif loop.last %} small-2 {% endif %}'>
+                        {{ th.data }}
+                    </th>
 
-        {% if loop.last %}
-            </thead>
-        {% endif %}
-
-    {% endfor %}
-    
-    {% for tr in item.data.tfoot %}
-
-        {% if loop.first %}
-            <tfoot>
-        {% endif %}
-            
-            <tr>
-
-            {% for td in tr.data %}
-
-                <td {% if td.colspan %} colspan='{{td.colspan}}'{% endif %}>
-                </td>
+                {% if loop.last %}
+                    </thead>
+                {% endif %}
 
             {% endfor %}
+            
+            {% for tr in item.data.tfoot %}
 
-            </tr>
+                {% if loop.first %}
+                    <tfoot>
+                {% endif %}
+                    
+                    <tr>
 
-        {% if loop.last %}
-            </tfoot>
-        {% endif %}
+                    {% for td in tr.data %}
 
-    {% endfor %}
-    {% set count = 1 %}
-    {% for tr in item.data.tbody %}
+                        <td {% if td.colspan %} colspan='{{td.colspan}}'{% endif %}>
+                        </td>
 
-        {% if loop.first %}
-            <tbody>
-        {% endif %}
+                    {% endfor %}
 
-        <tr>
-        
-        {% for td in tr %}
-    
-            {% if td.th %}
-                <th{% if td.colspan %} colspan='{{td.colspan}}'{% endif %} data-header='{{ item.data.thead[loop.index-1].data }}' class='data-anchor {% if item.responsive %}{% elif loop.first %} small-6 {% endif %} {% if item.responsive %}{% elif loop.last %} small-2 {% endif %}' data-showhide-trigger='table-{{count}}'>
-                    {{ td.data }} <i class='i-caret-down u-inline-block u-right'></i>
-                </th>
-            {% else %}
-                <td{% if td.colspan %} colspan='{{td.colspan}}'{% endif %} data-header='{{ item.data.thead[loop.index-1].data }}' class='{% if item.responsive %}{% elif loop.first %} small-6 {% endif %} {% if item.responsive %}{% elif loop.last %} small-2 {% endif %}{% if td.hide %} showhide-hidden {% endif %}' data-showhide-container='table-{{count}}'>
-                    {{ td.data }}
-                </td>
+                    </tr>
+
+                {% if loop.last %}
+                    </tfoot>
+                {% endif %}
+
+            {% endfor %}
+            {% set count = 1 %}
+
+            {% for tr in item.data.tbody %}
+
+                {% if loop.first %}
+                    <tbody>
+                {% endif %}
+                
+                <tr>
+                    
+                    {% for td in tr %}
+                       
+
+                        {% if td.th %}
+                            <th{% if td.colspan %} colspan='{{td.colspan}}'{% endif %} data-header='{{ item.data.thead[loop.index-1].data }}' class='data-anchor {% if item.responsive %}{% elif loop.first %} small-6 {% endif %} {% if item.responsive %}{% elif loop.last %} small-2 {% endif %}' data-showhide-trigger='table-{{count}}'>
+                                {{ td.data }} {#<i class='i-caret-down u-inline-block u-right'></i>#}
+                            </th>
+                            
+                        {% else %}
+                            
+
+                            <td{% if td.colspan %} colspan='{{td.colspan}}'{% endif %} data-header='{{ item.data.thead[loop.index-1].data }}' class='{% if item.responsive %}{% elif loop.first %} small-6 {% endif %} {% if item.responsive %}{% elif loop.last %} small-2 {% endif %}{% if td.hide %} showhide-hidden {% endif %}' data-showhide-container='table-{{count}}'>
+                                {{ td.data }}
+                            </td>
+                        {% endif %}
+                  
+
+                    {% endfor %}
+
+                     
+                  
+                </tr>
+
+
+                {% set count = count + 1 %}
+
+            {% if loop.last %}
+                </tbody>
             {% endif %}
-        
-        {% endfor %}
 
-        </tr>
-
-        {% set count = count + 1 %}
-
-    {% if loop.last %}
-        </tbody>
-    {% endif %}
-
-    {% endfor %}
-    
-</table>
+            {% endfor %}
+         
+ </table>

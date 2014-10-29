@@ -1,12 +1,12 @@
-$hr-colour: #F7F8F5;
+$hr-colour:#EEEEEE;
 
 /*------------------------------------*\
     #TABLES
 \*------------------------------------*/
 
 .table {
-    border-top:1px solid darken($hr-colour, 5%);
-    
+    border-top:1px solid $hr-colour;
+    position:relative;
     & + .table{border-top:none;}
     border-collapse: collapse;//// Remove most spacing between table cells.
     border-spacing: 0;// Remove most spacing between table cells.
@@ -20,12 +20,31 @@ $hr-colour: #F7F8F5;
     }
     tr {
         //border-top:1px solid darken($hr-colour, 5%);
-        border-bottom:1px solid darken($hr-colour, 5%);
+        border-bottom:1px solid $hr-colour;
+        position:relative;        
     }
+    // tbody tr {
+    //     overflow: hidden;
+    //     td:last-child {
+    //         &:after {
+    //             content:"";
+    //             height:1px; 
+    //             width:6rem; 
+    //             position:absolute;
+    //             bottom:-1px;
+    //             background-color:$hr-colour;
+    //             display: inline-block;
+    //         }
+    //     }
 
+    // }
     td, th {
         @include rem(padding-top, $space-s);
         @include rem(padding-bottom, $space-s);
+        @include small-down {
+            @include rem(padding-top, $space-xs);
+            @include rem(padding-bottom, $space-xs);
+        }
         @include rem(padding-left, 0);
         @include rem(padding-right, $space-s);
         text-align: right;
@@ -97,7 +116,7 @@ $hr-colour: #F7F8F5;
         }
 
         th {
-            background-color: $hr-colour;
+            //background-color: $hr-colour;
             
         }
 
@@ -107,38 +126,83 @@ $hr-colour: #F7F8F5;
             
             //@include rem(padding-left, $space);
         }
+
     }
 }
-//th .i-caret-down {
-//     display: none;
-// }
-// @include small-down {
-//     td:nth-child(2),
-//     td:nth-child(5),
-//     td:nth-child(6) {
-//         display:none;
+th .i-caret-down {
+     display: none;
+ }
+ @include small-down {
+     .tr {
+
+        position: relative;
+     }
+     .table td {
+        @include rem(padding-top, 0);
+        @include rem(padding-bottom, 0);
+     }
+     td:nth-child(2),
+     td:nth-child(5),
+     td:nth-child(6) {
+         display:none;
          
-//     }
+    }
 
-        
-//          td:nth-child(2),
-//         td:nth-child(5),
-//         td:nth-child(6) {
-//             &.show {
-//                 display:block;
-//             }  
-//         }
+    td {  max-width:80%; }
 
-//     th {
-//         cursor: pointer;
-//         position: relative;
+    th[data-header] {
+        @include rem(margin-top, $space-m);
+
+        border-top:1px solid $hr-colour;
+          &:after {
+            content: '▾';
+            border-left:1px solid $hr-colour;
+            //padding-left:1em;
+            right:0;
+            width:20%;
+            padding-left:1rem;
+            height:39px;
+            bottom:-43px;
+            position: absolute;
+            display:inline-block;
+            //background-color:red;
+           
+        }
        
-//         .i-caret-down {
-//             display: block;
-//             position:absolute; 
-//             right:1rem;
-//             top:50%;
+    }
+    tbody tr:first-child th {
+        margin-top:0;
+        border-top:none;
+    }
 
-//         }
-//     }
-// }
+    th[data-header].showhide-active {
+       
+        &:after {
+            bottom:-114px;
+            height:110px;   
+        }
+           
+    }
+
+    .table--responsive td { border-bottom:none}    
+        td:nth-child(2),
+        td:nth-child(5),
+        td:nth-child(6) {
+            &.show {
+                 display:block;
+            }  
+        }
+
+     th {
+         cursor: pointer;
+         position: relative;
+       
+         .i-caret-down {
+             display: block;
+             position:absolute; 
+             right:1rem;
+             top:50%;
+
+         }
+     }
+ }
