@@ -208,6 +208,9 @@ html {
     background-color:$base-bg-color;
 }
 
+
+* { -webkit-font-smoothing: subpixel-antialiased; }
+
 body {
    // @extend %franklinitcprocondlight;
     @extend %bentonsanscondensedbook;
@@ -218,6 +221,7 @@ body {
     line-height: $base-line-height;
     position: relative;
     min-height: 100%;
+
 }
 
 // Remove border when inside `a` element in IE 8/9.
@@ -502,7 +506,7 @@ img { border: 0;}
     .u-hide--large { display:none; }
     .u-show--large {  display:block; }
 
-    .u-text-right--large { text-align: center; }
+    .u-text-center--large { text-align: center; }
     .u-text-right--large { text-align: right; }
     .u-text-left--large { text-align: left; }
 

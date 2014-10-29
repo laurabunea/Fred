@@ -6,7 +6,7 @@
             <thead>
         {% endif %}
         
-            <th {% if th.colspan %} colspan='{{th.colspan}}'{% endif %} class='tiny u-uppercase {% if item.responsive %}hello{% elif loop.first %} small-6 {% endif %}{% if item.responsive %}{% elif loop.last %} small-2 {% endif %}'>
+            <th {% if th.colspan %} colspan='{{th.colspan}}'{% endif %} class='tiny u-uppercase {% if item.responsive %}{% elif loop.first %} small-6 {% endif %}{% if item.responsive %}{% elif loop.last %} small-2 {% endif %}'>
                 {{ th.data }}
             </th>
 
